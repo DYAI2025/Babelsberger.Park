@@ -1,0 +1,450 @@
+<!-- Gastronomie-Finder Map Module -->
+<!-- Integration: Füge diesen Block in index.html unterhalb der "WC-Finder"-Section ein -->
+
+<section id="gastronomie-finder" class="section">
+  <h2>Gastronomie-Finder</h2>
+  <p style="margin-bottom:20px;color:var(--text-muted)">
+    Finde Restaurants, Cafés und mehr in der Nähe. Nutze deinen Standort für Navigation.
+  </p>
+
+  <div class="card" style="padding:0;overflow:hidden;">
+    <!-- Map Container -->
+    <div id="gastro-map" style="height:400px;width:100%;background:#e2e8f0;"></div>
+
+    <!-- Controls -->
+    <div style="padding:calc(var(--grid) * 2);display:flex;gap:calc(var(--grid) * 1.5);flex-wrap:wrap;align-items:center;">
+      <button id="btn-gastro-locate" class="gastro-btn gastro-btn-primary">
+        📍 Standort nutzen
+      </button>
+      <button id="btn-gastro-nearest" class="gastro-btn gastro-btn-secondary" disabled>
+        🧭 Zum nächsten Restaurant
+      </button>
+      <span id="gastro-distance-info" style="color:var(--text-muted);font-size:0.9rem;margin-left:auto;"></span>
+    </div>
+
+    <!-- Info Notice -->
+    <div class="notice" style="margin:0 calc(var(--grid) * 2) calc(var(--grid) * 2);">
+      <small>
+        <strong>Legende:</strong>
+        🍽️ Restaurant · ☕ Café · 🍔 Imbiss · 🍺 Bar/Pub · 🍦 Eiscafé · 🌳 Biergarten<br>
+        <strong>Datenquelle:</strong> OpenStreetMap ·
+        <strong>Navigation:</strong> Öffnet Google Maps
+      </small>
+    </div>
+  </div>
+</section>
+
+<!-- Gastronomie Map Styles -->
+<style>
+  .gastro-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+  }
+
+  .gastro-btn-primary {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: var(--text-inverse);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .gastro-btn-primary:hover:not(:disabled) {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .gastro-btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+  }
+
+  .gastro-btn-secondary:hover:not(:disabled) {
+    background: var(--accent-primary);
+    color: var(--text-inverse);
+  }
+
+  .gastro-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    #gastro-map {
+      height: 320px;
+    }
+
+    .gastro-btn {
+      flex: 1;
+      min-width: 140px;
+    }
+
+    #gastro-distance-info {
+      flex-basis: 100%;
+      margin-left: 0 !important;
+      text-align: center;
+    }
+  }
+</style>
+
+<!-- Gastronomie Map Script -->
+<script>
+(function() {
+  'use strict';
+
+  // Configuration
+  const CONFIG = {
+    dataPath: 'data/gastronomie.geojson',
+    defaultCenter: [52.405, 13.075], // Between Park Babelsberg and Neuer Garten
+    defaultZoom: 14,
+    maxZoom: 19,
+    tileLayer: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    tileAttribution: '© OpenStreetMap contributors'
+  };
+
+  // Category colors
+  const CATEGORY_COLORS = {
+    'restaurant': '#ef4444',    // Red
+    'cafe': '#92400e',          // Brown
+    'fast_food': '#f59e0b',     // Orange
+    'bar': '#8b5cf6',           // Purple
+    'pub': '#8b5cf6',           // Purple
+    'ice_cream': '#ec4899',     // Pink
+    'biergarten': '#10b981'     // Green
+  };
+
+  // Category icons/labels
+  const CATEGORY_LABELS = {
+    'restaurant': '🍽️ Restaurant',
+    'cafe': '☕ Café',
+    'fast_food': '🍔 Imbiss',
+    'bar': '🍺 Bar',
+    'pub': '🍺 Pub',
+    'ice_cream': '🍦 Eiscafé',
+    'biergarten': '🌳 Biergarten'
+  };
+
+  // State
+  let map = null;
+  let userPos = null;
+  let markers = [];
+  let userMarker = null;
+
+  // DOM Elements
+  const btnLocate = document.getElementById('btn-gastro-locate');
+  const btnNearest = document.getElementById('btn-gastro-nearest');
+  const distanceInfo = document.getElementById('gastro-distance-info');
+
+  // Initialize Map
+  function initMap() {
+    map = L.map('gastro-map', {
+      zoomControl: true,
+      attributionControl: true
+    });
+
+    L.tileLayer(CONFIG.tileLayer, {
+      maxZoom: CONFIG.maxZoom,
+      attribution: CONFIG.tileAttribution
+    }).addTo(map);
+
+    map.setView(CONFIG.defaultCenter, CONFIG.defaultZoom);
+  }
+
+  // Load Gastronomie Data
+  async function loadGastroData() {
+    try {
+      const response = await fetch(CONFIG.dataPath);
+      const geojson = await response.json();
+
+      if (!geojson.features || geojson.features.length === 0) {
+        console.warn('Keine Gastronomie-Daten gefunden');
+        return;
+      }
+
+      // Fit map to data bounds
+      const bounds = calculateBounds(geojson);
+      if (bounds) {
+        map.fitBounds(bounds, { padding: [50, 50] });
+      }
+
+      // Add markers
+      geojson.features.forEach(addGastroMarker);
+
+    } catch (error) {
+      console.error('Fehler beim Laden der Gastronomie-Daten:', error);
+    }
+  }
+
+  // Calculate GeoJSON bounds
+  function calculateBounds(geojson) {
+    if (!geojson.features || geojson.features.length === 0) return null;
+
+    let minLat = 90, minLng = 180, maxLat = -90, maxLng = -180;
+
+    geojson.features.forEach(feature => {
+      const [lng, lat] = feature.geometry.coordinates;
+      if (lat < minLat) minLat = lat;
+      if (lat > maxLat) maxLat = lat;
+      if (lng < minLng) minLng = lng;
+      if (lng > maxLng) maxLng = lng;
+    });
+
+    return [[minLat, minLng], [maxLat, maxLng]];
+  }
+
+  // Add Gastronomie marker to map
+  function addGastroMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    // Determine marker icon based on amenity type
+    const icon = getMarkerIcon(props.amenity);
+
+    const marker = L.marker([lat, lng], { icon }).addTo(map);
+
+    // Popup content
+    let popupContent = `<strong>${props.name || 'Gastronomie'}</strong><br>`;
+    popupContent += `${CATEGORY_LABELS[props.amenity] || props.amenity}<br>`;
+
+    if (props.cuisine) {
+      popupContent += `🍴 ${props.cuisine}<br>`;
+    }
+
+    if (props.outdoor_seating === 'yes') {
+      popupContent += `🌞 Außensitzplätze<br>`;
+    }
+
+    if (props.opening_hours) {
+      popupContent += `🕐 ${props.opening_hours}<br>`;
+    }
+
+    marker.bindPopup(popupContent);
+
+    markers.push({ lat, lng, props, marker });
+  }
+
+  // Get marker icon based on amenity type
+  function getMarkerIcon(amenity) {
+    const color = CATEGORY_COLORS[amenity] || '#6b7280'; // Gray default
+
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `<div style="
+        width: 24px;
+        height: 24px;
+        background: ${color};
+        border: 3px solid white;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      "></div>`,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+  }
+
+  // Haversine distance calculation (meters)
+  function haversine(pos1, pos2) {
+    const R = 6371000; // Earth radius in meters
+    const toRad = x => x * Math.PI / 180;
+
+    const dLat = toRad(pos2.lat - pos1.lat);
+    const dLng = toRad(pos2.lng - pos1.lng);
+    const lat1 = toRad(pos1.lat);
+    const lat2 = toRad(pos2.lat);
+
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1) * Math.cos(lat2) *
+              Math.sin(dLng/2) * Math.sin(dLng/2);
+
+    return 2 * R * Math.asin(Math.sqrt(a));
+  }
+
+  // Find nearest Gastronomie
+  function findNearestGastro() {
+    if (!userPos || markers.length === 0) return null;
+
+    let nearest = null;
+    let minDistance = Infinity;
+
+    markers.forEach(gastro => {
+      const distance = haversine(
+        { lat: userPos.lat, lng: userPos.lng },
+        { lat: gastro.lat, lng: gastro.lng }
+      );
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearest = { ...gastro, distance };
+      }
+    });
+
+    return nearest;
+  }
+
+  // Format distance
+  function formatDistance(meters) {
+    if (meters < 1000) {
+      return `${Math.round(meters)} m`;
+    }
+    return `${(meters / 1000).toFixed(1)} km`;
+  }
+
+  // Check CMP consent (stub integration)
+  function checkGeolocationConsent() {
+    // TODO: Integrate with real CMP
+    // For now, we use browser's native geolocation permission
+    return true;
+  }
+
+  // Locate user
+  function locateUser() {
+    if (!navigator.geolocation) {
+      alert('Geolocation wird von deinem Browser nicht unterstützt.');
+      return;
+    }
+
+    // Check consent
+    if (!checkGeolocationConsent()) {
+      alert('Bitte erlaube Standortzugriff in den Datenschutzeinstellungen.');
+      return;
+    }
+
+    btnLocate.disabled = true;
+    btnLocate.textContent = '⏳ Standort wird ermittelt...';
+
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        userPos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        // Remove old user marker if exists
+        if (userMarker) {
+          map.removeLayer(userMarker);
+        }
+
+        // Add user marker
+        userMarker = L.circleMarker([userPos.lat, userPos.lng], {
+          radius: 8,
+          fillColor: '#ef4444',
+          color: '#fff',
+          weight: 3,
+          opacity: 1,
+          fillOpacity: 0.8
+        }).addTo(map);
+
+        userMarker.bindPopup('<strong>📍 Dein Standort</strong>').openPopup();
+
+        // Center map on user
+        map.setView([userPos.lat, userPos.lng], 16);
+
+        // Enable navigation button
+        btnNearest.disabled = false;
+        btnLocate.textContent = '✓ Standort aktiv';
+
+        // Show distance to nearest gastro
+        const nearest = findNearestGastro();
+        if (nearest) {
+          const label = CATEGORY_LABELS[nearest.props.amenity] || 'Restaurant';
+          distanceInfo.textContent = `Nächstes ${label}: ${formatDistance(nearest.distance)}`;
+        }
+      },
+      error => {
+        btnLocate.disabled = false;
+        btnLocate.textContent = '📍 Standort nutzen';
+
+        let message = 'Standortzugriff fehlgeschlagen. ';
+
+        switch(error.code) {
+          case error.PERMISSION_DENIED:
+            message += 'Bitte erlaube Standortzugriff in deinem Browser.';
+            break;
+          case error.POSITION_UNAVAILABLE:
+            message += 'Standort konnte nicht ermittelt werden.';
+            break;
+          case error.TIMEOUT:
+            message += 'Zeitüberschreitung. Bitte versuche es erneut.';
+            break;
+          default:
+            message += 'Unbekannter Fehler.';
+        }
+
+        alert(message);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0
+      }
+    );
+  }
+
+  // Navigate to nearest Gastronomie (platform-aware)
+  function navigateToNearest() {
+    if (!userPos || markers.length === 0) return;
+
+    const nearest = findNearestGastro();
+    if (!nearest) {
+      alert('Keine Gastronomie in der Nähe gefunden.');
+      return;
+    }
+
+    const origin = `${userPos.lat},${userPos.lng}`;
+    const destination = `${nearest.lat},${nearest.lng}`;
+
+    // Platform detection
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const isAndroid = /Android/i.test(navigator.userAgent);
+
+    let url;
+
+    if (isMobile) {
+      if (isIOS) {
+        // iOS: Try Apple Maps first, fallback to Google Maps
+        url = `maps://maps.apple.com/?saddr=${origin}&daddr=${destination}&dirflg=w`;
+
+        // Fallback to Google Maps if Apple Maps not available
+        setTimeout(() => {
+          window.location.href = `https://maps.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`;
+        }, 500);
+      } else if (isAndroid) {
+        // Android: Use geo: URI which opens default maps app
+        url = `geo:${destination}?q=${destination}(${nearest.props.name})`;
+      } else {
+        // Other mobile: Google Maps mobile web
+        url = `https://maps.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`;
+      }
+
+      window.location.href = url;
+    } else {
+      // Desktop: Open in new tab
+      url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=walking`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  }
+
+  // Event Listeners
+  btnLocate.addEventListener('click', locateUser);
+  btnNearest.addEventListener('click', navigateToNearest);
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      initMap();
+      loadGastroData();
+    });
+  } else {
+    initMap();
+    loadGastroData();
+  }
+})();
+</script>

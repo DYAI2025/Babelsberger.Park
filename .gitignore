@@ -1,0 +1,29 @@
+# Backup files
+*.backup
+*-backup.html
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+# Ignore large files
+park-babelsberg/images/images 2.zip
+park-babelsberg/images/images 2/
+*.zip
+

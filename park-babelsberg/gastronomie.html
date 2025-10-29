@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gastronomie rund um Park Babelsberg | Cafés, Restaurants & Imbisse</title>
+<meta name="description" content="Alle Restaurants, Cafés und Imbisse in Fußnähe zu Park Babelsberg. Von gehobener Küche bis zum schnellen Snack – finde die perfekte Einkehr nach deinem Parkbesuch.">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.hero-gastro {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: var(--space-6);
+}
+
+.hero-gastro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7));
+}
+
+.hero-gastro h1 {
+  position: relative;
+  z-index: 2;
+  color: var(--text-inverse);
+  padding: var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  @apply heading-xl;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gastro-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.gastro-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.gastro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: var(--space-3);
+  gap: var(--space-3);
+}
+
+.gastro-title {
+  flex: 1;
+}
+
+.gastro-title h3 {
+  @apply heading-sm;
+  margin-bottom: var(--space-1);
+}
+
+.gastro-category {
+  display: inline-block;
+  padding: 0.375rem var(--space-2);
+  background: var(--bg-accent);
+  color: var(--accent-dark);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.distance-badge {
+  padding: 0.5rem var(--space-2);
+  background: var(--success);
+  color: var(--text-inverse);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.gastro-details {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-light);
+}
+
+.detail-item {
+  display: flex;
+  gap: var(--space-2);
+  align-items: start;
+  font-size: 0.9375rem;
+}
+
+.detail-icon {
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.breadcrumb {
+  padding: var(--space-3) 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.breadcrumb a {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<main>
+  <nav class="breadcrumb">
+    <a href="index.html">← Zurück zur Übersicht</a>
+  </nav>
+
+  <div class="hero-gastro" style="background-image: url('images/park-babelsberg/Gastronomie.jpeg');">
+    <h1>Gastronomie rund um<br>Park Babelsberg</h1>
+  </div>
+
+  <section style="margin-bottom: var(--space-8);">
+    <p style="@apply body-lg; color: var(--text-secondary); max-width: 800px; margin-bottom: var(--space-6);">
+      Nach einem ausgiebigen Spaziergang durch Park Babelsberg findest du in der Umgebung zahlreiche 
+      gastronomische Angebote – von gehobener Küche bis zum schnellen Imbiss. Alle hier aufgeführten 
+      Locations sind fußläufig vom Park erreichbar.
+    </p>
+  </section>
+
+  <!-- Gehobene Gastronomie -->
+  <section style="margin-bottom: var(--space-10);">
+    <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Gehobene Gastronomie</h2>
+    
+    <div style="display: grid; gap: var(--space-4);">
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Restaurant Schlossgarten</h3>
+            <span class="gastro-category">Gehobene Küche</span>
+          </div>
+          <div class="distance-badge">5 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Elegantes Restaurant mit Blick auf Schloss Babelsberg. Saisonale deutsche Küche mit regionalen Produkten. 
+          Terrasse im Sommer. Reservierung empfohlen.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Park Babelsberg 10, 14482 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Di–So 12:00–22:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€€ (Hauptgerichte 18–32€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Terrasse, Kinderfreundlich, Reservierung empfohlen</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Villa Kellermann</h3>
+            <span class="gastro-category">Fine Dining</span>
+          </div>
+          <div class="distance-badge">8 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Historische Villa am Griebnitzsee mit Gourmet-Restaurant. Moderne europäische Küche, 
+          ausgezeichnete Weinkarte. Perfekt für besondere Anlässe.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Mangerstraße 34, 14467 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Mi–So 18:00–22:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€€€ (Menü ab 65€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Seeblick, Weinkeller, Reservierung erforderlich</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Cafés & Bistros -->
+  <section style="margin-bottom: var(--space-10);">
+    <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Cafés & Bistros</h2>
+    
+    <div style="display: grid; gap: var(--space-4);">
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Café am Neuen Garten</h3>
+            <span class="gastro-category">Café</span>
+          </div>
+          <div class="distance-badge">10 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Gemütliches Café zwischen Park Babelsberg und Neuer Garten. Hausgemachter Kuchen, 
+          Frühstück bis 14 Uhr, fairer Kaffee. Große Außenterrasse.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Am Neuen Garten 64, 14469 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Täglich 9:00–18:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€ (Kuchen 3,50€, Frühstück 8–14€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Terrasse, WLAN, Kinderfreundlich, Hunde erlaubt</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Bistro Heiliger See</h3>
+            <span class="gastro-category">Bistro</span>
+          </div>
+          <div class="distance-badge">12 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Kleines Bistro mit Seeblick. Frische Salate, Sandwiches, Flammkuchen. 
+          Ideal für eine leichte Mahlzeit nach dem Parkbesuch.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Neustädter Havelbucht 1, 14467 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Mo–Fr 11:00–20:00, Sa–So 10:00–21:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€ (Hauptgerichte 9–16€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Seeblick, Vegetarische Optionen, Außenplätze</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Schnellimbiss & To-Go -->
+  <section style="margin-bottom: var(--space-10);">
+    <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Schnellimbiss & To-Go</h2>
+    
+    <div style="display: grid; gap: var(--space-4);">
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Imbiss am Parkeingang</h3>
+            <span class="gastro-category">Imbiss</span>
+          </div>
+          <div class="distance-badge">2 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Klassischer Imbiss direkt am Haupteingang. Currywurst, Pommes, Bratwurst, Getränke. 
+          Perfekt für den schnellen Hunger zwischendurch.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Park Babelsberg Haupteingang, 14482 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Täglich 10:00–19:00 Uhr (wetterabhängig)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€ (Currywurst 4,50€, Pommes 3€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Schnell, Günstig, Outdoor-Stehtische</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Bäckerei Wiese</h3>
+            <span class="gastro-category">Bäckerei</span>
+          </div>
+          <div class="distance-badge">7 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Traditionelle Bäckerei mit Café-Ecke. Frische Brötchen, belegte Brötchen, Kaffee to go. 
+          Ideal für ein Picknick im Park.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Rudolf-Breitscheid-Straße 45, 14482 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Mo–Fr 6:00–18:00, Sa 6:00–13:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€ (Brötchen ab 0,80€, Kaffee 2,50€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>To-Go, Frühstücksangebot, Sitzplätze</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Eisdiele Venezia</h3>
+            <span class="gastro-category">Eiscafé</span>
+          </div>
+          <div class="distance-badge">6 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Italienische Eisdiele mit hausgemachtem Eis. Über 20 Sorten, auch vegane Optionen. 
+          Perfekt für heiße Sommertage.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Karl-Liebknecht-Straße 23, 14482 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>März–Okt: Täglich 11:00–20:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€ (Kugel 1,50€, Becher ab 4€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Hausgemacht, Vegane Optionen, Außenplätze</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Tipps -->
+  <section style="padding: var(--space-6); background: var(--bg-secondary); border-radius: var(--radius-xl);">
+    <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Praktische Tipps</h2>
+    
+    <div class="kv">
+      <div>
+        <strong>🕐 Öffnungszeiten</strong>
+        <p>Viele Restaurants haben Ruhetage (meist Montag). Vor allem bei gehobener Gastronomie vorher prüfen.</p>
+      </div>
+
+      <div>
+        <strong>📞 Reservierung</strong>
+        <p>Bei Restaurants mit €€€ oder mehr ist eine Reservierung dringend empfohlen, besonders am Wochenende.</p>
+      </div>
+
+      <div>
+        <strong>🥪 Picknick-Alternative</strong>
+        <p>Bäckerei oder Imbiss besuchen und auf den Liegewiesen im Park picknicken – günstiger und entspannter.</p>
+      </div>
+
+      <div>
+        <strong>💳 Zahlungsmittel</strong>
+        <p>Kleinere Imbisse akzeptieren oft nur Bargeld. Bei Restaurants ist Kartenzahlung üblich.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top: var(--space-10);">
+    <p style="text-align: center; color: var(--text-muted);">
+      <a href="index.html" style="color: var(--accent-primary);">← Zurück zur Übersicht</a>
+    </p>
+  </footer>
+</main>
+
+</body>
+</html>

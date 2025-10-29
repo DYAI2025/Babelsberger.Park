@@ -1,0 +1,1223 @@
+<!-- Unified Location-Finder Map Module V4 -->
+<!-- V4: + Live-Fahrplandaten (VBB REST API v6) mit Echtzeit-Abfahrten -->
+
+<section id="location-finder" class="section">
+  <h2>Location-Finder für Park Babelsberg</h2>
+  <p style="margin-bottom:16px;color:var(--text-muted)">
+    Finde WCs, Restaurants, Parkplätze und ÖPNV-Haltestellen im Park Babelsberg, Neuer Garten und rund um Schloss Babelsberg.
+    Mit Standort-Navigation und Live-Fahrplanauskünften.
+  </p>
+
+  <div class="card" style="padding:0;overflow:hidden;">
+    <!-- Main Filter Buttons -->
+    <div style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;background:var(--bg-secondary);border-bottom:2px solid var(--border-color);">
+      <button id="filter-wc" class="filter-btn active" data-layer="wc" aria-pressed="true">
+        <span class="filter-icon">🚻</span> WC <span class="filter-count" id="count-wc">0</span>
+      </button>
+      <button id="filter-gastro" class="filter-btn active" data-layer="gastro" aria-pressed="true">
+        <span class="filter-icon">🍽️</span> Gastronomie <span class="filter-count" id="count-gastro">0</span>
+      </button>
+      <button id="filter-parking" class="filter-btn" data-layer="parking" aria-pressed="false">
+        <span class="filter-icon">🅿️</span> Parkplätze <span class="filter-count" id="count-parking">0</span>
+      </button>
+      <button id="filter-oepnv" class="filter-btn" data-layer="oepnv" aria-pressed="false">
+        <span class="filter-icon">🚍</span> ÖPNV <span class="filter-count" id="count-oepnv">0</span>
+      </button>
+    </div>
+
+    <!-- Sub-Filter für Gastronomie -->
+    <div id="gastro-subfilter" class="subfilter-panel">
+      <div style="padding:12px 16px;display:flex;gap:8px;flex-wrap:wrap;background:#fafafa;">
+        <label class="subfilter-checkbox">
+          <input type="checkbox" data-amenity="restaurant" checked> 🍽️ Restaurant
+        </label>
+        <label class="subfilter-checkbox">
+          <input type="checkbox" data-amenity="cafe" checked> ☕ Café
+        </label>
+        <label class="subfilter-checkbox">
+          <input type="checkbox" data-amenity="fast_food" checked> 🍔 Imbiss
+        </label>
+        <label class="subfilter-checkbox">
+          <input type="checkbox" data-amenity="bar" checked> 🍺 Bar
+        </label>
+        <label class="subfilter-checkbox">
+          <input type="checkbox" data-amenity="pub" checked> 🍺 Pub
+        </label>
+        <label class="subfilter-checkbox">
+          <input type="checkbox" data-amenity="ice_cream" checked> 🍦 Eiscafé
+        </label>
+        <label class="subfilter-checkbox">
+          <input type="checkbox" data-amenity="biergarten" checked> 🌳 Biergarten
+        </label>
+      </div>
+    </div>
+
+    <!-- Map Container -->
+    <div id="unified-map" style="height:500px;width:100%;background:#e5e7eb;" role="application" aria-label="Interaktive Karte"></div>
+
+    <!-- Controls -->
+    <div style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:white;">
+      <button id="btn-locate" class="map-btn map-btn-primary" aria-label="Meinen Standort nutzen">
+        📍 Standort nutzen
+      </button>
+      <button id="btn-nearest-wc" class="map-btn map-btn-secondary" disabled aria-label="Zum nächsten WC navigieren">
+        🚻 Nächstes WC
+      </button>
+      <button id="btn-nearest-gastro" class="map-btn map-btn-secondary" disabled aria-label="Zum nächsten Restaurant navigieren">
+        🍽️ Nächstes Restaurant
+      </button>
+      <button id="btn-nearest-parking" class="map-btn map-btn-secondary" disabled style="display:none;" aria-label="Zum nächsten Parkplatz navigieren">
+        🅿️ Nächster Parkplatz
+      </button>
+    </div>
+
+    <!-- Distance Info -->
+    <div id="distance-info" style="padding:0 16px 12px;color:var(--text-muted);font-size:0.9rem;min-height:20px;" role="status" aria-live="polite"></div>
+
+    <!-- Legend -->
+    <details class="notice" style="margin:0 16px 16px;cursor:pointer;">
+      <summary style="font-weight:600;padding:8px 0;">📍 Legende & Datenquellen</summary>
+      <div style="padding-top:8px;font-size:0.9rem;line-height:1.6;">
+        <strong>WC:</strong> 🟢 Öffentlich · 🟡 Nur Kunden · 💰 Kostenpflichtig<br>
+        <strong>Gastronomie:</strong> 🍽️ Restaurant · ☕ Café · 🍔 Imbiss · 🍺 Bar/Pub · 🍦 Eiscafé · 🌳 Biergarten<br>
+        <strong>Parkplätze:</strong> 🅿️ Öffentlich · 💰 Kostenpflichtig · 🔒 Privat · 🏢 Parkhaus · 🚲 Fahrrad<br>
+        <strong>ÖPNV:</strong> 🚍 Bus & Tram Haltestellen · 🕐 Fahrplanauskünfte via VBB<br>
+        <strong>Daten:</strong> © OpenStreetMap-Mitwirkende (ODbL) ·
+        <strong>Navigation:</strong> Google Maps
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+
+<!-- Leaflet MarkerCluster CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="anonymous">
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+
+<!-- Leaflet MarkerCluster JS -->
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin="anonymous"></script>
+
+<!-- Styles -->
+<style>
+  /* Filter Buttons */
+  .filter-btn {
+    padding: 10px 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    color: #374151;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1 1 auto;
+    min-width: 140px;
+    justify-content: center;
+  }
+
+  .filter-btn .filter-icon {
+    font-size: 1.2rem;
+  }
+
+  .filter-btn .filter-count {
+    background: #e5e7eb;
+    color: #6b7280;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-left: 4px;
+  }
+
+  .filter-btn.active {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 2px 4px rgba(37,99,235,0.3);
+  }
+
+  .filter-btn.active .filter-count {
+    background: rgba(255,255,255,0.3);
+    color: white;
+  }
+
+  .filter-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .filter-btn:active {
+    transform: translateY(0);
+  }
+
+  /* Sub-Filter Panel */
+  .subfilter-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .subfilter-panel.open {
+    max-height: 200px;
+  }
+
+  .subfilter-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+  .subfilter-checkbox:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+  }
+
+  .subfilter-checkbox input[type="checkbox"] {
+    cursor: pointer;
+  }
+
+  /* Map Buttons */
+  .map-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    min-width: 140px;
+  }
+
+  .map-btn-primary {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    box-shadow: 0 2px 4px rgba(37,99,235,0.3);
+  }
+
+  .map-btn-primary:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(37,99,235,0.4);
+    transform: translateY(-2px);
+  }
+
+  .map-btn-secondary {
+    background: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .map-btn-secondary:hover:not(:disabled) {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-1px);
+  }
+
+  .map-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+
+  /* Leaflet Popup Customization */
+  .leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .leaflet-popup-content {
+    margin: 0;
+    font-family: var(--font-body);
+    min-width: 200px;
+  }
+
+  .popup-header {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .popup-body {
+    padding: 12px 16px;
+    line-height: 1.6;
+  }
+
+  .popup-body p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+  }
+
+  .popup-actions {
+    padding: 12px 16px;
+    background: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .popup-btn {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    min-width: 100px;
+  }
+
+  .popup-btn-primary {
+    background: #2563eb;
+    color: white;
+  }
+
+  .popup-btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+
+  .popup-btn-secondary {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+  }
+
+  .popup-btn-secondary:hover {
+    background: #eff6ff;
+  }
+
+  /* Marker Cluster Customization */
+  .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
+    background: rgba(37, 99, 235, 0.6);
+  }
+
+  .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
+    background: rgba(37, 99, 235, 0.8);
+    color: white;
+    font-weight: 700;
+  }
+
+  /* Mobile Optimization */
+  @media (max-width: 768px) {
+    #unified-map {
+      height: 400px;
+    }
+
+    .filter-btn {
+      font-size: 0.85rem;
+      padding: 8px 12px;
+      min-width: 110px;
+    }
+
+    .filter-btn .filter-icon {
+      font-size: 1rem;
+    }
+
+    .map-btn {
+      font-size: 0.85rem;
+      padding: 8px 12px;
+      min-width: 110px;
+    }
+
+    .subfilter-checkbox {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+
+    .popup-header {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+    }
+
+    .popup-body p {
+      font-size: 0.85rem;
+    }
+
+    .popup-btn {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+      min-width: 80px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #unified-map {
+      height: 350px;
+    }
+
+    .filter-btn, .map-btn {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+
+    .popup-actions {
+      flex-direction: column;
+    }
+
+    .popup-btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<!-- Script -->
+<script>
+(function() {
+  'use strict';
+
+  // Configuration
+  const CONFIG = {
+    dataPaths: {
+      wc: 'data/wc.geojson',
+      gastro: 'data/gastronomie.geojson',
+      parking: 'data/parking.geojson',
+      oepnv: 'data/oepnv.geojson'
+    },
+    defaultCenter: [52.400, 13.085], // Between Park Babelsberg and Neuer Garten
+    defaultZoom: 14,
+    maxZoom: 19,
+    tileLayer: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    tileAttribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    clusterOptions: {
+      maxClusterRadius: 60,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true
+    }
+  };
+
+  // Color schemes
+  const COLORS = {
+    wc: { public: '#10b981', customers: '#f59e0b', paid: '#3b82f6' },
+    gastro: {
+      restaurant: '#dc2626', cafe: '#92400e', fast_food: '#f59e0b',
+      bar: '#7c3aed', pub: '#7c3aed', ice_cream: '#ec4899', biergarten: '#10b981'
+    },
+    parking: {
+      bicycle_parking: '#10b981', public_free: '#3b82f6', public_paid: '#f59e0b',
+      private: '#6b7280', 'multi-storey': '#1e3a8a'
+    }
+  };
+
+  // State
+  let map = null;
+  let userPos = null;
+  let userMarker = null;
+  let clusters = {
+    wc: L.markerClusterGroup(CONFIG.clusterOptions),
+    gastro: L.markerClusterGroup(CONFIG.clusterOptions),
+    parking: L.markerClusterGroup(CONFIG.clusterOptions),
+    oepnv: L.markerClusterGroup(CONFIG.clusterOptions)
+  };
+  let data = { wc: [], gastro: [], parking: [], oepnv: [] };
+  let activeFilters = { wc: true, gastro: true, parking: false, oepnv: false };
+  let gastroSubFilters = {
+    restaurant: true, cafe: true, fast_food: true,
+    bar: true, pub: true, ice_cream: true, biergarten: true
+  };
+
+  // DOM Elements
+  const btnLocate = document.getElementById('btn-locate');
+  const btnNearestWC = document.getElementById('btn-nearest-wc');
+  const btnNearestGastro = document.getElementById('btn-nearest-gastro');
+  const btnNearestParking = document.getElementById('btn-nearest-parking');
+  const distanceInfo = document.getElementById('distance-info');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const gastroSubfilter = document.getElementById('gastro-subfilter');
+  const gastroSubCheckboxes = document.querySelectorAll('.subfilter-checkbox input[type="checkbox"]');
+
+  // Initialize Map
+  function initMap() {
+    map = L.map('unified-map', {
+      zoomControl: true,
+      attributionControl: true
+    });
+
+    L.tileLayer(CONFIG.tileLayer, {
+      maxZoom: CONFIG.maxZoom,
+      attribution: CONFIG.tileAttribution
+    }).addTo(map);
+
+    map.setView(CONFIG.defaultCenter, CONFIG.defaultZoom);
+
+    // Add active clusters to map
+    clusters.wc.addTo(map);
+    clusters.gastro.addTo(map);
+    // parking cluster not added by default
+  }
+
+  // Load all data
+  async function loadAllData() {
+    try {
+      const [wcData, gastroData, parkingData, oepnvData] = await Promise.all([
+        fetch(CONFIG.dataPaths.wc).then(r => r.json()),
+        fetch(CONFIG.dataPaths.gastro).then(r => r.json()),
+        fetch(CONFIG.dataPaths.parking).then(r => r.json()),
+        fetch(CONFIG.dataPaths.oepnv).then(r => r.json())
+      ]);
+
+      if (wcData.features) wcData.features.forEach(f => addWCMarker(f));
+      if (gastroData.features) gastroData.features.forEach(f => addGastroMarker(f));
+      if (parkingData.features) parkingData.features.forEach(f => addParkingMarker(f));
+      if (oepnvData.features) oepnvData.features.forEach(f => addOEPNVMarker(f));
+
+      updateCounts();
+
+      // Fit map to WC + Gastro data (not parking)
+      const bounds = [
+        ...data.wc.map(d => [d.lat, d.lng]),
+        ...data.gastro.map(d => [d.lat, d.lng])
+      ];
+
+      if (bounds.length > 0) {
+        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+      }
+
+    } catch (error) {
+      console.error('Fehler beim Laden der Daten:', error);
+    }
+  }
+
+  // Add WC marker
+  function addWCMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    let color = COLORS.wc.public;
+    if (props.access === 'customers') color = COLORS.wc.customers;
+    else if (props.fee === 'yes') color = COLORS.wc.paid;
+
+    const marker = createMarker([lat, lng], color, '🚻');
+    const popup = createWCPopup(props, lat, lng);
+    marker.bindPopup(popup);
+
+    clusters.wc.addLayer(marker);
+    data.wc.push({ lat, lng, props, type: 'wc' });
+  }
+
+  // Add Gastro marker
+  function addGastroMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    const color = COLORS.gastro[props.amenity] || '#6b7280';
+    const icon = getGastroIcon(props.amenity);
+    const marker = createMarker([lat, lng], color, icon);
+    const popup = createGastroPopup(props, lat, lng);
+    marker.bindPopup(popup);
+
+    marker._amenityType = props.amenity; // Store for filtering
+    clusters.gastro.addLayer(marker);
+    data.gastro.push({ lat, lng, props, type: 'gastro', amenity: props.amenity });
+  }
+
+  // Add Parking marker
+  function addParkingMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    const category = getParkingCategory(props);
+    const color = COLORS.parking[category] || '#3b82f6';
+    const marker = createMarker([lat, lng], color, '🅿️');
+    const popup = createParkingPopup(props, lat, lng);
+    marker.bindPopup(popup);
+
+    clusters.parking.addLayer(marker);
+    data.parking.push({ lat, lng, props, type: 'parking', category });
+  }
+
+  // Add ÖPNV marker (Bus & Tram)
+  function addOEPNVMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    // Unified color for all ÖPNV (Bus & Tram together)
+    const color = '#10b981'; // Green
+    const marker = createMarker([lat, lng], color, '🚍');
+    const popup = createOEPNVPopup(props, lat, lng);
+    marker.bindPopup(popup);
+
+    // Event: Load live data when popup opens
+    marker.on('popupopen', async () => {
+      const liveContainerId = `live-departures-${lat.toFixed(5)}-${lng.toFixed(5)}`.replace(/\./g, '_');
+      const refreshBtnId = `btn-refresh-${lat.toFixed(5)}-${lng.toFixed(5)}`.replace(/\./g, '_');
+
+      const container = document.getElementById(liveContainerId);
+      if (!container) return;
+
+      // Check if already loaded
+      if (container.dataset.loaded) return;
+      container.dataset.loaded = 'true';
+
+      // Fetch and display live data
+      await updatePopupWithLiveData(lat, lng, liveContainerId);
+
+      // Refresh button handler
+      const refreshBtn = document.getElementById(refreshBtnId);
+      if (refreshBtn) {
+        refreshBtn.addEventListener('click', async () => {
+          refreshBtn.disabled = true;
+          refreshBtn.textContent = '⏳ Lädt...';
+
+          await updatePopupWithLiveData(lat, lng, liveContainerId);
+
+          refreshBtn.disabled = false;
+          refreshBtn.textContent = '🔄 Aktualisieren';
+        });
+      }
+    });
+
+    clusters.oepnv.addLayer(marker);
+    data.oepnv.push({ lat, lng, props, type: 'oepnv' });
+  }
+
+  // Create marker
+  function createMarker(latlng, color, emoji) {
+    const icon = L.divIcon({
+      className: 'custom-marker',
+      html: `<div style="
+        width: 32px;
+        height: 32px;
+        background: ${color};
+        border: 3px solid white;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+      ">${emoji}</div>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -16]
+    });
+
+    return L.marker(latlng, { icon });
+  }
+
+  // Create WC Popup
+  function createWCPopup(props, lat, lng) {
+    const name = props.name || 'WC';
+    const access = getWCAccessLabel(props);
+    const fee = getWCFeeLabel(props);
+
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`;
+
+    return `
+      <div class="popup-header">🚻 ${name}</div>
+      <div class="popup-body">
+        <p>${access}</p>
+        <p>${fee}</p>
+      </div>
+      <div class="popup-actions">
+        <a href="${mapsUrl}" target="_blank" rel="noopener" class="popup-btn popup-btn-primary">
+          📍 Route (Maps)
+        </a>
+      </div>
+    `;
+  }
+
+  // Create Gastro Popup
+  function createGastroPopup(props, lat, lng) {
+    const name = props.name || 'Gastronomie';
+    const type = getGastroLabel(props.amenity);
+    const cuisine = props.cuisine ? `🍴 ${props.cuisine}` : '';
+    const outdoor = props.outdoor_seating === 'yes' ? '🌞 Außensitzplätze' : '';
+    const hours = props.opening_hours ? `🕐 ${props.opening_hours}` : '';
+    const website = props.website || props.contact_website || props['contact:website'] || '';
+
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`;
+
+    let buttons = `<a href="${mapsUrl}" target="_blank" rel="noopener" class="popup-btn popup-btn-primary">📍 Route</a>`;
+    if (website) {
+      buttons += `<a href="${website}" target="_blank" rel="noopener" class="popup-btn popup-btn-secondary">🌐 Website</a>`;
+    }
+
+    return `
+      <div class="popup-header">${name}</div>
+      <div class="popup-body">
+        <p>${type}</p>
+        ${cuisine ? `<p>${cuisine}</p>` : ''}
+        ${outdoor ? `<p>${outdoor}</p>` : ''}
+        ${hours ? `<p>${hours}</p>` : ''}
+      </div>
+      <div class="popup-actions">
+        ${buttons}
+      </div>
+    `;
+  }
+
+  // Create Parking Popup
+  function createParkingPopup(props, lat, lng) {
+    const name = props.name || 'Parkplatz';
+    const type = props.amenity === 'bicycle_parking' ? '🚲 Fahrradparkplatz' : '🅿️ Auto-Parkplatz';
+    const capacity = props.capacity ? `🚗 ${props.capacity} Plätze` : '';
+    const fee = props.fee === 'yes' ? '💰 Kostenpflichtig' : props.fee === 'no' ? '✓ Kostenlos' : '';
+    const access = props.access === 'private' ? '🔒 Privat' : props.access === 'customers' ? '🔒 Nur Kunden' : '';
+
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`;
+
+    return `
+      <div class="popup-header">${name}</div>
+      <div class="popup-body">
+        <p>${type}</p>
+        ${capacity ? `<p>${capacity}</p>` : ''}
+        ${fee ? `<p>${fee}</p>` : ''}
+        ${access ? `<p>${access}</p>` : ''}
+      </div>
+      <div class="popup-actions">
+        <a href="${mapsUrl}" target="_blank" rel="noopener" class="popup-btn popup-btn-primary">
+          📍 Route (Auto)
+        </a>
+      </div>
+    `;
+  }
+
+  // Create ÖPNV Popup (Phase 2: With Live-Departures)
+  function createOEPNVPopup(props, lat, lng) {
+    const name = props.name || 'Haltestelle';
+    const ref = props.ref ? `#${props.ref}` : '';
+    const isBus = props.bus === true || props.bus === 'yes';
+    const isTram = props.tram === true || props.tram === 'yes';
+
+    let types = [];
+    if (isBus) types.push('🚌 Bus');
+    if (isTram) types.push('🚊 Tram');
+    const typeLabel = types.length > 0 ? types.join(' · ') : '🚍 ÖPNV';
+
+    const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`;
+    const vbbUrl = `https://www.vbb.de/fahrplan/?origin=${lat},${lng}`;
+
+    // Unique IDs for this popup
+    const liveContainerId = `live-departures-${lat.toFixed(5)}-${lng.toFixed(5)}`.replace(/\./g, '_');
+    const refreshBtnId = `btn-refresh-${lat.toFixed(5)}-${lng.toFixed(5)}`.replace(/\./g, '_');
+
+    return `
+      <div class="popup-header">
+        🚍 ${name} ${ref}
+      </div>
+      <div class="popup-body">
+        <p style="margin-bottom:8px;">${typeLabel}</p>
+        <div id="${liveContainerId}" style="min-height:40px;">
+          <p style="color:#6b7280;font-size:0.9rem;">⏳ Lade Fahrplandaten...</p>
+        </div>
+      </div>
+      <div class="popup-actions">
+        <button id="${refreshBtnId}" class="popup-btn popup-btn-primary" style="cursor:pointer;">
+          🔄 Aktualisieren
+        </button>
+        <a href="${vbbUrl}" target="_blank" rel="noopener" class="popup-btn popup-btn-secondary">
+          📱 VBB-App
+        </a>
+        <a href="${mapsUrl}" target="_blank" rel="noopener" class="popup-btn popup-btn-secondary">
+          📍 Route
+        </a>
+      </div>
+    `;
+  }
+
+  // ==========================================
+  // PHASE 2: VBB Live-Fahrplandaten API
+  // ==========================================
+
+  // Cache for live departures (60s TTL)
+  const departuresCache = new Map();
+  const CACHE_TTL = 60000; // 60 seconds
+
+  // Fetch live departures from VBB API
+  async function fetchLiveDepartures(lat, lng) {
+    const cacheKey = `${lat},${lng}`;
+    const cached = departuresCache.get(cacheKey);
+
+    // Return cached data if still fresh
+    if (cached && (Date.now() - cached.timestamp < CACHE_TTL)) {
+      console.log('VBB: Using cached data');
+      return cached.data;
+    }
+
+    try {
+      // 1. Find nearest stop
+      const nearbyUrl = `https://v6.vbb.transport.rest/locations/nearby?latitude=${lat}&longitude=${lng}&results=1&poi=false&distance=150`;
+      const nearbyRes = await fetch(nearbyUrl);
+
+      if (!nearbyRes.ok) {
+        throw new Error(`Nearby API failed: HTTP ${nearbyRes.status}`);
+      }
+
+      const nearbyData = await nearbyRes.json();
+
+      if (!nearbyData || nearbyData.length === 0) {
+        console.warn('VBB: No stop found nearby');
+        return null;
+      }
+
+      const stop = nearbyData[0];
+      console.log('VBB: Found stop', stop.name, stop.id);
+
+      // 2. Get departures
+      const depsUrl = `https://v6.vbb.transport.rest/stops/${stop.id}/departures?duration=60&results=10`;
+      const depsRes = await fetch(depsUrl);
+
+      if (!depsRes.ok) {
+        throw new Error(`Departures API failed: HTTP ${depsRes.status}`);
+      }
+
+      const depsData = await depsRes.json();
+
+      const result = {
+        stopId: stop.id,
+        stopName: stop.name,
+        departures: depsData.departures || []
+      };
+
+      // Cache the result
+      departuresCache.set(cacheKey, {
+        data: result,
+        timestamp: Date.now()
+      });
+
+      console.log('VBB: Fetched', result.departures.length, 'departures');
+      return result;
+
+    } catch (error) {
+      console.error('VBB API Error:', error);
+      return null;
+    }
+  }
+
+  // Format departure time (relative: "3 Min" or absolute: "14:35")
+  function formatDepartureTime(when) {
+    const now = new Date();
+    const depTime = new Date(when);
+    const diffMs = depTime - now;
+    const diffMin = Math.round(diffMs / 60000);
+
+    if (diffMin < 0) return '<span style="color:#6b7280;">Abgefahren</span>';
+    if (diffMin === 0) return '<span style="color:#ef4444;font-weight:700;">Jetzt</span>';
+    if (diffMin <= 20) return `<span style="font-weight:700;">${diffMin} Min</span>`;
+
+    return depTime.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // Render departures HTML
+  function renderDepartures(departures) {
+    if (!departures || departures.length === 0) {
+      return '<p style="color:#6b7280;font-size:0.9rem;padding:8px 0;">Keine Abfahrten in den nächsten 60 Minuten.</p>';
+    }
+
+    const items = departures.slice(0, 6).map(dep => {
+      const lineName = dep.line?.name || dep.line?.id || '?';
+      const direction = dep.direction || 'Unbekannt';
+      const when = dep.when || dep.plannedWhen;
+      const delay = dep.delay || 0;
+      const timeLabel = formatDepartureTime(when);
+
+      let delayLabel = '';
+      if (delay > 0) {
+        delayLabel = `<span style="color:#ef4444;font-size:0.75rem;font-weight:700;margin-left:4px;">+${delay}'</span>`;
+      }
+
+      const isTram = dep.line?.product === 'tram' || dep.line?.mode === 'train';
+      const lineColor = isTram ? '#3b82f6' : '#f59e0b';
+      const lineIcon = isTram ? '🚊' : '🚌';
+
+      return `
+        <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #e5e7eb;">
+          <span style="background:${lineColor};color:white;padding:3px 8px;border-radius:6px;font-size:0.75rem;font-weight:700;min-width:55px;text-align:center;display:flex;align-items:center;justify-content:center;gap:4px;">
+            ${lineIcon} ${lineName}
+          </span>
+          <span style="flex:1;font-size:0.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#374151;">
+            ${direction}
+          </span>
+          <span style="font-size:0.9rem;white-space:nowrap;">
+            ${timeLabel}${delayLabel}
+          </span>
+        </div>
+      `;
+    }).join('');
+
+    return `
+      <div style="margin-top:8px;">
+        <p style="font-weight:600;margin-bottom:6px;font-size:0.95rem;">Nächste Abfahrten:</p>
+        <div style="max-height:200px;overflow-y:auto;">
+          ${items}
+        </div>
+      </div>
+    `;
+  }
+
+  // Update popup with live departures
+  async function updatePopupWithLiveData(lat, lng, containerId) {
+    const liveContainerId = containerId || `live-departures-${lat.toFixed(5)}-${lng.toFixed(5)}`.replace(/\./g, '_');
+    const container = document.getElementById(liveContainerId);
+    if (!container) return;
+
+    // Show loading
+    container.innerHTML = '<p style="color:#6b7280;font-size:0.9rem;">⏳ Lade Fahrplandaten...</p>';
+
+    // Fetch data
+    const liveData = await fetchLiveDepartures(lat, lng);
+
+    if (!container) return; // Popup might be closed
+
+    if (liveData && liveData.departures) {
+      const now = new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+      container.innerHTML = renderDepartures(liveData.departures) +
+        `<p style="color:#6b7280;font-size:0.75rem;margin-top:8px;">🕐 Aktualisiert: ${now}</p>`;
+    } else {
+      container.innerHTML = `
+        <div style="padding:12px;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;margin-top:8px;">
+          <p style="color:#dc2626;font-size:0.85rem;margin:0;">
+            ⚠️ Live-Daten vorübergehend nicht verfügbar
+          </p>
+          <p style="color:#6b7280;font-size:0.8rem;margin:4px 0 0;">
+            Bitte nutze den VBB-Fahrplan-Link unten.
+          </p>
+        </div>
+      `;
+    }
+  }
+
+  // Helper functions
+  function getWCAccessLabel(props) {
+    const labels = {
+      'public': '🟢 Öffentlich', 'yes': '🟢 Öffentlich',
+      'permissive': '🟢 Zugänglich', 'customers': '🟡 Nur Kunden', 'private': '🔴 Privat'
+    };
+    return labels[props.access] || '🟢 Zugänglich';
+  }
+
+  function getWCFeeLabel(props) {
+    if (props.fee === 'yes') return '💰 Kostenpflichtig';
+    if (props.fee === 'no') return '✓ Kostenlos';
+    return '❓ Kosten unbekannt';
+  }
+
+  function getGastroIcon(amenity) {
+    const icons = {
+      restaurant: '🍽️', cafe: '☕', fast_food: '🍔',
+      bar: '🍺', pub: '🍺', ice_cream: '🍦', biergarten: '🌳'
+    };
+    return icons[amenity] || '🍽️';
+  }
+
+  function getGastroLabel(amenity) {
+    const labels = {
+      restaurant: '🍽️ Restaurant', cafe: '☕ Café', fast_food: '🍔 Imbiss',
+      bar: '🍺 Bar', pub: '🍺 Pub', ice_cream: '🍦 Eiscafé', biergarten: '🌳 Biergarten'
+    };
+    return labels[amenity] || amenity;
+  }
+
+  function getParkingCategory(props) {
+    if (props.amenity === 'bicycle_parking') return 'bicycle_parking';
+    if (props.parking === 'multi-storey') return 'multi-storey';
+    if (props.access === 'private' || props.access === 'customers') return 'private';
+    if (props.fee === 'yes') return 'public_paid';
+    return 'public_free';
+  }
+
+  // Update counts
+  function updateCounts() {
+    document.getElementById('count-wc').textContent = data.wc.length;
+    document.getElementById('count-gastro').textContent = data.gastro.length;
+    document.getElementById('count-parking').textContent = data.parking.length;
+    document.getElementById('count-oepnv').textContent = data.oepnv.length;
+  }
+
+  // Main filter toggle
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const layer = btn.dataset.layer;
+      const isActive = btn.classList.contains('active');
+
+      if (isActive) {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+        map.removeLayer(clusters[layer]);
+        activeFilters[layer] = false;
+
+        // Hide gastro subfilter if gastro disabled
+        if (layer === 'gastro') {
+          gastroSubfilter.classList.remove('open');
+        }
+
+        // Hide parking button if parking disabled
+        if (layer === 'parking') {
+          btnNearestParking.style.display = 'none';
+        }
+      } else {
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        clusters[layer].addTo(map);
+        activeFilters[layer] = true;
+
+        // Show gastro subfilter if gastro enabled
+        if (layer === 'gastro') {
+          gastroSubfilter.classList.add('open');
+        }
+
+        // Show parking button if parking enabled
+        if (layer === 'parking') {
+          btnNearestParking.style.display = 'inline-block';
+        }
+      }
+
+      updateDistanceInfo();
+    });
+  });
+
+  // Gastro sub-filter
+  gastroSubCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const amenity = checkbox.dataset.amenity;
+      gastroSubFilters[amenity] = checkbox.checked;
+      applyGastroSubFilters();
+      updateDistanceInfo();
+    });
+  });
+
+  function applyGastroSubFilters() {
+    clusters.gastro.clearLayers();
+
+    data.gastro.forEach(item => {
+      if (gastroSubFilters[item.amenity]) {
+        const color = COLORS.gastro[item.amenity] || '#6b7280';
+        const icon = getGastroIcon(item.amenity);
+        const marker = createMarker([item.lat, item.lng], color, icon);
+        const popup = createGastroPopup(item.props, item.lat, item.lng);
+        marker.bindPopup(popup);
+        clusters.gastro.addLayer(marker);
+      }
+    });
+  }
+
+  // Haversine distance
+  function haversine(pos1, pos2) {
+    const R = 6371000;
+    const toRad = x => x * Math.PI / 180;
+    const dLat = toRad(pos2.lat - pos1.lat);
+    const dLng = toRad(pos2.lng - pos1.lng);
+    const lat1 = toRad(pos1.lat);
+    const lat2 = toRad(pos2.lat);
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1) * Math.cos(lat2) *
+              Math.sin(dLng/2) * Math.sin(dLng/2);
+    return 2 * R * Math.asin(Math.sqrt(a));
+  }
+
+  // Find nearest
+  function findNearest(type) {
+    if (!userPos || !activeFilters[type]) return null;
+
+    let searchList = data[type];
+
+    // Apply gastro sub-filters
+    if (type === 'gastro') {
+      searchList = searchList.filter(item => gastroSubFilters[item.amenity]);
+    }
+
+    // Prioritize car parking
+    if (type === 'parking') {
+      const carParking = searchList.filter(p => p.props.amenity !== 'bicycle_parking');
+      if (carParking.length > 0) searchList = carParking;
+    }
+
+    if (searchList.length === 0) return null;
+
+    let nearest = null;
+    let minDistance = Infinity;
+
+    searchList.forEach(loc => {
+      const distance = haversine(
+        { lat: userPos.lat, lng: userPos.lng },
+        { lat: loc.lat, lng: loc.lng }
+      );
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearest = { ...loc, distance };
+      }
+    });
+
+    return nearest;
+  }
+
+  // Format distance
+  function formatDistance(meters) {
+    if (meters < 1000) return `${Math.round(meters)} m`;
+    return `${(meters / 1000).toFixed(1)} km`;
+  }
+
+  // Update distance info
+  function updateDistanceInfo() {
+    if (!userPos) return;
+
+    const distances = [];
+
+    if (activeFilters.wc) {
+      const nearest = findNearest('wc');
+      if (nearest) distances.push(`WC: ${formatDistance(nearest.distance)}`);
+    }
+
+    if (activeFilters.gastro) {
+      const nearest = findNearest('gastro');
+      if (nearest) distances.push(`Restaurant: ${formatDistance(nearest.distance)}`);
+    }
+
+    if (activeFilters.parking) {
+      const nearest = findNearest('parking');
+      if (nearest) distances.push(`Parkplatz: ${formatDistance(nearest.distance)}`);
+    }
+
+    if (activeFilters.oepnv) {
+      const nearest = findNearest('oepnv');
+      if (nearest) distances.push(`Haltestelle: ${formatDistance(nearest.distance)}`);
+    }
+
+    distanceInfo.textContent = distances.length > 0
+      ? `Nächste: ${distances.join(' · ')}`
+      : '';
+  }
+
+  // Locate user
+  function locateUser() {
+    if (!navigator.geolocation) {
+      alert('Geolocation wird von deinem Browser nicht unterstützt.');
+      return;
+    }
+
+    btnLocate.disabled = true;
+    btnLocate.textContent = '⏳ Ermittle...';
+
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        userPos = { lat: position.coords.latitude, lng: position.coords.longitude };
+
+        if (userMarker) map.removeLayer(userMarker);
+
+        userMarker = L.circleMarker([userPos.lat, userPos.lng], {
+          radius: 10,
+          fillColor: '#ef4444',
+          color: '#fff',
+          weight: 3,
+          opacity: 1,
+          fillOpacity: 0.9
+        }).addTo(map);
+
+        userMarker.bindPopup('<strong>📍 Dein Standort</strong>').openPopup();
+
+        map.setView([userPos.lat, userPos.lng], 16);
+
+        btnNearestWC.disabled = false;
+        btnNearestGastro.disabled = false;
+        if (activeFilters.parking) btnNearestParking.disabled = false;
+        btnLocate.textContent = '✓ Standort aktiv';
+
+        updateDistanceInfo();
+      },
+      error => {
+        btnLocate.disabled = false;
+        btnLocate.textContent = '📍 Standort nutzen';
+
+        let message = 'Standortzugriff fehlgeschlagen. ';
+        switch(error.code) {
+          case error.PERMISSION_DENIED:
+            message += 'Bitte erlaube Standortzugriff.';
+            break;
+          case error.POSITION_UNAVAILABLE:
+            message += 'Standort nicht verfügbar.';
+            break;
+          case error.TIMEOUT:
+            message += 'Zeitüberschreitung.';
+            break;
+        }
+        alert(message);
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+    );
+  }
+
+  // Navigate to nearest
+  function navigateToNearest(type) {
+    if (!userPos) return;
+
+    const nearest = findNearest(type);
+    if (!nearest) {
+      const labels = { wc: 'WC', gastro: 'Restaurant', parking: 'Parkplatz' };
+      alert(`Kein${type === 'gastro' ? '' : 'e'} ${labels[type]} gefunden.`);
+      return;
+    }
+
+    const origin = `${userPos.lat},${userPos.lng}`;
+    const destination = `${nearest.lat},${nearest.lng}`;
+    const travelMode = type === 'parking' ? 'driving' : 'walking';
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    let url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=${travelMode}`;
+
+    if (isMobile) {
+      if (isIOS) {
+        const dirFlag = type === 'parking' ? 'd' : 'w';
+        window.location.href = `maps://maps.apple.com/?saddr=${origin}&daddr=${destination}&dirflg=${dirFlag}`;
+        setTimeout(() => { window.location.href = url; }, 500);
+      } else {
+        window.location.href = url;
+      }
+    } else {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  }
+
+  // Event Listeners
+  btnLocate.addEventListener('click', locateUser);
+  btnNearestWC.addEventListener('click', () => navigateToNearest('wc'));
+  btnNearestGastro.addEventListener('click', () => navigateToNearest('gastro'));
+  btnNearestParking.addEventListener('click', () => navigateToNearest('parking'));
+
+  // Initialize
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      initMap();
+      loadAllData();
+    });
+  } else {
+    initMap();
+    loadAllData();
+  }
+})();
+</script>

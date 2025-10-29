@@ -1,0 +1,1 @@
+window.__CMP_STUB__=true;console.log('[CMP] Stub active. Replace with provider script.');

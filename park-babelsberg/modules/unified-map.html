@@ -1,0 +1,681 @@
+<!-- Unified Location-Finder Map Module -->
+<!-- Integration: Ersetze die separaten Map-Sections in index.html mit diesem Block -->
+
+<section id="location-finder" class="section">
+  <h2>Location-Finder</h2>
+  <p style="margin-bottom:20px;color:var(--text-muted)">
+    Finde WCs, Restaurants, Cafés und Parkplätze in der Nähe. Nutze deinen Standort für Navigation.
+  </p>
+
+  <div class="card" style="padding:0;overflow:hidden;">
+    <!-- Filter Buttons -->
+    <div style="padding:calc(var(--grid) * 2);display:flex;gap:calc(var(--grid));flex-wrap:wrap;background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
+      <button id="filter-wc" class="filter-btn active" data-layer="wc">
+        <span class="filter-indicator"></span> WC
+      </button>
+      <button id="filter-gastro" class="filter-btn active" data-layer="gastro">
+        <span class="filter-indicator"></span> Gastronomie
+      </button>
+      <button id="filter-parking" class="filter-btn active" data-layer="parking">
+        <span class="filter-indicator"></span> Parkplätze
+      </button>
+    </div>
+
+    <!-- Map Container -->
+    <div id="unified-map" style="height:500px;width:100%;background:#e2e8f0;"></div>
+
+    <!-- Controls -->
+    <div style="padding:calc(var(--grid) * 2);display:flex;gap:calc(var(--grid) * 1.5);flex-wrap:wrap;align-items:center;">
+      <button id="btn-locate" class="unified-btn unified-btn-primary">
+        📍 Standort nutzen
+      </button>
+      <button id="btn-nearest-wc" class="unified-btn unified-btn-secondary" disabled>
+        🚻 Zum nächsten WC
+      </button>
+      <button id="btn-nearest-gastro" class="unified-btn unified-btn-secondary" disabled>
+        🍽️ Zum nächsten Restaurant
+      </button>
+      <button id="btn-nearest-parking" class="unified-btn unified-btn-secondary" disabled>
+        🅿️ Zum nächsten Parkplatz
+      </button>
+      <span id="distance-info" style="color:var(--text-muted);font-size:0.9rem;margin-left:auto;flex-basis:100%;margin-top:8px;"></span>
+    </div>
+
+    <!-- Info Notice -->
+    <div class="notice" style="margin:0 calc(var(--grid) * 2) calc(var(--grid) * 2);">
+      <small>
+        <strong>WC:</strong> 🟢 Öffentlich · 🟡 Nur für Kunden · 💰 Kostenpflichtig<br>
+        <strong>Gastronomie:</strong> 🍽️ Restaurant · ☕ Café · 🍔 Imbiss · 🍺 Bar/Pub · 🍦 Eiscafé · 🌳 Biergarten<br>
+        <strong>Parkplätze:</strong> 🅿️ Öffentlich · 💰 Kostenpflichtig · 🔒 Privat/Kunden · 🏢 Parkhaus · 🚲 Fahrrad<br>
+        <strong>Datenquelle:</strong> OpenStreetMap · <strong>Navigation:</strong> Öffnet Google Maps
+      </small>
+    </div>
+  </div>
+</section>
+
+<!-- Leaflet CSS (only load once) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+
+<!-- Leaflet JS (only load once) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+
+<!-- Unified Map Styles -->
+<style>
+  /* Filter Buttons */
+  .filter-btn {
+    padding: 10px 18px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: white;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .filter-btn .filter-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d1d5db;
+    transition: background var(--transition-base);
+  }
+
+  .filter-btn.active {
+    border-color: var(--accent-primary);
+    background: var(--accent-primary);
+    color: white;
+  }
+
+  .filter-btn.active .filter-indicator {
+    background: white;
+  }
+
+  .filter-btn:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+  }
+
+  /* Control Buttons */
+  .unified-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+  }
+
+  .unified-btn-primary {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: var(--text-inverse);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .unified-btn-primary:hover:not(:disabled) {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .unified-btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+
+  .unified-btn-secondary:hover:not(:disabled) {
+    background: var(--accent-primary);
+    color: var(--text-inverse);
+  }
+
+  .unified-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Leaflet popup customization */
+  .leaflet-popup-content-wrapper {
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .leaflet-popup-content {
+    font-family: var(--font-body);
+    margin: 16px;
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    #unified-map {
+      height: 400px;
+    }
+
+    .filter-btn {
+      flex: 1;
+      min-width: 100px;
+      font-size: 0.85rem;
+      padding: 8px 12px;
+      justify-content: center;
+    }
+
+    .unified-btn {
+      flex: 1;
+      min-width: 120px;
+      font-size: 0.85rem;
+      padding: 10px 14px;
+    }
+
+    .unified-btn-secondary {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+
+    #distance-info {
+      text-align: center;
+    }
+  }
+</style>
+
+<!-- Unified Map Script -->
+<script>
+(function() {
+  'use strict';
+
+  // Configuration
+  const CONFIG = {
+    dataPaths: {
+      wc: 'data/wc.geojson',
+      gastro: 'data/gastronomie.geojson',
+      parking: 'data/parking.geojson'
+    },
+    defaultCenter: [52.395, 13.080],
+    defaultZoom: 14,
+    maxZoom: 19,
+    tileLayer: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    tileAttribution: '© OpenStreetMap contributors'
+  };
+
+  // Color schemes for different categories
+  const COLORS = {
+    wc: {
+      public: '#10b981',
+      customers: '#f59e0b',
+      paid: '#3b82f6'
+    },
+    gastro: {
+      restaurant: '#ef4444',
+      cafe: '#92400e',
+      fast_food: '#f59e0b',
+      bar: '#8b5cf6',
+      pub: '#8b5cf6',
+      ice_cream: '#ec4899',
+      biergarten: '#10b981'
+    },
+    parking: {
+      bicycle_parking: '#10b981',
+      public_free: '#3b82f6',
+      public_paid: '#f59e0b',
+      private: '#6b7280',
+      'multi-storey': '#1e3a8a'
+    }
+  };
+
+  // State
+  let map = null;
+  let userPos = null;
+  let userMarker = null;
+  let layers = {
+    wc: L.layerGroup(),
+    gastro: L.layerGroup(),
+    parking: L.layerGroup()
+  };
+  let data = {
+    wc: [],
+    gastro: [],
+    parking: []
+  };
+  let activeFilters = {
+    wc: true,
+    gastro: true,
+    parking: true
+  };
+
+  // DOM Elements
+  const btnLocate = document.getElementById('btn-locate');
+  const btnNearestWC = document.getElementById('btn-nearest-wc');
+  const btnNearestGastro = document.getElementById('btn-nearest-gastro');
+  const btnNearestParking = document.getElementById('btn-nearest-parking');
+  const distanceInfo = document.getElementById('distance-info');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+
+  // Initialize Map
+  function initMap() {
+    map = L.map('unified-map', {
+      zoomControl: true,
+      attributionControl: true
+    });
+
+    L.tileLayer(CONFIG.tileLayer, {
+      maxZoom: CONFIG.maxZoom,
+      attribution: CONFIG.tileAttribution
+    }).addTo(map);
+
+    map.setView(CONFIG.defaultCenter, CONFIG.defaultZoom);
+
+    // Add all layers to map
+    layers.wc.addTo(map);
+    layers.gastro.addTo(map);
+    layers.parking.addTo(map);
+  }
+
+  // Load all data sources in parallel
+  async function loadAllData() {
+    try {
+      const [wcData, gastroData, parkingData] = await Promise.all([
+        fetch(CONFIG.dataPaths.wc).then(r => r.json()),
+        fetch(CONFIG.dataPaths.gastro).then(r => r.json()),
+        fetch(CONFIG.dataPaths.parking).then(r => r.json())
+      ]);
+
+      // Process WC data
+      if (wcData.features && wcData.features.length > 0) {
+        wcData.features.forEach(feature => addWCMarker(feature));
+      }
+
+      // Process Gastro data
+      if (gastroData.features && gastroData.features.length > 0) {
+        gastroData.features.forEach(feature => addGastroMarker(feature));
+      }
+
+      // Process Parking data
+      if (parkingData.features && parkingData.features.length > 0) {
+        parkingData.features.forEach(feature => addParkingMarker(feature));
+      }
+
+      // Fit map to show all data
+      const allBounds = [
+        ...data.wc.map(d => [d.lat, d.lng]),
+        ...data.gastro.map(d => [d.lat, d.lng]),
+        ...data.parking.map(d => [d.lat, d.lng])
+      ];
+
+      if (allBounds.length > 0) {
+        map.fitBounds(allBounds, { padding: [50, 50] });
+      }
+
+    } catch (error) {
+      console.error('Fehler beim Laden der Daten:', error);
+    }
+  }
+
+  // Add WC marker
+  function addWCMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    let color = COLORS.wc.public;
+    if (props.access === 'customers') color = COLORS.wc.customers;
+    else if (props.fee === 'yes') color = COLORS.wc.paid;
+
+    const marker = createMarker([lat, lng], color);
+
+    let popup = `<strong>${props.name || 'WC'}</strong><br>`;
+    popup += getWCAccessLabel(props) + '<br>';
+    popup += getWCFeeLabel(props);
+
+    marker.bindPopup(popup);
+    marker.addTo(layers.wc);
+
+    data.wc.push({ lat, lng, props, type: 'wc' });
+  }
+
+  // Add Gastro marker
+  function addGastroMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    const color = COLORS.gastro[props.amenity] || '#6b7280';
+    const marker = createMarker([lat, lng], color);
+
+    let popup = `<strong>${props.name || 'Gastronomie'}</strong><br>`;
+    popup += `${getGastroLabel(props.amenity)}<br>`;
+    if (props.cuisine) popup += `🍴 ${props.cuisine}<br>`;
+    if (props.outdoor_seating === 'yes') popup += `🌞 Außensitzplätze<br>`;
+    if (props.opening_hours) popup += `🕐 ${props.opening_hours}`;
+
+    marker.bindPopup(popup);
+    marker.addTo(layers.gastro);
+
+    data.gastro.push({ lat, lng, props, type: 'gastro' });
+  }
+
+  // Add Parking marker
+  function addParkingMarker(feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    const props = feature.properties || {};
+
+    const category = getParkingCategory(props);
+    const color = COLORS.parking[category] || '#3b82f6';
+    const marker = createMarker([lat, lng], color);
+
+    let popup = `<strong>${props.name || 'Parkplatz'}</strong><br>`;
+
+    if (props.amenity === 'bicycle_parking') {
+      popup += '🚲 Fahrradparkplatz<br>';
+    } else {
+      popup += '🅿️ Auto-Parkplatz<br>';
+      if (props.capacity) popup += `🚗 ${props.capacity} Plätze<br>`;
+    }
+
+    if (props.fee === 'yes') popup += '💰 Kostenpflichtig<br>';
+    else if (props.fee === 'no') popup += '✓ Kostenlos<br>';
+
+    if (props.access === 'private') popup += '🔒 Privat<br>';
+    else if (props.access === 'customers') popup += '🔒 Nur für Kunden';
+
+    marker.bindPopup(popup);
+    marker.addTo(layers.parking);
+
+    data.parking.push({ lat, lng, props, type: 'parking', category });
+  }
+
+  // Create consistent marker style
+  function createMarker(latlng, color) {
+    const icon = L.divIcon({
+      className: 'custom-marker',
+      html: `<div style="
+        width: 24px;
+        height: 24px;
+        background: ${color};
+        border: 3px solid white;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      "></div>`,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+
+    return L.marker(latlng, { icon });
+  }
+
+  // Helper functions for labels
+  function getWCAccessLabel(props) {
+    const labels = {
+      'public': '🟢 Öffentlich zugänglich',
+      'yes': '🟢 Öffentlich zugänglich',
+      'permissive': '🟢 Zugänglich',
+      'customers': '🟡 Nur für Kunden',
+      'private': '🔴 Privat'
+    };
+    return labels[props.access] || '🟢 Zugänglich';
+  }
+
+  function getWCFeeLabel(props) {
+    if (props.fee === 'yes') return '💰 Kostenpflichtig';
+    if (props.fee === 'no') return '✓ Kostenlos';
+    return '❓ Kosten unbekannt';
+  }
+
+  function getGastroLabel(amenity) {
+    const labels = {
+      'restaurant': '🍽️ Restaurant',
+      'cafe': '☕ Café',
+      'fast_food': '🍔 Imbiss',
+      'bar': '🍺 Bar',
+      'pub': '🍺 Pub',
+      'ice_cream': '🍦 Eiscafé',
+      'biergarten': '🌳 Biergarten'
+    };
+    return labels[amenity] || amenity;
+  }
+
+  function getParkingCategory(props) {
+    if (props.amenity === 'bicycle_parking') return 'bicycle_parking';
+    if (props.parking === 'multi-storey') return 'multi-storey';
+    if (props.access === 'private' || props.access === 'customers') return 'private';
+    if (props.fee === 'yes') return 'public_paid';
+    return 'public_free';
+  }
+
+  // Filter toggle functionality
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const layerName = btn.dataset.layer;
+      const isActive = btn.classList.contains('active');
+
+      if (isActive) {
+        btn.classList.remove('active');
+        map.removeLayer(layers[layerName]);
+        activeFilters[layerName] = false;
+      } else {
+        btn.classList.add('active');
+        layers[layerName].addTo(map);
+        activeFilters[layerName] = true;
+      }
+
+      updateDistanceInfo();
+    });
+  });
+
+  // Haversine distance calculation
+  function haversine(pos1, pos2) {
+    const R = 6371000; // Earth radius in meters
+    const toRad = x => x * Math.PI / 180;
+
+    const dLat = toRad(pos2.lat - pos1.lat);
+    const dLng = toRad(pos2.lng - pos1.lng);
+    const lat1 = toRad(pos1.lat);
+    const lat2 = toRad(pos2.lat);
+
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1) * Math.cos(lat2) *
+              Math.sin(dLng/2) * Math.sin(dLng/2);
+
+    return 2 * R * Math.asin(Math.sqrt(a));
+  }
+
+  // Find nearest location by type
+  function findNearest(type) {
+    if (!userPos || !activeFilters[type] || data[type].length === 0) return null;
+
+    let nearest = null;
+    let minDistance = Infinity;
+
+    // For parking, prioritize car parking over bicycle
+    let searchList = data[type];
+    if (type === 'parking') {
+      const carParking = data[type].filter(p => p.props.amenity !== 'bicycle_parking');
+      searchList = carParking.length > 0 ? carParking : data[type];
+    }
+
+    searchList.forEach(loc => {
+      const distance = haversine(
+        { lat: userPos.lat, lng: userPos.lng },
+        { lat: loc.lat, lng: loc.lng }
+      );
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearest = { ...loc, distance };
+      }
+    });
+
+    return nearest;
+  }
+
+  // Format distance
+  function formatDistance(meters) {
+    if (meters < 1000) return `${Math.round(meters)} m`;
+    return `${(meters / 1000).toFixed(1)} km`;
+  }
+
+  // Update distance info display
+  function updateDistanceInfo() {
+    if (!userPos) return;
+
+    const distances = [];
+
+    if (activeFilters.wc) {
+      const nearest = findNearest('wc');
+      if (nearest) distances.push(`WC: ${formatDistance(nearest.distance)}`);
+    }
+
+    if (activeFilters.gastro) {
+      const nearest = findNearest('gastro');
+      if (nearest) distances.push(`Restaurant: ${formatDistance(nearest.distance)}`);
+    }
+
+    if (activeFilters.parking) {
+      const nearest = findNearest('parking');
+      if (nearest) distances.push(`Parkplatz: ${formatDistance(nearest.distance)}`);
+    }
+
+    distanceInfo.textContent = distances.length > 0
+      ? `Nächste: ${distances.join(' · ')}`
+      : '';
+  }
+
+  // Locate user
+  function locateUser() {
+    if (!navigator.geolocation) {
+      alert('Geolocation wird von deinem Browser nicht unterstützt.');
+      return;
+    }
+
+    btnLocate.disabled = true;
+    btnLocate.textContent = '⏳ Standort wird ermittelt...';
+
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        userPos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        // Remove old user marker if exists
+        if (userMarker) map.removeLayer(userMarker);
+
+        // Add user marker
+        userMarker = L.circleMarker([userPos.lat, userPos.lng], {
+          radius: 10,
+          fillColor: '#ef4444',
+          color: '#fff',
+          weight: 3,
+          opacity: 1,
+          fillOpacity: 0.9
+        }).addTo(map);
+
+        userMarker.bindPopup('<strong>📍 Dein Standort</strong>').openPopup();
+
+        // Center map on user
+        map.setView([userPos.lat, userPos.lng], 16);
+
+        // Enable navigation buttons
+        btnNearestWC.disabled = false;
+        btnNearestGastro.disabled = false;
+        btnNearestParking.disabled = false;
+        btnLocate.textContent = '✓ Standort aktiv';
+
+        updateDistanceInfo();
+      },
+      error => {
+        btnLocate.disabled = false;
+        btnLocate.textContent = '📍 Standort nutzen';
+
+        let message = 'Standortzugriff fehlgeschlagen. ';
+        switch(error.code) {
+          case error.PERMISSION_DENIED:
+            message += 'Bitte erlaube Standortzugriff in deinem Browser.';
+            break;
+          case error.POSITION_UNAVAILABLE:
+            message += 'Standort konnte nicht ermittelt werden.';
+            break;
+          case error.TIMEOUT:
+            message += 'Zeitüberschreitung. Bitte versuche es erneut.';
+            break;
+          default:
+            message += 'Unbekannter Fehler.';
+        }
+        alert(message);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0
+      }
+    );
+  }
+
+  // Navigate to nearest location
+  function navigateToNearest(type) {
+    if (!userPos) return;
+
+    const nearest = findNearest(type);
+    if (!nearest) {
+      const labels = { wc: 'WC', gastro: 'Restaurant', parking: 'Parkplatz' };
+      alert(`Kein${type === 'wc' ? '' : 'e'} ${labels[type]} in der Nähe gefunden.`);
+      return;
+    }
+
+    const origin = `${userPos.lat},${userPos.lng}`;
+    const destination = `${nearest.lat},${nearest.lng}`;
+
+    // Platform detection
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const isAndroid = /Android/i.test(navigator.userAgent);
+
+    // Travel mode: driving for parking, walking for others
+    const travelMode = type === 'parking' ? 'driving' : 'walking';
+    const dirFlag = type === 'parking' ? 'd' : 'w';
+
+    let url;
+
+    if (isMobile) {
+      if (isIOS) {
+        url = `maps://maps.apple.com/?saddr=${origin}&daddr=${destination}&dirflg=${dirFlag}`;
+        setTimeout(() => {
+          window.location.href = `https://maps.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=${travelMode}`;
+        }, 500);
+      } else if (isAndroid) {
+        url = `geo:${destination}?q=${destination}`;
+      } else {
+        url = `https://maps.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=${travelMode}`;
+      }
+      window.location.href = url;
+    } else {
+      url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=${travelMode}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  }
+
+  // Event Listeners
+  btnLocate.addEventListener('click', locateUser);
+  btnNearestWC.addEventListener('click', () => navigateToNearest('wc'));
+  btnNearestGastro.addEventListener('click', () => navigateToNearest('gastro'));
+  btnNearestParking.addEventListener('click', () => navigateToNearest('parking'));
+
+  // Initialize
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      initMap();
+      loadAllData();
+    });
+  } else {
+    initMap();
+    loadAllData();
+  }
+})();
+</script>

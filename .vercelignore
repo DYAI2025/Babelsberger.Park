@@ -1,0 +1,14 @@
+# Ignore Python scripts
+*.py
+
+# Ignore markdown docs
+*.md
+
+# Ignore git
+.git
+.gitignore
+
+# Ignore backup files
+*.backup
+
+# Keep only deployment files

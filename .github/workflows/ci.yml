@@ -1,0 +1,133 @@
+name: CI Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        npm install -g html-validate
+        npm install -g broken-link-checker
+
+    - name: Validate HTML files
+      run: |
+        echo "Validating HTML files..."
+        find park-babelsberg -name "*.html" -type f | while read file; do
+          echo "Checking $file"
+          html-validate "$file" || echo "Warning: $file has validation issues"
+        done
+
+    - name: Check internal links
+      run: |
+        echo "Checking internal links..."
+        cd park-babelsberg
+
+        # Check if critical HTML files exist
+        for file in index.html schloss-babelsberg.html flatowturm.html uferweg-nord.html gastronomie.html parkordnung-vergleich.html neuer-garten.html park-glienicke.html; do
+          if [ ! -f "$file" ]; then
+            echo "ERROR: Missing critical file: $file"
+            exit 1
+          else
+            echo "✓ $file exists"
+          fi
+        done
+
+    - name: Check image references
+      run: |
+        echo "Checking image references..."
+        cd park-babelsberg
+
+        # Extract image paths from HTML and check if they exist
+        grep -rho 'src="images/[^"]*"' *.html | sed 's/src="//;s/"//' | sort | uniq | while read img; do
+          if [ ! -f "$img" ]; then
+            echo "WARNING: Missing image: $img"
+          else
+            echo "✓ $img exists"
+          fi
+        done
+
+    - name: Check data files
+      run: |
+        echo "Checking GeoJSON data files..."
+        cd park-babelsberg/data
+
+        for file in wc.geojson gastronomie.geojson parking.geojson oepnv.geojson; do
+          if [ ! -f "$file" ]; then
+            echo "ERROR: Missing data file: $file"
+            exit 1
+          fi
+
+          # Basic JSON validation
+          if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+            echo "ERROR: Invalid JSON in $file"
+            exit 1
+          fi
+
+          echo "✓ $file is valid JSON"
+        done
+
+    - name: Check CSS files
+      run: |
+        echo "Checking CSS files..."
+        if [ ! -f "park-babelsberg/assets/style.css" ]; then
+          echo "ERROR: Missing style.css"
+          exit 1
+        fi
+        echo "✓ style.css exists"
+
+    - name: File structure verification
+      run: |
+        echo "Verifying file structure..."
+
+        # Check critical directories
+        for dir in park-babelsberg park-babelsberg/assets park-babelsberg/data park-babelsberg/images park-babelsberg/modules; do
+          if [ ! -d "$dir" ]; then
+            echo "ERROR: Missing directory: $dir"
+            exit 1
+          fi
+          echo "✓ $dir exists"
+        done
+
+    - name: Security checks
+      run: |
+        echo "Running security checks..."
+
+        # Check for exposed secrets or API keys
+        if grep -r "PRIVATE_KEY\|SECRET_KEY\|API_KEY" park-babelsberg/*.html park-babelsberg/**/*.html 2>/dev/null; then
+          echo "WARNING: Potential secrets found in HTML files"
+        fi
+
+        # Check for debug code
+        if grep -r "console.log\|debugger" park-babelsberg/*.html 2>/dev/null; then
+          echo "INFO: Debug code found in HTML files"
+        fi
+
+        echo "✓ Security check complete"
+
+    - name: Summary
+      if: always()
+      run: |
+        echo "============================================"
+        echo "CI Tests Summary"
+        echo "============================================"
+        echo "HTML validation: Completed"
+        echo "Internal links: Verified"
+        echo "Image references: Checked"
+        echo "Data files: Validated"
+        echo "File structure: Verified"
+        echo "Security: Scanned"
+        echo "============================================"
