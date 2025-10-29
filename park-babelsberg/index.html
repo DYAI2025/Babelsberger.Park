@@ -88,15 +88,15 @@
 <body>
 <header class="header">
   <div class="hero" style="background-image: url('images/park-babelsberg/jagdschloss.jpeg')">
-    <h1>Park Babelsberg Potsdam <span>Kultur, Natur und Erholung am Ufer der Havel</span></h1>
+    <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1;">Parks und Schlösser in Potsdam-Babelsberg <span style="font-size: clamp(1.25rem, 3vw, 2rem); display: block; margin-top: 1rem;">Kultur, Natur und Erholung am Ufer der Havel</span></h1>
   </div>
-  <p class="lead">Entdecke einen der schönsten Parks Potsdams. Alle praktischen Infos für deinen Besuch: Wo sind die Toiletten? Welche Wege sind barrierefrei? Was darf ich mitbringen? Echte Bilder, ehrliche Informationen.</p>
+  <p class="lead">Eine Reise durch die UNESCO-Welterbe-Parks und Kulturdenkmäler am Ufer der Havel. Entdecken Sie die historischen Schlösser, Landschaftsgärten und ihre besonderen Merkmale – mit detaillierten Informationen zu Örtlichkeiten, Anfahrt, Öffnungszeiten und aktuellen Gegebenheiten vor Ort.</p>
   <nav class="nav" aria-label="Sprungmarken">
     <div class="badges">
-      <a class="badge" href="#praktisches">Praktisches vor Ort</a>
+      <a class="badge" href="#areale">Die 4 Areale</a>
       <a class="badge" href="#location-finder">Location-Finder</a>
       <a class="badge" href="#highlights">Highlights</a>
-      <a class="badge" href="#zielgruppen">Für wen geeignet</a>
+      <a class="badge" href="#praktisches">Praktisches</a>
       <a class="badge" href="#anreise">Anreise</a>
       <a class="badge" href="#faq">FAQ</a>
     </div>
@@ -105,36 +105,118 @@
 
 <main id="content" data-page="park-babelsberg" data-date="2025-10-25">
 
-  <!-- Bereiche Overview -->
-  <section id="bereiche" class="section" style="background: var(--bg-accent);">
-    <h2>Die Potsdamer Parklandschaft</h2>
-    <p style="margin-bottom:20px;color:var(--muted)">Entdecke vier einzigartige Parks und Gärten, die zum UNESCO-Welterbe gehören. Jeder mit eigenem Charakter, Geschichte und Sehenswürdigkeiten.</p>
+  <!-- Die 4 Areale - Entdecke die schönsten Parks Potsdams -->
+  <section id="areale" class="section" style="padding: var(--space-8) 0;">
+    <h2 style="text-align: center; margin-bottom: var(--space-3);">Die 4 Areale – Eine Landschaft, vier Erlebnisse</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto var(--space-8); color: var(--text-secondary);">
+      Von der historischen Parkanlage bis zum königlichen Schloss – entdecke die verbundenen UNESCO-Welterbe-Areale am Ufer der Havel.
+      Jeder Bereich hat seinen eigenen Charakter, seine eigene Geschichte und besondere Highlights.
+    </p>
 
-    <div class="cards">
-      <article class="card">
-        <h3>Park Babelsberg</h3>
-        <p>124 Hektar Landschaftspark am Havelufer. Gestaltet von Lenné und Pückler-Muskau. Mit Schloss Babelsberg, Flatowturm und historischen Bauwerken.</p>
-        <a href="#highlights" class="btn">Highlights ansehen</a>
-      </article>
+    <!-- Areal 1: Park Babelsberg -->
+    <article id="park-babelsberg" class="section" style="margin-bottom: var(--space-10);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center;">
+        <div>
+          <span style="color: var(--accent-primary); font-weight: 600; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em;">Areal 1</span>
+          <h3 style="font-size: 2rem; margin: var(--space-2) 0 var(--space-3); font-family: var(--font-display);">Park Babelsberg</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4); line-height: 1.7;">
+            Der 124 Hektar große englische Landschaftspark am Ufer der Havel ist ein Meisterwerk der Gartenkunst.
+            Seit 1990 UNESCO-Welterbe. Gestaltet von den legendären Landschaftsarchitekten Peter Joseph Lenné und Fürst Hermann von Pückler-Muskau.
+          </p>
+          <div style="margin-bottom: var(--space-3);">
+            <strong style="color: var(--text-primary);">Besondere Highlights:</strong>
+            <ul style="list-style: none; padding: 0; margin-top: var(--space-2);">
+              <li style="padding: var(--space-1) 0;">→ <a href="uferweg-nord.html" style="color: var(--accent-primary);">Uferweg Nord</a> – Panoramablick über den Tiefen See</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="flatowturm.html" style="color: var(--accent-primary);">Flatowturm</a> – 46m Aussichtsturm mit 360°-Blick</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="matrosenhaus.html" style="color: var(--accent-primary);">Matrosenhaus</a> – Historisches Bootshaus am Havelufer</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="liegewiesen.html" style="color: var(--accent-primary);">Liegewiesen</a> – Entspannung mit Seeblick</li>
+            </ul>
+          </div>
+          <a href="park-babelsberg.html" class="btn">Mehr über Park Babelsberg</a>
+        </div>
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+          <img src="images/park-babelsberg/eingang_park_babelsberg.jpeg" alt="Eingang Park Babelsberg" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </article>
 
-      <article class="card">
-        <h3>Schloss Babelsberg</h3>
-        <p>Neugotisches Sommerschloss von Kaiser Wilhelm I. Erbaut 1833-1849 von Schinkel, Persius und Strack. Besichtigung und Führungen verfügbar.</p>
-        <a href="schloss-babelsberg.html" class="btn">Mehr erfahren</a>
-      </article>
+    <!-- Areal 2: Schloss Babelsberg -->
+    <article id="schloss-babelsberg" class="section" style="margin-bottom: var(--space-10); background: var(--bg-tertiary); padding: var(--space-8); border-radius: var(--radius-xl);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center;">
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+          <img src="images/park-babelsberg/schloss_garten.jpeg" alt="Schloss Babelsberg Garten" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div>
+          <span style="color: var(--accent-primary); font-weight: 600; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em;">Areal 2</span>
+          <h3 style="font-size: 2rem; margin: var(--space-2) 0 var(--space-3); font-family: var(--font-display);">Schloss Babelsberg</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4); line-height: 1.7;">
+            Das neugotische Sommerschloss von Kaiser Wilhelm I. thront majestätisch über der Havel.
+            Erbaut 1833-1849 nach Entwürfen von Karl Friedrich Schinkel, Ludwig Persius und Johann Heinrich Strack.
+          </p>
+          <div style="margin-bottom: var(--space-3);">
+            <strong style="color: var(--text-primary);">Besondere Highlights:</strong>
+            <ul style="list-style: none; padding: 0; margin-top: var(--space-2);">
+              <li style="padding: var(--space-1) 0;">→ <a href="schloss-babelsberg.html" style="color: var(--accent-primary);">Schloss Babelsberg</a> – Neugotische Architektur von Schinkel</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="schlosspark.html" style="color: var(--accent-primary);">Schlosspark</a> – Terrassengärten mit Aussicht</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="zypressen-allee.html" style="color: var(--accent-primary);">Zypressen-Allee</a> – Beeindruckende Baumallee</li>
+            </ul>
+          </div>
+          <a href="schloss-babelsberg.html" class="btn">Mehr über Schloss Babelsberg</a>
+        </div>
+      </div>
+    </article>
 
-      <article class="card">
-        <h3>Neuer Garten</h3>
-        <p>102 Hektar Landschaftsgarten am Heiligen See. Mit Marmorpalais, Orangerie und der berühmten Bibliothek. Direkt nördlich von Park Babelsberg.</p>
-        <a href="neuer-garten.html" class="btn">Mehr erfahren</a>
-      </article>
+    <!-- Areal 3: Neuer Garten -->
+    <article id="neuer-garten" class="section" style="margin-bottom: var(--space-10);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center;">
+        <div>
+          <span style="color: var(--accent-primary); font-weight: 600; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em;">Areal 3</span>
+          <h3 style="font-size: 2rem; margin: var(--space-2) 0 var(--space-3); font-family: var(--font-display);">Neuer Garten</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4); line-height: 1.7;">
+            Ein frühes Meisterwerk der Landschaftsgestaltung am Heiligen See. Angelegt ab 1787 für Friedrich Wilhelm II. im Stil englischer Gärten.
+            Hier fand 1945 die Potsdamer Konferenz statt.
+          </p>
+          <div style="margin-bottom: var(--space-3);">
+            <strong style="color: var(--text-primary);">Besondere Highlights:</strong>
+            <ul style="list-style: none; padding: 0; margin-top: var(--space-2);">
+              <li style="padding: var(--space-1) 0;">→ <a href="schloss-cecilienhof.html" style="color: var(--accent-primary);">Schloss Cecilienhof</a> – Ort der Potsdamer Konferenz 1945</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="marmorpalais.html" style="color: var(--accent-primary);">Marmorpalais</a> – Frühklassizistisches Schloss am See</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="heiliger-see.html" style="color: var(--accent-primary);">Heiliger See</a> – Idyllischer Rundweg mit Badestellen</li>
+            </ul>
+          </div>
+          <a href="neuer-garten.html" class="btn">Mehr über Neuer Garten</a>
+        </div>
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+          <img src="images/park-babelsberg/cicilienhof.jpeg" alt="Schloss Cecilienhof im Neuen Garten" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </article>
 
-      <article class="card">
-        <h3>Park Glienicke</h3>
-        <p>116 Hektar Park im italienischen Stil. Westlich der Glienicker Brücke. Mit Schloss Glienicke, Klosterhof und Casino. UNESCO-Welterbe seit 1990.</p>
-        <a href="park-glienicke.html" class="btn">Mehr erfahren</a>
-      </article>
-    </div>
+    <!-- Areal 4: Park Glienicke -->
+    <article id="park-glienicke" class="section" style="margin-bottom: var(--space-10); background: var(--bg-tertiary); padding: var(--space-8); border-radius: var(--radius-xl);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center;">
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+          <img src="images/park-babelsberg/jagdschloss.jpeg" alt="Jagdschloss Glienicke" style="width: 100%; height: auto; display: block;">
+        </div>
+        <div>
+          <span style="color: var(--accent-primary); font-weight: 600; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em;">Areal 4</span>
+          <h3 style="font-size: 2rem; margin: var(--space-2) 0 var(--space-3); font-family: var(--font-display);">Park Glienicke</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-4); line-height: 1.7;">
+            Der südlichste Teil der UNESCO-Welterbe-Landschaft an der Glienicker Brücke.
+            Ein verstecktes Juwel mit italienisch inspirierter Architektur und romantischen Ausblicken über die Havel.
+          </p>
+          <div style="margin-bottom: var(--space-3);">
+            <strong style="color: var(--text-primary);">Besondere Highlights:</strong>
+            <ul style="list-style: none; padding: 0; margin-top: var(--space-2);">
+              <li style="padding: var(--space-1) 0;">→ <a href="jagdschloss-glienicke.html" style="color: var(--accent-primary);">Jagdschloss Glienicke</a> – Klassizistisches Kleinod am Wasser</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="glienicker-bruecke.html" style="color: var(--accent-primary);">Glienicker Brücke</a> – Historische "Agentenbrücke"</li>
+              <li style="padding: var(--space-1) 0;">→ <a href="park-glienicke.html" style="color: var(--accent-primary);">Parklandschaft</a> – Italienisch inspirierte Gartenkunst</li>
+            </ul>
+          </div>
+          <a href="park-glienicke.html" class="btn">Mehr über Park Glienicke</a>
+        </div>
+      </div>
+    </article>
   </section>
 
   <!-- Gastronomie Teaser -->
@@ -163,7 +245,7 @@
         </p>
         <a href="#anreise" class="btn" style="align-self: flex-start;">Zur Parkplatz-Info</a>
       </div>
-      <img src="images/park-babelsberg/Parkplatz.jpeg" alt="Parkplätze am Park Babelsberg" loading="lazy" style="aspect-ratio: 16/9; height: 100%; object-fit: cover;">
+      <img src="images/park-babelsberg/Parkplatz_schloss.jpeg" alt="Parkplätze am Park Babelsberg" loading="lazy" style="aspect-ratio: 16/9; height: 100%; object-fit: cover;">
     </article>
   </section>
 
@@ -188,7 +270,7 @@
       </article>
 
       <article class="card">
-        <img src="images/park-babelsberg/spots/park-babelsberg-img-3731.webp" alt="Uferweg Nord – Blick über den Tiefen See" loading="lazy">
+        <img src="images/park-babelsberg/Uferweg_nord.jpeg" alt="Uferweg Nord – Blick über den Tiefen See" loading="lazy">
         <h3>Uferweg Nord</h3>
         <p>Malerischer Spazierweg mit freiem Panoramablick über den Tiefen See. Perfekt zum Entspannen, Fotografieren und Sonnenuntergang genießen.</p>
         <a href="uferweg-nord.html" class="btn">Mehr erfahren</a>
@@ -290,7 +372,7 @@
       </article>
 
       <article class="card">
-        <img src="images/park-babelsberg/info/bus-placeholder.webp" alt="ÖPNV Haltestellen" loading="lazy" style="object-fit:cover;">
+        <img src="images/park-babelsberg/info/vip-logo.png" alt="ViP Verkehrsbetrieb Potsdam - ÖPNV Haltestellen" loading="lazy" style="object-fit:contain; background: white; padding: var(--space-4);">
         <h3>ÖPNV</h3>
         <p>446 Bus- und Tram-Haltestellen mit Live-Abfahrten. Klimafreundlich anreisen.</p>
         <a href="#location-finder" class="btn" onclick="setTimeout(() => { document.getElementById('filter-oepnv').click(); }, 100);">Live-Fahrplan</a>

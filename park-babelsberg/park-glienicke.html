@@ -37,143 +37,225 @@
 <body>
 
 <header class="header">
-  <div class="hero" style="background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%); min-height: 300px; display: flex; align-items: center; justify-content: center;">
-    <h1 style="color: white; text-align: center; padding: 2rem;">Park Glienicke <span style="display: block; font-size: 0.6em; margin-top: 1rem; opacity: 0.95;">Italienische Gartenkunst an der Glienicker Brücke</span></h1>
-  </div>
-  <nav class="nav" aria-label="Sprungmarken">
-    <div class="badges">
-      <a class="badge" href="index.html">← Zur Übersicht</a>
-      <a class="badge" href="index.html#location-finder">Location-Finder</a>
-      <a class="badge" href="#highlights">Highlights</a>
-    </div>
+  <nav class="breadcrumb">
+    <a href="index.html">← Zurück zur Übersicht</a>
   </nav>
+
+  <div class="hero" style="background-image: url('images/park-babelsberg/spot-01-bru-cke.jpeg')">
+    <h1>Park Glienicke <span>Italienischer Villengarten an der Glienicker Brücke</span></h1>
+  </div>
+
+  <p class="lead">
+    Park Glienicke ist ein 116 Hektar großer Landschaftspark im italienischen Villenstil am Ufer der Havel. 
+    Gestaltet von Peter Joseph Lenné und Karl Friedrich Schinkel für Prinz Carl von Preußen, 
+    verbindet er mediterrane Gartenkunst mit preußischer Landschaftsarchitektur. Seit 1990 UNESCO-Welterbe.
+  </p>
 </header>
 
 <main id="content" data-page="park-glienicke" data-date="2025-10-29">
 
+  <!-- Quick Facts -->
   <section class="section">
-    <h2>Über Park Glienicke</h2>
+    <h2>Auf einen Blick</h2>
+    
     <div class="kv">
       <div>
-        <strong>Fläche</strong>
-        <span>116 Hektar</span>
+        <strong>📏 Größe</strong>
+        <p>116 Hektar zwischen Berlin-Wannsee und Potsdam</p>
       </div>
+
       <div>
-        <strong>Anlage</strong>
-        <span>Ab 1814</span>
+        <strong>🎨 Gestalter</strong>
+        <p>Peter Joseph Lenné (Gartenarchitekt) und Karl Friedrich Schinkel (Architekt)</p>
       </div>
+
       <div>
-        <strong>Stil</strong>
-        <span>Italienischer Landschaftsgarten</span>
+        <strong>🏛️ Stil</strong>
+        <p>Italienischer Villengarten mit klassizistischen Elementen</p>
       </div>
+
       <div>
-        <strong>UNESCO</strong>
-        <span>Welterbe seit 1990</span>
+        <strong>👑 Auftraggeber</strong>
+        <p>Prinz Carl von Preußen (1816)</p>
       </div>
+
       <div>
-        <strong>Lage</strong>
-        <span>An der Havel, westlich der Glienicker Brücke</span>
+        <strong>🌍 UNESCO-Welterbe</strong>
+        <p>Seit 1990 Teil des Welterbes "Schlösser und Parks von Potsdam und Berlin"</p>
       </div>
+
       <div>
-        <strong>GPS</strong>
-        <span>52.413, 13.093</span>
+        <strong>🎫 Eintritt</strong>
+        <p>Park kostenlos, Casino und Gebäude kostenpflichtig</p>
       </div>
     </div>
-
-    <p style="margin-top: 24px; line-height: 1.8;">
-      Park Glienicke wurde ab 1814 von Prinz Carl von Preußen angelegt und vom Landschaftsarchitekten
-      Peter Joseph Lenné gestaltet. Der Park verbindet italienische Gartenarchitektur mit preußischer
-      Landschaftsgestaltung und gilt als Meisterwerk klassizistischer Gartenkunst. Die Glienicker Brücke,
-      die den Park mit Potsdam verbindet, wurde während des Kalten Krieges als „Agentenbrücke" weltbekannt.
-    </p>
   </section>
 
-  <section id="highlights" class="section" style="background: var(--bg-accent);">
-    <h2>Hauptsehenswürdigkeiten</h2>
+  <!-- Geschichte Timeline -->
+  <section class="section" style="background: var(--bg-secondary); padding: var(--space-8) var(--container-padding); border-radius: var(--radius-xl);">
+    <h2>Geschichte des Parks</h2>
+    <p style="margin-bottom: var(--space-6); color: var(--text-secondary);">
+      Von der preußischen Sommerresidenz zum Symbol der deutsch-deutschen Teilung und Wiedervereinigung.
+    </p>
+
+    <div style="display: grid; gap: var(--space-4);">
+      <div class="info-box-info">
+        <strong>1816 – Gründung</strong>
+        <p>Prinz Carl von Preußen erwirbt das Gut Glienicke und beauftragt Peter Joseph Lenné mit der Gestaltung 
+        eines Landschaftsparks. Ziel: Ein italienisch inspirierter Garten als Sommerresidenz.</p>
+      </div>
+
+      <div class="info-box-info">
+        <strong>1824-1826 – Casino Glienicke</strong>
+        <p>Karl Friedrich Schinkel entwirft das Casino im klassizistischen Stil. Inspiriert von italienischen Villen, 
+        mit Säulenportikus und Terrassen zur Havel.</p>
+      </div>
+
+      <div class="info-box-warning">
+        <strong>1961-1989 – Teilung</strong>
+        <p>Die Glienicker Brücke wird zur Grenze zwischen West-Berlin und DDR. Der Park liegt im Grenzgebiet. 
+        Die Brücke wird berühmt als "Agentenbrücke" für Spionageaustausch im Kalten Krieg.</p>
+      </div>
+
+      <div class="info-box-success">
+        <strong>1989 – Mauerfall</strong>
+        <p>Nach dem Mauerfall wird die Glienicker Brücke wieder geöffnet. Der Park wird Symbol der Wiedervereinigung.</p>
+      </div>
+
+      <div class="info-box-success">
+        <strong>1990 – UNESCO-Welterbe</strong>
+        <p>Anerkennung als Teil des Welterbes. Umfangreiche Restaurierung von Park und Gebäuden.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sehenswürdigkeiten -->
+  <section id="highlights" class="section">
+    <h2>Sehenswürdigkeiten im Park</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary);">
+      Entdecke die architektonischen Meisterwerke und historischen Orte.
+    </p>
 
     <div class="cards">
       <article class="card">
-        <h3>Schloss Glienicke</h3>
-        <p>Klassizistisches Schloss von Karl Friedrich Schinkel, erbaut 1825-1827. Prunkvolle Innenausstattung mit Antiquitäten und italienischen Kunstwerken.</p>
-      </article>
-
-      <article class="card">
-        <h3>Casino</h3>
-        <p>Elegantes Teehaus im italienischen Stil direkt am Havelufer. Perfekt für romantische Spaziergänge und historische Atmosphäre.</p>
-      </article>
-
-      <article class="card">
-        <h3>Klosterhof</h3>
-        <p>Architektonisches Ensemble mit mittelalterlichen Elementen. Sammlung antiker Säulen und Skulpturen aus Italien.</p>
-      </article>
-
-      <article class="card">
-        <h3>Große Neugierde</h3>
-        <p>Oktogonaler Pavillon mit weitem Blick über die Havel. Beliebter Aussichtspunkt und Fotomotiv.</p>
+        <h3>Casino Glienicke</h3>
+        <p>Klassizistisches Hauptgebäude (1824-1826) von Karl Friedrich Schinkel. Italienische Villa mit Säulenportikus, 
+        Terrassen und Havelblick. Museum mit Originalausstattung.</p>
       </article>
 
       <article class="card">
         <h3>Glienicker Brücke</h3>
-        <p>Historische Verbindung zwischen Berlin und Potsdam. Legendärer Austauschort für Agenten während des Kalten Krieges.</p>
+        <p>Historische Brücke zwischen Berlin und Potsdam (1907). Berühmt als "Agentenbrücke" im Kalten Krieg. 
+        Schauplatz von Spionageaustausch. Heute Symbol der Wiedervereinigung.</p>
+      </article>
+
+      <article class="card">
+        <h3>Klosterhof</h3>
+        <p>Romantischer Innenhof (1832) mit mittelalterlichen Architekturteilen aus Italien. 
+        Kreuzgang, byzantinische Säulen, Brunnen.</p>
+      </article>
+
+      <article class="card">
+        <h3>Große Neugierde</h3>
+        <p>Aussichtspavillon (1835) von Schinkel am Havelufer. Bietet Panoramablick über die Havel. 
+        Beliebter Fotopunkt mit Blick zur Pfaueninsel.</p>
       </article>
 
       <article class="card">
         <h3>Löwenfontäne</h3>
-        <p>Monumentaler Brunnen mit goldenen Löwenskulpturen. Italienische Pracht mitten im preußischen Park.</p>
+        <p>Monumentaler Brunnen mit Löwenskulpturen. Zentrum des Pleasuregrounds vor dem Casino. 
+        Inspiriert von italienischen Renaissance-Brunnen.</p>
+      </article>
+
+      <article class="card">
+        <h3>Jägerhof</h3>
+        <p>Historisches Wirtschaftsgebäude im italienischen Stil. Heute Café und Veranstaltungsort. 
+        Schöner Biergarten im Sommer.</p>
       </article>
     </div>
   </section>
 
+  <!-- Glienicker Brücke -->
+  <section class="section" style="background: var(--bg-secondary); padding: var(--space-6); border-radius: var(--radius-xl);">
+    <h2>Die Glienicker Brücke – "Agentenbrücke"</h2>
+    
+    <div style="display: grid; gap: var(--space-4); margin-top: var(--space-4);">
+      <div class="info-box-info">
+        <strong>Historische Bedeutung</strong>
+        <p>Die Glienicker Brücke verbindet Berlin-Wannsee mit Potsdam. Im Kalten Krieg (1961-1989) war sie 
+        Grenze zwischen West-Berlin und DDR. Berühmt wurde sie als Schauplatz von Spionageaustausch zwischen 
+        USA und Sowjetunion – daher der Name "Agentenbrücke".</p>
+      </div>
+
+      <div class="info-box-info">
+        <strong>Spionageaustausch</strong>
+        <p>Drei spektakuläre Agentenaustausche fanden hier statt: 1962 (Rudolf Abel gegen Francis Gary Powers), 
+        1985 (23 Agenten) und 1986 (Anatoly Shcharansky gegen Karl Koecher). Hollywood-Filme wie "Bridge of Spies" 
+        (2015) mit Tom Hanks machten die Brücke weltberühmt.</p>
+      </div>
+
+      <div class="info-box-success">
+        <strong>Symbol der Wiedervereinigung</strong>
+        <p>Nach dem Mauerfall 1989 wurde die Brücke wieder für alle geöffnet. Sie ist heute Symbol der 
+        Wiedervereinigung und verbindet Berlin und Potsdam.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Besucherinfos -->
   <section class="section">
-    <h2>Besucherinformationen</h2>
+    <h2>Praktische Informationen</h2>
+    
+    <div class="kv">
+      <div>
+        <strong>🚶 Wanderwege</strong>
+        <p>Über 8 km Wanderwege durch den Park. Spaziergang zur Glienicker Brücke sehr empfehlenswert.</p>
+      </div>
 
-    <div class="card">
-      <h3>Anreise</h3>
-      <p>
-        <strong>ÖPNV:</strong> Bus 316 bis "Glienicker Brücke"<br>
-        <strong>S-Bahn:</strong> S7 bis Wannsee, dann Bus 316<br>
-        <strong>Auto:</strong> Parkplatz an der Königstraße (GPS: 52.413, 13.093)<br>
-        <strong>Zu Fuß:</strong> Über Glienicker Brücke von Potsdam (20 Min. vom Neuen Garten)
-      </p>
-    </div>
+      <div>
+        <strong>🚴 Radfahren</strong>
+        <p>Erlaubt auf Hauptwegen. Beliebte Radroute von Berlin nach Potsdam über die Glienicker Brücke.</p>
+      </div>
 
-    <div class="card">
-      <h3>Öffnungszeiten & Eintritt</h3>
-      <p>
-        <strong>Park:</strong> Ganzjährig frei zugänglich<br>
-        <strong>Schloss Glienicke:</strong> April–Oktober, Sa/So 10–18 Uhr (Eintritt kostenpflichtig)<br>
-        <strong>Führungen:</strong> Buchbar über die SPSG<br>
-        <strong>Besonderheit:</strong> Der Park erstreckt sich über Berlin und Brandenburg
-      </p>
-    </div>
-  </section>
+      <div>
+        <strong>🐕 Hunde</strong>
+        <p>Hunde an der Leine willkommen. Schöne Spazierwege am Havelufer.</p>
+      </div>
 
-  <section class="section" style="background: var(--bg-accent);">
-    <div class="card">
-      <h3>Historischer Kontext: Die Agentenbrücke</h3>
-      <p style="line-height: 1.8;">
-        Die Glienicker Brücke verband während der deutschen Teilung West-Berlin (US-Sektor) mit Potsdam (DDR).
-        Zwischen 1962 und 1986 wurden hier insgesamt drei Mal Agenten zwischen den USA/Großbritannien und der
-        Sowjetunion ausgetauscht, darunter der berühmte U-2-Pilot Francis Gary Powers 1962.
-      </p>
-      <p style="margin-top: 12px; line-height: 1.8;">
-        Die Brücke wurde zum Symbol des Kalten Krieges und ist heute ein beliebtes Ausflugsziel für
-        Geschichtsinteressierte. Eine Dauerausstellung in der Nähe dokumentiert die historischen Ereignisse.
-      </p>
+      <div>
+        <strong>🏛️ Casino-Besichtigung</strong>
+        <p>Casino Glienicke: Führungen April-Oktober, Sa/So 10-17 Uhr. Eintritt kostenpflichtig.</p>
+      </div>
+
+      <div>
+        <strong>🍽️ Gastronomie</strong>
+        <p>Jägerhof: Café und Restaurant mit Biergarten. Schöne Terrasse im Sommer.</p>
+      </div>
+
+      <div>
+        <strong>🅿️ Parken</strong>
+        <p>Parkplatz am Jägerhof (begrenzt). ÖPNV empfohlen: Bus 316 bis "Glienicker Brücke".</p>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="card">
-      <p style="margin: 0; text-align: center;">
-        <strong>Hinweis:</strong> Diese Seite befindet sich im Aufbau. Weitere Informationen, Bilder und Details folgen in Kürze.
-      </p>
-      <p style="margin: 12px 0 0; text-align: center;">
-        <a href="index.html" class="btn">Zurück zur Übersicht</a>
-        <a href="index.html#location-finder" class="btn" style="background: var(--accent-light); margin-left: 12px;">Location-Finder nutzen</a>
-      </p>
+  <!-- Call to Action -->
+  <section class="section" style="background: linear-gradient(135deg, var(--accent-primary), var(--accent-dark)); padding: var(--space-8); border-radius: var(--radius-xl); text-align: center;">
+    <h2 style="color: var(--text-inverse); margin-bottom: var(--space-3);">Entdecke Park Glienicke</h2>
+    <p style="color: var(--text-inverse); margin-bottom: var(--space-5); opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Erlebe italienisches Flair an der Havel und besuche die historische Glienicker Brücke.
+    </p>
+    <div style="display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;">
+      <a href="index.html" class="btn" style="background: var(--bg-primary); color: var(--accent-primary);">Zur Übersicht</a>
+      <a href="index.html#anreise" class="btn" style="background: transparent; border: 2px solid var(--text-inverse); color: var(--text-inverse);">Anreise planen</a>
     </div>
   </section>
+
+  <footer style="margin-top: var(--space-10);">
+    <p style="text-align: center; color: var(--text-muted);">
+      <a href="index.html" style="color: var(--accent-primary);">← Zurück zur Übersicht</a>
+    </p>
+  </footer>
 
 </main>
 

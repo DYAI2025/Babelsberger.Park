@@ -684,6 +684,97 @@ footer {
   }
 }
 
+/* Areale Grid - Consistent Sizing */
+#areale a {
+  display: block;
+  text-decoration: none;
+  transition: transform var(--transition-base);
+}
+
+#areale a > div {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-2);
+  width: 100%;
+  height: auto;
+}
+
+#areale a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition-slow);
+  display: block;
+}
+
+#areale a h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  transition: color var(--transition-base);
+}
+
+/* Areale Grid - Hover Effects */
+.areale-card:hover {
+  transform: translateY(-4px);
+}
+
+.areale-card:hover img {
+  transform: scale(1.05);
+}
+
+.areale-card:hover h3 {
+  color: var(--accent-primary);
+}
+
+/* Responsive Areale Grid */
+@media (max-width: 1024px) {
+  #areale > div {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Areale Articles - Stack on tablet */
+  #areale article > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-4) !important;
+  }
+
+  /* Reverse order for visual variety on mobile */
+  #areale article:nth-child(even) > div[style*="grid-template-columns"] {
+    direction: rtl;
+  }
+
+  #areale article:nth-child(even) > div[style*="grid-template-columns"] > * {
+    direction: ltr;
+  }
+}
+
+@media (max-width: 640px) {
+  #areale > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Areale Articles - Full width on mobile */
+  #areale article > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-3) !important;
+  }
+
+  /* Remove alternating padding on mobile */
+  #areale article[style*="padding"] {
+    padding: var(--space-5) var(--space-3) !important;
+  }
+
+  /* Smaller headings on mobile */
+  #areale h3 {
+    font-size: 1.5rem !important;
+  }
+}
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   *,

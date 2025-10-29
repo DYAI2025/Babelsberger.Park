@@ -37,116 +37,204 @@
 <body>
 
 <header class="header">
-  <div class="hero" style="background: linear-gradient(135deg, #0f766e 0%, #064e3b 100%); min-height: 300px; display: flex; align-items: center; justify-content: center;">
-    <h1 style="color: white; text-align: center; padding: 2rem;">Neuer Garten Potsdam <span style="display: block; font-size: 0.6em; margin-top: 1rem; opacity: 0.95;">Landschaftsgarten am Heiligen See</span></h1>
-  </div>
-  <nav class="nav" aria-label="Sprungmarken">
-    <div class="badges">
-      <a class="badge" href="index.html">← Zur Übersicht</a>
-      <a class="badge" href="index.html#location-finder">Location-Finder</a>
-      <a class="badge" href="#highlights">Highlights</a>
-    </div>
+  <nav class="breadcrumb">
+    <a href="index.html">← Zurück zur Übersicht</a>
   </nav>
+
+  <div class="hero" style="background-image: url('images/park-babelsberg/park_babelsberg_haus_003.jpeg')">
+    <h1>Neuer Garten <span>Englischer Landschaftsgarten am Heiligen See</span></h1>
+  </div>
+
+  <p class="lead">
+    Der Neue Garten ist ein 102,5 Hektar großer englischer Landschaftsgarten am Ufer des Heiligen Sees in Potsdam. 
+    Angelegt ab 1787 für König Friedrich Wilhelm II., beherbergt er das klassizistische Marmorpalais und 
+    das historische Schloss Cecilienhof. Seit 1990 UNESCO-Welterbe.
+  </p>
 </header>
 
 <main id="content" data-page="neuer-garten" data-date="2025-10-29">
 
+  <!-- Quick Facts -->
   <section class="section">
-    <h2>Über den Neuen Garten</h2>
+    <h2>Auf einen Blick</h2>
+    
     <div class="kv">
       <div>
-        <strong>Fläche</strong>
-        <span>102 Hektar</span>
+        <strong>📏 Größe</strong>
+        <p>102,5 Hektar am Ufer des Heiligen Sees</p>
       </div>
+
       <div>
-        <strong>Anlage</strong>
-        <span>1787-1791</span>
+        <strong>👑 Auftraggeber</strong>
+        <p>König Friedrich Wilhelm II. von Preußen (1787)</p>
       </div>
+
       <div>
-        <strong>Stil</strong>
-        <span>Englischer Landschaftsgarten</span>
+        <strong>🏛️ Stil</strong>
+        <p>Englischer Landschaftsgarten mit natürlichen Formen</p>
       </div>
+
       <div>
-        <strong>UNESCO</strong>
-        <span>Welterbe seit 1990</span>
+        <strong>🌍 UNESCO-Welterbe</strong>
+        <p>Seit 1990 Teil des Welterbes "Schlösser und Parks von Potsdam und Berlin"</p>
       </div>
+
       <div>
-        <strong>Lage</strong>
-        <span>Am Heiligen See, nördlich von Park Babelsberg</span>
+        <strong>🎫 Eintritt</strong>
+        <p>Park kostenlos, Schlösser kostenpflichtig</p>
       </div>
+
       <div>
-        <strong>GPS</strong>
-        <span>52.415, 13.070</span>
+        <strong>⏰ Öffnungszeiten</strong>
+        <p>Täglich von Sonnenaufgang bis Sonnenuntergang</p>
       </div>
     </div>
-
-    <p style="margin-top: 24px; line-height: 1.8;">
-      Der Neue Garten wurde ab 1787 im Auftrag von Friedrich Wilhelm II. angelegt und gilt als eines
-      der bedeutendsten Beispiele englischer Landschaftsgartenkunst in Deutschland. Der Park erstreckt
-      sich am Ufer des Heiligen Sees und bietet malerische Ausblicke, verschlungene Wege und eine
-      einzigartige Verbindung von Natur und Architektur.
-    </p>
   </section>
 
-  <section id="highlights" class="section" style="background: var(--bg-accent);">
-    <h2>Hauptsehenswürdigkeiten</h2>
+  <!-- Geschichte Timeline -->
+  <section class="section" style="background: var(--bg-secondary); padding: var(--space-8) var(--container-padding); border-radius: var(--radius-xl);">
+    <h2>Geschichte des Gartens</h2>
+    <p style="margin-bottom: var(--space-6); color: var(--text-secondary);">
+      Vom königlichen Rückzugsort zum historischen Schauplatz der Weltgeschichte.
+    </p>
+
+    <div style="display: grid; gap: var(--space-4);">
+      <div class="info-box-info">
+        <strong>1787 – Gründung</strong>
+        <p>König Friedrich Wilhelm II. lässt den Neuen Garten als Gegenentwurf zum formalen Sanssouci anlegen. 
+        Er wünscht sich einen natürlichen, englischen Landschaftsgarten als privaten Rückzugsort.</p>
+      </div>
+
+      <div class="info-box-info">
+        <strong>1787-1791 – Marmorpalais</strong>
+        <p>Bau des Marmorpalais am Ufer des Heiligen Sees nach Plänen von Carl von Gontard und Carl Gotthard Langhans. 
+        Frühklassizistisches Schloss mit Marmorfassade als Sommerresidenz.</p>
+      </div>
+
+      <div class="info-box-info">
+        <strong>1913-1917 – Schloss Cecilienhof</strong>
+        <p>Bau von Schloss Cecilienhof im englischen Landhausstil für Kronprinz Wilhelm und Cecilie. 
+        Letzter Schlossbau der Hohenzollern vor dem Ende der Monarchie 1918.</p>
+      </div>
+
+      <div class="info-box-success">
+        <strong>1945 – Potsdamer Konferenz</strong>
+        <p>Schloss Cecilienhof wird Schauplatz der Potsdamer Konferenz (17. Juli - 2. August 1945). 
+        Truman, Stalin und Churchill/Attlee verhandeln über die Nachkriegsordnung Europas.</p>
+      </div>
+
+      <div class="info-box-info">
+        <strong>1990 – UNESCO-Welterbe</strong>
+        <p>Anerkennung als Teil des Welterbes. Umfangreiche Restaurierung von Park und Gebäuden.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sehenswürdigkeiten -->
+  <section id="highlights" class="section">
+    <h2>Sehenswürdigkeiten im Neuen Garten</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary);">
+      Entdecke die architektonischen Highlights und historischen Orte.
+    </p>
 
     <div class="cards">
       <article class="card">
         <h3>Marmorpalais</h3>
-        <p>Frühklassizistisches Schloss direkt am Ufer des Heiligen Sees. Erbaut 1787-1792 von Carl von Gontard. Prunkvolle Innenausstattung mit Marmor aus Schlesien.</p>
+        <p>Frühklassizistisches Schloss (1787-1791) mit Marmorfassade am Heiligen See. Sommerresidenz Friedrich Wilhelms II. 
+        Besichtigung mit Führung möglich. Prachtvolle Innenräume im klassizistischen Stil.</p>
       </article>
 
       <article class="card">
-        <h3>Orangerie</h3>
-        <p>Historisches Gewächshaus mit mediterranen Pflanzen. Heute für Veranstaltungen genutzt.</p>
+        <h3>Schloss Cecilienhof</h3>
+        <p>Letzter Schlossbau der Hohenzollern (1913-1917) im englischen Landhausstil. Schauplatz der Potsdamer Konferenz 1945. 
+        Museum und Hotel. Historische Konferenzräume besichtigbar.</p>
       </article>
 
       <article class="card">
-        <h3>Bibliothek</h3>
-        <p>Klassizistischer Bau am Seeufer. Ursprünglich als Bibliothek für Friedrich Wilhelm II. konzipiert.</p>
+        <h3>Heiliger See</h3>
+        <p>Natürlicher See mit 0,97 km² Fläche. Malerische Uferwege, Wasservögel, Schilfgürtel. 
+        Baden offiziell verboten, aber beliebter Ort für Spaziergänge.</p>
       </article>
 
       <article class="card">
         <h3>Gotische Bibliothek</h3>
-        <p>Neugotisches Gartenhaus aus rotem Backstein. Beliebtes Fotomotiv und architektonisches Highlight.</p>
+        <p>Künstliche Ruine im neugotischen Stil (1792-1794). Ursprünglich als Bibliothek geplant, 
+        diente als romantisches Staffagegebäude. Heute Ausstellungsraum.</p>
+      </article>
+
+      <article class="card">
+        <h3>Muschelgrotte</h3>
+        <p>Künstliche Grotte am Seeufer, verziert mit Muscheln und Mineralien. 
+        Romantisches Element der Gartengestaltung aus dem 18. Jahrhundert.</p>
+      </article>
+
+      <article class="card">
+        <h3>Pyramide</h3>
+        <p>Eiskeller in Form einer Pyramide (1791-1792). Diente zur Lagerung von Eis aus dem See. 
+        Ungewöhnliches architektonisches Element im Park.</p>
       </article>
     </div>
   </section>
 
+  <!-- Besucherinfos -->
   <section class="section">
-    <h2>Besucherinformationen</h2>
+    <h2>Praktische Informationen</h2>
+    
+    <div class="kv">
+      <div>
+        <strong>🚶 Wanderwege</strong>
+        <p>Rundweg um den Heiligen See ca. 4 km. Uferwege teilweise naturbelassen. 
+        Hauptwege gut begehbar und größtenteils barrierefrei.</p>
+      </div>
 
-    <div class="card">
-      <h3>Anreise</h3>
-      <p>
-        <strong>ÖPNV:</strong> Tram 92, 93 bis "Am Neuen Garten"<br>
-        <strong>Auto:</strong> Parkplatz "Am Neuen Garten" (GPS: 52.419, 13.072)<br>
-        <strong>Zu Fuß:</strong> 15 Min. vom Hauptbahnhof Potsdam
-      </p>
-    </div>
+      <div>
+        <strong>🚴 Radfahren</strong>
+        <p>Ähnliche Regeln wie Park Babelsberg: Hauptwege ja, Wanderwege nein. 
+        Beschilderung vor Ort beachten.</p>
+      </div>
 
-    <div class="card">
-      <h3>Öffnungszeiten & Eintritt</h3>
-      <p>
-        <strong>Park:</strong> Ganzjährig frei zugänglich<br>
-        <strong>Marmorpalais:</strong> April–Oktober, Di–So 10–17:30 Uhr (Eintritt kostenpflichtig)<br>
-        <strong>Führungen:</strong> Buchbar über die SPSG
-      </p>
+      <div>
+        <strong>🐕 Hunde</strong>
+        <p>Hunde an der Leine erlaubt. Besonders wichtig wegen Wasservögeln am See. 
+        Hundekotbeutel mitbringen.</p>
+      </div>
+
+      <div>
+        <strong>🏛️ Schlossbesichtigung</strong>
+        <p>Marmorpalais: Führungen nach Voranmeldung. Cecilienhof: Museum täglich geöffnet. 
+        Eintritt kostenpflichtig. Tickets online buchbar.</p>
+      </div>
+
+      <div>
+        <strong>🚻 Toiletten</strong>
+        <p>WCs an den Haupteingängen und bei den Schlössern. Standorte ausgeschildert.</p>
+      </div>
+
+      <div>
+        <strong>🅿️ Parken</strong>
+        <p>Parkplätze begrenzt. ÖPNV empfohlen: Tram 92/96 bis "Reiterweg/Alleestraße", 
+        dann 10 Min. Fußweg.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section" style="background: var(--bg-accent);">
-    <div class="card">
-      <p style="margin: 0; text-align: center;">
-        <strong>Hinweis:</strong> Diese Seite befindet sich im Aufbau. Weitere Informationen, Bilder und Details folgen in Kürze.
-      </p>
-      <p style="margin: 12px 0 0; text-align: center;">
-        <a href="index.html" class="btn">Zurück zur Übersicht</a>
-        <a href="index.html#location-finder" class="btn" style="background: var(--accent-light); margin-left: 12px;">Location-Finder nutzen</a>
-      </p>
+  <!-- Call to Action -->
+  <section class="section" style="background: linear-gradient(135deg, var(--success), var(--accent-secondary)); padding: var(--space-8); border-radius: var(--radius-xl); text-align: center;">
+    <h2 style="color: var(--text-inverse); margin-bottom: var(--space-3);">Entdecke den Neuen Garten</h2>
+    <p style="color: var(--text-inverse); margin-bottom: var(--space-5); opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Plane deinen Besuch mit Informationen zu Anreise, Öffnungszeiten und Führungen.
+    </p>
+    <div style="display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;">
+      <a href="index.html" class="btn" style="background: var(--bg-primary); color: var(--success);">Zur Übersicht</a>
+      <a href="parkordnung-vergleich.html" class="btn" style="background: transparent; border: 2px solid var(--text-inverse); color: var(--text-inverse);">Parkordnung</a>
     </div>
   </section>
+
+  <footer style="margin-top: var(--space-10);">
+    <p style="text-align: center; color: var(--text-muted);">
+      <a href="index.html" style="color: var(--accent-primary);">← Zurück zur Übersicht</a>
+    </p>
+  </footer>
 
 </main>
 
