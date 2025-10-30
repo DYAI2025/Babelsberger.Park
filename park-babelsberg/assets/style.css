@@ -97,6 +97,21 @@ body {
   overflow-x: hidden;
 }
 
+/* Accessibility: Enhanced Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+a:focus-visible,
+button:focus-visible,
+.badge:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
 /* Typography Utilities */
 @utility heading-hero {
   font-family: var(--font-display);

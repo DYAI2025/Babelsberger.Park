@@ -5,31 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Park Babelsberg Potsdam – Praktische Infos, Toiletten, Wege & Highlights</title>
 <meta name="description" content="Alle praktischen Infos für deinen Besuch: Wo sind Toiletten? Welche Wege sind barrierefrei? Echte Bilder zeigen, was dich erwartet. Für Familien, Senioren, Hundebesitzer.">
-<link rel="preload" href="images/park-babelsberg/jagdschloss.jpeg" as="image">
+
+<!-- Preload Hero Image for LCP -->
+<link rel="preload" href="images/park-babelsberg/jagdschloss.jpeg" as="image" fetchpriority="high">
 
 <!-- SEO Enhancements -->
 <meta name="keywords" content="park babelsberg toiletten, wc park babelsberg, restaurants park babelsberg, parkplätze park babelsberg, neuer garten potsdam toiletten, schloss babelsberg gastronomie, potsdam park toiletten finden, park babelsberg karte">
 <meta name="geo.region" content="DE-BB">
 <meta name="geo.placename" content="Park Babelsberg, Potsdam">
 <meta name="geo.position" content="52.400;13.085">
-<link rel="canonical" href="https://example.com/park-babelsberg/index.html">
+<link rel="canonical" href="https://park.babelsberger.info/">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://example.com/park-babelsberg/index.html">
-<meta property="og:title" content="Park Babelsberg Potsdam – Location-Finder für WCs & Restaurants">
-<meta property="og:description" content="Interaktive Karte mit WCs, Restaurants und Parkplätzen im Park Babelsberg, Neuer Garten und Schloss Babelsberg. Mit Standort-Navigation.">
-<meta property="og:image" content="https://example.com/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg">
+<meta property="og:url" content="https://park.babelsberger.info/">
+<meta property="og:title" content="Parks und Schlösser Potsdam – Park Babelsberg, Neuer Garten & Glienicke">
+<meta property="og:description" content="UNESCO-Welterbe Parks in Potsdam: Interaktive Karten mit WCs, Restaurants & Parkplätzen. Location-Finder für Park Babelsberg, Neuer Garten und Park Glienicke.">
+<meta property="og:image" content="https://park.babelsberger.info/images/park-babelsberg/jagdschloss.jpeg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
 <meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Park Babelsberg Info">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://example.com/park-babelsberg/index.html">
-<meta name="twitter:title" content="Park Babelsberg Location-Finder">
-<meta name="twitter:description" content="Finde WCs & Restaurants im Park Babelsberg mit unserer interaktiven Karte">
-<meta name="twitter:image" content="https://example.com/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg">
+<meta name="twitter:url" content="https://park.babelsberger.info/">
+<meta name="twitter:title" content="Parks und Schlösser Potsdam – Location-Finder">
+<meta name="twitter:description" content="UNESCO-Welterbe Parks: WCs, Restaurants & Parkplätze finden mit interaktiver Karte">
+<meta name="twitter:image" content="https://park.babelsberger.info/images/park-babelsberg/jagdschloss.jpeg">
 
 <link rel="stylesheet" href="assets/style.css">
+
+<!-- Preconnect for faster Ad loading -->
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
 
 <!-- DSGVO-konformes Cookie-Consent-Management -->
 <!-- Google Analytics und AdSense werden nur nach Einwilligung geladen -->
@@ -84,8 +93,19 @@
 </head>
 <body>
 <header class="header">
-  <div class="hero" style="background-image: url('images/park-babelsberg/jagdschloss.jpeg')">
-    <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1;">Parks und Schlösser in Potsdam-Babelsberg <span style="font-size: clamp(1.25rem, 3vw, 2rem); display: block; margin-top: 1rem;">Kultur, Natur und Erholung am Ufer der Havel</span></h1>
+  <div class="hero" style="position: relative; overflow: hidden; border-radius: var(--radius-xl, 16px);">
+    <img src="images/park-babelsberg/jagdschloss.jpeg"
+         alt="Park Babelsberg mit Blick aufs Jagdschloss Glienicke"
+         width="1600"
+         height="900"
+         fetchpriority="high"
+         decoding="async"
+         style="width: 100%; height: auto; display: block; object-fit: cover; min-height: 400px;">
+    <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; text-shadow: 0 4px 12px rgba(0,0,0,0.6); z-index: 2; width: 90%; max-width: 1200px;">
+      Parks und Schlösser in Potsdam-Babelsberg
+      <span style="font-size: clamp(1.25rem, 3vw, 2rem); display: block; margin-top: 1rem; text-shadow: 0 2px 8px rgba(0,0,0,0.7);">Kultur, Natur und Erholung am Ufer der Havel</span>
+    </h1>
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.4) 100%); z-index: 1;"></div>
   </div>
   <p class="lead">Eine Reise durch die UNESCO-Welterbe-Parks und Kulturdenkmäler am Ufer der Havel. Entdecken Sie die historischen Schlösser, Landschaftsgärten und ihre besonderen Merkmale – mit detaillierten Informationen zu Örtlichkeiten, Anfahrt, Öffnungszeiten und aktuellen Gegebenheiten vor Ort.</p>
   <nav class="nav" aria-label="Sprungmarken">
