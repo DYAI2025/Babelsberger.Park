@@ -1025,6 +1025,65 @@ footer {
 }
 
 /* ============================================
+   ICON SYSTEM (Lucide Icons)
+   ============================================ */
+
+/* Icon Sizes */
+:root {
+  --icon-xs: 16px;
+  --icon-sm: 20px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-xl: 48px;
+}
+
+/* Base Icon Styles */
+.icon {
+  width: var(--icon-md);
+  height: var(--icon-md);
+  stroke-width: 2;
+  color: var(--text-primary);
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+/* Icon Sizes */
+.icon-xs { width: var(--icon-xs); height: var(--icon-xs); }
+.icon-sm { width: var(--icon-sm); height: var(--icon-sm); }
+.icon-md { width: var(--icon-md); height: var(--icon-md); }
+.icon-lg { width: var(--icon-lg); height: var(--icon-lg); }
+.icon-xl { width: var(--icon-xl); height: var(--icon-xl); }
+
+/* Icon Colors */
+.icon-primary { color: var(--text-primary); }
+.icon-secondary { color: var(--text-secondary); }
+.icon-muted { color: var(--text-muted); }
+.icon-accent { color: var(--accent-primary); }
+.icon-success { color: var(--success); }
+.icon-warning { color: var(--warning); }
+.icon-error { color: var(--error); }
+.icon-white { color: white; }
+
+/* Icon in Buttons */
+button .icon,
+a .icon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+button .icon:last-child,
+a .icon:last-child {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* Icon-only buttons */
+button.icon-only .icon,
+a.icon-only .icon {
+  margin: 0;
+}
+
+/* ============================================
    THEME TOGGLE BUTTON
    ============================================ */
 
@@ -1056,10 +1115,8 @@ footer {
 }
 
 .theme-icon {
-  font-size: 28px;
   position: absolute;
   transition: all 0.3s ease;
-  line-height: 1;
 }
 
 /* Light mode - show moon */
@@ -1116,19 +1173,20 @@ footer {
   transform: scale(0.95);
 }
 
-.lang-icon {
-  font-size: 28px;
+.lang-text {
+  font-size: 14px;
+  font-weight: 700;
   position: absolute;
   transition: all 0.3s ease;
-  line-height: 1;
+  letter-spacing: 0.5px;
 }
 
-.lang-icon-de {
+.lang-text-de {
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }
 
-.lang-icon-en {
+.lang-text-en {
   opacity: 0;
   transform: rotate(180deg) scale(0.5);
   display: none;
@@ -1145,6 +1203,514 @@ footer {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* ============================================
+   NEW NICHE CONTENT COMPONENTS
+   ============================================ */
+
+/* Photography Light Matrix Table */
+.light-matrix {
+  overflow-x: auto;
+  margin: var(--space-4) 0;
+}
+
+.light-matrix table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.light-matrix th {
+  background: var(--bg-accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: left;
+  padding: var(--space-3);
+  border-bottom: 2px solid var(--border-medium);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.light-matrix td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+
+.light-matrix tr:last-child td {
+  border-bottom: none;
+}
+
+.light-matrix td:first-child {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.light-matrix td.hint {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Photography Tips Component */
+.photo-tips {
+  background: var(--bg-secondary);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+}
+
+.photo-tips h3 {
+  margin: 0 0 var(--space-2);
+  color: var(--text-primary);
+  font-size: 1.125rem;
+}
+
+.photo-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 0;
+}
+
+.photo-tips li {
+  padding: var(--space-2) 0 var(--space-2) var(--space-4);
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.photo-tips li::before {
+  content: "📷";
+  position: absolute;
+  left: 0;
+  top: var(--space-2);
+}
+
+/* Downloads Component */
+.downloads {
+  background: var(--bg-accent);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  margin: var(--space-4) 0;
+}
+
+.downloads h3 {
+  margin: 0 0 var(--space-3);
+  color: var(--text-primary);
+  font-size: 1.125rem;
+}
+
+.downloads-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.downloads-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.downloads-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  font-size: 0.9375rem;
+}
+
+.downloads-list a::before {
+  content: "⬇️";
+  font-size: 1.25rem;
+}
+
+.downloads-list a:hover {
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Hidden Gems Component */
+.hidden-gems {
+  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-secondary) 100%);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  margin: var(--space-6) 0;
+}
+
+.hidden-gems h3 {
+  margin: 0 0 var(--space-3);
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.hidden-gems ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.hidden-gems li {
+  padding: var(--space-3);
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent-primary);
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: var(--space-5);
+}
+
+.hidden-gems li::before {
+  content: "💎";
+  position: absolute;
+  left: var(--space-2);
+  top: var(--space-3);
+  font-size: 1.25rem;
+}
+
+/* Geocaching Component */
+.geocaching {
+  background: var(--bg-secondary);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+}
+
+.geocaching strong {
+  color: var(--text-primary);
+}
+
+.geocaching p {
+  margin: var(--space-2) 0 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.geocaching .warning {
+  margin-top: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-accent);
+  border-left: 4px solid var(--warning);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* Rule Footer Component */
+.rule-footer {
+  margin: var(--space-10) 0 var(--space-4);
+  padding: var(--space-4);
+  border-top: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.rule-footer small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.rule-footer strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Dark Mode Overrides for New Components */
+[data-theme="dark"] .light-matrix th {
+  background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .photo-tips,
+[data-theme="dark"] .geocaching {
+  background: var(--bg-tertiary);
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .downloads {
+  background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .downloads-list a {
+  background: var(--bg-secondary);
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .downloads-list a:hover {
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+}
+
+[data-theme="dark"] .hidden-gems {
+  background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .hidden-gems li {
+  background: var(--bg-primary);
+  border-left-color: var(--accent-light);
+}
+
+[data-theme="dark"] .rule-footer {
+  background: var(--bg-tertiary);
+  border-color: var(--border-medium);
+}
+
+/* Enthusiast Cards - Foto-Spots, Geocaches, Routes */
+.enthusiast-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.enthusiast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.enthusiast-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.enthusiast-card-content {
+  padding: var(--space-4);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.enthusiast-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-3);
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.enthusiast-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+  min-width: 60%;
+}
+
+/* Season Badges */
+.season-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.season-badge.spring {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.season-badge.summer {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.season-badge.autumn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.season-badge.winter {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.enthusiast-card-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-3);
+}
+
+.enthusiast-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: auto;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-light);
+}
+
+.enthusiast-card-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.enthusiast-card-meta-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.enthusiast-card-footer {
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  gap: var(--space-2);
+}
+
+.enthusiast-btn {
+  flex: 1;
+  padding: var(--space-2) var(--space-3);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.enthusiast-btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.enthusiast-btn-primary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.enthusiast-btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.enthusiast-btn-secondary:hover {
+  background: var(--bg-accent);
+}
+
+/* Difficulty Badges */
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.difficulty-badge.easy {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.difficulty-badge.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.difficulty-badge.hard {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Dark Mode for Enthusiast Cards */
+[data-theme="dark"] .enthusiast-card {
+  background: var(--bg-secondary);
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .enthusiast-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .enthusiast-card-footer {
+  background: var(--bg-tertiary);
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .difficulty-badge.easy {
+  background: #064e3b;
+  color: #d1fae5;
+}
+
+[data-theme="dark"] .difficulty-badge.medium {
+  background: #78350f;
+  color: #fef3c7;
+}
+
+[data-theme="dark"] .difficulty-badge.hard {
+  background: #7f1d1d;
+  color: #fee2e2;
+}
+
+/* Grid for Enthusiast Cards */
+.enthusiast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .enthusiast-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .enthusiast-card img {
+    height: 180px;
+  }
+
+  .enthusiast-card-title {
+    font-size: 1.125rem;
+  }
+
+  .enthusiast-card-footer {
+    flex-direction: column;
+  }
+
+  .enthusiast-btn {
+    width: 100%;
+  }
 }
 
 /* Smooth transitions for theme change */
@@ -1170,7 +1736,8 @@ body {
   }
   
   .theme-icon {
-    font-size: 24px;
+    width: 24px;
+    height: 24px;
   }
   
   .lang-toggle {
@@ -1180,8 +1747,8 @@ body {
     height: 48px;
   }
   
-  .lang-icon {
-    font-size: 24px;
+  .lang-text {
+    font-size: 12px;
   }
   
   .hero {

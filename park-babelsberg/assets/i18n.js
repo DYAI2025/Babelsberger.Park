@@ -183,17 +183,17 @@
       const toggle = document.getElementById('lang-toggle');
       if (!toggle) return;
       
-      const deIcon = toggle.querySelector('.lang-icon-de');
-      const enIcon = toggle.querySelector('.lang-icon-en');
+      const deText = toggle.querySelector('.lang-text-de');
+      const enText = toggle.querySelector('.lang-text-en');
       
       if (this.currentLang === 'de') {
-        deIcon.style.display = 'none';
-        enIcon.style.display = 'block';
+        deText.style.display = 'none';
+        enText.style.display = 'block';
         toggle.setAttribute('aria-label', 'Switch to English');
         toggle.setAttribute('title', 'Switch to English');
       } else {
-        deIcon.style.display = 'block';
-        enIcon.style.display = 'none';
+        deText.style.display = 'block';
+        enText.style.display = 'none';
         toggle.setAttribute('aria-label', 'Auf Deutsch umschalten');
         toggle.setAttribute('title', 'Auf Deutsch umschalten');
       }

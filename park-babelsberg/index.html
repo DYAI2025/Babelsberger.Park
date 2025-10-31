@@ -93,10 +93,16 @@
 </head>
 <body>
 
+<!-- Language Toggle Button -->
+<button id="lang-toggle" class="lang-toggle icon-only" aria-label="Switch to English" title="Switch to English">
+  <span class="lang-text lang-text-de" aria-hidden="true">DE</span>
+  <span class="lang-text lang-text-en" aria-hidden="true">EN</span>
+</button>
+
 <!-- Theme Toggle Button -->
-<button id="theme-toggle" class="theme-toggle" aria-label="Dark Mode umschalten" title="Dark Mode umschalten">
-  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀️</span>
-  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+<button id="theme-toggle" class="theme-toggle icon-only" aria-label="Dark Mode umschalten" title="Dark Mode umschalten">
+  <i data-lucide="sun" class="theme-icon theme-icon-sun icon icon-md" aria-hidden="true"></i>
+  <i data-lucide="moon" class="theme-icon theme-icon-moon icon icon-md" aria-hidden="true"></i>
 </button>
 
 <header class="header">
@@ -120,6 +126,7 @@
       <a class="badge" href="#areale">Die 4 Areale</a>
       <a class="badge" href="#location-finder">Location-Finder</a>
       <a class="badge" href="#kategorien">Kategorien</a>
+      <a class="badge" href="#enthusiasts">Für Enthusiasten</a>
       <a class="badge" href="#anreise">Anreise</a>
       <a class="badge" href="#faq">FAQ</a>
     </div>
@@ -194,16 +201,24 @@
         <!-- Main Filter Buttons -->
         <div style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;background:var(--bg-secondary);border-bottom:2px solid var(--border-light);">
           <button id="filter-wc" class="filter-btn active" data-layer="wc" aria-pressed="true">
-            <span class="filter-icon">🚻</span> WC <span class="filter-count" id="count-wc">0</span>
+            <i data-lucide="map-pin" class="filter-icon icon icon-sm"></i>
+            <span>WC</span>
+            <span class="filter-count" id="count-wc">0</span>
           </button>
           <button id="filter-gastro" class="filter-btn active" data-layer="gastro" aria-pressed="true">
-            <span class="filter-icon">🍽️</span> Gastronomie <span class="filter-count" id="count-gastro">0</span>
+            <i data-lucide="utensils-crossed" class="filter-icon icon icon-sm"></i>
+            <span>Gastronomie</span>
+            <span class="filter-count" id="count-gastro">0</span>
           </button>
           <button id="filter-parking" class="filter-btn" data-layer="parking" aria-pressed="false">
-            <span class="filter-icon">🅿️</span> Parkplätze <span class="filter-count" id="count-parking">0</span>
+            <i data-lucide="parking-circle" class="filter-icon icon icon-sm"></i>
+            <span>Parkplätze</span>
+            <span class="filter-count" id="count-parking">0</span>
           </button>
           <button id="filter-oepnv" class="filter-btn" data-layer="oepnv" aria-pressed="false">
-            <span class="filter-icon">🚍</span> ÖPNV <span class="filter-count" id="count-oepnv">0</span>
+            <i data-lucide="bus" class="filter-icon icon icon-sm"></i>
+            <span>ÖPNV</span>
+            <span class="filter-count" id="count-oepnv">0</span>
           </button>
         </div>
 
@@ -211,25 +226,32 @@
         <div id="gastro-subfilter" class="subfilter-panel">
           <div style="padding:12px 16px;display:flex;gap:8px;flex-wrap:wrap;background:#fafafa;">
             <label class="subfilter-checkbox">
-              <input type="checkbox" data-amenity="restaurant" checked> 🍽️ Restaurant
+              <input type="checkbox" data-amenity="restaurant" checked>
+              <i data-lucide="utensils-crossed" class="icon icon-xs"></i> Restaurant
             </label>
             <label class="subfilter-checkbox">
-              <input type="checkbox" data-amenity="cafe" checked> ☕ Café
+              <input type="checkbox" data-amenity="cafe" checked>
+              <i data-lucide="coffee" class="icon icon-xs"></i> Café
             </label>
             <label class="subfilter-checkbox">
-              <input type="checkbox" data-amenity="fast_food" checked> 🍔 Imbiss
+              <input type="checkbox" data-amenity="fast_food" checked>
+              <i data-lucide="sandwich" class="icon icon-xs"></i> Imbiss
             </label>
             <label class="subfilter-checkbox">
-              <input type="checkbox" data-amenity="bar" checked> 🍺 Bar
+              <input type="checkbox" data-amenity="bar" checked>
+              <i data-lucide="wine" class="icon icon-xs"></i> Bar
             </label>
             <label class="subfilter-checkbox">
-              <input type="checkbox" data-amenity="pub" checked> 🍺 Pub
+              <input type="checkbox" data-amenity="pub" checked>
+              <i data-lucide="beer" class="icon icon-xs"></i> Pub
             </label>
             <label class="subfilter-checkbox">
-              <input type="checkbox" data-amenity="ice_cream" checked> 🍦 Eiscafé
+              <input type="checkbox" data-amenity="ice_cream" checked>
+              <i data-lucide="ice-cream" class="icon icon-xs"></i> Eiscafé
             </label>
             <label class="subfilter-checkbox">
-              <input type="checkbox" data-amenity="biergarten" checked> 🌳 Biergarten
+              <input type="checkbox" data-amenity="biergarten" checked>
+              <i data-lucide="trees" class="icon icon-xs"></i> Biergarten
             </label>
           </div>
         </div>
@@ -240,16 +262,20 @@
         <!-- Controls -->
         <div style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:white;">
           <button id="btn-locate" class="map-btn map-btn-primary" aria-label="Meinen Standort nutzen">
-            📍 Standort nutzen
+            <i data-lucide="locate" class="icon icon-sm"></i>
+            <span>Standort nutzen</span>
           </button>
           <button id="btn-nearest-wc" class="map-btn map-btn-secondary" disabled aria-label="Zum nächsten WC navigieren">
-            🚻 Nächstes WC
+            <i data-lucide="navigation" class="icon icon-sm"></i>
+            <span>Nächstes WC</span>
           </button>
           <button id="btn-nearest-gastro" class="map-btn map-btn-secondary" disabled aria-label="Zum nächsten Restaurant navigieren">
-            🍽️ Nächstes Restaurant
+            <i data-lucide="navigation" class="icon icon-sm"></i>
+            <span>Nächstes Restaurant</span>
           </button>
           <button id="btn-nearest-parking" class="map-btn map-btn-secondary" disabled style="display:none;" aria-label="Zum nächsten Parkplatz navigieren">
-            🅿️ Nächster Parkplatz
+            <i data-lucide="navigation" class="icon icon-sm"></i>
+            <span>Nächster Parkplatz</span>
           </button>
         </div>
 
@@ -296,7 +322,9 @@
 
     <div class="grid-3">
       <article class="card-category">
-        <div class="card-category-icon">🏰</div>
+        <div class="card-category-icon">
+          <i data-lucide="castle" class="icon icon-lg icon-accent"></i>
+        </div>
         <h3 data-i18n="categories.castles.title">Schlösser & Bauwerke</h3>
         <p class="card-category-count" data-i18n="categories.castles.count">8 historische Orte</p>
         <p data-i18n="categories.castles.description">Neugotische Schlösser, Aussichtstürme und historische Bauwerke aus verschiedenen Epochen.</p>
@@ -304,7 +332,9 @@
       </article>
 
       <article class="card-category">
-        <div class="card-category-icon">🍽️</div>
+        <div class="card-category-icon">
+          <i data-lucide="utensils-crossed" class="icon icon-lg icon-accent"></i>
+        </div>
         <h3 data-i18n="categories.gastro.title">Gastronomie</h3>
         <p class="card-category-count" data-i18n="categories.gastro.count">303 Locations</p>
         <p data-i18n="categories.gastro.description">Restaurants, Cafés, Imbisse und Biergärten in Fußnähe zum Park.</p>
@@ -312,7 +342,9 @@
       </article>
 
       <article class="card-category">
-        <div class="card-category-icon">🚻</div>
+        <div class="card-category-icon">
+          <i data-lucide="info" class="icon icon-lg icon-accent"></i>
+        </div>
         <h3 data-i18n="categories.practical.title">Praktisches</h3>
         <p class="card-category-count" data-i18n="categories.practical.count">WC, Parking, ÖPNV</p>
         <p data-i18n="categories.practical.description">Toiletten, Parkplätze und öffentliche Verkehrsmittel mit Live-Daten.</p>
@@ -320,7 +352,9 @@
       </article>
 
       <article class="card-category">
-        <div class="card-category-icon">🌳</div>
+        <div class="card-category-icon">
+          <i data-lucide="trees" class="icon icon-lg icon-accent"></i>
+        </div>
         <h3 data-i18n="categories.nature.title">Natur & Wege</h3>
         <p class="card-category-count" data-i18n="categories.nature.count">Spazierwege & Wiesen</p>
         <p data-i18n="categories.nature.description">Malerische Uferwege, Liegewiesen und Naturerlebnisse im Park.</p>
@@ -328,7 +362,9 @@
       </article>
 
       <article class="card-category">
-        <div class="card-category-icon">🚗</div>
+        <div class="card-category-icon">
+          <i data-lucide="car" class="icon icon-lg icon-accent"></i>
+        </div>
         <h3 data-i18n="categories.arrival.title">Anreise & Parken</h3>
         <p class="card-category-count" data-i18n="categories.arrival.count">1200+ Parkplätze</p>
         <p data-i18n="categories.arrival.description">Alle Infos zu Anfahrt, Parkplätzen und öffentlichen Verkehrsmitteln.</p>
@@ -336,7 +372,9 @@
       </article>
 
       <article class="card-category">
-        <div class="card-category-icon">📋</div>
+        <div class="card-category-icon">
+          <i data-lucide="file-text" class="icon icon-lg icon-accent"></i>
+        </div>
         <h3 data-i18n="categories.rules.title">Regeln & Ordnung</h3>
         <p class="card-category-count" data-i18n="categories.rules.count">Parkordnung</p>
         <p data-i18n="categories.rules.description">Was ist erlaubt? Radfahren, Picknicken, Baden und mehr.</p>
@@ -395,6 +433,53 @@
         <p data-i18n="highlights.matrosenhaus.description">Historisches Bootshaus am Havelufer aus dem 19. Jahrhundert. Heute Event-Location mit romantischem Blick aufs Wasser.</p>
         <a href="/park-babelsberg/matrosenhaus.html" class="btn" data-i18n="highlights.matrosenhaus.button">Mehr erfahren</a>
       </article>
+    </div>
+  </section>
+
+  <!-- Für Enthusiasten - Niche Content -->
+  <section id="enthusiasts" class="section" style="background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
+    <div style="max-width: var(--container-max); margin: 0 auto;">
+      <div class="section-header">
+        <h2 data-i18n="enthusiasts.title">Für Enthusiasten</h2>
+        <p data-i18n="enthusiasts.subtitle">Nischen-Erlebnisse für Fotografie, Laufen, Geschichte und mehr – entdecke die Parks aus neuen Perspektiven.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card-category">
+          <div class="card-category-icon">📷</div>
+          <h3 data-i18n="enthusiasts.photography.title">📷 Fotografie & Licht</h3>
+          <p data-i18n="enthusiasts.photography.description">Licht-Matrizen, Kompositions-Tipps und optimale Tageszeiten für alle drei Parks. Von Tele-Kompression bis Langzeitbelichtung.</p>
+          <a href="/park-babelsberg/park-babelsberg.html#photography" class="btn" data-i18n="enthusiasts.photography.button">Foto-Guides</a>
+        </article>
+
+        <article class="card-category">
+          <div class="card-category-icon">🏃</div>
+          <h3 data-i18n="enthusiasts.running.title">🏃 Laufen & Bewegung</h3>
+          <p data-i18n="enthusiasts.running.description">GPS-Tracks zum Download: 4,5–7,7 km hügelige Strecken in Babelsberg, 4 km flache Runde im Neuen Garten. Plus Yoga-Tipps.</p>
+          <a href="/park-babelsberg/park-babelsberg.html#running" class="btn" data-i18n="enthusiasts.running.button">Routen & GPX</a>
+        </article>
+
+        <article class="card-category">
+          <div class="card-category-icon">🎯</div>
+          <h3 data-i18n="enthusiasts.geocaching.title">🎯 Geocaching</h3>
+          <p data-i18n="enthusiasts.geocaching.description">Multi-Caches 'Park Babelsberg 01/02' führen zu versteckten Spots. Hohe Muggeldichte – diskret loggen!</p>
+          <a href="/park-babelsberg/park-babelsberg.html#geocaching" class="btn" data-i18n="enthusiasts.geocaching.button">Cache-Infos</a>
+        </article>
+
+        <article class="card-category">
+          <div class="card-category-icon">🕵️</div>
+          <h3 data-i18n="enthusiasts.history.title">🕵️ Geschichte & Spionage</h3>
+          <p data-i18n="enthusiasts.history.description">Glienicker Brücke Austausch-Historie, KGB 'Verbotene Stadt' Trail mit 14 Stationen, Story-Walks buchbar.</p>
+          <a href="/park-babelsberg/park-glienicke.html#history" class="btn" data-i18n="enthusiasts.history.button">Geschichtspfade</a>
+        </article>
+
+        <article class="card-category">
+          <div class="card-category-icon">🔮</div>
+          <h3 data-i18n="enthusiasts.esoteric.title">🔮 Esoterik & Verborgenes</h3>
+          <p data-i18n="enthusiasts.esoteric.description">Freimaurerische Pyramide, versunkener Tempel, getarnte Burgen – historische Kuriositäten mit spiritueller Aufladung.</p>
+          <a href="/park-babelsberg/neuer-garten.html#esoteric" class="btn" data-i18n="enthusiasts.esoteric.button">Hidden Gems</a>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -1479,6 +1564,15 @@
 
 <!-- i18n System -->
 <script src="assets/i18n.js"></script>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  // Initialize Lucide icons after DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
+  });
+</script>
 
 </body>
 </html>

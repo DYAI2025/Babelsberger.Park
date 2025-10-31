@@ -202,6 +202,160 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "cookies": "Cookie-Einstellungen",
-    "copyright": "© 2025 Park Babelsberg Info · Daten: OpenStreetMap-Mitwirkende (ODbL)"
+    "copyright": "© 2025 Park Babelsberg Info · Daten: OpenStreetMap-Mitwirkende (ODbL)",
+    "rules": "Stand: 2025-10-31 • SPSG-Parkordnung: Wegegebot beachten • Öffnung 8:00 Uhr bis Dämmerung • Private Foto/Film außen mit Stativ/Blitz erlaubt • Kommerzielle Nutzung genehmigungspflichtig • Drohnen strikt verboten"
+  },
+  "babelsberg": {
+    "photography": {
+      "title": "Fotografie-Tipps für Park Babelsberg",
+      "intro": "Tele 135–200 mm für Achsen (Pfingstberg/Marmorpalais), Polfilter am Wasser, ND 6–10 Stufen für seidig-glatte Havel. Drohnen verboten. Wegegebot beachten.",
+      "lightMatrix": {
+        "title": "Licht-Matrix: Spots × Tageszeit",
+        "spot": "Spot",
+        "morning": "Morgen",
+        "evening": "Abend",
+        "winter": "Winter",
+        "summer": "Sommer"
+      },
+      "spots": {
+        "uferweg": {
+          "name": "Uferwege → Glienicker Brücke",
+          "morning": "Sanfte Modellierung aus O/ONO",
+          "evening": "Warmes Seitenlicht",
+          "winter": "Flaches SW-Licht für Texturen",
+          "summer": "Spätes NW-Gegenlicht"
+        },
+        "flatowturm": {
+          "name": "Flatowturm Panorama",
+          "morning": "Klarer Dunst-Layer",
+          "evening": "Goldene Silhouetten",
+          "hint": "Zutritt saisonal – 'Schöne Aussichten!' Programm prüfen"
+        }
+      },
+      "composition": {
+        "title": "Komposition & Perspektiven",
+        "tip1": "S-Linie des Uferwegs als Leitkurve zur Brücke – führt den Blick durch das Bild",
+        "tip2": "Tele-Kompression vom Flatowturm auf Pfingstberg/Marmorpalais – verdichtet Landschaft",
+        "tip3": "Dampfmaschinenhaus: Langzeitbelichtung am Wasser mit ND-Filter für seidig-glatten Effekt"
+      }
+    },
+    "hiddenGems": {
+      "title": "Verborgene Schätze",
+      "dampfmaschine": "Dampfmaschinenhaus: Als \"normannische Burg\" getarnt – Ingenieurskunst für Schloss-Fontäne, nicht Verteidigung",
+      "gerichtslaube": "Gerichtslaube: Mittelalterliches Berliner Rathaus-Fragment (13. Jh.), 1871 als \"Teehaus-Kuriosum\" hierher versetzt",
+      "disclaimer": "Historische Besonderheiten. Aktuelle Zugänglichkeit bitte vor Ort prüfen."
+    },
+    "geocaching": {
+      "title": "Geocaching-Hotspot",
+      "description": "Multi-Caches 'Park Babelsberg 01/02' (Owner: g_r) führen durch den Park mit Stationen u.a. Flatowturm, Marstall, Matrosenhaus.",
+      "warning": "⚠️ Hohe Muggeldichte – diskret loggen. Wege nicht verlassen (UNESCO-Welterbe/SPSG-Parkordnung). Drohnen verboten. Cache-Status auf geocaching.com prüfen (Stand: 2025-10-31)."
+    },
+    "running": {
+      "title": "Laufen & Achtsamkeit",
+      "description": "Hügeliges Profil für Trainingsreiz – stetige Auf- und Abstiege trainieren Kraft und Ausdauer.",
+      "routes": {
+        "title": "Laufrouten (GPX-Downloads)",
+        "route1": "Laufrunde Babelsberg ~4,5 km (hügelig)",
+        "route2": "Laufrunde Babelsberg ~7,7 km (anspruchsvoll)",
+        "disclaimer": "Community-Vorschläge. Vor Ort Wegegebot beachten (nur asphaltierte Hauptwege)."
+      }
+    }
+  },
+  "glienicke": {
+    "photography": {
+      "title": "Fotospots im Fokus",
+      "intro": "Belvedere-Layering: Wasser–Brücke–Schloss mit Tele 135–200 mm. Nachmittagslicht warm. Wegegebot, Drohnenverbot.",
+      "spots": {
+        "title": "Komposition & Perspektiven",
+        "casino": "Casino Glienicke: Arkaden-Rahmung + Spiegelungen bei Windstille – Symmetrie nutzen",
+        "loggia": "Böttcherberg/Loggia Alexandra: Layering bis Schloss Babelsberg – Teleobjektiv verdichtet Landschaft",
+        "stibadium": "Stibadium (Persius): Halbkreis-Teepavillon als Nischenmotiv – architektonische Details"
+      }
+    },
+    "history": {
+      "title": "Agentenkulisse & Kuriositäten",
+      "bridge": "Glienicker Brücke: Austausch-Historie (Powers 1962, Abel 1962, Shcharansky 1986) – Geführte Story-Walks buchbar",
+      "curiosity": "\"Little Curiosity\": Dorischer Beobachtungsposten – perfekte Sichtlinie zur Brücke",
+      "frigate": "Schinkels Dummy-Fregatte: Historisches Kulissen-Schiff (1840er), heute verschollen – architektonische Illusion",
+      "disclaimer": "Historische Besonderheiten. Story-Walks extern organisiert (nicht SPSG)."
+    },
+    "events": {
+      "title": "Event-Potenzial (Premium/Kleinformatig)",
+      "storytelling": {
+        "title": "📚 Storytelling-Formate",
+        "description": "Exklusive Dinner/Podien zu Spionage-Themen im historischen Ambiente"
+      },
+      "photography": {
+        "title": "📷 Golden-Hour-Workshops",
+        "description": "Product-Launches für Kamera/Optik mit professioneller Kulisse"
+      },
+      "disclaimer": "Event-Genehmigung bei SPSG erforderlich. Kapazitäten limitiert."
+    }
+  },
+  "neuerGarten": {
+    "photography": {
+      "title": "Fotospots im Neuen Garten",
+      "intro": "Vormittags frontales Licht am Marmorpalais. Diffuses Licht für Cecilienhof-Texturen. Wegegebot, Drohnenverbot.",
+      "spots": {
+        "title": "Komposition & Perspektiven",
+        "marmorpalais": "Marmorpalais: Ostufer → symmetrische Spiegelungen (morgens) bei Windstille",
+        "cecilienhof": "Cecilienhof: Backstein-/Dach-Texturen – SW-tauglich bei Dunst/Nebel",
+        "see": "Heiliger See: Layer im Morgennebel – atmosphärische Stimmung"
+      }
+    },
+    "history": {
+      "title": "Geschichtsweg \"Verbotene Stadt\" (2,5 km / 14 Stationen)",
+      "description": "KGB-Sperrzone ab 1945 – sowjetische Militärstadt mitten in Potsdam. Gedenkstätte Leistikowstraße 1: Authentische Zellen des sowjetischen Geheimdienstes.",
+      "warning": "ℹ️ Respektvoller Besuch empfohlen. Hinweise vor Ort beachten. Führungen buchbar über Gedenkstätte."
+    },
+    "esoteric": {
+      "title": "Esoterische Spuren Friedrich Wilhelms II.",
+      "pyramid": "Eiskammer als Pyramide: Freimaurerische Symbolik – nicht nur praktisch, sondern spirituell aufgeladen",
+      "temple": "Palastküche als \"versunkener Tempel\": Architektonische Anspielung auf antike Mysterien",
+      "disclaimer": "Historische Interpretationen. Zugänglichkeit variiert je nach Bauwerk."
+    },
+    "movement": {
+      "title": "Joggen & Yoga im Neuen Garten",
+      "description": "Flache ~4-km-Runde – ideal für entspanntes Laufen. Ruhige Wiesen abseits Hauptwege für Yoga/Achtsamkeit.",
+      "running": {
+        "title": "Laufroute (GPX-Download)",
+        "route": "Laufrunde Neuer Garten ~4,0 km (flach)"
+      },
+      "yoga": {
+        "title": "Yoga & Achtsamkeit",
+        "tip1": "Ausrüstung: Matte robust (Wiesen können feucht sein), Zwiebellook gegen Morgen-Kühle",
+        "tip2": "Zeitfenster: Früh morgens = ruhiger & kühler, weniger Besucher",
+        "tip3": "Spots: Ruhige ebene Wiesen abseits Hauptwege – Wegegebot beachten"
+      }
+    }
+  },
+  "enthusiasts": {
+    "title": "Für Enthusiasten",
+    "subtitle": "Nischen-Erlebnisse für Fotografie, Laufen, Geschichte und mehr – entdecke die Parks aus neuen Perspektiven.",
+    "photography": {
+      "title": "📷 Fotografie & Licht",
+      "description": "Licht-Matrizen, Kompositions-Tipps und optimale Tageszeiten für alle drei Parks. Von Tele-Kompression bis Langzeitbelichtung.",
+      "button": "Foto-Guides"
+    },
+    "running": {
+      "title": "🏃 Laufen & Bewegung",
+      "description": "GPS-Tracks zum Download: 4,5–7,7 km hügelige Strecken in Babelsberg, 4 km flache Runde im Neuen Garten. Plus Yoga-Tipps.",
+      "button": "Routen & GPX"
+    },
+    "geocaching": {
+      "title": "🎯 Geocaching",
+      "description": "Multi-Caches 'Park Babelsberg 01/02' führen zu versteckten Spots. Hohe Muggeldichte – diskret loggen!",
+      "button": "Cache-Infos"
+    },
+    "history": {
+      "title": "🕵️ Geschichte & Spionage",
+      "description": "Glienicker Brücke Austausch-Historie, KGB 'Verbotene Stadt' Trail mit 14 Stationen, Story-Walks buchbar.",
+      "button": "Geschichtspfade"
+    },
+    "esoteric": {
+      "title": "🔮 Esoterik & Verborgenes",
+      "description": "Freimaurerische Pyramide, versunkener Tempel, getarnte Burgen – historische Kuriositäten mit spiritueller Aufladung.",
+      "button": "Hidden Gems"
+    }
   }
 }

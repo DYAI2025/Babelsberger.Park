@@ -202,6 +202,160 @@
     "imprint": "Imprint",
     "privacy": "Privacy",
     "cookies": "Cookie Settings",
-    "copyright": "© 2025 Park Babelsberg Info · Data: OpenStreetMap Contributors (ODbL)"
+    "copyright": "© 2025 Park Babelsberg Info · Data: OpenStreetMap Contributors (ODbL)",
+    "rules": "As of: 2025-10-31 • SPSG Park Regulations: Stay on paths • Open 8:00am to dusk • Private photo/film outdoors with tripod/flash permitted • Commercial use requires permission • Drones strictly prohibited"
+  },
+  "babelsberg": {
+    "photography": {
+      "title": "Photography Tips for Park Babelsberg",
+      "intro": "Telephoto 135–200mm for sight lines (Pfingstberg/Marmorpalais), polarizer for water, ND 6–10 stops for silky-smooth Havel. Drones prohibited. Stay on paths.",
+      "lightMatrix": {
+        "title": "Light Matrix: Spots × Time of Day",
+        "spot": "Spot",
+        "morning": "Morning",
+        "evening": "Evening",
+        "winter": "Winter",
+        "summer": "Summer"
+      },
+      "spots": {
+        "uferweg": {
+          "name": "Riverside Paths → Glienicke Bridge",
+          "morning": "Soft modeling from E/ENE",
+          "evening": "Warm side light",
+          "winter": "Flat SW light for textures",
+          "summer": "Late NW backlight"
+        },
+        "flatowturm": {
+          "name": "Flatow Tower Panorama",
+          "morning": "Clear haze layer",
+          "evening": "Golden silhouettes",
+          "hint": "Seasonal access – check 'Schöne Aussichten!' program"
+        }
+      },
+      "composition": {
+        "title": "Composition & Perspectives",
+        "tip1": "S-curve of the riverside path as leading line to the bridge – guides the viewer's eye through the image",
+        "tip2": "Telephoto compression from Flatow Tower to Pfingstberg/Marmorpalais – compresses landscape",
+        "tip3": "Steam Engine House: Long exposure at water with ND filter for silky-smooth effect"
+      }
+    },
+    "hiddenGems": {
+      "title": "Hidden Gems",
+      "dampfmaschine": "Steam Engine House: Disguised as 'Norman castle' – engineering for palace fountain, not defense",
+      "gerichtslaube": "Court Arcade: Medieval Berlin town hall fragment (13th c.), relocated here in 1871 as 'teahouse curiosity'",
+      "disclaimer": "Historic peculiarities. Please check current accessibility on site."
+    },
+    "geocaching": {
+      "title": "Geocaching Hotspot",
+      "description": "Multi-caches 'Park Babelsberg 01/02' (Owner: g_r) lead through the park with stations including Flatow Tower, Marstall, Sailor's House.",
+      "warning": "⚠️ High muggle density – log discreetly. Stay on paths (UNESCO World Heritage/SPSG park regulations). Drones prohibited. Check cache status on geocaching.com (as of 2025-10-31)."
+    },
+    "running": {
+      "title": "Running & Mindfulness",
+      "description": "Hilly profile for training stimulus – steady ups and downs train strength and endurance.",
+      "routes": {
+        "title": "Running Routes (GPX Downloads)",
+        "route1": "Babelsberg Loop ~4.5 km (hilly)",
+        "route2": "Babelsberg Loop ~7.7 km (challenging)",
+        "disclaimer": "Community suggestions. Stay on paths on site (paved main paths only)."
+      }
+    }
+  },
+  "glienicke": {
+    "photography": {
+      "title": "Photo Spots in Focus",
+      "intro": "Belvedere layering: Water–Bridge–Palace with telephoto 135–200mm. Warm afternoon light. Stay on paths, drones prohibited.",
+      "spots": {
+        "title": "Composition & Perspectives",
+        "casino": "Casino Glienicke: Arcade framing + reflections in calm conditions – use symmetry",
+        "loggia": "Böttcherberg/Loggia Alexandra: Layering to Babelsberg Palace – telephoto compresses landscape",
+        "stibadium": "Stibadium (Persius): Semicircular tea pavilion as niche motif – architectural details"
+      }
+    },
+    "history": {
+      "title": "Spy Bridge History & Curiosities",
+      "bridge": "Glienicke Bridge: Exchange history (Powers 1962, Abel 1962, Shcharansky 1986) – Guided story walks available",
+      "curiosity": "\"Little Curiosity\": Doric observation post – perfect sight line to the bridge",
+      "frigate": "Schinkel's Dummy Frigate: Historic prop ship (1840s), now lost – architectural illusion",
+      "disclaimer": "Historic peculiarities. Story walks organized externally (not SPSG)."
+    },
+    "events": {
+      "title": "Event Potential (Premium/Small-scale)",
+      "storytelling": {
+        "title": "📚 Storytelling Formats",
+        "description": "Exclusive dinners/panels on espionage themes in historic setting"
+      },
+      "photography": {
+        "title": "📷 Golden Hour Workshops",
+        "description": "Product launches for camera/optics with professional backdrop"
+      },
+      "disclaimer": "Event permission from SPSG required. Limited capacity."
+    }
+  },
+  "neuerGarten": {
+    "photography": {
+      "title": "Photo Spots in the New Garden",
+      "intro": "Morning frontal light at Marble Palace. Diffuse light for Cecilienhof textures. Stay on paths, drones prohibited.",
+      "spots": {
+        "title": "Composition & Perspectives",
+        "marmorpalais": "Marble Palace: East shore → symmetrical reflections (morning) in calm conditions",
+        "cecilienhof": "Cecilienhof: Brick/roof textures – B&W suitable in haze/fog",
+        "see": "Heiliger See: Layers in morning mist – atmospheric mood"
+      }
+    },
+    "history": {
+      "title": "History Trail \"Forbidden City\" (2.5 km / 14 stations)",
+      "description": "KGB restricted zone from 1945 – Soviet military town in the middle of Potsdam. Leistikowstraße 1 Memorial: Authentic cells of Soviet intelligence service.",
+      "warning": "ℹ️ Respectful visit recommended. Follow on-site instructions. Guided tours bookable via memorial."
+    },
+    "esoteric": {
+      "title": "Esoteric Traces of Friedrich Wilhelm II",
+      "pyramid": "Ice Chamber as Pyramid: Masonic symbolism – not just practical, but spiritually charged",
+      "temple": "Palace Kitchen as 'Sunken Temple': Architectural allusion to ancient mysteries",
+      "disclaimer": "Historic interpretations. Accessibility varies by structure."
+    },
+    "movement": {
+      "title": "Running & Yoga in the New Garden",
+      "description": "Flat ~4km loop – ideal for relaxed running. Quiet meadows away from main paths for yoga/mindfulness.",
+      "running": {
+        "title": "Running Route (GPX Download)",
+        "route": "New Garden Loop ~4.0 km (flat)"
+      },
+      "yoga": {
+        "title": "Yoga & Mindfulness",
+        "tip1": "Equipment: Mat robust (meadows can be damp), layered clothing for morning chill",
+        "tip2": "Time window: Early morning = quieter & cooler, fewer visitors",
+        "tip3": "Spots: Quiet level meadows away from main paths – stay on permitted areas"
+      }
+    }
+  },
+  "enthusiasts": {
+    "title": "For Enthusiasts",
+    "subtitle": "Niche experiences for photography, running, history and more – discover the parks from new perspectives.",
+    "photography": {
+      "title": "📷 Photography & Light",
+      "description": "Light matrices, composition tips and optimal times of day for all three parks. From telephoto compression to long exposure.",
+      "button": "Photo Guides"
+    },
+    "running": {
+      "title": "🏃 Running & Movement",
+      "description": "GPS tracks to download: 4.5–7.7 km hilly routes in Babelsberg, 4 km flat loop in New Garden. Plus yoga tips.",
+      "button": "Routes & GPX"
+    },
+    "geocaching": {
+      "title": "🎯 Geocaching",
+      "description": "Multi-caches 'Park Babelsberg 01/02' lead to hidden spots. High muggle density – log discreetly!",
+      "button": "Cache Info"
+    },
+    "history": {
+      "title": "🕵️ History & Espionage",
+      "description": "Glienicke Bridge exchange history, KGB 'Forbidden City' trail with 14 stations, story walks bookable.",
+      "button": "History Trails"
+    },
+    "esoteric": {
+      "title": "🔮 Esoteric & Hidden",
+      "description": "Masonic pyramid, sunken temple, disguised castles – historic curiosities with spiritual significance.",
+      "button": "Hidden Gems"
+    }
   }
 }

@@ -295,6 +295,86 @@
     </div>
   </section>
 
+  <!-- Fotografie-Spots (Hybrid: Statischer Intro + Dynamische Cards) -->
+  <section id="photography" class="section">
+    <h2>📷 Die besten Foto-Spots im Park Babelsberg</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
+      Park Babelsberg bietet spektakuläre Motive für Landschafts- und Architekturfotografie.
+      Von der 360°-Aussicht am Flatowturm über malerische Uferwege bis zum neugotischen Schloss –
+      hier findest du die besten Spots mit <strong>Saison-Empfehlungen</strong> und praktischen Tipps zu Tageszeiten und Equipment.
+      <strong>Wichtig:</strong> Drohnen sind verboten, Wegegebot beachten!
+    </p>
+
+    <!-- Dynamic Photography Spots Cards (loaded via JS) -->
+    <div id="photo-spots-container" style="min-height: 300px;">
+      <p style="text-align: center; color: var(--text-muted); padding: var(--space-6);">Lade Foto-Spots...</p>
+    </div>
+  </section>
+
+  <!-- AdSense Unit: Between Photography & Geocaching -->
+  <div style="margin: var(--space-8) 0; text-align: center;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-fb+5w+4e-db+86"
+         data-ad-client="ca-pub-1712273263687132"
+         data-ad-slot="1234567890"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- NEW: Hidden Gems -->
+  <div class="hidden-gems">
+    <h3 data-i18n="babelsberg.hiddenGems.title">Verborgene Schätze</h3>
+    <ul>
+      <li data-i18n="babelsberg.hiddenGems.dampfmaschine">
+        <strong>Dampfmaschinenhaus:</strong> Als "normannische Burg" getarnt – Ingenieurskunst für Schloss-Fontäne,
+        nicht Verteidigung
+      </li>
+      <li data-i18n="babelsberg.hiddenGems.gerichtslaube">
+        <strong>Gerichtslaube:</strong> Mittelalterliches Berliner Rathaus-Fragment (13. Jh.),
+        1871 als "Teehaus-Kuriosum" hierher versetzt
+      </li>
+    </ul>
+    <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: var(--space-3); font-style: italic;"
+       data-i18n="babelsberg.hiddenGems.disclaimer">
+      Historische Besonderheiten. Aktuelle Zugänglichkeit bitte vor Ort prüfen.
+    </p>
+  </div>
+
+  <!-- Geocaching (Hybrid: Statischer Intro + Dynamische Cards) -->
+  <section id="geocaching" class="section">
+    <h2>🎯 Geocaching im Park Babelsberg</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
+      Park Babelsberg ist ein beliebter Geocaching-Hotspot mit mehreren Multi-Caches,
+      die dich zu den schönsten Orten des Parks führen. Die Caches kombinieren Rätsel, Geschichte und Natur.
+      <strong>Beste Zeit:</strong> Herbst (weniger Besucher/Muggel).
+      Bitte respektiere die UNESCO-Welterbe-Regelungen und bleibe auf den Wegen!
+    </p>
+
+    <!-- Dynamic Geocache Cards (loaded via JS) -->
+    <div id="geocaches-container" style="min-height: 300px;">
+      <p style="text-align: center; color: var(--text-muted); padding: var(--space-6);">Lade Geocaches...</p>
+    </div>
+  </section>
+
+  <!-- Laufrouten (Hybrid: Statischer Intro + Dynamische Cards) -->
+  <section id="running" class="section">
+    <h2>🏃 Laufen im Park Babelsberg</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
+      Park Babelsberg bietet hügelige Laufstrecken mit 120-180m Höhenmeter – perfekt für Intervall- und Ausdauertraining.
+      Von der entspannten 4,5km-Runde bis zur anspruchsvollen 7,7km-Tour mit allen Highlights.
+      Alle Routen mit <strong>GPX-Download</strong> und <strong>Saison-Empfehlungen</strong>.
+      <strong>Wichtig:</strong> Nur asphaltierte Hauptwege nutzen (Wegegebot)!
+    </p>
+
+    <!-- Dynamic Running Routes Cards (loaded via JS) -->
+    <div id="running-routes-container" style="min-height: 300px;">
+      <p style="text-align: center; color: var(--text-muted); padding: var(--space-6);">Lade Laufrouten...</p>
+    </div>
+  </section>
+
   <!-- AdSense Ad Unit -->
   <section class="section" style="padding: var(--space-4) 0;">
     <div style="max-width: 728px; margin: 0 auto;">
@@ -323,7 +403,17 @@
     </div>
   </section>
 
-  <footer style="margin-top: var(--space-10); padding-top: var(--space-6); border-top: 1px solid var(--border);">
+  <!-- Rule Footer with SPSG Regulations -->
+  <footer class="rule-footer">
+    <small data-i18n="footer.rules">
+      <strong>Stand: 2025-10-31</strong> •
+      <strong>SPSG-Parkordnung:</strong> Wegegebot beachten • Öffnung 8:00 Uhr bis Dämmerung •
+      Private Foto/Film außen mit Stativ/Blitz erlaubt • Kommerzielle Nutzung genehmigungspflichtig •
+      <strong>Drohnen strikt verboten</strong>
+    </small>
+  </footer>
+
+  <footer style="margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--border);">
     <div style="text-align: center;">
       <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
         © 2025 Park Babelsberg Info
@@ -336,6 +426,28 @@
     </div>
   </footer>
 </main>
+
+<!-- Enthusiasts Renderer Script -->
+<script src="/park-babelsberg/assets/enthusiasts-renderer.js"></script>
+<script>
+  // Load dynamic content when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    // Render Photography Spots (Park Babelsberg only)
+    if (window.EnthusiastsRenderer && document.getElementById('photo-spots-container')) {
+      window.EnthusiastsRenderer.renderPhotographySpots('photo-spots-container', 'babelsberg');
+    }
+
+    // Render Geocaches
+    if (window.EnthusiastsRenderer && document.getElementById('geocaches-container')) {
+      window.EnthusiastsRenderer.renderGeocaches('geocaches-container');
+    }
+
+    // Render Running Routes (Park Babelsberg, type: running)
+    if (window.EnthusiastsRenderer && document.getElementById('running-routes-container')) {
+      window.EnthusiastsRenderer.renderRoutes('running-routes-container', 'babelsberg', 'running');
+    }
+  });
+</script>
 
 </body>
 </html>

@@ -215,6 +215,80 @@
     </div>
   </section>
 
+  <!-- Fotografie-Spots (Hybrid: Statischer Intro + Dynamische Cards) -->
+  <section id="photography" class="section">
+    <h2>📷 Die besten Foto-Spots im Neuen Garten</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
+      Der Neue Garten am Heiligen See bietet klassizistische Architektur und Wasser-Spiegelungen.
+      Das Marmorpalais glänzt im Morgenlicht, Cecilienhof zeigt bei Nebel seine Tudor-Texturen.
+      Perfekt für Architektur- und Naturfotografie mit <strong>Saison-Empfehlungen</strong>.
+      <strong>Wichtig:</strong> Drohnen verboten, Wegegebot beachten!
+    </p>
+
+    <!-- Dynamic Photography Spots Cards (loaded via JS) -->
+    <div id="photo-spots-container-ng" style="min-height: 300px;">
+      <p style="text-align: center; color: var(--text-muted); padding: var(--space-6);">Lade Foto-Spots...</p>
+    </div>
+  </section>
+
+  <!-- AdSense Unit: Between Photography & History Trail -->
+  <div style="margin: var(--space-8) 0; text-align: center;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-fb+5w+4e-db+86"
+         data-ad-client="ca-pub-1712273263687132"
+         data-ad-slot="1234567891"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- NEW: Forbidden City History Trail -->
+  <section class="section geocaching">
+    <h2 data-i18n="neuerGarten.history.title">Geschichtsweg "Verbotene Stadt" (2,5 km / 14 Stationen)</h2>
+    <p data-i18n="neuerGarten.history.description">
+      KGB-Sperrzone ab 1945 – sowjetische Militärstadt mitten in Potsdam.
+      <strong>Gedenkstätte Leistikowstraße 1:</strong> Authentische Zellen des sowjetischen Geheimdienstes.
+    </p>
+    <div class="warning" data-i18n="neuerGarten.history.warning">
+      ℹ️ Respektvoller Besuch empfohlen. Hinweise vor Ort beachten. Führungen buchbar über Gedenkstätte.
+    </div>
+  </section>
+
+  <!-- NEW: Esoteric Traces -->
+  <div id="esoteric" class="hidden-gems">
+    <h3 data-i18n="neuerGarten.esoteric.title">Esoterische Spuren Friedrich Wilhelms II.</h3>
+    <ul>
+      <li data-i18n="neuerGarten.esoteric.pyramid">
+        <strong>Eiskammer als Pyramide:</strong> Freimaurerische Symbolik – nicht nur praktisch, sondern spirituell aufgeladen
+      </li>
+      <li data-i18n="neuerGarten.esoteric.temple">
+        <strong>Palastküche als "versunkener Tempel":</strong> Architektonische Anspielung auf antike Mysterien
+      </li>
+    </ul>
+    <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: var(--space-3); font-style: italic;"
+       data-i18n="neuerGarten.esoteric.disclaimer">
+      Historische Interpretationen. Zugänglichkeit variiert je nach Bauwerk.
+    </p>
+  </div>
+
+  <!-- Laufen & Yoga (Hybrid: Statischer Intro + Dynamische Cards) -->
+  <section id="movement" class="section">
+    <h2>🏃 Laufen & Yoga im Neuen Garten</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
+      Der Neue Garten bietet eine flache 4km-Laufrunde am Heiligen See – perfekt für entspannte Läufe und Anfänger.
+      Ruhige Wiesen abseits der Hauptwege laden zu Yoga und Achtsamkeitsübungen ein.
+      Mit <strong>GPX-Download</strong>, <strong>Saison-Tipps</strong> und konkreten Yoga-Spot-Empfehlungen.
+      <strong>Beste Zeit:</strong> Früh morgens (6-8 Uhr) für Ruhe und kühle Temperaturen!
+    </p>
+
+    <!-- Dynamic Running & Yoga Routes Cards (loaded via JS) -->
+    <div id="movement-routes-container-ng" style="min-height: 300px;">
+      <p style="text-align: center; color: var(--text-muted); padding: var(--space-6);">Lade Routen...</p>
+    </div>
+  </section>
+
   <!-- Call to Action -->
   <section class="section" style="background: linear-gradient(135deg, var(--success), var(--accent-secondary)); padding: var(--space-8); border-radius: var(--radius-xl); text-align: center;">
     <h2 style="color: var(--text-inverse); margin-bottom: var(--space-3);">Entdecke den Neuen Garten</h2>
@@ -227,8 +301,18 @@
     </div>
   </section>
 
+  <!-- Rule Footer with SPSG Regulations -->
+  <footer class="rule-footer">
+    <small data-i18n="footer.rules">
+      <strong>Stand: 2025-10-31</strong> •
+      <strong>SPSG-Parkordnung:</strong> Wegegebot beachten • Öffnung 8:00 Uhr bis Dämmerung •
+      Private Foto/Film außen mit Stativ/Blitz erlaubt • Kommerzielle Nutzung genehmigungspflichtig •
+      <strong>Drohnen strikt verboten</strong>
+    </small>
+  </footer>
+
   <!-- Footer -->
-  <footer style="margin-top: var(--space-10); padding-top: var(--space-6); border-top: 1px solid var(--border);">
+  <footer style="margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--border);">
     <div style="text-align: center;">
       <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
         © 2025 Park Babelsberg Info
@@ -242,6 +326,23 @@
   </footer>
 
 </main>
+
+<!-- Enthusiasts Renderer Script -->
+<script src="/park-babelsberg/assets/enthusiasts-renderer.js"></script>
+<script>
+  // Load dynamic content when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    // Render Photography Spots (Neuer Garten only)
+    if (window.EnthusiastsRenderer && document.getElementById('photo-spots-container-ng')) {
+      window.EnthusiastsRenderer.renderPhotographySpots('photo-spots-container-ng', 'neuer-garten');
+    }
+
+    // Render Running & Yoga Routes (Neuer Garten, all types)
+    if (window.EnthusiastsRenderer && document.getElementById('movement-routes-container-ng')) {
+      window.EnthusiastsRenderer.renderRoutes('movement-routes-container-ng', 'neuer-garten', null);
+    }
+  });
+</script>
 
 </body>
 </html>
