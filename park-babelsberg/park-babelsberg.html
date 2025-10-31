@@ -22,6 +22,21 @@
 
 <link rel="stylesheet" href="assets/style.css">
 
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K409QD2YSJ');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1712273263687132" crossorigin="anonymous"></script>
+
+<!-- DSGVO-konformes Cookie-Consent-Management -->
+<script src="assets/cookie-consent.js"></script>
+
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
 {
@@ -446,6 +461,18 @@
     if (window.EnthusiastsRenderer && document.getElementById('running-routes-container')) {
       window.EnthusiastsRenderer.renderRoutes('running-routes-container', 'babelsberg', 'running');
     }
+  });
+</script>
+
+<!-- i18n System -->
+<script src="assets/i18n.js"></script>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  // Initialize Lucide icons after DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
   });
 </script>
 

@@ -7,6 +7,18 @@
 <meta name="description" content="Entdecke Park Glienicke in Potsdam: 116 Hektar Park im italienischen Stil mit Schloss Glienicke, Klosterhof und Casino. Westlich der Glienicker Brücke. UNESCO-Welterbe.">
 <link rel="stylesheet" href="assets/style.css">
 
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K409QD2YSJ');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1712273263687132" crossorigin="anonymous"></script>
+
 <!-- DSGVO-konformes Cookie-Consent-Management -->
 <script src="assets/cookie-consent.js"></script>
 
@@ -236,29 +248,35 @@
     </div>
   </section>
 
-  <!-- NEW: Photography Spots -->
-  <section class="section">
-    <h2 data-i18n="glienicke.photography.title">Fotospots im Fokus</h2>
-    <p data-i18n="glienicke.photography.intro" style="margin-bottom: var(--space-4); color: var(--text-secondary);">
-      Belvedere-Layering: Wasser–Brücke–Schloss mit Tele 135–200 mm. Nachmittagslicht warm.
-      <strong>Wegegebot, Drohnenverbot</strong>.
+  <!-- Fotografie-Spots (Hybrid: Statischer Intro + Dynamische Cards) -->
+  <section id="photography" class="section">
+    <h2>📷 Die besten Foto-Spots im Park Glienicke</h2>
+    <p style="margin-bottom: var(--space-4); color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">
+      Park Glienicke bietet spektakuläre Motive für Architekturfotografie und Landschaftsaufnahmen.
+      Die berühmte <strong>Glienicker Brücke</strong> ist ein ikonischer Fotospot, das <strong>Casino Glienicke</strong>
+      glänzt im klassizistischen Stil, und die <strong>Große Neugierde</strong> bietet Panoramablick über die Havel.
+      Hier findest du die besten Spots mit <strong>Saison-Empfehlungen</strong> und praktischen Tipps.
+      <strong>Wichtig:</strong> Drohnen sind verboten, Wegegebot beachten!
     </p>
 
-    <div class="photo-tips">
-      <h3 data-i18n="glienicke.photography.spots.title">Komposition & Perspektiven</h3>
-      <ul>
-        <li data-i18n="glienicke.photography.spots.casino">
-          <strong>Casino Glienicke:</strong> Arkaden-Rahmung + Spiegelungen bei Windstille – Symmetrie nutzen
-        </li>
-        <li data-i18n="glienicke.photography.spots.loggia">
-          <strong>Böttcherberg/Loggia Alexandra:</strong> Layering bis Schloss Babelsberg – Teleobjektiv verdichtet Landschaft
-        </li>
-        <li data-i18n="glienicke.photography.spots.stibadium">
-          <strong>Stibadium (Persius):</strong> Halbkreis-Teepavillon als Nischenmotiv – architektonische Details
-        </li>
-      </ul>
+    <!-- Dynamic Photography Spots Cards (loaded via JS) -->
+    <div id="photo-spots-container-gl" style="min-height: 300px;">
+      <p style="text-align: center; color: var(--text-muted); padding: var(--space-6);">Lade Foto-Spots...</p>
     </div>
   </section>
+
+  <!-- AdSense Unit: Between Photography & History -->
+  <div style="margin: var(--space-8) 0; text-align: center; min-height: 250px;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-fb+5w+4e-db+86"
+         data-ad-client="ca-pub-1712273263687132"
+         data-ad-slot="1234567890"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 
   <!-- NEW: Spy Bridge History & Curiosities -->
   <div id="history" class="hidden-gems">
@@ -342,6 +360,30 @@
   </footer>
 
 </main>
+
+<!-- Load Enthusiasts Renderer -->
+<script src="assets/enthusiasts-renderer.js"></script>
+<script>
+  // Initialize enthusiast content when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    // Load Photography Spots for Park Glienicke
+    if (window.EnthusiastsRenderer && document.getElementById('photo-spots-container-gl')) {
+      window.EnthusiastsRenderer.renderPhotographySpots('photo-spots-container-gl', 'glienicke');
+    }
+  });
+</script>
+
+<!-- i18n System -->
+<script src="assets/i18n.js"></script>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  // Initialize Lucide icons after DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
+  });
+</script>
 
 </body>
 </html>

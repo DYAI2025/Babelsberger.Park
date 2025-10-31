@@ -83,6 +83,34 @@
       "difficulty": "einfach",
       "coordinates": [52.4135, 13.0890],
       "image": "images/park-babelsberg/jagdschloss.jpeg"
+    },
+    {
+      "id": "casino-glienicke-arkaden",
+      "park": "glienicke",
+      "name": "Casino Glienicke - Säulenportikus",
+      "description": "Klassizistisches Hauptgebäude von Schinkel mit Säulenportikus. Italienische Villa-Architektur mit Terrassen zur Havel.",
+      "seasons": ["frühling", "sommer"],
+      "seasonLabels": "🌸 Frühling · ☀️ Sommer",
+      "bestTime": "Vormittags (9-11 Uhr) frontales Licht",
+      "equipment": "Standard-Zoom 24-70mm, Weitwinkel 16-35mm",
+      "tips": "Symmetrie nutzen. Führungen Sa/So 10-17 Uhr (April-Okt). Eintritt ca. 6€.",
+      "difficulty": "einfach",
+      "coordinates": [52.4130, 13.0925],
+      "image": "images/park-babelsberg/attractions/casino-glienicke.webp"
+    },
+    {
+      "id": "grosse-neugierde-panorama",
+      "park": "glienicke",
+      "name": "Große Neugierde - Havel-Panorama",
+      "description": "Aussichtspavillon von Schinkel am Havelufer. 270°-Panoramablick über Havel zur Pfaueninsel.",
+      "seasons": ["herbst", "winter"],
+      "seasonLabels": "🍂 Herbst · ❄️ Winter",
+      "bestTime": "Abends (16-18 Uhr) Golden Hour",
+      "equipment": "Weitwinkel 16-35mm für Panorama, Tele 70-200mm für Pfaueninsel",
+      "tips": "Klare Wintertage bieten beste Fernsicht. Pavillon frei zugänglich.",
+      "difficulty": "einfach",
+      "coordinates": [52.4138, 13.0905],
+      "image": "images/park-babelsberg/attractions/grosse-neugierde.webp"
     }
   ]
 }
