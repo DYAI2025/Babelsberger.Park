@@ -92,6 +92,13 @@
 
 </head>
 <body>
+
+<!-- Theme Toggle Button -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Dark Mode umschalten" title="Dark Mode umschalten">
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀️</span>
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+</button>
+
 <header class="header">
   <div class="hero" style="position: relative; overflow: hidden; border-radius: var(--radius-xl, 16px);">
     <img src="images/park-babelsberg/jagdschloss.jpeg"
@@ -857,6 +864,19 @@
   }
 </style>
 
+<!-- Theme Toggle Script - FOUC Prevention -->
+<script>
+(function() {
+  'use strict';
+  
+  // Prevent FOUC - apply theme before page renders
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', initialTheme);
+})();
+</script>
+
 <!-- Map Script -->
 <script>
 (function() {
@@ -936,6 +956,38 @@
       attribution: CONFIG.tileAttribution,
       maxZoom: CONFIG.maxZoom
     }).addTo(map);
+
+    // Add Park Babelsberg boundary
+    const parkBabelsbergBoundary = L.polygon([
+      [52.412, 13.067],  // Nordwest
+      [52.412, 13.105],  // Nordost
+      [52.390, 13.105],  // Südost
+      [52.390, 13.067]   // Südwest
+    ], {
+      color: '#228B22',  // Forest Green
+      fillColor: '#90EE90',  // Light Green
+      fillOpacity: 0.2,
+      weight: 2,
+      dashArray: '5, 5'
+    }).addTo(map);
+    
+    parkBabelsbergBoundary.bindPopup('<strong>Park Babelsberg</strong><br>UNESCO-Welterbe seit 1990');
+
+    // Add Neuer Garten boundary
+    const neuerGartenBoundary = L.polygon([
+      [52.395, 13.045],  // Nordwest
+      [52.395, 13.070],  // Nordost
+      [52.380, 13.070],  // Südost
+      [52.380, 13.045]   // Südwest
+    ], {
+      color: '#228B22',  // Forest Green
+      fillColor: '#98FB98',  // Pale Green
+      fillOpacity: 0.2,
+      weight: 2,
+      dashArray: '5, 5'
+    }).addTo(map);
+    
+    neuerGartenBoundary.bindPopup('<strong>Neuer Garten</strong><br>UNESCO-Welterbe seit 1990');
 
     // Add active clusters to map
     updateMapLayers();
@@ -1398,6 +1450,62 @@
   } else {
     initMap();
     loadAllData();
+  }
+})();
+</script>
+
+<!-- Theme Toggle Handler -->
+<script>
+(function() {
+  'use strict';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    if (!themeToggle) return;
+    
+    // Toggle handler
+    themeToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      
+      // Announce to screen readers
+      const announcement = `${newTheme === 'dark' ? 'Dunkler' : 'Heller'} Modus aktiviert`;
+      announceToScreenReader(announcement);
+      
+      // Update button title
+      themeToggle.setAttribute('title', 
+        newTheme === 'dark' ? 'Heller Modus aktivieren' : 'Dunkler Modus aktivieren'
+      );
+    });
+    
+    // Listen to system preference changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      // Only auto-switch if user hasn't manually set a preference
+      if (!localStorage.getItem('theme')) {
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      }
+    });
+    
+    // Set initial button title
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    themeToggle.setAttribute('title', 
+      currentTheme === 'dark' ? 'Heller Modus aktivieren' : 'Dunkler Modus aktivieren'
+    );
+  });
+  
+  // Screen reader announcement
+  function announceToScreenReader(message) {
+    const announcement = document.createElement('div');
+    announcement.setAttribute('role', 'status');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.className = 'sr-only';
+    announcement.textContent = message;
+    document.body.appendChild(announcement);
+    setTimeout(() => announcement.remove(), 1000);
   }
 })();
 </script>

@@ -73,6 +73,97 @@
   --container-padding: var(--space-4);
 }
 
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+[data-theme="dark"] {
+  /* Backgrounds - Inverted for dark mode */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --bg-accent: #1e3a5f;
+  
+  /* Text - Light colors for dark background */
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+  --text-inverse: #0f172a;
+  
+  /* Accent Colors - Brighter for dark mode */
+  --accent-primary: #38bdf8;
+  --accent-secondary: #22d3ee;
+  --accent-dark: #0ea5e9;
+  --accent-light: #7dd3fc;
+  
+  /* Status Colors - Adjusted for dark mode */
+  --success: #34d399;
+  --warning: #fbbf24;
+  --error: #f87171;
+  
+  /* Borders - Lighter for dark mode */
+  --border-light: #334155;
+  --border-medium: #475569;
+  
+  /* Overlays - Darker for dark mode */
+  --overlay-dark: rgba(15, 23, 42, 0.85);
+  --glass-bg: rgba(15, 23, 42, 0.9);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* Shadows - Stronger for dark mode */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+/* System Preference Detection */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Backgrounds */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --bg-accent: #1e3a5f;
+    
+    /* Text */
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-light: #64748b;
+    --text-inverse: #0f172a;
+    
+    /* Accent Colors */
+    --accent-primary: #38bdf8;
+    --accent-secondary: #22d3ee;
+    --accent-dark: #0ea5e9;
+    --accent-light: #7dd3fc;
+    
+    /* Status Colors */
+    --success: #34d399;
+    --warning: #fbbf24;
+    --error: #f87171;
+    
+    /* Borders */
+    --border-light: #334155;
+    --border-medium: #475569;
+    
+    /* Overlays */
+    --overlay-dark: rgba(15, 23, 42, 0.85);
+    --glass-bg: rgba(15, 23, 42, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    
+    /* Shadows */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.7);
+    --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.8);
+  }
+}
+
 /* Reset & Base */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -839,10 +930,197 @@ footer {
   line-height: 1.7;
 }
 
+/* ============================================
+   DARK MODE SPECIFIC ADJUSTMENTS
+   ============================================ */
+
+/* Hero Image - Stronger overlay in dark mode */
+[data-theme="dark"] .hero::before {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.7) 0%,
+    rgba(15, 23, 42, 0.5) 50%,
+    rgba(15, 23, 42, 0.8) 100%
+  ) !important;
+}
+
+/* Cards - Better contrast in dark mode */
+[data-theme="dark"] .card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+[data-theme="dark"] .card-areal:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+[data-theme="dark"] .card-category:hover {
+  border-color: var(--accent-primary);
+  background: var(--bg-tertiary);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+/* FAQ Items - Dark mode styling */
+[data-theme="dark"] .faq-item {
+  background: var(--bg-secondary);
+  border-color: var(--border-light);
+}
+
+[data-theme="dark"] .faq-item summary:hover {
+  background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .faq-item[open] {
+  border-color: var(--accent-primary);
+}
+
+/* Badges - Dark mode */
+[data-theme="dark"] .badge {
+  background: var(--bg-secondary);
+  border-color: var(--border-light);
+}
+
+[data-theme="dark"] .badge:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+/* Notice boxes - Dark mode */
+[data-theme="dark"] .notice {
+  background: var(--bg-secondary);
+  border-color: var(--border-light);
+}
+
+/* Info boxes - Dark mode */
+[data-theme="dark"] .info-box-success {
+  background: rgba(52, 211, 153, 0.1);
+  border-color: var(--success);
+}
+
+[data-theme="dark"] .info-box-warning {
+  background: rgba(251, 191, 36, 0.1);
+  border-color: var(--warning);
+}
+
+[data-theme="dark"] .info-box-error {
+  background: rgba(248, 113, 113, 0.1);
+  border-color: var(--error);
+}
+
+[data-theme="dark"] .info-box-info {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: var(--accent-primary);
+}
+
+/* Map - Dark mode tiles */
+[data-theme="dark"] .leaflet-tile {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+/* Focus visible - Dark mode */
+[data-theme="dark"] :focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+}
+
+/* ============================================
+   THEME TOGGLE BUTTON
+   ============================================ */
+
+.theme-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-xl);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-icon {
+  font-size: 28px;
+  position: absolute;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+/* Light mode - show moon */
+[data-theme="light"] .theme-icon-moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .theme-icon-sun {
+  opacity: 0;
+  transform: rotate(180deg) scale(0.5);
+}
+
+/* Dark mode - show sun */
+[data-theme="dark"] .theme-icon-sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+[data-theme="dark"] .theme-icon-moon {
+  opacity: 0;
+  transform: rotate(-180deg) scale(0.5);
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Smooth transitions for theme change */
+html {
+  transition: background-color 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* Responsive Design - Mobile First */
 @media (max-width: 768px) {
   :root {
     --container-padding: var(--space-3);
+  }
+  
+  .theme-toggle {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .theme-icon {
+    font-size: 24px;
   }
   
   .hero {
