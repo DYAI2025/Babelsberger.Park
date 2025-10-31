@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "title": "Park Babelsberg Potsdam – Practical Info, Toilets, Paths & Highlights",
+    "description": "All practical information for your visit: Where are the toilets? Which paths are accessible? Real photos show what to expect. For families, seniors, dog owners.",
+    "keywords": "park babelsberg toilets, wc park babelsberg, restaurants park babelsberg, parking park babelsberg, neuer garten potsdam toilets, schloss babelsberg gastronomy, potsdam park toilet finder, park babelsberg map"
+  },
+  "hero": {
+    "title": "Parks and Palaces in Potsdam-Babelsberg",
+    "subtitle": "Culture, Nature and Recreation on the Banks of the Havel",
+    "lead": "Discover the UNESCO World Heritage parks and cultural monuments on the banks of the Havel River. With practical information about locations, directions and current conditions on site."
+  },
+  "nav": {
+    "areale": "The 4 Areas",
+    "finder": "Location Finder",
+    "categories": "Categories",
+    "arrival": "Getting Here",
+    "faq": "FAQ"
+  },
+  "areale": {
+    "title": "The 4 Areas – One Landscape, Four Experiences",
+    "subtitle": "From historic parkland to royal palace – discover the connected UNESCO World Heritage areas on the banks of the Havel.",
+    "label": "Area",
+    "mapButton": "Map View",
+    "areal1": {
+      "title": "Park Babelsberg",
+      "description": "The 124-hectare English landscape park on the banks of the Havel is a masterpiece of garden art. UNESCO World Heritage Site since 1990."
+    },
+    "areal2": {
+      "title": "Babelsberg Palace",
+      "description": "The neo-Gothic summer palace of Emperor Wilhelm I majestically overlooks the Havel. Built 1833-1849 to designs by Karl Friedrich Schinkel."
+    },
+    "areal3": {
+      "title": "New Garden",
+      "description": "An early masterpiece of landscape design on the Heiliger See. Created from 1787 for Friedrich Wilhelm II. The Potsdam Conference took place here in 1945."
+    },
+    "areal4": {
+      "title": "Park Glienicke",
+      "description": "The southernmost part of the UNESCO World Heritage landscape at the Glienicke Bridge. A hidden gem with Italian-inspired architecture."
+    }
+  },
+  "finder": {
+    "title": "Find What You Need",
+    "subtitle": "Interactive map with toilets, restaurants, parking and public transport stops. With location navigation and live timetable information.",
+    "wc": "Toilets",
+    "gastro": "Dining",
+    "parking": "Parking",
+    "transit": "Transit",
+    "subfilter": {
+      "restaurant": "Restaurant",
+      "cafe": "Café",
+      "fastFood": "Fast Food",
+      "bar": "Bar",
+      "pub": "Pub",
+      "iceCream": "Ice Cream",
+      "biergarten": "Beer Garden"
+    },
+    "controls": {
+      "locate": "Use My Location",
+      "nearestWc": "Nearest Toilet",
+      "nearestGastro": "Nearest Restaurant",
+      "nearestParking": "Nearest Parking"
+    },
+    "legend": {
+      "title": "Legend & Data Sources",
+      "wc": "Toilets: 🟢 Public · 🟡 Customers Only · 💰 Fee Required",
+      "gastro": "Dining: 🍽️ Restaurant · ☕ Café · 🍔 Fast Food · 🍺 Bar/Pub · 🍦 Ice Cream · 🌳 Beer Garden",
+      "parking": "Parking: 🅿️ Public · 💰 Fee Required · 🔒 Private · 🏢 Parking Garage · 🚲 Bicycle",
+      "transit": "Transit: 🚍 Bus & Tram Stops · 🕐 Timetable Info via VBB",
+      "data": "Data: © OpenStreetMap Contributors (ODbL) · Navigation: Google Maps"
+    }
+  },
+  "categories": {
+    "title": "Explore by Category",
+    "subtitle": "Quickly find what you're looking for – from attractions to practical services.",
+    "castles": {
+      "title": "Palaces & Buildings",
+      "count": "8 Historic Sites",
+      "description": "Neo-Gothic palaces, observation towers and historic buildings from different eras.",
+      "button": "View All"
+    },
+    "gastro": {
+      "title": "Dining",
+      "count": "303 Locations",
+      "description": "Restaurants, cafés, snack bars and beer gardens within walking distance of the park.",
+      "button": "View All"
+    },
+    "practical": {
+      "title": "Practical",
+      "count": "Toilets, Parking, Transit",
+      "description": "Toilets, parking and public transport with live data.",
+      "button": "Show on Map"
+    },
+    "nature": {
+      "title": "Nature & Paths",
+      "count": "Walking Paths & Lawns",
+      "description": "Scenic riverside paths, lawns and nature experiences in the park.",
+      "button": "Explore"
+    },
+    "arrival": {
+      "title": "Getting Here & Parking",
+      "count": "1200+ Parking Spaces",
+      "description": "All information about directions, parking and public transport.",
+      "button": "Learn More"
+    },
+    "rules": {
+      "title": "Rules & Regulations",
+      "count": "Park Rules",
+      "description": "What's allowed? Cycling, picnicking, swimming and more.",
+      "button": "View Comparison"
+    }
+  },
+  "highlights": {
+    "title": "The Most Beautiful Places",
+    "subtitle": "Discover the historic buildings and landscape highlights in the UNESCO World Heritage Park Babelsberg.",
+    "schloss": {
+      "title": "Babelsberg Palace",
+      "description": "Neo-Gothic summer palace of Emperor Wilhelm I. Built 1833-1849 by Schinkel, Persius and Strack. UNESCO World Heritage Site since 1990.",
+      "button": "Learn More"
+    },
+    "flatow": {
+      "title": "Flatow Tower",
+      "description": "46m high observation tower with 360° panorama over Potsdam. Built 1853-1856. Open May–October, Sat/Sun 10am-5:30pm.",
+      "button": "Learn More"
+    },
+    "uferweg": {
+      "title": "North Riverside Path",
+      "description": "Scenic walking path with open panoramic views over the Tiefer See. Perfect for relaxing, photography and enjoying sunsets.",
+      "button": "Learn More"
+    },
+    "matrosenhaus": {
+      "title": "Sailor's House",
+      "description": "Historic boathouse on the Havel riverbank from the 19th century. Now an event location with romantic water views.",
+      "button": "Learn More"
+    }
+  },
+  "arrival": {
+    "title": "Getting Here & Parking",
+    "subtitle": "The best way to get to Park Babelsberg – by car, public transport or bicycle.",
+    "car": {
+      "title": "By Car",
+      "mainParking": "Main Parking \"Am Neuen Garten\"",
+      "gps": "GPS: 52.419083, 13.071547",
+      "capacity": "Capacity: approx. 50 spaces",
+      "distance": "Distance to palace: 1.2 km (15 min walk)",
+      "warning": "Often full on weekends from 11am",
+      "warningTip": "arrive early recommended!",
+      "button": "All Parking on Map"
+    },
+    "transit": {
+      "title": "By Public Transport (Recommended!)",
+      "bus694": "Bus 694: Stop \"Park Babelsberg\" (directly at entrance)",
+      "bus690": "Bus 690: Stop \"Rathaus Babelsberg\" (800m walk)",
+      "tram93": "Tram 93: Stop \"Lutherplatz\" (1.2 km walk)",
+      "benefit": "Climate-friendly and stress-free",
+      "benefitDetail": "no parking search! Live departure times available on our map.",
+      "button": "Live Timetable"
+    },
+    "tips": {
+      "title": "Parking Tips for Drivers",
+      "tip1": "Tip 1: Weekend visitors should arrive before 10am or switch to public transport.",
+      "tip2": "Tip 2: Over 1200 additional parking spaces in the area (see map above).",
+      "tip3": "Tip 3: Park & Ride: Parking at Griebnitzsee S-Bahn station (free), then 15 min walk."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers to the most important questions about your visit.",
+    "q1": {
+      "question": "Where can I find toilets in the park?",
+      "answer": "Public toilets are signposted at the main entrances. Use our Location Finder to find the nearest toilet. Some require a fee (approx. €0.50), others are free."
+    },
+    "q2": {
+      "question": "Is the park accessible?",
+      "answer": "The paved main paths are easily accessible for wheelchairs and strollers. Some nature trails have inclines and are less suitable. The Flatow Tower is not accessible (only accessible via stairs)."
+    },
+    "q3": {
+      "question": "Can I grill or picnic in the park?",
+      "answer": "Picnicking is allowed on the lawns. Grilling is prohibited throughout the park (fire safety). Please take your trash with you or dispose of it in the provided bins."
+    },
+    "q4": {
+      "question": "Can I cycle through the park?",
+      "answer": "Cycling is only allowed on paved main paths. Cycling is prohibited on hiking trails and nature paths. Follow signs on site. More details in our park regulations."
+    },
+    "q5": {
+      "question": "Are dogs allowed in the park?",
+      "answer": "Yes, dogs are allowed but must be kept on a leash. Please bring dog waste bags and dispose of them in the bins."
+    },
+    "q6": {
+      "question": "Can I swim in the Havel?",
+      "answer": "No, swimming in the Havel is prohibited (no lifeguard, current, boat traffic). Alternative swimming spots are available at Heiliger See in the New Garden."
+    },
+    "q7": {
+      "question": "Are there guided tours of the park?",
+      "answer": "Yes, the Prussian Palaces and Gardens Foundation offers regular tours. Dates and booking at www.spsg.de."
+    },
+    "q8": {
+      "question": "How long should I plan for a visit?",
+      "answer": "For a relaxed walk: 2-3 hours. With palace tour and Flatow Tower: 4-5 hours. For all 4 areas: full day trip recommended."
+    }
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "cookies": "Cookie Settings",
+    "copyright": "© 2025 Park Babelsberg Info · Data: OpenStreetMap Contributors (ODbL)"
+  }
+}

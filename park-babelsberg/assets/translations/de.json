@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "title": "Park Babelsberg Potsdam – Praktische Infos, Toiletten, Wege & Highlights",
+    "description": "Alle praktischen Infos für deinen Besuch: Wo sind Toiletten? Welche Wege sind barrierefrei? Echte Bilder zeigen, was dich erwartet. Für Familien, Senioren, Hundebesitzer.",
+    "keywords": "park babelsberg toiletten, wc park babelsberg, restaurants park babelsberg, parkplätze park babelsberg, neuer garten potsdam toiletten, schloss babelsberg gastronomie, potsdam park toiletten finden, park babelsberg karte"
+  },
+  "hero": {
+    "title": "Parks und Schlösser in Potsdam-Babelsberg",
+    "subtitle": "Kultur, Natur und Erholung am Ufer der Havel",
+    "lead": "Entdecken Sie die UNESCO-Welterbe-Parks und Kulturdenkmäler am Ufer der Havel. Mit praktischen Informationen zu Örtlichkeiten, Anfahrt und aktuellen Gegebenheiten vor Ort."
+  },
+  "nav": {
+    "areale": "Die 4 Areale",
+    "finder": "Location-Finder",
+    "categories": "Kategorien",
+    "arrival": "Anreise",
+    "faq": "FAQ"
+  },
+  "areale": {
+    "title": "Die 4 Areale – Eine Landschaft, vier Erlebnisse",
+    "subtitle": "Von der historischen Parkanlage bis zum königlichen Schloss – entdecke die verbundenen UNESCO-Welterbe-Areale am Ufer der Havel.",
+    "label": "Areal",
+    "mapButton": "Kartenansicht",
+    "areal1": {
+      "title": "Park Babelsberg",
+      "description": "Der 124 Hektar große englische Landschaftspark am Ufer der Havel ist ein Meisterwerk der Gartenkunst. Seit 1990 UNESCO-Welterbe."
+    },
+    "areal2": {
+      "title": "Schloss Babelsberg",
+      "description": "Das neugotische Sommerschloss von Kaiser Wilhelm I. thront majestätisch über der Havel. Erbaut 1833-1849 nach Entwürfen von Karl Friedrich Schinkel."
+    },
+    "areal3": {
+      "title": "Neuer Garten",
+      "description": "Ein frühes Meisterwerk der Landschaftsgestaltung am Heiligen See. Angelegt ab 1787 für Friedrich Wilhelm II. Hier fand 1945 die Potsdamer Konferenz statt."
+    },
+    "areal4": {
+      "title": "Park Glienicke",
+      "description": "Der südlichste Teil der UNESCO-Welterbe-Landschaft an der Glienicker Brücke. Ein verstecktes Juwel mit italienisch inspirierter Architektur."
+    }
+  },
+  "finder": {
+    "title": "Finde was du brauchst",
+    "subtitle": "Interaktive Karte mit WCs, Restaurants, Parkplätzen und ÖPNV-Haltestellen. Mit Standort-Navigation und Live-Fahrplanauskünften.",
+    "wc": "WC",
+    "gastro": "Gastronomie",
+    "parking": "Parkplätze",
+    "transit": "ÖPNV",
+    "subfilter": {
+      "restaurant": "Restaurant",
+      "cafe": "Café",
+      "fastFood": "Imbiss",
+      "bar": "Bar",
+      "pub": "Pub",
+      "iceCream": "Eiscafé",
+      "biergarten": "Biergarten"
+    },
+    "controls": {
+      "locate": "Standort nutzen",
+      "nearestWc": "Nächstes WC",
+      "nearestGastro": "Nächstes Restaurant",
+      "nearestParking": "Nächster Parkplatz"
+    },
+    "legend": {
+      "title": "Legende & Datenquellen",
+      "wc": "WC: 🟢 Öffentlich · 🟡 Nur Kunden · 💰 Kostenpflichtig",
+      "gastro": "Gastronomie: 🍽️ Restaurant · ☕ Café · 🍔 Imbiss · 🍺 Bar/Pub · 🍦 Eiscafé · 🌳 Biergarten",
+      "parking": "Parkplätze: 🅿️ Öffentlich · 💰 Kostenpflichtig · 🔒 Privat · 🏢 Parkhaus · 🚲 Fahrrad",
+      "transit": "ÖPNV: 🚍 Bus & Tram Haltestellen · 🕐 Fahrplanauskünfte via VBB",
+      "data": "Daten: © OpenStreetMap-Mitwirkende (ODbL) · Navigation: Google Maps"
+    }
+  },
+  "categories": {
+    "title": "Entdecke nach Kategorien",
+    "subtitle": "Finde schnell was du suchst – von Sehenswürdigkeiten bis zu praktischen Services.",
+    "castles": {
+      "title": "Schlösser & Bauwerke",
+      "count": "8 historische Orte",
+      "description": "Neugotische Schlösser, Aussichtstürme und historische Bauwerke aus verschiedenen Epochen.",
+      "button": "Alle ansehen"
+    },
+    "gastro": {
+      "title": "Gastronomie",
+      "count": "303 Locations",
+      "description": "Restaurants, Cafés, Imbisse und Biergärten in Fußnähe zum Park.",
+      "button": "Alle ansehen"
+    },
+    "practical": {
+      "title": "Praktisches",
+      "count": "WC, Parking, ÖPNV",
+      "description": "Toiletten, Parkplätze und öffentliche Verkehrsmittel mit Live-Daten.",
+      "button": "Auf Karte zeigen"
+    },
+    "nature": {
+      "title": "Natur & Wege",
+      "count": "Spazierwege & Wiesen",
+      "description": "Malerische Uferwege, Liegewiesen und Naturerlebnisse im Park.",
+      "button": "Entdecken"
+    },
+    "arrival": {
+      "title": "Anreise & Parken",
+      "count": "1200+ Parkplätze",
+      "description": "Alle Infos zu Anfahrt, Parkplätzen und öffentlichen Verkehrsmitteln.",
+      "button": "Mehr erfahren"
+    },
+    "rules": {
+      "title": "Regeln & Ordnung",
+      "count": "Parkordnung",
+      "description": "Was ist erlaubt? Radfahren, Picknicken, Baden und mehr.",
+      "button": "Vergleich ansehen"
+    }
+  },
+  "highlights": {
+    "title": "Die schönsten Orte",
+    "subtitle": "Entdecke die historischen Bauwerke und landschaftlichen Highlights im UNESCO-Welterbe Park Babelsberg.",
+    "schloss": {
+      "title": "Schloss Babelsberg",
+      "description": "Neugotisches Sommerschloss von Kaiser Wilhelm I. Erbaut 1833-1849 von Schinkel, Persius und Strack. UNESCO-Welterbe seit 1990.",
+      "button": "Mehr erfahren"
+    },
+    "flatow": {
+      "title": "Flatowturm",
+      "description": "46m hoher Aussichtsturm mit 360°-Panorama über Potsdam. Erbaut 1853-1856. Geöffnet Mai–Oktober, Sa/So 10-17:30 Uhr.",
+      "button": "Mehr erfahren"
+    },
+    "uferweg": {
+      "title": "Uferweg Nord",
+      "description": "Malerischer Spazierweg mit freiem Panoramablick über den Tiefen See. Perfekt zum Entspannen, Fotografieren und Sonnenuntergang genießen.",
+      "button": "Mehr erfahren"
+    },
+    "matrosenhaus": {
+      "title": "Matrosenhaus",
+      "description": "Historisches Bootshaus am Havelufer aus dem 19. Jahrhundert. Heute Event-Location mit romantischem Blick aufs Wasser.",
+      "button": "Mehr erfahren"
+    }
+  },
+  "arrival": {
+    "title": "Anreise & Parkplätze",
+    "subtitle": "So kommst du am besten zum Park Babelsberg – mit Auto, ÖPNV oder Fahrrad.",
+    "car": {
+      "title": "Mit dem Auto",
+      "mainParking": "Hauptparkplatz \"Am Neuen Garten\"",
+      "gps": "GPS: 52.419083, 13.071547",
+      "capacity": "Kapazität: ca. 50 Stellplätze",
+      "distance": "Entfernung zum Schloss: 1,2 km (15 Min. Fußweg)",
+      "warning": "An Wochenenden oft voll ab 11 Uhr",
+      "warningTip": "früh kommen empfohlen!",
+      "button": "Alle Parkplätze auf Karte"
+    },
+    "transit": {
+      "title": "Mit ÖPNV (Empfohlen!)",
+      "bus694": "Bus 694: Haltestelle \"Park Babelsberg\" (direkt am Eingang)",
+      "bus690": "Bus 690: Haltestelle \"Rathaus Babelsberg\" (800m Fußweg)",
+      "tram93": "Tram 93: Haltestelle \"Lutherplatz\" (1,2 km Fußweg)",
+      "benefit": "Klimafreundlich und stressfrei",
+      "benefitDetail": "keine Parkplatzsuche! Live-Abfahrtszeiten auf unserer Karte verfügbar.",
+      "button": "Live-Fahrplan"
+    },
+    "tips": {
+      "title": "Parktipps für Autofahrer",
+      "tip1": "Tipp 1: Wochenend-Besucher sollten vor 10 Uhr anreisen oder auf ÖPNV umsteigen.",
+      "tip2": "Tipp 2: Über 1200 weitere Parkplätze in der Umgebung (siehe Karte oben).",
+      "tip3": "Tipp 3: Park + Ride: Parkplatz am S-Bahnhof Griebnitzsee (kostenlos), dann 15 Min. Fußweg."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Schnelle Antworten auf die wichtigsten Fragen rund um deinen Besuch.",
+    "q1": {
+      "question": "Wo finde ich Toiletten im Park?",
+      "answer": "Öffentliche WCs sind an den Haupteingängen ausgeschildert. Nutze unseren Location-Finder um die nächste Toilette zu finden. Einige sind kostenpflichtig (ca. 0,50€), andere kostenlos."
+    },
+    "q2": {
+      "question": "Ist der Park barrierefrei?",
+      "answer": "Die asphaltierten Hauptwege sind gut befahrbar für Rollstühle und Kinderwagen. Einige Naturwege haben Steigungen und sind weniger geeignet. Der Flatowturm ist nicht barrierefrei (nur über Treppen erreichbar)."
+    },
+    "q3": {
+      "question": "Darf ich im Park grillen oder picknicken?",
+      "answer": "Picknicken ist auf den Liegewiesen erlaubt. Grillen ist im gesamten Park verboten (Brandschutz). Bitte Müll mitnehmen oder in den bereitgestellten Abfallbehältern entsorgen."
+    },
+    "q4": {
+      "question": "Kann ich mit dem Fahrrad durch den Park fahren?",
+      "answer": "Radfahren ist nur auf den asphaltierten Hauptwegen erlaubt. Auf Wanderwegen und Naturpfaden ist Radfahren verboten. Schilder vor Ort beachten. Mehr Details in unserer Parkordnung."
+    },
+    "q5": {
+      "question": "Sind Hunde im Park erlaubt?",
+      "answer": "Ja, Hunde sind erlaubt, müssen aber an der Leine geführt werden. Hundekotbeutel bitte mitnehmen und in den Abfallbehältern entsorgen."
+    },
+    "q6": {
+      "question": "Kann ich in der Havel schwimmen?",
+      "answer": "Nein, Schwimmen in der Havel ist verboten (keine Badeaufsicht, Strömung, Schiffsverkehr). Alternative Badestellen gibt es am Heiligen See im Neuen Garten."
+    },
+    "q7": {
+      "question": "Gibt es Führungen durch den Park?",
+      "answer": "Ja, die Stiftung Preußische Schlösser und Gärten bietet regelmäßig Führungen an. Termine und Buchung auf www.spsg.de."
+    },
+    "q8": {
+      "question": "Wie lange sollte ich für einen Besuch einplanen?",
+      "answer": "Für einen entspannten Spaziergang: 2-3 Stunden. Mit Schlossbesichtigung und Flatowturm: 4-5 Stunden. Für alle 4 Areale: Ganztagesausflug empfohlen."
+    }
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "cookies": "Cookie-Einstellungen",
+    "copyright": "© 2025 Park Babelsberg Info · Daten: OpenStreetMap-Mitwirkende (ODbL)"
+  }
+}

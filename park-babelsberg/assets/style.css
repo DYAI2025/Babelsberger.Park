@@ -1084,6 +1084,56 @@ footer {
   transform: rotate(-180deg) scale(0.5);
 }
 
+/* ============================================
+   LANGUAGE TOGGLE BUTTON
+   ============================================ */
+
+.lang-toggle {
+  position: fixed;
+  bottom: 92px; /* Above theme toggle (56px + 12px gap + 24px bottom) */
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-light);
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-primary);
+}
+
+.lang-toggle:active {
+  transform: scale(0.95);
+}
+
+.lang-icon {
+  font-size: 28px;
+  position: absolute;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.lang-icon-de {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.lang-icon-en {
+  opacity: 0;
+  transform: rotate(180deg) scale(0.5);
+  display: none;
+}
+
 /* Screen reader only */
 .sr-only {
   position: absolute;
@@ -1120,6 +1170,17 @@ body {
   }
   
   .theme-icon {
+    font-size: 24px;
+  }
+  
+  .lang-toggle {
+    bottom: 76px; /* Above theme toggle (48px + 12px gap + 16px bottom) */
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .lang-icon {
     font-size: 24px;
   }
   
