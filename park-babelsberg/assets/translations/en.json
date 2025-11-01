@@ -14,7 +14,8 @@
     "finder": "Location Finder",
     "categories": "Categories",
     "arrival": "Getting Here",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "wasser": "Water Activities"
   },
   "areale": {
     "title": "The 4 Areas – One Landscape, Four Experiences",
@@ -356,6 +357,89 @@
       "title": "🔮 Esoteric & Hidden",
       "description": "Masonic pyramid, sunken temple, disguised castles – historic curiosities with spiritual significance.",
       "button": "Hidden Gems"
+    }
+  },
+  "enthusiasts": {
+    "title": "For Enthusiasts",
+    "subtitle": "Niche experiences for photography, running, history and more – discover the parks from new perspectives.",
+    "photography": {
+      "title": "📷 Photography & Light",
+      "description": "Light matrices, composition tips and optimal times of day for all three parks. From telephoto compression to long exposure.",
+      "button": "Photo Guides"
+    },
+    "running": {
+      "title": "🏃 Running & Movement",
+      "description": "GPS tracks to download: 4.5–7.7 km hilly routes in Babelsberg, 4 km flat loop in New Garden. Plus yoga tips.",
+      "button": "Routes & GPX"
+    },
+    "geocaching": {
+      "title": "🎯 Geocaching",
+      "description": "Multi-caches 'Park Babelsberg 01/02' lead to hidden spots. High muggle density – log discreetly!",
+      "button": "Cache Info"
+    },
+    "history": {
+      "title": "🕵️ History & Espionage",
+      "description": "Glienicke Bridge exchange history, KGB 'Forbidden City' trail with 14 stations, story walks bookable.",
+      "button": "History Trails"
+    },
+    "esoteric": {
+      "title": "🔮 Esoteric & Hidden",
+      "description": "Masonic pyramid, sunken temple, disguised castles – historic curiosities with spiritual significance.",
+      "button": "Hidden Gems"
+    },
+    "social": {
+      "title": "☕ Social Hotspots Guide",
+      "description": "The parks as a \"third place\": youth culture at Heiliger See, Café Matschke as a link to the art scene, palace concerts as a cultural ritual. From autonomous zones to intellectual exchange and cultivated community events – the parks as a foundation of urban identity.",
+      "button": "Hidden Gems"
+    }
+  },
+  "wasser": {
+    "hero": {
+      "title": "The Havel from the Water",
+      "subtitle": "Rediscovering Potsdam's Park Landscape"
+    },
+    "intro": {
+      "title": "The Havel as a Stage",
+      "subtitle": "While most visitors explore Potsdam's park landscapes on foot, a completely new, almost magical perspective opens up from the water. The masterfully staged visual axes by Lenné and Pückler-Muskau were deliberately designed to unfold their full splendor from the water. Glide across the Havel in a canoe, SUP or on an excursion boat and experience how the castles and gardens present themselves as a perfectly composed shore landscape."
+    },
+    "aktiv": {
+      "title": "Active on the Water",
+      "subtitle": "For all those who want to explore the park landscape on their own, there are numerous opportunities to get active. Whether sporty in a kayak or relaxed on a SUP – Potsdam's waters are a paradise for paddlers.",
+      "kanu": {
+        "title": "Canoe & Kayak",
+        "description": "Rent a canoe or kayak and paddle along the shores of Park Babelsberg, the New Garden and Park Glienicke. Discover hidden bays and enjoy the tranquility on the water. Numerous rental stations in Potsdam offer a large selection of boats for beginners and advanced paddlers.",
+        "button": "Find rental stations"
+      },
+      "sup": {
+        "title": "Stand-Up-Paddling (SUP)",
+        "description": "Experience the parks from a SUP and enjoy a unique workout in the fresh air. The calm waters of the Havel are ideal for beginners. Some rental stations also offer guided SUP tours and yoga classes on the water.",
+        "button": "Find SUP rental"
+      }
+    },
+    "touren": {
+      "title": "Relaxed Tours",
+      "subtitle": "Sit back and enjoy the passing scenery on one of the numerous boat trips. Various shipping companies offer round trips that take you to the most beautiful places in the Potsdam park landscape.",
+      "weltkulturerbe": {
+        "title": "World Heritage Tour",
+        "description": "The 3-hour \"World Heritage Tour\" by the STERN+KREIS shipping company is a classic. It takes you past Babelsberg and Cecilienhof palaces, the Glienicke Bridge, Peacock Island and many other highlights. An audio guide in German and English explains the history and special features of the places.",
+        "button": "More about the World Heritage Tour"
+      }
+    },
+    "regeln": {
+      "title": "What you need to know",
+      "subtitle": "To make your trip on the water an unforgettable experience, you should observe a few things.",
+      "regeln": {
+        "title": "Rules & Safety",
+        "description": "Observe the applicable shipping rules and be considerate of other water sports enthusiasts and commercial shipping. Wear a life jacket and check the weather before you start."
+      },
+      "umwelt": {
+        "title": "Environmental Protection",
+        "description": "The shore areas of the parks are valuable habitats for many animal and plant species. Keep your distance from reed zones and overgrown shores and avoid noise. Take your rubbish with you."
+      },
+      "anstieg": {
+        "title": "Jetties & Breaks",
+        "description": "Use only the designated jetties and rest areas. Mooring on the banks of the parks is generally not permitted in order to protect the vegetation."
+      }
     }
   }
 }

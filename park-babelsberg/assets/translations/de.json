@@ -14,7 +14,8 @@
     "finder": "Location-Finder",
     "categories": "Kategorien",
     "arrival": "Anreise",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "wasser": "Wasseraktivitäten"
   },
   "areale": {
     "title": "Die 4 Areale – Eine Landschaft, vier Erlebnisse",
@@ -356,6 +357,84 @@
       "title": "🔮 Esoterik & Verborgenes",
       "description": "Freimaurerische Pyramide, versunkener Tempel, getarnte Burgen – historische Kuriositäten mit spiritueller Aufladung.",
       "button": "Hidden Gems"
+    }
+  },
+  "enthusiasts": {
+    "title": "Für Enthusiasten",
+    "subtitle": "Nischen-Erlebnisse für Fotografie, Laufen, Geschichte und mehr – entdecke die Parks aus neuen Perspektiven.",
+    "photography": {
+      "title": "📷 Fotografie & Licht",
+      "description": "Licht-Matrizen, Kompositions-Tipps und optimale Tageszeiten für alle drei Parks. Von Tele-Kompression bis Langzeitbelichtung.",
+      "button": "Foto-Guides"
+    },
+    "running": {
+      "title": "🏃 Laufen & Bewegung",
+      "description": "GPS-Tracks zum Download: 4,5–7,7 km hügelige Strecken in Babelsberg, 4 km flache Runde im Neuen Garten. Plus Yoga-Tipps.",
+      "button": "Routen & GPX"
+    },
+    "geocaching": {
+      "title": "🎯 Geocaching",
+      "description": "Multi-Caches 'Park Babelsberg 01/02' führen zu versteckten Spots. Hohe Muggeldichte – diskret loggen!",
+      "button": "Cache-Infos"
+    },
+    "history": {
+      "title": "🕵️ Geschichte & Spionage",
+      "description": "Glienicker Brücke Austausch-Historie, KGB 'Verbotene Stadt' Trail mit 14 Stationen, Story-Walks buchbar.",
+      "button": "Geschichtspfade"
+    },
+    "esoteric": {
+      "title": "🔮 Esoterik & Verborgenes",
+      "description": "Freimaurerische Pyramide, versunkener Tempel, getarnte Burgen – historische Kuriositäten mit spiritueller Aufladung.",
+    "button": "Hidden Gems"
+    }
+  },
+  "wasser": {
+    "hero": {
+      "title": "Die Havel vom Wasser aus",
+      "subtitle": "Potsdams Parklandschaft neu entdecken"
+    },
+    "intro": {
+      "title": "Die Havel als Bühne",
+      "subtitle": "Während die meisten Besucher die Potsdamer Parklandschaften zu Fuß erkunden, eröffnet sich vom Wasser aus eine völlig neue, fast magische Perspektive. Die von Lenné und Pückler-Muskau meisterhaft inszenierten Sichtachsen wurden bewusst so konzipiert, dass sie ihre volle Pracht vom Wasser aus entfalten. Gleiten Sie mit dem Kanu, SUP oder einem Ausflugsschiff über die Havel und erleben Sie, wie sich die Schlösser und Gärten als eine perfekt komponierte Uferlandschaft präsentieren."
+    },
+    "aktiv": {
+      "title": "Aktiv auf dem Wasser",
+      "subtitle": "Für alle, die die Parklandschaft auf eigene Faust erkunden möchten, bieten sich zahlreiche Möglichkeiten, aktiv zu werden. Ob sportlich im Kajak oder entspannt auf dem SUP – die Potsdamer Gewässer sind ein Paradies für Paddler.",
+      "kanu": {
+        "title": "Kanu & Kajak",
+        "description": "Mieten Sie ein Kanu oder Kajak und paddeln Sie entlang der Ufer von Park Babelsberg, dem Neuen Garten und Park Glienicke. Entdecken Sie versteckte Buchten und genießen Sie die Ruhe auf dem Wasser. Zahlreiche Verleihstationen in Potsdam bieten eine große Auswahl an Booten für Anfänger und Fortgeschrittene.",
+        "button": "Verleihstationen finden"
+      },
+      "sup": {
+        "title": "Stand-Up-Paddling (SUP)",
+        "description": "Erleben Sie die Parks vom SUP aus und genießen Sie ein einzigartiges Workout an der frischen Luft. Die ruhigen Gewässer der Havel sind ideal für Anfänger. Einige Verleihstationen bieten auch geführte SUP-Touren und Yoga-Kurse auf dem Wasser an.",
+        "button": "SUP-Verleih finden"
+      }
+    },
+    "touren": {
+      "title": "Entspannte Touren",
+      "subtitle": "Lehnen Sie sich zurück und genießen Sie die vorbeiziehende Landschaft bei einer der zahlreichen Schiffstouren. Verschiedene Reedereien bieten Rundfahrten an, die Sie zu den schönsten Orten der Potsdamer Parklandschaft bringen.",
+      "weltkulturerbe": {
+        "title": "Weltkulturerbefahrt",
+        "description": "Die 3-stündige \"Weltkulturerbefahrt\" der Reederei STERN+KREIS ist ein Klassiker. Sie führt vorbei an den Schlössern Babelsberg und Cecilienhof, der Glienicker Brücke, der Pfaueninsel und vielen weiteren Highlights. Ein Audioguide in Deutsch und Englisch erläutert die Geschichte und die Besonderheiten der Orte.",
+        "button": "Mehr zur Weltkulturerbefahrt"
+      }
+    },
+    "regeln": {
+      "title": "Was man wissen muss",
+      "subtitle": "Damit Ihr Ausflug aufs Wasser zu einem unvergesslichen Erlebnis wird, sollten Sie einige Dinge beachten.",
+      "regeln": {
+        "title": "Regeln & Sicherheit",
+        "description": "Beachten Sie die geltenden Schifffahrtsregeln und nehmen Sie Rücksicht auf andere Wassersportler und die Berufsschifffahrt. Tragen Sie eine Schwimmweste und informieren Sie sich über das Wetter, bevor Sie starten."
+      },
+      "umwelt": {
+        "title": "Umweltschutz",
+        "description": "Die Uferbereiche der Parks sind wertvolle Lebensräume für viele Tier- und Pflanzenarten. Halten Sie Abstand zu Schilfzonen und bewachsenen Ufern und vermeiden Sie Lärm. Nehmen Sie Ihren Müll wieder mit."
+      },
+      "anstieg": {
+        "title": "Anlegestellen & Pausen",
+        "description": "Nutzen Sie nur die ausgewiesenen Anlegestellen und Rastplätze. Das Anlegen an den Ufern der Parks ist in der Regel nicht gestattet, um die Vegetation zu schützen."
+      }
     }
   }
 }

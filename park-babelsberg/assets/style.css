@@ -408,7 +408,9 @@ main {
 
 /* Sections - Consistent Spacing */
 .section {
-  margin: var(--space-10) 0;
+  margin: var(--space-6) 0;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
 }
 
 .section:first-child {
