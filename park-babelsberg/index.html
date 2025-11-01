@@ -447,48 +447,109 @@
     </div>
   </section>
 
-  <!-- Für Enthusiasten - Niche Content -->
+  <!-- Spezialisierte Guides - Nische Content -->
   <section id="enthusiasts" class="section" style="background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
     <div style="max-width: var(--container-max); margin: 0 auto;">
       <div class="section-header">
-        <h2 data-i18n="enthusiasts.title">Für Enthusiasten</h2>
-        <p data-i18n="enthusiasts.subtitle">Nischen-Erlebnisse für Fotografie, Laufen, Geschichte und mehr – entdecke die Parks aus neuen Perspektiven.</p>
+        <h2>Für Enthusiasten – Die Parks als vielschichtiges Palimpsest</h2>
+        <p>Entdecke die Potsdamer Parks aus sechs einzigartigen Perspektiven: Von der Landschaftsfotografie über Geocaching und Sport bis zur Spurensuche im Kalten Krieg. Detaillierte Guides mit Personas, Community-Geschichten und professionellem Know-how – die Parks als lebendige Bühnen für zeitgenössische Praktiken.</p>
       </div>
 
-      <div class="grid-3">
-        <article class="card-category">
-          <div class="card-category-icon">📷</div>
-          <h3 data-i18n="enthusiasts.photography.title">📷 Fotografie & Licht</h3>
-          <p data-i18n="enthusiasts.photography.description">Licht-Matrizen, Kompositions-Tipps und optimale Tageszeiten für alle drei Parks. Von Tele-Kompression bis Langzeitbelichtung.</p>
-          <a href="/park-babelsberg/park-babelsberg.html#photography" class="btn" data-i18n="enthusiasts.photography.button">Foto-Guides</a>
+      <div class="grid-2" style="gap: var(--space-6);">
+        <article class="card" style="display: flex; flex-direction: column;">
+          <img src="images/park-babelsberg/jagdschloss.jpeg" alt="Landschaftsfotografie in den Parks" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-lg);">
+          <div style="flex: 1; display: flex; flex-direction: column; padding: var(--space-4) 0;">
+            <h3 style="margin-bottom: var(--space-2);">
+              <i data-lucide="camera" class="icon icon-sm" style="vertical-align: text-bottom; margin-right: 8px;"></i>
+              Landschaftsfotografie Guide
+            </h3>
+            <p style="margin-bottom: var(--space-4); color: var(--text-secondary); flex: 1;">
+              Professioneller Foto-Guide mit besten Spots, Licht-Timing-Analyse und Kompositions-Tipps.
+              Lennés Sichtachsen fotografisch interpretieren, rechtliche Rahmenbedingungen der SPSG,
+              Equipment-Empfehlungen (Teleobjektive für Kompression), HDR-Techniken und Schwarz-Weiß-Fotografie.
+            </p>
+            <a href="fotografie.html" class="btn" style="align-self: flex-start;">Zum Foto-Guide</a>
+          </div>
         </article>
 
-        <article class="card-category">
-          <div class="card-category-icon">🏃</div>
-          <h3 data-i18n="enthusiasts.running.title">🏃 Laufen & Bewegung</h3>
-          <p data-i18n="enthusiasts.running.description">GPS-Tracks zum Download: 4,5–7,7 km hügelige Strecken in Babelsberg, 4 km flache Runde im Neuen Garten. Plus Yoga-Tipps.</p>
-          <a href="/park-babelsberg/park-babelsberg.html#running" class="btn" data-i18n="enthusiasts.running.button">Routen & GPX</a>
+        <article class="card" style="display: flex; flex-direction: column;">
+          <img src="images/park-babelsberg/park_babelsberg_flatowturm.jpeg" alt="Geocaching in den Parks" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-lg);">
+          <div style="flex: 1; display: flex; flex-direction: column; padding: var(--space-4) 0;">
+            <h3 style="margin-bottom: var(--space-2);">
+              <i data-lucide="map-pin" class="icon icon-sm" style="vertical-align: text-bottom; margin-right: 8px;"></i>
+              Geocaching Guide
+            </h3>
+            <p style="margin-bottom: var(--space-4); color: var(--text-secondary); flex: 1;">
+              Digitale Schatzsuche im UNESCO-Welterbe: Multi-Caches (Park Babelsberg 01/02 mit 8 Stationen),
+              Mystery-Caches an der Glienicker Brücke, Adventure Labs. SPSG-Regeln, Muggel-Warnungen,
+              Community-Tipps und GPX-Downloads für Navigation.
+            </p>
+            <a href="geocaching.html" class="btn" style="align-self: flex-start;">Zum Geocaching-Guide</a>
+          </div>
         </article>
 
-        <article class="card-category">
-          <div class="card-category-icon">🎯</div>
-          <h3 data-i18n="enthusiasts.geocaching.title">🎯 Geocaching</h3>
-          <p data-i18n="enthusiasts.geocaching.description">Multi-Caches 'Park Babelsberg 01/02' führen zu versteckten Spots. Hohe Muggeldichte – diskret loggen!</p>
-          <a href="/park-babelsberg/park-babelsberg.html#geocaching" class="btn" data-i18n="enthusiasts.geocaching.button">Cache-Infos</a>
+        <article class="card" style="display: flex; flex-direction: column;">
+          <img src="images/park-babelsberg/Uferweg_nord.jpeg" alt="Laufen in den Parks" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-lg);">
+          <div style="flex: 1; display: flex; flex-direction: column; padding: var(--space-4) 0;">
+            <h3 style="margin-bottom: var(--space-2);">
+              <i data-lucide="activity" class="icon icon-sm" style="vertical-align: text-bottom; margin-right: 8px;"></i>
+              Laufen & Jogging Guide
+            </h3>
+            <p style="margin-bottom: var(--space-4); color: var(--text-secondary); flex: 1;">
+              Kuratierte Laufrouten mit präzisen Distanzen, Höhenprofilen und GPX-Downloads.
+              Park Babelsberg: Hügelige 4,5-7,7 km Strecken (120m Höhenmeter). Neuer Garten: Flache 4 km Runde.
+              Beste Zeiten, Untergrund-Infos, Trainingstipps für Intervall- und Tempoläufe.
+            </p>
+            <a href="laufen.html" class="btn" style="align-self: flex-start;">Zum Lauf-Guide</a>
+          </div>
         </article>
 
-        <article class="card-category">
-          <div class="card-category-icon">🕵️</div>
-          <h3 data-i18n="enthusiasts.history.title">🕵️ Geschichte & Spionage</h3>
-          <p data-i18n="enthusiasts.history.description">Glienicker Brücke Austausch-Historie, KGB 'Verbotene Stadt' Trail mit 14 Stationen, Story-Walks buchbar.</p>
-          <a href="/park-babelsberg/park-glienicke.html#history" class="btn" data-i18n="enthusiasts.history.button">Geschichtspfade</a>
+        <article class="card" style="display: flex; flex-direction: column;">
+          <img src="images/park-babelsberg/liegewiesen.jpeg" alt="Yoga in den Parks" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-lg);">
+          <div style="flex: 1; display: flex; flex-direction: column; padding: var(--space-4) 0;">
+            <h3 style="margin-bottom: var(--space-2);">
+              <i data-lucide="flower-2" class="icon icon-sm" style="vertical-align: text-bottom; margin-right: 8px;"></i>
+              Yoga & Achtsamkeit Guide
+            </h3>
+            <p style="margin-bottom: var(--space-4); color: var(--text-secondary); flex: 1;">
+              Spirituelle Kraftorte für Outdoor-Yoga und Achtsamkeits-Spaziergänge.
+              Ruhige Wiesen abseits der Hauptwege, praktische Tipps für Praxis im Freien (Unterlage, Kleidung),
+              "Bewegte Meditation" (wöchentlich Freitag 8:30), Lennés Sichtachsen als Meditations-Pfade.
+            </p>
+            <a href="yoga.html" class="btn" style="align-self: flex-start;">Zum Yoga-Guide</a>
+          </div>
         </article>
 
-        <article class="card-category">
-          <div class="card-category-icon">🔮</div>
-          <h3 data-i18n="enthusiasts.esoteric.title">🔮 Esoterik & Verborgenes</h3>
-          <p data-i18n="enthusiasts.esoteric.description">Freimaurerische Pyramide, versunkener Tempel, getarnte Burgen – historische Kuriositäten mit spiritueller Aufladung.</p>
-          <a href="/park-babelsberg/neuer-garten.html#esoteric" class="btn" data-i18n="enthusiasts.esoteric.button">Hidden Gems</a>
+        <article class="card" style="display: flex; flex-direction: column;">
+          <img src="images/park-babelsberg/jagdschloss.jpeg" alt="Geschichte & Architektur" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-lg);">
+          <div style="flex: 1; display: flex; flex-direction: column; padding: var(--space-4) 0;">
+            <h3 style="margin-bottom: var(--space-2);">
+              <i data-lucide="landmark" class="icon icon-sm" style="vertical-align: text-bottom; margin-right: 8px;"></i>
+              Geschichte & Architektur Guide
+            </h3>
+            <p style="margin-bottom: var(--space-4); color: var(--text-secondary); flex: 1;">
+              Spurensuche im Kalten Krieg: Grenzstreifen-Relikte im Park Babelsberg, KGB-Gefängnis, Glienicker Brücke.
+              Architektonische Schätze: Dampfmaschinenhaus, Gerichtslaube, Freimaurersymbole im Neuen Garten.
+              Der "Raudensky-Coup" – Gärtner des Gedächtnisses. Die Parks als vielschichtige Palimpseste der Geschichte.
+            </p>
+            <a href="geschichte.html" class="btn" style="align-self: flex-start;">Zum Geschichte-Guide</a>
+          </div>
+        </article>
+
+        <article class="card" style="display: flex; flex-direction: column;">
+          <img src="images/park-babelsberg/liegewiesen.jpeg" alt="Soziale Treffpunkte" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-lg);">
+          <div style="flex: 1; display: flex; flex-direction: column; padding: var(--space-4) 0;">
+            <h3 style="margin-bottom: var(--space-2);">
+              <i data-lucide="coffee" class="icon icon-sm" style="vertical-align: text-bottom; margin-right: 8px;"></i>
+              Soziale Treffpunkte Guide
+            </h3>
+            <p style="margin-bottom: var(--space-4); color: var(--text-secondary); flex: 1;">
+              Die Parks als "dritter Ort": Jugendkultur am Heiligen See, Café Matschke als Scharnier zur Kunstszene,
+              Schlosskonzerte als kulturelles Ritual. Von autonomen Zonen über intellektuellen Austausch bis zu
+              kultivierten Community-Events – die Parks als Fundament urbaner Identität.
+            </p>
+            <a href="soziale-treffpunkte.html" class="btn" style="align-self: flex-start;">Zum Soziale-Orte-Guide</a>
+          </div>
         </article>
       </div>
     </div>
