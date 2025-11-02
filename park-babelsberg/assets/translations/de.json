@@ -10,12 +10,42 @@
     "lead": "Entdecken Sie die UNESCO-Welterbe-Parks und Kulturdenkmäler am Ufer der Havel. Mit praktischen Informationen zu Örtlichkeiten, Anfahrt und aktuellen Gegebenheiten vor Ort."
   },
   "nav": {
+    "funfacts": "Fun Facts",
     "areale": "Die 4 Areale",
     "finder": "Location-Finder",
     "categories": "Kategorien",
+    "enthusiasts": "Für Enthusiasten",
     "arrival": "Anreise",
     "faq": "FAQ",
     "wasser": "Wasseraktivitäten"
+  },
+  "funfacts": {
+    "title": "Wusstest du schon?",
+    "subtitle": "Faszinierende Fakten über die UNESCO-Welterbe-Parks in Potsdam",
+    "unesco": {
+      "title": "UNESCO-Welterbe",
+      "text": "Die Potsdamer Kulturlandschaft wurde 1990 in die UNESCO-Welterbeliste aufgenommen – zusammen mit Schloss Sanssouci."
+    },
+    "hectares": {
+      "title": "Hektar Parkfläche",
+      "text": "Der Park Babelsberg erstreckt sich über 124 Hektar – das entspricht etwa 174 Fußballfeldern!"
+    },
+    "kaiser": {
+      "title": "Kaiser Wilhelm I.",
+      "text": "Das Schloss Babelsberg war das Sommerschloss von Kaiser Wilhelm I. – erbaut von Karl Friedrich Schinkel."
+    },
+    "architects": {
+      "title": "Berühmte Architekten",
+      "text": "Schinkel, Persius und Strack – drei Architektur-Genies schufen gemeinsam das neugotische Meisterwerk."
+    },
+    "shoreline": {
+      "title": "Uferlinie",
+      "text": "Über 7 Kilometer malerische Uferwege entlang der Havel laden zum Spazieren und Verweilen ein."
+    },
+    "potsdam": {
+      "title": "Potsdamer Konferenz",
+      "text": "Im Schloss Cecilienhof (Neuer Garten) fand 1945 die historische Potsdamer Konferenz statt."
+    }
   },
   "areale": {
     "title": "Die 4 Areale – Eine Landschaft, vier Erlebnisse",

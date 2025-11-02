@@ -10,12 +10,42 @@
     "lead": "Discover the UNESCO World Heritage parks and cultural monuments on the banks of the Havel River. With practical information about locations, directions and current conditions on site."
   },
   "nav": {
+    "funfacts": "Fun Facts",
     "areale": "The 4 Areas",
     "finder": "Location Finder",
     "categories": "Categories",
+    "enthusiasts": "For Enthusiasts",
     "arrival": "Getting Here",
     "faq": "FAQ",
     "wasser": "Water Activities"
+  },
+  "funfacts": {
+    "title": "Did You Know?",
+    "subtitle": "Fascinating facts about the UNESCO World Heritage parks in Potsdam",
+    "unesco": {
+      "title": "UNESCO World Heritage",
+      "text": "The Potsdam cultural landscape was inscribed on the UNESCO World Heritage List in 1990 – together with Sanssouci Palace."
+    },
+    "hectares": {
+      "title": "Hectares of Parkland",
+      "text": "Park Babelsberg covers 124 hectares – equivalent to about 174 football fields!"
+    },
+    "kaiser": {
+      "title": "Emperor Wilhelm I",
+      "text": "Babelsberg Palace was the summer residence of Emperor Wilhelm I – built by Karl Friedrich Schinkel."
+    },
+    "architects": {
+      "title": "Famous Architects",
+      "text": "Schinkel, Persius and Strack – three architectural geniuses created this neo-Gothic masterpiece together."
+    },
+    "shoreline": {
+      "title": "Shoreline",
+      "text": "Over 7 kilometers of scenic riverside paths along the Havel invite you to stroll and linger."
+    },
+    "potsdam": {
+      "title": "Potsdam Conference",
+      "text": "The historic Potsdam Conference took place at Cecilienhof Palace (New Garden) in 1945."
+    }
   },
   "areale": {
     "title": "The 4 Areas – One Landscape, Four Experiences",

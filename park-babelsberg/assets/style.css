@@ -1715,6 +1715,157 @@ a.icon-only .icon {
   }
 }
 
+/* ============================================
+   FUN FACTS SECTION
+   ============================================ */
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.fun-fact-card {
+  background: var(--bg-primary);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  text-align: center;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.fun-fact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent, var(--accent-primary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
+}
+
+.fun-fact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent, var(--accent-primary));
+}
+
+.fun-fact-card:hover::before {
+  transform: scaleX(1);
+}
+
+.fun-fact-icon {
+  font-size: 3.5rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.fun-fact-number {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--accent, var(--accent-primary)), var(--accent-dark, var(--accent-primary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.fun-fact-card h3 {
+  @apply heading-sm;
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.125rem;
+}
+
+.fun-fact-card p {
+  color: var(--text-secondary);
+  @apply body-base;
+  margin: 0;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+/* Counter Animation */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fun-fact-number {
+  animation: countUp 0.8s ease-out;
+}
+
+/* Dark Mode for Fun Facts */
+[data-theme="dark"] .fun-fact-card {
+  background: var(--bg-secondary);
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .fun-fact-card:hover {
+  background: var(--bg-tertiary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .fun-fact-icon {
+  filter: drop-shadow(0 2px 8px rgba(255,255,255,0.1));
+}
+
+/* Responsive Fun Facts */
+@media (max-width: 768px) {
+  .fun-facts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: var(--space-3);
+  }
+
+  .fun-fact-card {
+    padding: var(--space-4);
+  }
+
+  .fun-fact-icon {
+    font-size: 2.5rem;
+  }
+
+  .fun-fact-number {
+    font-size: 2.5rem;
+  }
+
+  .fun-fact-card h3 {
+    font-size: 1rem;
+  }
+
+  .fun-fact-card p {
+    font-size: 0.875rem;
+  }
+}
+
 /* Smooth transitions for theme change */
 html {
   transition: background-color 0.3s ease;
