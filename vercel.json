@@ -77,6 +77,42 @@
       "dest": "/park-babelsberg/parkordnung-vergleich.html"
     },
     {
+      "src": "/schloss-glienicke/?",
+      "dest": "/park-babelsberg/schloss-glienicke.html"
+    },
+    {
+      "src": "/glienicke/?",
+      "dest": "/park-babelsberg/schloss-glienicke.html"
+    },
+    {
+      "src": "/charlottenhof/?",
+      "dest": "/park-babelsberg/schloss-charlottenhof.html"
+    },
+    {
+      "src": "/meierei/?",
+      "dest": "/park-babelsberg/meierei-neuer-garten.html"
+    },
+    {
+      "src": "/eritage/?",
+      "dest": "/park-babelsberg/eritage.html"
+    },
+    {
+      "src": "/raeucherhaus/?",
+      "dest": "/park-babelsberg/raeucherhaus.html"
+    },
+    {
+      "src": "/schifffahrtsanleger/?",
+      "dest": "/park-babelsberg/schifffahrtsanleger.html"
+    },
+    {
+      "src": "/jagdschloss/?",
+      "dest": "/park-babelsberg/jagdschloss-glienicke.html"
+    },
+    {
+      "src": "/gruenes-haus/?",
+      "dest": "/park-babelsberg/grünes-haus.html"
+    },
+    {
       "src": "/",
       "dest": "/park-babelsberg/index.html"
     },
