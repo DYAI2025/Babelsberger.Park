@@ -36,8 +36,8 @@
 
 <link rel="stylesheet" href="assets/style.css">
 
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ"></script>
+<!-- Google Analytics 4 - Deferred for performance -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -45,8 +45,8 @@
   gtag('config', 'G-K409QD2YSJ');
 </script>
 
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1712273263687132" crossorigin="anonymous"></script>
+<!-- Google AdSense - Deferred for performance -->
+<script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1712273263687132" crossorigin="anonymous"></script>
 
 <!-- Preconnect for faster Ad loading -->
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
@@ -116,20 +116,6 @@
   <i data-lucide="moon" class="theme-icon theme-icon-moon icon icon-md" aria-hidden="true"></i>
 </button>
 
-<!-- Weather Widget -->
-<div id="weather-widget" class="weather-widget" aria-label="Wettervorhersage für Potsdam">
-  <div class="weather-widget-header" id="weather-header">
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <i data-lucide="cloud" class="icon icon-sm"></i>
-      <span class="weather-location">Potsdam</span>
-    </div>
-    <button class="weather-widget-toggle" id="weather-toggle" aria-label="Wetter-Widget umschalten" title="Ein-/Ausklappen">▼</button>
-  </div>
-  <div id="weather-content" class="weather-content">
-    <div class="weather-loading">Lädt...</div>
-  </div>
-</div>
-
 <header class="header">
   <div class="hero" style="position: relative; overflow: hidden; border-radius: var(--radius-xl, 16px);">
     <img src="images/park-babelsberg/jagdschloss.jpeg"
@@ -148,6 +134,7 @@
   <p class="lead" data-i18n="hero.lead">Entdecken Sie die UNESCO-Welterbe-Parks und Kulturdenkmäler am Ufer der Havel. Mit praktischen Informationen zu Örtlichkeiten, Anfahrt und aktuellen Gegebenheiten vor Ort.</p>
   <nav class="nav" aria-label="Sprungmarken">
     <div class="badges">
+      <a class="badge" href="#fun-facts" data-i18n="nav.funfacts">Fun Facts</a>
       <a class="badge" href="#areale" data-i18n="nav.areale">Die 4 Areale</a>
       <a class="badge" href="#location-finder" data-i18n="nav.finder">Location-Finder</a>
       <a class="badge" href="#kategorien" data-i18n="nav.categories">Kategorien</a>
@@ -161,88 +148,112 @@
 
 <main id="content" data-page="park-babelsberg" data-date="2025-10-25">
 
-  <!-- Areal 1: Park Babelsberg -->
-  <section id="area-babelsberg" class="section theme-babelsberg" style="padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
+  <!-- Fun Facts Section -->
+  <section id="fun-facts" class="section" style="background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-secondary) 100%); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
     <div style="max-width: var(--container-max); margin: 0 auto;">
-      <header class="section-header">
-        <h2 data-i18n="areale.babelsberg.title">Park Babelsberg</h2>
-      </header>
-      <div class="cards-grid-areas">
-        <article class="card theme-babelsberg">
-          <img src="images/park-babelsberg/attractions/schloss-babelsberg-1.webp" alt="Schloss Babelsberg" loading="lazy">
-          <h3 data-i18n="areale.babelsberg.schloss">Schloss Babelsberg</h3>
-          <span class="badge" data-i18n="areale.badges.architecture">Architektur</span>
-          <a href="schloss-babelsberg.html" class="btn">Mehr erfahren</a>
-        </article>
-        
-        <article class="card theme-babelsberg">
-          <img src="images/park-babelsberg/attractions/flatowturm-1.webp" alt="Flatowturm" loading="lazy">
-          <h3 data-i18n="areale.babelsberg.flatowturm">Flatowturm</h3>
-          <span class="badge" data-i18n="areale.badges.viewpoint">Aussicht</span>
-          <a href="flatowturm.html" class="btn">Mehr erfahren</a>
-        </article>
-        
-        <article class="card theme-babelsberg">
-          <img src="images/park-babelsberg/attractions/matrosenhaus-1.webp" alt="Matrosenhaus" loading="lazy">
-          <h3 data-i18n="areale.babelsberg.matrosenhaus">Matrosenhaus</h3>
-          <span class="badge" data-i18n="areale.badges.building">Bauwerk</span>
-          <a href="matrosenhaus.html" class="btn">Mehr erfahren</a>
-        </article>
-        
-        <article class="card theme-babelsberg">
-          <img src="images/park-babelsberg/Parkplatz.jpeg" alt="Anreise & Parken" loading="lazy">
-          <h3 data-i18n="areale.babelsberg.anreise">Anreise & Parken</h3>
-          <span class="badge" data-i18n="areale.badges.service">Service</span>
-          <a href="anreise.html" class="btn">Mehr erfahren</a>
-        </article>
-        
-        <article class="card theme-babelsberg">
-          <img src="images/park-babelsberg/Gastronomie.jpeg" alt="Gastronomie" loading="lazy">
-          <h3 data-i18n="areale.babelsberg.gastro">Gastronomie</h3>
-          <span class="badge" data-i18n="areale.badges.food">Essen & Trinken</span>
-          <a href="gastronomie.html" class="btn">Mehr erfahren</a>
-        </article>
+      <div class="section-header">
+        <h2 data-i18n="funfacts.title">Wusstest du schon?</h2>
+        <p data-i18n="funfacts.subtitle">Faszinierende Fakten über die UNESCO-Welterbe-Parks in Potsdam</p>
+      </div>
+
+      <div class="fun-facts-grid">
+        <div class="fun-fact-card" style="--accent: #10b981;">
+          <div class="fun-fact-icon">🏛️</div>
+          <div class="fun-fact-number" data-count="1990">1990</div>
+          <h3 data-i18n="funfacts.unesco.title">UNESCO-Welterbe</h3>
+          <p data-i18n="funfacts.unesco.text">Die Potsdamer Kulturlandschaft wurde 1990 in die UNESCO-Welterbeliste aufgenommen – zusammen mit Schloss Sanssouci.</p>
+        </div>
+
+        <div class="fun-fact-card" style="--accent: #3b82f6;">
+          <div class="fun-fact-icon">🌳</div>
+          <div class="fun-fact-number" data-count="124">124</div>
+          <h3 data-i18n="funfacts.hectares.title">Hektar Parkfläche</h3>
+          <p data-i18n="funfacts.hectares.text">Der Park Babelsberg erstreckt sich über 124 Hektar – das entspricht etwa 174 Fußballfeldern!</p>
+        </div>
+
+        <div class="fun-fact-card" style="--accent: #f59e0b;">
+          <div class="fun-fact-icon">👑</div>
+          <div class="fun-fact-number" data-count="1833">1833</div>
+          <h3 data-i18n="funfacts.kaiser.title">Kaiser Wilhelm I.</h3>
+          <p data-i18n="funfacts.kaiser.text">Das Schloss Babelsberg war das Sommerschloss von Kaiser Wilhelm I. – erbaut von Karl Friedrich Schinkel.</p>
+        </div>
+
+        <div class="fun-fact-card" style="--accent: #ec4899;">
+          <div class="fun-fact-icon">🎨</div>
+          <div class="fun-fact-number" data-count="3">3</div>
+          <h3 data-i18n="funfacts.architects.title">Berühmte Architekten</h3>
+          <p data-i18n="funfacts.architects.text">Schinkel, Persius und Strack – drei Architektur-Genies schufen gemeinsam das neugotische Meisterwerk.</p>
+        </div>
+
+        <div class="fun-fact-card" style="--accent: #8b5cf6;">
+          <div class="fun-fact-icon">🌊</div>
+          <div class="fun-fact-number" data-count="7">7km</div>
+          <h3 data-i18n="funfacts.shoreline.title">Uferlinie</h3>
+          <p data-i18n="funfacts.shoreline.text">Über 7 Kilometer malerische Uferwege entlang der Havel laden zum Spazieren und Verweilen ein.</p>
+        </div>
+
+        <div class="fun-fact-card" style="--accent: #ef4444;">
+          <div class="fun-fact-icon">🎬</div>
+          <div class="fun-fact-number" data-count="1945">1945</div>
+          <h3 data-i18n="funfacts.potsdam.title">Potsdamer Konferenz</h3>
+          <p data-i18n="funfacts.potsdam.text">Im Schloss Cecilienhof (Neuer Garten) fand 1945 die historische Potsdamer Konferenz statt.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Areal 2: Park Glienicke -->
-  <section id="area-glienicke" class="section theme-glienicke" style="padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
+  <!-- Die 4 Areale - Unified Card Grid -->
+  <section id="areale" class="section" style="background: var(--bg-accent); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
     <div style="max-width: var(--container-max); margin: 0 auto;">
-      <header class="section-header">
-        <h2 data-i18n="areale.glienicke.title">Park Glienicke</h2>
-      </header>
-      <div class="cards-grid-areas">
-        <article class="card theme-glienicke">
-          <img src="images/park-babelsberg/jagdschloss.jpeg" alt="Jagdschloss Glienicke" loading="lazy">
-          <h3 data-i18n="areale.glienicke.jagdschloss">Jagdschloss Glienicke</h3>
-          <span class="badge" data-i18n="areale.badges.architecture">Architektur</span>
-          <a href="#location-finder" class="btn">Auf Karte zeigen</a>
-        </article>
-      </div>
+      <div class="section-header">
+      <h2 data-i18n="areale.title">Die 4 Areale – Eine Landschaft, vier Erlebnisse</h2>
+      <p data-i18n="areale.subtitle">Von der historischen Parkanlage bis zum königlichen Schloss – entdecke die verbundenen UNESCO-Welterbe-Areale am Ufer der Havel.</p>
     </div>
-  </section>
 
-  <!-- Areal 3: Neuer Garten -->
-  <section id="area-neuer-garten" class="section theme-neuer-garten" style="padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
-    <div style="max-width: var(--container-max); margin: 0 auto;">
-      <header class="section-header">
-        <h2 data-i18n="areale.neuergarten.title">Neuer Garten</h2>
-      </header>
-      <div class="cards-grid-areas">
-        <article class="card theme-neuer-garten">
-          <img src="images/park-babelsberg/neuer_garten_cicilienhof.jpeg" alt="Schloss Cecilienhof" loading="lazy">
-          <h3 data-i18n="areale.neuergarten.cecilienhof">Schloss Cecilienhof</h3>
-          <span class="badge" data-i18n="areale.badges.architecture">Architektur</span>
-          <a href="#location-finder" class="btn">Auf Karte zeigen</a>
-        </article>
-        
-        <article class="card theme-neuer-garten">
-          <img src="images/park-babelsberg/meierei_wasser.jpeg" alt="Meierei im Neuen Garten" loading="lazy">
-          <h3 data-i18n="areale.neuergarten.meierei">Meierei</h3>
-          <span class="badge" data-i18n="areale.badges.building">Bauwerk</span>
-          <a href="#location-finder" class="btn">Auf Karte zeigen</a>
-        </article>
+    <div class="grid-2">
+      <!-- Areal 1: Park Babelsberg -->
+      <article class="card-areal">
+        <img src="images/park-babelsberg/Uferweg_nord.jpeg" alt="Park Babelsberg - Uferweg Nord mit Panoramablick" loading="lazy">
+        <div class="card-areal-content">
+          <span class="card-areal-label" data-i18n="areale.label">Areal 1</span>
+          <h3 data-i18n="areale.areal1.title">Park Babelsberg</h3>
+          <p data-i18n="areale.areal1.description">Der 124 Hektar große englische Landschaftspark am Ufer der Havel ist ein Meisterwerk der Gartenkunst. Seit 1990 UNESCO-Welterbe.</p>
+          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+        </div>
+      </article>
+
+      <!-- Areal 2: Schloss Babelsberg -->
+      <article class="card-areal">
+        <img src="images/park-babelsberg/schloss_garten.jpeg" alt="Schloss Babelsberg Garten" loading="lazy">
+        <div class="card-areal-content">
+          <span class="card-areal-label" data-i18n="areale.label">Areal 2</span>
+          <h3 data-i18n="areale.areal2.title">Schloss Babelsberg</h3>
+          <p data-i18n="areale.areal2.description">Das neugotische Sommerschloss von Kaiser Wilhelm I. thront majestätisch über der Havel. Erbaut 1833-1849 nach Entwürfen von Karl Friedrich Schinkel.</p>
+          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+        </div>
+      </article>
+
+      <!-- Areal 3: Neuer Garten -->
+      <article class="card-areal">
+        <img src="images/park-babelsberg/cicilienhof.jpeg" alt="Schloss Cecilienhof im Neuen Garten" loading="lazy">
+        <div class="card-areal-content">
+          <span class="card-areal-label" data-i18n="areale.label">Areal 3</span>
+          <h3 data-i18n="areale.areal3.title">Neuer Garten</h3>
+          <p data-i18n="areale.areal3.description">Ein frühes Meisterwerk der Landschaftsgestaltung am Heiligen See. Angelegt ab 1787 für Friedrich Wilhelm II. Hier fand 1945 die Potsdamer Konferenz statt.</p>
+          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+        </div>
+      </article>
+
+      <!-- Areal 4: Park Glienicke -->
+      <article class="card-areal">
+        <img src="images/park-babelsberg/jagdschloss.jpeg" alt="Jagdschloss Glienicke" loading="lazy">
+        <div class="card-areal-content">
+          <span class="card-areal-label" data-i18n="areale.label">Areal 4</span>
+          <h3 data-i18n="areale.areal4.title">Park Glienicke</h3>
+          <p data-i18n="areale.areal4.description">Der südlichste Teil der UNESCO-Welterbe-Landschaft an der Glienicker Brücke. Ein verstecktes Juwel mit italienisch inspirierter Architektur.</p>
+          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+        </div>
+      </article>
       </div>
     </div>
   </section>
@@ -797,20 +808,20 @@
   </p>
 </footer>
 
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<!-- Leaflet CSS - Preload for performance -->
+<link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></noscript>
 
-<!-- Leaflet MarkerCluster CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="anonymous">
+<!-- Leaflet MarkerCluster CSS - Lazy load -->
+<link rel="preload" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+<!-- Leaflet JS - Defer loading -->
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
 
-<!-- Leaflet MarkerCluster JS -->
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin="anonymous"></script>
+<!-- Leaflet MarkerCluster JS - Defer loading -->
+<script defer src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin="anonymous"></script>
 
 <!-- Styles -->
 <style>
@@ -851,34 +862,13 @@
   .filter-btn.active {
     border-color: #2563eb;
     background: #2563eb;
-    color: white !important;
+    color: white;
     box-shadow: 0 2px 4px rgba(37,99,235,0.3);
   }
 
   .filter-btn.active .filter-count {
     background: rgba(255,255,255,0.3);
-    color: white !important;
-  }
-
-  /* Dark mode filter button text fix */
-  [data-theme="dark"] .filter-btn {
-    background: var(--bg-secondary);
-    color: var(--text-primary) !important;
-    border-color: var(--border-medium);
-  }
-
-  [data-theme="dark"] .filter-btn.active {
-    background: #2563eb;
-    color: white !important;
-  }
-
-  [data-theme="dark"] .filter-btn.active .filter-count {
-    color: white !important;
-  }
-
-  [data-theme="dark"] .filter-btn .filter-count {
-    background: var(--bg-tertiary);
-    color: var(--text-secondary) !important;
+    color: white;
   }
 
   .filter-btn:hover {
@@ -969,152 +959,6 @@
     opacity: 0.4;
     cursor: not-allowed;
     transform: none !important;
-  }
-
-  /* Weather Widget Styling */
-  .weather-widget {
-    position: fixed;
-    bottom: 140px;
-    right: 24px;
-    background: white;
-    border: 1px solid #d1d5db;
-    border-radius: 12px;
-    padding: 0;
-    min-width: 200px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    z-index: 100;
-    font-family: var(--font-body);
-    transition: all 0.3s ease;
-  }
-
-  .weather-widget-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 12px 16px;
-    background: #f3f4f6;
-    border-bottom: 1px solid #e5e7eb;
-    border-radius: 11px 11px 0 0;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .weather-widget-header span {
-    flex: 1;
-    font-weight: 600;
-    color: #374151;
-  }
-
-  .weather-widget-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px 8px;
-    color: #6b7280;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .weather-widget-toggle:hover {
-    color: #374151;
-  }
-
-  .weather-content {
-    padding: 12px 16px;
-    max-height: 300px;
-    overflow-y: auto;
-    background: white;
-  }
-
-  .weather-widget.collapsed .weather-content {
-    display: none;
-  }
-
-  .weather-item {
-    padding: 8px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #f3f4f6;
-    font-size: 0.9rem;
-  }
-
-  .weather-item:last-child {
-    border-bottom: none;
-  }
-
-  .weather-day {
-    font-weight: 500;
-    color: #374151;
-  }
-
-  .weather-temp {
-    color: #6b7280;
-  }
-
-  .weather-icon {
-    font-size: 1.2rem;
-    margin: 0 8px;
-  }
-
-  /* Dark mode weather widget */
-  [data-theme="dark"] .weather-widget {
-    background: var(--bg-secondary);
-    border-color: var(--border-medium);
-  }
-
-  [data-theme="dark"] .weather-widget-header {
-    background: var(--bg-tertiary);
-    border-bottom-color: var(--border-medium);
-  }
-
-  [data-theme="dark"] .weather-widget-header span {
-    color: var(--text-primary);
-  }
-
-  [data-theme="dark"] .weather-widget-toggle {
-    color: var(--text-secondary);
-  }
-
-  [data-theme="dark"] .weather-widget-toggle:hover {
-    color: var(--text-primary);
-  }
-
-  [data-theme="dark"] .weather-content {
-    background: var(--bg-secondary);
-  }
-
-  [data-theme="dark"] .weather-item {
-    border-bottom-color: var(--bg-tertiary);
-  }
-
-  [data-theme="dark"] .weather-day {
-    color: var(--text-primary);
-  }
-
-  [data-theme="dark"] .weather-temp {
-    color: var(--text-secondary);
-  }
-
-  /* Leaflet Map Container - Ensure visibility */
-  #unified-map {
-    height: 500px !important;
-    width: 100% !important;
-    background: #e5e7eb !important;
-    display: block !important;
-    visibility: visible !important;
-    position: relative !important;
-    z-index: 1 !important;
-    border: 1px solid #d1d5db;
-  }
-
-  .leaflet-container {
-    background-color: #e5e7eb !important;
-    position: relative !important;
-    overflow: hidden !important;
   }
 
   /* Leaflet Popup Customization */
@@ -1264,6 +1108,81 @@
     .popup-btn {
       width: 100%;
     }
+  }
+
+  /* Dark Mode - Filter Buttons */
+  [data-theme="dark"] .filter-btn {
+    background: var(--bg-secondary, #1f2937) !important;
+    color: var(--text-primary, #f3f4f6) !important;
+    border-color: var(--border-medium, #4b5563) !important;
+  }
+
+  [data-theme="dark"] .filter-btn.active {
+    background: #2563eb !important;
+    color: white !important;
+    border-color: #2563eb !important;
+  }
+
+  [data-theme="dark"] .filter-btn .filter-count {
+    background: rgba(255,255,255,0.1) !important;
+    color: rgba(255,255,255,0.9) !important;
+  }
+
+  /* Weather Widget - Light Mode */
+  #weather-widget {
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  #weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f3f4f6;
+    background: #f3f4f6;
+    margin: -16px -16px 12px -16px;
+    padding: 12px 16px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  #weather-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    transition: transform 0.2s ease;
+  }
+
+  .weather-content {
+    display: block;
+    transition: display 0.2s ease;
+  }
+
+  #weather-widget.collapsed .weather-content {
+    display: none !important;
+  }
+
+  /* Weather Widget - Dark Mode */
+  [data-theme="dark"] #weather-widget {
+    background: var(--bg-secondary, #1f2937);
+    border-color: var(--border-medium, #4b5563);
+    color: var(--text-primary, #f3f4f6);
+  }
+
+  [data-theme="dark"] #weather-header {
+    background: rgba(75, 85, 99, 0.3);
+    border-bottom-color: var(--border-medium, #4b5563);
+    color: var(--text-primary, #f3f4f6);
+  }
+
+  [data-theme="dark"] .weather-content {
+    color: var(--text-primary, #f3f4f6);
   }
 </style>
 
@@ -1945,11 +1864,13 @@
     });
 
     // Also toggle when clicking header
-    header.addEventListener('click', () => {
-      if (event.target !== toggle) {
-        toggle.click();
-      }
-    });
+    if (header) {
+      header.addEventListener('click', () => {
+        if (event.target !== toggle) {
+          toggle.click();
+        }
+      });
+    }
   });
 })();
 </script>
@@ -1957,12 +1878,14 @@
 <!-- Weather Widget -->
 <script src="assets/weather.js"></script>
 
-<!-- Lucide Icons -->
-<script src="https://unpkg.com/lucide@latest"></script>
+<!-- Lucide Icons - Defer for performance -->
+<script defer src="https://unpkg.com/lucide@latest"></script>
 <script>
   // Initialize Lucide icons after DOM is loaded
   document.addEventListener('DOMContentLoaded', () => {
-    lucide.createIcons();
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
   });
 </script>
 
