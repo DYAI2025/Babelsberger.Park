@@ -1,0 +1,92 @@
+{
+  "pillar": {
+    "hero": {
+      "title": "Die drei Parks von Potsdam: Babelsberg, Glienicke & Neuer Garten",
+      "subtitle": "UNESCO-Welterbe Kulturlandschaft | Sehenswürdigkeiten | Praktische Infos"
+    }
+  },
+  "parks": {
+    "babelsberg": {
+      "name": "Park Babelsberg",
+      "description": "Historischer Landschaftspark mit UNESCO-Welterbe-Status am Havelufer",
+      "link": "Alle Infos zu Park Babelsberg ’"
+    },
+    "glienicke": {
+      "name": "Park Glienicke",
+      "description": "Klassizistischer Landschaftspark mit italienischen Einflüssen und Havelblick",
+      "link": "Alle Infos zu Park Glienicke ’"
+    },
+    "neuergarten": {
+      "name": "Neuer Garten",
+      "description": "Englischer Landschaftsgarten am Heiligen See mit königlicher Geschichte",
+      "link": "Alle Infos zum Neuen Garten ’"
+    }
+  },
+  "specials": {
+    "title": "Besonderheiten & Aktivitäten",
+    "wassersport": {
+      "title": "Wassersport & Bootfahren",
+      "description": "Die Havel verbindet alle drei Parks und bietet ideale Bedingungen für Kanufahrten, Stand-Up-Paddling und Bootstouren."
+    },
+    "unesco": {
+      "title": "UNESCO-Welterbe",
+      "description": "Alle drei Parks gehören zum UNESCO-Welterbe 'Schlösser und Parks von Potsdam und Berlin'."
+    },
+    "fotografie": {
+      "title": "Fotografie-Hotspots",
+      "description": "Von den Schlössern über die Havelpromenade bis zu versteckten Parkwegen  unzählige Instagram-würdige Fotomotive."
+    },
+    "veranstaltungen": {
+      "title": "Veranstaltungen & Führungen",
+      "description": "Die Stiftung Preußische Schlösser und Gärten bietet regelmäßig Themenführungen und saisonale Events an."
+    },
+    "natur": {
+      "title": "Natur & Biodiversität",
+      "description": "Die Parks beherbergen über 200 Vogelarten und bieten wertvollen Lebensraum für heimische Tier- und Pflanzenarten."
+    },
+    "radwege": {
+      "title": "Radwege & Wanderwege",
+      "description": "Ein Netz aus asphaltierten Hauptwegen und Naturpfaden verbindet alle drei Parks."
+    }
+  },
+  "finder": {
+    "title": "WC, Gastronomie & Parkplätze finden",
+    "description": "Finde schnell die nächste Toilette, Restaurant oder Parkplatz in allen drei Parks:"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Schnelle Antworten auf die wichtigsten Fragen rund um deinen Besuch.",
+    "q1": {
+      "question": "Wo finde ich Toiletten im Park?",
+      "answer": "Öffentliche WCs sind an den Haupteingängen ausgeschildert. Nutze unseren <a href=\"#location-finder\">Location-Finder</a> um die nächste Toilette zu finden. Einige sind kostenpflichtig (ca. 0,50¬), andere kostenlos."
+    },
+    "q2": {
+      "question": "Ist der Park barrierefrei?",
+      "answer": "Die asphaltierten Hauptwege sind gut befahrbar für Rollstühle und Kinderwagen. Einige Naturwege haben Steigungen und sind weniger geeignet. Der Flatowturm ist nicht barrierefrei (nur über Treppen erreichbar)."
+    },
+    "q3": {
+      "question": "Darf ich im Park grillen oder picknicken?",
+      "answer": "Picknicken ist auf den Liegewiesen erlaubt. Grillen ist im gesamten Park verboten (Brandschutz). Bitte Müll mitnehmen oder in den bereitgestellten Abfallbehältern entsorgen."
+    },
+    "q4": {
+      "question": "Kann ich mit dem Fahrrad durch den Park fahren?",
+      "answer": "Radfahren ist nur auf den asphaltierten Hauptwegen erlaubt. Auf Wanderwegen und Naturpfaden ist Radfahren verboten. Schilder vor Ort beachten. Mehr Details in unserer <a href=\"/park-babelsberg/parkordnung-vergleich.html\">Parkordnung</a>."
+    },
+    "q5": {
+      "question": "Sind Hunde im Park erlaubt?",
+      "answer": "Ja, Hunde sind erlaubt, müssen aber an der Leine geführt werden. Hundekotbeutel bitte mitnehmen und in den Abfallbehältern entsorgen."
+    },
+    "q6": {
+      "question": "Kann ich in der Havel schwimmen?",
+      "answer": "Nein, Schwimmen in der Havel ist verboten (keine Badeaufsicht, Strömung, Schiffsverkehr). Alternative Badestellen gibt es am Heiligen See im Neuen Garten."
+    },
+    "q7": {
+      "question": "Gibt es Führungen durch den Park?",
+      "answer": "Ja, die Stiftung Preußische Schlösser und Gärten bietet regelmäßig Führungen an. Termine und Buchung auf <a href=\"https://www.spsg.de\" target=\"_blank\" rel=\"noopener\">www.spsg.de</a>."
+    },
+    "q8": {
+      "question": "Wie lange sollte ich für einen Besuch einplanen?",
+      "answer": "Für einen entspannten Spaziergang: 2-3 Stunden. Mit Schlossbesichtigung und Flatowturm: 4-5 Stunden. Für alle 4 Areale: Ganztagesausflug empfohlen."
+    }
+  }
+}
