@@ -59,45 +59,79 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TouristAttraction",
-  "name": "Park Babelsberg",
-  "description": "Historischer Landschaftspark in Potsdam mit Location-Finder für WCs, Restaurants und Parkplätze",
+  "@type": "ItemList",
+  "name": "Die drei Parks von Potsdam: Babelsberg, Glienicke & Neuer Garten",
+  "description": "UNESCO-Welterbe Kulturlandschaft mit drei historischen Landschaftsparks in Potsdam: Park Babelsberg, Park Glienicke und Neuer Garten. Interaktive Location-Finder für WCs, Gastronomie und Parkplätze.",
   "url": "https://park.babelsberger.info/park-babelsberg/index.html",
-  "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "52.400",
-    "longitude": "13.085"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Potsdam",
-    "addressRegion": "Brandenburg",
-    "addressCountry": "DE"
-  },
-  "amenityFeature": [
+  "numberOfItems": 3,
+  "itemListElement": [
     {
-      "@type": "LocationFeatureSpecification",
-      "name": "WC-Finder",
-      "value": "Interaktive Karte mit allen öffentlichen Toiletten im Park"
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Park Babelsberg",
+        "description": "Historischer Landschaftspark mit UNESCO-Welterbe-Status am Havelufer. Highlights: Schloss Babelsberg, Flatowturm, Matrosenhaus, Dampfmaschinenhaus, Uferweg Nord.",
+        "url": "https://park.babelsberger.info/park-babelsberg/park-babelsberg.html",
+        "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "52.4089",
+          "longitude": "13.1011"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Potsdam",
+          "addressRegion": "Brandenburg",
+          "addressCountry": "DE"
+        }
+      }
     },
     {
-      "@type": "LocationFeatureSpecification",
-      "name": "Gastronomie-Finder",
-      "value": "Restaurants, Cafés und Imbisse in der Umgebung"
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Park Glienicke",
+        "description": "Klassizistischer Landschaftspark mit italienischen Einflüssen und Havelblick. Highlights: Schloss Glienicke, Casino, Große Neugierde, Kleine Neugierde, Klosterhof.",
+        "url": "https://park.babelsberger.info/park-babelsberg/park-glienicke.html",
+        "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "52.4142",
+          "longitude": "13.0964"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Berlin",
+          "addressRegion": "Berlin",
+          "addressCountry": "DE"
+        }
+      }
     },
     {
-      "@type": "LocationFeatureSpecification",
-      "name": "Parkplatz-Finder",
-      "value": "Parkplätze für PKW und Fahrräder"
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Neuer Garten",
+        "description": "Englischer Landschaftsgarten am Heiligen See mit königlicher Geschichte. Highlights: Marmorpalais, Schloss Cecilienhof, Muschelgrotte, Orangerie, Gotische Bibliothek.",
+        "url": "https://park.babelsberger.info/park-babelsberg/neuer-garten.html",
+        "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "52.4197",
+          "longitude": "13.0669"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Potsdam",
+          "addressRegion": "Brandenburg",
+          "addressCountry": "DE"
+        }
+      }
     }
-  ],
-  "hasMap": {
-    "@type": "Map",
-    "name": "Park Babelsberg Location-Finder",
-    "url": "https://park.babelsberger.info/park-babelsberg/index.html#location-finder",
-    "mapType": "VenueMap"
-  }
+  ]
 }
 </script>
 
