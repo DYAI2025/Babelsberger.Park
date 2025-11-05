@@ -1,6 +1,6 @@
 /**
  * Parks Renderer - Component-driven rendering for pillar page
- * Loads inline core data + lazy-loads extended data (specials, FAQs)
+ * Loads inline core data + lazy-loads extended data (specials, categories, FAQs)
  */
 
 class AttractionCard {
@@ -23,7 +23,7 @@ class AttractionCard {
     } else {
       imageHTML = `
         <div class="card-image-placeholder">
-          <span>=� Bild folgt</span>
+          <span>📷 Bild folgt</span>
         </div>
       `;
     }
@@ -80,7 +80,7 @@ class ParkSection {
       grid.appendChild(card.render());
     });
 
-    console.log(` Rendered ${this.data.highlights.length} attractions for ${this.data.name}`);
+    console.log(`✓ Rendered ${this.data.highlights.length} attractions for ${this.data.name}`);
   }
 }
 
@@ -100,6 +100,73 @@ class SpecialCard {
   }
 }
 
+class CategoryCard {
+  constructor(categoryData) {
+    this.data = categoryData;
+  }
+
+  render() {
+    const card = document.createElement('article');
+    card.className = 'category-card';
+    card.setAttribute('data-category-id', this.data.id);
+
+    // Image or icon placeholder
+    let imageHTML = '';
+    if (this.data.image && this.data.image !== '') {
+      imageHTML = `
+        <div class="category-card-image" style="background-image: url('${this.data.image}');">
+          <div class="category-card-icon">${this.data.icon}</div>
+        </div>
+      `;
+    } else {
+      imageHTML = `
+        <div class="category-card-image">
+          <div class="category-card-icon">${this.data.icon}</div>
+        </div>
+      `;
+    }
+
+    card.innerHTML = `
+      ${imageHTML}
+      <div class="category-card-content">
+        <h3>
+          ${this.data.title}
+          <span class="category-count">${this.data.count}</span>
+        </h3>
+        <p>${this.data.description}</p>
+      </div>
+    `;
+
+    // Click handler - navigate to link
+    if (this.data.link) {
+      card.addEventListener('click', () => {
+        if (this.data.link.startsWith('#')) {
+          // Internal anchor link - smooth scroll
+          const target = document.querySelector(this.data.link);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        } else {
+          // External link - navigate
+          window.location.href = this.data.link;
+        }
+      });
+
+      // Keyboard accessibility
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'link');
+      card.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.click();
+        }
+      });
+    }
+
+    return card;
+  }
+}
+
 class ParksApp {
   constructor() {
     this.coreData = null;
@@ -108,7 +175,7 @@ class ParksApp {
   }
 
   async init() {
-    console.log('=� Parks App initializing...');
+    console.log('🚀 Parks App initializing...');
 
     try {
       // Load inline core data
@@ -120,12 +187,13 @@ class ParksApp {
       // Lazy-load extended data
       await this.loadExtendedData();
 
-      // Render specials after extended data loads
+      // Render specials and categories after extended data loads
       this.renderSpecials();
+      this.renderCategories();
 
-      console.log(' Parks App initialized successfully');
+      console.log('✓ Parks App initialized successfully');
     } catch (error) {
-      console.error('L Parks App initialization failed:', error);
+      console.error('❌ Parks App initialization failed:', error);
     }
   }
 
@@ -137,7 +205,7 @@ class ParksApp {
 
     try {
       this.coreData = JSON.parse(dataScript.textContent);
-      console.log(` Loaded core data: ${this.coreData.parks.length} parks`);
+      console.log(`✓ Loaded core data: ${this.coreData.parks.length} parks`);
     } catch (error) {
       throw new Error(`Failed to parse parks-core-data: ${error.message}`);
     }
@@ -147,21 +215,23 @@ class ParksApp {
     try {
       const response = await fetch('assets/data/parks-extended.json');
       if (!response.ok) {
-        console.warn('� Extended data not found, skipping');
+        console.warn('⚠️ Extended data not found, skipping');
         this.extendedData = { specials: [], categories: [], faqs: [] };
         return;
       }
       this.extendedData = await response.json();
-      console.log(` Loaded extended data: ${this.extendedData.specials?.length || 0} specials`);
+      const specialsCount = this.extendedData.specials ? this.extendedData.specials.length : 0;
+      const categoriesCount = this.extendedData.categories ? this.extendedData.categories.length : 0;
+      console.log(`✓ Loaded extended data: ${specialsCount} specials, ${categoriesCount} categories`);
     } catch (error) {
-      console.warn('� Failed to load extended data:', error);
+      console.warn('⚠️ Failed to load extended data:', error);
       this.extendedData = { specials: [], categories: [], faqs: [] };
     }
   }
 
   renderParks() {
     if (!this.coreData || !this.coreData.parks) {
-      console.error('L No parks data to render');
+      console.error('❌ No parks data to render');
       return;
     }
 
@@ -170,18 +240,18 @@ class ParksApp {
       parkSection.render();
     });
 
-    console.log(` Rendered ${this.coreData.parks.length} park sections`);
+    console.log(`✓ Rendered ${this.coreData.parks.length} park sections`);
   }
 
   renderSpecials() {
     const container = document.getElementById('specials-container');
     if (!container) {
-      console.warn('� Specials container not found');
+      console.warn('⚠️ Specials container not found');
       return;
     }
 
     if (!this.extendedData || !this.extendedData.specials || this.extendedData.specials.length === 0) {
-      container.innerHTML = '<p style="text-align: center; color: var(--ink-muted);">Besonderheiten werden demn�chst erg�nzt.</p>';
+      container.innerHTML = '<p style="text-align: center; color: var(--ink-muted);">Besonderheiten werden demnächst ergänzt.</p>';
       return;
     }
 
@@ -191,7 +261,28 @@ class ParksApp {
       container.appendChild(card.render());
     });
 
-    console.log(` Rendered ${this.extendedData.specials.length} specials`);
+    console.log(`✓ Rendered ${this.extendedData.specials.length} specials`);
+  }
+
+  renderCategories() {
+    const container = document.getElementById('categories-container');
+    if (!container) {
+      console.warn('⚠️ Categories container not found');
+      return;
+    }
+
+    if (!this.extendedData || !this.extendedData.categories || this.extendedData.categories.length === 0) {
+      container.innerHTML = '<p style="text-align: center; color: var(--ink-muted);">Kategorien werden demnächst ergänzt.</p>';
+      return;
+    }
+
+    container.innerHTML = '';
+    this.extendedData.categories.forEach(category => {
+      const card = new CategoryCard(category);
+      container.appendChild(card.render());
+    });
+
+    console.log(`✓ Rendered ${this.extendedData.categories.length} categories`);
   }
 }
 
