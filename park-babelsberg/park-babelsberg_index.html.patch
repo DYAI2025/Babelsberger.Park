@@ -1,0 +1,238 @@
+--- /mnt/data/babelsberg_repo/Babelsberger.Park-main/park-babelsberg/index.html
++++ /mnt/data/babelsberg_repo_patched/Babelsberger.Park-main/park-babelsberg/index.html
+@@ -149,59 +149,69 @@
+ 
+
+   <!-- Die 4 Areale - Unified Card Grid -->
+
+   <section id="areale" class="section" style="background: var(--bg-accent); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
+
+-    <div style="max-width: var(--container-max); margin: 0 auto;">
+
+-      <div class="section-header">
+
+-      <h2 data-i18n="areale.title">Die 4 Areale – Eine Landschaft, vier Erlebnisse</h2>
+
+-      <p data-i18n="areale.subtitle">Von der historischen Parkanlage bis zum königlichen Schloss – entdecke die verbundenen UNESCO-Welterbe-Areale am Ufer der Havel.</p>
+
++
+
++  <div class="areas-wrapper">
+
++    <!-- Section: Babelsberg -->
+
++    <div class="section-block theme-babelsberg" id="area-babelsberg">
+
++      <header class="section__head">
+
++        <h2 class="section__title">Park Babelsberg</h2>
+
++      </header>
+
++      <div class="cards-grid-areas">
+
++        <a class="card" href="schloss-babelsberg.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/attractions/schloss-babelsberg-1.webp" alt="Schloss Babelsberg"></figure>
+
++          <div class="card__body"><h3 class="card__title">Schloss Babelsberg</h3><span class="badge">Architektur</span></div>
+
++        </a>
+
++        <a class="card" href="flatowturm.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/attractions/flatowturm-1.webp" alt="Flatowturm"></figure>
+
++          <div class="card__body"><h3 class="card__title">Flatowturm</h3><span class="badge">Aussicht</span></div>
+
++        </a>
+
++        <a class="card" href="matrosenhaus.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/attractions/matrosenhaus-1.webp" alt="Matrosenhaus"></figure>
+
++          <div class="card__body"><h3 class="card__title">Matrosenhaus</h3><span class="badge">Bauwerk</span></div>
+
++        </a>
+
++        <a class="card" href="anreise.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/Parkplatz.jpeg" alt="Anreise & Parken"></figure>
+
++          <div class="card__body"><h3 class="card__title">Anreise & Parken</h3><span class="badge">Service</span></div>
+
++        </a>
+
++        <a class="card" href="gastronomie.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/Gastronomie.jpeg" alt="Gastronomie"></figure>
+
++          <div class="card__body"><h3 class="card__title">Gastronomie</h3><span class="badge">Essen & Trinken</span></div>
+
++        </a>
+
++      </div>
+
+     </div>
+
+ 
+
+-    <div class="grid-2">
+
+-      <!-- Areal 1: Park Babelsberg -->
+
+-      <article class="card-areal">
+
+-        <img src="images/park-babelsberg/Uferweg_nord.jpeg" alt="Park Babelsberg - Uferweg Nord mit Panoramablick" loading="lazy">
+
+-        <div class="card-areal-content">
+
+-          <span class="card-areal-label" data-i18n="areale.label">Areal 1</span>
+
+-          <h3 data-i18n="areale.areal1.title">Park Babelsberg</h3>
+
+-          <p data-i18n="areale.areal1.description">Der 124 Hektar große englische Landschaftspark am Ufer der Havel ist ein Meisterwerk der Gartenkunst. Seit 1990 UNESCO-Welterbe.</p>
+
+-          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+
+-        </div>
+
+-      </article>
+
+-
+
+-      <!-- Areal 2: Schloss Babelsberg -->
+
+-      <article class="card-areal">
+
+-        <img src="images/park-babelsberg/schloss_garten.jpeg" alt="Schloss Babelsberg Garten" loading="lazy">
+
+-        <div class="card-areal-content">
+
+-          <span class="card-areal-label" data-i18n="areale.label">Areal 2</span>
+
+-          <h3 data-i18n="areale.areal2.title">Schloss Babelsberg</h3>
+
+-          <p data-i18n="areale.areal2.description">Das neugotische Sommerschloss von Kaiser Wilhelm I. thront majestätisch über der Havel. Erbaut 1833-1849 nach Entwürfen von Karl Friedrich Schinkel.</p>
+
+-          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+
+-        </div>
+
+-      </article>
+
+-
+
+-      <!-- Areal 3: Neuer Garten -->
+
+-      <article class="card-areal">
+
+-        <img src="images/park-babelsberg/cicilienhof.jpeg" alt="Schloss Cecilienhof im Neuen Garten" loading="lazy">
+
+-        <div class="card-areal-content">
+
+-          <span class="card-areal-label" data-i18n="areale.label">Areal 3</span>
+
+-          <h3 data-i18n="areale.areal3.title">Neuer Garten</h3>
+
+-          <p data-i18n="areale.areal3.description">Ein frühes Meisterwerk der Landschaftsgestaltung am Heiligen See. Angelegt ab 1787 für Friedrich Wilhelm II. Hier fand 1945 die Potsdamer Konferenz statt.</p>
+
+-          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+
+-        </div>
+
+-      </article>
+
+-
+
+-      <!-- Areal 4: Park Glienicke -->
+
+-      <article class="card-areal">
+
+-        <img src="images/park-babelsberg/jagdschloss.jpeg" alt="Jagdschloss Glienicke" loading="lazy">
+
+-        <div class="card-areal-content">
+
+-          <span class="card-areal-label" data-i18n="areale.label">Areal 4</span>
+
+-          <h3 data-i18n="areale.areal4.title">Park Glienicke</h3>
+
+-          <p data-i18n="areale.areal4.description">Der südlichste Teil der UNESCO-Welterbe-Landschaft an der Glienicker Brücke. Ein verstecktes Juwel mit italienisch inspirierter Architektur.</p>
+
+-          <a href="#location-finder" class="btn" style="margin-top: auto;" data-i18n="areale.mapButton">Kartenansicht</a>
+
+-        </div>
+
+-      </article>
+
++    <!-- Section: Park Glienicke -->
+
++    <div class="section-block theme-glienicke" id="area-glienicke">
+
++      <header class="section__head">
+
++        <h2 class="section__title">Park Glienicke</h2>
+
++      </header>
+
++      <div class="cards-grid-areas">
+
++        <a class="card" href="park-glienicke.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/jagdschloss.webp" alt="Jagdschloss Glienicke"></figure>
+
++          <div class="card__body"><h3 class="card__title">Jagdschloss Glienicke</h3><span class="badge">Architektur</span></div>
+
++        </a>
+
+       </div>
+
+     </div>
+
+-  </section>
+
++
+
++    <!-- Section: Neuer Garten -->
+
++    <div class="section-block theme-neuer-garten" id="area-neuer-garten">
+
++      <header class="section__head">
+
++        <h2 class="section__title">Neuer Garten</h2>
+
++      </header>
+
++      <div class="cards-grid-areas">
+
++        <a class="card" href="neuer-garten.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/neuer_garten_cicilienhof.jpeg" alt="Schloss Cecilienhof"></figure>
+
++          <div class="card__body"><h3 class="card__title">Schloss Cecilienhof</h3><span class="badge">Architektur</span></div>
+
++        </a>
+
++        <a class="card" href="neuer-garten.html">
+
++          <figure class="card__media"><img src="images/park-babelsberg/meierei_wasser.jpeg" alt="Meierei im Neuen Garten"></figure>
+
++          <div class="card__body"><h3 class="card__title">Meierei</h3><span class="badge">Bauwerk</span></div>
+
++        </a>
+
++      </div>
+
++    </div>
+
++  </div>
+
++
+
++</section>
+
+ 
+
+   <!-- Kategorien-Übersicht -->
+
+   <section id="kategorien" class="section" style="background: var(--bg-accent); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">

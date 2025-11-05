@@ -22,6 +22,10 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Git worktrees
+.worktrees/
+
 # Ignore large files
 park-babelsberg/images/images 2.zip
 park-babelsberg/images/images 2/

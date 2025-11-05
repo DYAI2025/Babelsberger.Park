@@ -682,11 +682,23 @@ main {
   border: none;
   cursor: pointer;
   text-decoration: none;
+  min-height: 44px; /* For mobile touch targets */
 }
 
 .btn:hover {
   background: var(--accent-dark);
   color: var(--text-inverse);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -863,6 +875,54 @@ hr {
   margin: var(--space-1) 0 0;
 }
 
+/* Enhanced Info Box Component with Icons */
+.info-box-enhanced {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
+  align-items: flex-start;
+}
+
+.info-box-enhanced-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.info-box-enhanced-content h3 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.info-box-enhanced-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.info-box-enhanced.success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.info-box-enhanced.warning {
+  background: #fefce8;
+  border: 1px solid #fde68a;
+}
+
+.info-box-enhanced.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.info-box-enhanced.info {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
 /* Footer */
 footer {
   margin: var(--space-10) 0 var(--space-4);
@@ -1024,6 +1084,69 @@ footer {
 [data-theme="dark"] :focus-visible {
   outline: 2px solid var(--accent-light);
   outline-offset: 3px;
+}
+
+/* Loading states for images */
+.image-loading {
+  opacity: 0.7;
+  filter: blur(2px);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.image-loaded {
+  opacity: 1;
+  filter: none;
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-element {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 /* ============================================
