@@ -27,7 +27,7 @@
 
     <!-- Sub-Filter für Gastronomie -->
     <div id="gastro-subfilter" class="subfilter-panel">
-      <div style="padding:12px 16px;display:flex;gap:8px;flex-wrap:wrap;background:#fafafa;">
+      <div class="subfilter-container">
         <label class="subfilter-checkbox">
           <input type="checkbox" data-amenity="restaurant" checked> 🍽️ Restaurant
         </label>
@@ -56,7 +56,7 @@
     <div id="unified-map" style="height:500px;width:100%;background:#e5e7eb;" role="application" aria-label="Interaktive Karte"></div>
 
     <!-- Controls -->
-    <div style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:white;">
+    <div class="map-controls">
       <button id="btn-locate" class="map-btn map-btn-primary" aria-label="Meinen Standort nutzen">
         📍 Standort nutzen
       </button>
@@ -166,11 +166,19 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--border-light, #e5e7eb);
   }
 
   .subfilter-panel.open {
     max-height: 200px;
+  }
+
+  .subfilter-container {
+    padding: 12px 16px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    background: var(--bg-secondary, #fafafa);
   }
 
   .subfilter-checkbox {
@@ -178,10 +186,11 @@
     align-items: center;
     gap: 6px;
     padding: 6px 12px;
-    background: white;
-    border: 1px solid #d1d5db;
+    background: var(--bg-primary, white);
+    border: 1px solid var(--border-light, #d1d5db);
     border-radius: 6px;
     font-size: 0.85rem;
+    color: var(--text-primary, #374151);
     cursor: pointer;
     transition: all 0.2s ease;
     user-select: none;
@@ -189,11 +198,21 @@
 
   .subfilter-checkbox:hover {
     border-color: #2563eb;
-    background: #eff6ff;
+    background: var(--bg-accent, #eff6ff);
   }
 
   .subfilter-checkbox input[type="checkbox"] {
     cursor: pointer;
+  }
+
+  /* Map Controls */
+  .map-controls {
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg-primary, white);
   }
 
   /* Map Buttons */
@@ -223,7 +242,7 @@
   }
 
   .map-btn-secondary {
-    background: white;
+    background: var(--bg-primary, white);
     color: #2563eb;
     border: 2px solid #2563eb;
     font-size: 0.85rem;
@@ -327,6 +346,55 @@
     background: rgba(37, 99, 235, 0.8);
     color: white;
     font-weight: 700;
+  }
+
+  /* ============================================
+     DARK MODE ADJUSTMENTS
+     ============================================ */
+
+  [data-theme="dark"] .subfilter-container {
+    background: var(--bg-tertiary, #334155);
+  }
+
+  [data-theme="dark"] .subfilter-checkbox {
+    background: var(--bg-secondary, #1e293b);
+    border-color: var(--border-medium, #475569);
+    color: var(--text-primary, #f1f5f9);
+  }
+
+  [data-theme="dark"] .subfilter-checkbox:hover {
+    background: var(--bg-tertiary, #334155);
+    border-color: #38bdf8;
+  }
+
+  [data-theme="dark"] .map-controls {
+    background: var(--bg-secondary, #1e293b);
+  }
+
+  [data-theme="dark"] .map-btn-secondary {
+    background: var(--bg-secondary, #1e293b);
+    border-color: #38bdf8;
+    color: #38bdf8;
+  }
+
+  [data-theme="dark"] .map-btn-secondary:hover:not(:disabled) {
+    background: #38bdf8;
+    color: var(--text-inverse, #0f172a);
+  }
+
+  [data-theme="dark"] .popup-actions {
+    background: var(--bg-tertiary, #334155);
+    border-top-color: var(--border-medium, #475569);
+  }
+
+  [data-theme="dark"] .popup-btn-secondary {
+    background: var(--bg-secondary, #1e293b);
+    border-color: var(--border-medium, #475569);
+    color: var(--text-primary, #f1f5f9);
+  }
+
+  [data-theme="dark"] .popup-btn-secondary:hover {
+    background: var(--bg-tertiary, #334155);
   }
 
   /* Mobile Optimization */

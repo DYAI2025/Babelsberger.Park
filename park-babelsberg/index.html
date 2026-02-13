@@ -792,6 +792,66 @@
     display: none !important;
   }
 
+  /* Weather Content Styles */
+  #weather-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+  }
+
+  .weather-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    background: var(--bg-secondary, #f9fafb);
+    border: 1px solid var(--border-light, #e5e7eb);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+
+  .weather-day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .weather-day-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary, #6b7280);
+    margin-bottom: 8px;
+  }
+
+  .weather-day-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .weather-day-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .weather-temp-high {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-primary, #111827);
+  }
+
+  .weather-temp-low {
+    font-size: 0.875rem;
+    color: var(--text-muted, #9ca3af);
+  }
+
+  .weather-error {
+    color: var(--text-muted, #9ca3af);
+    text-align: center;
+    padding: 12px;
+    font-size: 0.875rem;
+  }
+
   /* Weather Widget - Dark Mode */
   [data-theme="dark"] #weather-widget {
     background: var(--bg-secondary, #1f2937);
@@ -807,6 +867,31 @@
 
   [data-theme="dark"] .weather-content {
     color: var(--text-primary, #f3f4f6);
+  }
+
+  [data-theme="dark"] .weather-day {
+    background: var(--bg-tertiary, #334155);
+    border-color: var(--border-medium, #475569);
+  }
+
+  [data-theme="dark"] .weather-day:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  [data-theme="dark"] .weather-day-name {
+    color: var(--text-secondary, #cbd5e1);
+  }
+
+  [data-theme="dark"] .weather-temp-high {
+    color: var(--text-primary, #f1f5f9);
+  }
+
+  [data-theme="dark"] .weather-temp-low {
+    color: var(--text-muted, #94a3b8);
+  }
+
+  [data-theme="dark"] .weather-error {
+    color: var(--text-muted, #94a3b8);
   }
 </style>
 
