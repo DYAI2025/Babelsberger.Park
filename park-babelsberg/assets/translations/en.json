@@ -1,4 +1,30 @@
 {
+  "pillar": {
+    "hero": {
+      "title": "The Three Parks of Potsdam: Babelsberg, Glienicke & New Garden",
+      "subtitle": "UNESCO World Heritage Cultural Landscape | Attractions | Practical Info"
+    }
+  },
+  "parks": {
+    "babelsberg": {
+      "name": "Park Babelsberg",
+      "description": "Historic landscape park with UNESCO World Heritage status on the banks of the Havel",
+      "link": "All about Park Babelsberg →"
+    },
+    "glienicke": {
+      "name": "Park Glienicke",
+      "description": "Classicist landscape park with Italian influences and Havel views",
+      "link": "All about Park Glienicke →"
+    },
+    "neuergarten": {
+      "name": "New Garden",
+      "description": "English landscape garden on the Heiliger See with royal history",
+      "link": "All about the New Garden →"
+    }
+  },
+  "specials": {
+    "title": "Special Features & Activities"
+  },
   "meta": {
     "title": "Park Babelsberg Potsdam – Practical Info, Toilets, Paths & Highlights",
     "description": "All practical information for your visit: Where are the toilets? Which paths are accessible? Real photos show what to expect. For families, seniors, dog owners.",
@@ -72,6 +98,7 @@
   "finder": {
     "title": "Find What You Need",
     "subtitle": "Interactive map with toilets, restaurants, parking and public transport stops. With location navigation and live timetable information.",
+    "description": "Quickly find the nearest toilet, restaurant or parking in all three parks:",
     "wc": "Toilets",
     "gastro": "Dining",
     "parking": "Parking",

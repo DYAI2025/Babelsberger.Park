@@ -41,7 +41,8 @@ class AttractionCard {
 
     // Keyboard accessibility
     card.setAttribute('tabindex', '0');
-    card.setAttribute('role', 'link');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', this.data.title);
     card.addEventListener('keypress', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
@@ -110,19 +111,15 @@ class CategoryCard {
     card.className = 'category-card';
     card.setAttribute('data-category-id', this.data.id);
 
-    // Image or icon placeholder
+    // Image placeholder (no icon overlay)
     let imageHTML = '';
     if (this.data.image && this.data.image !== '') {
       imageHTML = `
-        <div class="category-card-image" style="background-image: url('${this.data.image}');">
-          <div class="category-card-icon">${this.data.icon}</div>
-        </div>
+        <div class="category-card-image" style="background-image: url('${this.data.image}');"></div>
       `;
     } else {
       imageHTML = `
-        <div class="category-card-image">
-          <div class="category-card-icon">${this.data.icon}</div>
-        </div>
+        <div class="category-card-image"></div>
       `;
     }
 
@@ -154,7 +151,8 @@ class CategoryCard {
 
       // Keyboard accessibility
       card.setAttribute('tabindex', '0');
-      card.setAttribute('role', 'link');
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-label', this.data.title);
       card.addEventListener('keypress', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();

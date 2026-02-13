@@ -1,4 +1,30 @@
 {
+  "pillar": {
+    "hero": {
+      "title": "Die drei Parks von Potsdam: Babelsberg, Glienicke & Neuer Garten",
+      "subtitle": "UNESCO-Welterbe Kulturlandschaft | Sehenswürdigkeiten | Praktische Infos"
+    }
+  },
+  "parks": {
+    "babelsberg": {
+      "name": "Park Babelsberg",
+      "description": "Historischer Landschaftspark mit UNESCO-Welterbe-Status am Havelufer",
+      "link": "Alle Infos zu Park Babelsberg →"
+    },
+    "glienicke": {
+      "name": "Park Glienicke",
+      "description": "Klassizistischer Landschaftspark mit italienischen Einflüssen und Havelblick",
+      "link": "Alle Infos zu Park Glienicke →"
+    },
+    "neuergarten": {
+      "name": "Neuer Garten",
+      "description": "Englischer Landschaftsgarten am Heiligen See mit königlicher Geschichte",
+      "link": "Alle Infos zum Neuen Garten →"
+    }
+  },
+  "specials": {
+    "title": "Besonderheiten & Aktivitäten"
+  },
   "meta": {
     "title": "Park Babelsberg Potsdam – Praktische Infos, Toiletten, Wege & Highlights",
     "description": "Alle praktischen Infos für deinen Besuch: Wo sind Toiletten? Welche Wege sind barrierefrei? Echte Bilder zeigen, was dich erwartet. Für Familien, Senioren, Hundebesitzer.",
@@ -72,6 +98,7 @@
   "finder": {
     "title": "Finde was du brauchst",
     "subtitle": "Interaktive Karte mit WCs, Restaurants, Parkplätzen und ÖPNV-Haltestellen. Mit Standort-Navigation und Live-Fahrplanauskünften.",
+    "description": "Finde schnell die nächste Toilette, Restaurant oder Parkplatz in allen drei Parks:",
     "wc": "WC",
     "gastro": "Gastronomie",
     "parking": "Parkplätze",
