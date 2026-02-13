@@ -74,7 +74,7 @@
       "count": 1254,
       "icon": "🅿️",
       "description": "Über 1250 Parkplätze in der Nähe der drei Parks – kostenlos und kostenpflichtig. Von Straßenparkplätzen bis zu großen Parkdecks. Tipp: Anreise mit ÖPNV ist günstiger und umweltfreundlicher.",
-      "image": "images/categories/parkplaetze-placeholder.jpg",
+      "image": "images/categories/parkplaetze.jpg",
       "link": "#location-finder"
     },
     {
@@ -83,7 +83,7 @@
       "count": 23,
       "icon": "🚻",
       "description": "23 öffentliche Toiletten in und um die Parks – kostenlos und kostenpflichtig (ca. 0,50€). Alle barrierefrei zugänglichen WCs sind im Location-Finder markiert. Sauber und regelmäßig gewartet.",
-      "image": "images/categories/wc-placeholder.jpg",
+      "image": "images/categories/wc.webp",
       "link": "#location-finder"
     },
     {
@@ -92,7 +92,7 @@
       "count": 303,
       "icon": "☕",
       "description": "Über 300 Restaurants, Cafés, Imbisse und Biergärten in Laufnähe zu den Parks. Von traditioneller deutscher Küche bis zu internationalen Spezialitäten. Viele mit Terrassen und Havelblick.",
-      "image": "images/categories/gastronomie-placeholder.jpg",
+      "image": "images/categories/Gastronomie.jpeg",
       "link": "gastronomie.html"
     },
     {
@@ -101,7 +101,7 @@
       "count": 45,
       "icon": "🚌",
       "description": "45 ÖPNV-Haltestellen (Bus, Tram, S-Bahn) in direkter Parknähe. VBB-Ticket gilt für alle Verbindungen. Beste Anbindung: S7 Babelsberg, Bus 316, 692, 694. Fahrpläne im Location-Finder.",
-      "image": "images/categories/oepnv-placeholder.jpg",
+      "image": "images/categories/oepnv.jpg",
       "link": "#location-finder"
     },
     {
@@ -110,7 +110,7 @@
       "count": 8,
       "icon": "🏰",
       "description": "8 historische Schlösser, Paläste und architektonische Kleinode verteilt auf die drei Parks: Schloss Babelsberg, Flatowturm, Marmorpalais, Schloss Cecilienhof, Schloss Glienicke u.v.m.",
-      "image": "images/categories/schloesser-placeholder.jpg",
+      "image": "images/categories/schloesser.webp",
       "link": "#park-babelsberg"
     },
     {
@@ -119,7 +119,7 @@
       "count": 6,
       "icon": "🔭",
       "description": "6 spektakuläre Aussichtspunkte mit Panoramablick auf Havel, Berlin und Potsdam: Flatowturm (höchster Punkt), Belvedere auf dem Pfingstberg, Große Neugierde, Havelpromenaden.",
-      "image": "images/categories/aussicht-placeholder.jpg",
+      "image": "images/categories/aussicht.jpg",
       "link": "#park-babelsberg"
     },
     {
@@ -128,7 +128,7 @@
       "count": 9,
       "icon": "🌊",
       "description": "9 Uferabschnitte und Wassersport-Spots: Havelpromenaden, Bootsstege, SUP-Verleih, Kanuanlegestellen. Perfekt für Wassersport, Spaziergänge und Sonnenuntergänge am Wasser.",
-      "image": "images/categories/wasser-placeholder.jpg",
+      "image": "images/categories/wasser.jpg",
       "link": "#park-babelsberg"
     },
     {
@@ -137,7 +137,7 @@
       "count": 7,
       "icon": "🌳",
       "description": "7 Liegewiesen, Naturschutzgebiete und botanische Highlights: Perfekt für Picknick, Sonnenbaden und Naturbeobachtung. Alte Baumbestände, Feuchtwiesen, Wildblumenwiesen.",
-      "image": "images/categories/natur-placeholder.jpg",
+      "image": "images/categories/natur.jpg",
       "link": "#park-babelsberg"
     },
     {
@@ -146,7 +146,7 @@
       "count": 11,
       "icon": "📚",
       "description": "11 Museen, Gedenkstätten und historische Stätten: Vom preußischen Königtum bis zur Potsdamer Konferenz. Geschichte zum Anfassen in authentischen Schauplätzen.",
-      "image": "images/categories/kultur-placeholder.jpg",
+      "image": "images/categories/kultur.jpg",
       "link": "#park-babelsberg"
     }
   ],
