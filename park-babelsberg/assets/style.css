@@ -73,6 +73,8 @@
   --container-padding: var(--space-4);
 }
 
+
+
 /* ============================================
    DARK MODE
    ============================================ */
@@ -117,6 +119,7 @@
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.7);
   --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.8);
+
 }
 
 /* System Preference Detection */
@@ -361,12 +364,11 @@ a:hover {
 .nav {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   background: var(--glass-bg);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
   backdrop-filter: blur(12px) saturate(180%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 1000;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -3287,10 +3289,6 @@ summary:focus-visible {
 
   .category-card-content h3 {
     font-size: 1.125rem;
-  }
-
-  .category-card-image {
-    height: 150px;
   }
 
   .category-card-image {

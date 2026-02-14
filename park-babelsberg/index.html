@@ -46,6 +46,44 @@
 
   <link rel="stylesheet" href="assets/style.css">
 
+  <!-- Legacy design-system variables (separate from external stylesheet to avoid parser truncation) -->
+  <style>
+    :root {
+      --grid: 8px;
+      --bg: #ffffff;
+      --bg-subtle: #fafbfc;
+      --border: #e2e8f0;
+      --radius: 0.75rem;
+      --ink: #0f172a;
+      --ink-muted: #475569;
+      --ink-secondary: #64748b;
+      --accent: #0ea5e9;
+      --bg-surface: #fafbfc;
+    }
+    [data-theme="dark"] {
+      --bg: #0f172a;
+      --bg-subtle: #1e293b;
+      --border: #334155;
+      --ink: #f1f5f9;
+      --ink-muted: #cbd5e1;
+      --ink-secondary: #94a3b8;
+      --accent: #38bdf8;
+      --bg-surface: #1e293b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0f172a;
+        --bg-subtle: #1e293b;
+        --border: #334155;
+        --ink: #f1f5f9;
+        --ink-muted: #cbd5e1;
+        --ink-secondary: #94a3b8;
+        --accent: #38bdf8;
+        --bg-surface: #1e293b;
+      }
+    }
+  </style>
+
   <!-- Google Analytics 4 - Deferred for performance -->
   <script defer src="https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ"></script>
   <script>
@@ -546,6 +584,14 @@
     <section class="categories-section" id="kategorien"
       style="background: var(--bg-accent); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
       <div style="max-width: var(--container-max); margin: 0 auto;">
+        <div class="section-header">
+          <h2>Entdecke nach Kategorien</h2>
+          <p>Finde schnell, was du suchst – systematisch gruppiert nach Themen:</p>
+        </div>
+        <div class="categories-grid" id="categories-container">
+          <!-- JavaScript renders categories here (lazy-loaded) -->
+        </div>
+      </div>
     </section>
 
     <!-- Categories & Map Section -->
@@ -1452,8 +1498,8 @@
 
         // Also toggle when clicking header
         if (weatherHeader) {
-          weatherHeader.addEventListener('click', () => {
-            if (event.target !== weatherToggle) {
+          weatherHeader.addEventListener('click', (e) => {
+            if (e.target !== weatherToggle) {
               weatherToggle.click();
             }
           });
