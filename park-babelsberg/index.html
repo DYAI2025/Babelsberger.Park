@@ -560,9 +560,27 @@
 
         <!-- Unified Map iframe -->
         <iframe src="modules/unified-map-v4.html" width="100%" height="600" frameborder="0" title="Location Finder"
-          loading="lazy" style="border-radius: var(--radius-md); border: 1px solid var(--border-light);"></iframe>
+          loading="lazy" style="border-radius: var(--radius-md); border: 1px solid var(--border-light);"
+          allowfullscreen></iframe>
       </div>
     </section>
+
+    <!-- Mobile Map Fullscreen Button -->
+    <style>
+      @media (max-width: 768px) {
+        #location-finder iframe {
+          height: 50vh;
+          min-height: 300px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #location-finder iframe {
+          height: 45vh;
+          min-height: 280px;
+        }
+      }
+    </style>
 
     <!-- AdSense Unit - Before Planning -->
     <aside class="ad-unit">
