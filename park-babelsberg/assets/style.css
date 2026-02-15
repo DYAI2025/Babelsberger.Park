@@ -71,6 +71,12 @@
   /* Container */
   --container-max: 1200px;
   --container-padding: var(--space-4);
+  
+  /* Section Background Variations for Visual Differentiation */
+  --section-bg-default: var(--bg-primary);
+  --section-bg-alternate: rgba(240, 249, 255, 0.4);  /* Very subtle blue tint */
+  --section-bg-accent-soft: rgba(14, 165, 233, 0.03);  /* Extremely subtle accent */
+  --section-bg-warm: rgba(251, 191, 36, 0.04);  /* Subtle warm tint */
 }
 
 
@@ -119,6 +125,12 @@
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.7);
   --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.8);
+  
+  /* Section Background Variations - Dark Mode */
+  --section-bg-default: var(--bg-primary);
+  --section-bg-alternate: rgba(30, 41, 59, 0.6);  /* Subtle darker tint */
+  --section-bg-accent-soft: rgba(56, 189, 248, 0.05);  /* Subtle bright accent */
+  --section-bg-warm: rgba(251, 191, 36, 0.06);  /* Subtle warm tint */
 
 }
 
@@ -349,6 +361,7 @@ a:hover {
   margin: calc(var(--space-6) * -1) auto var(--space-6);
   padding: var(--space-5);
   background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
@@ -412,29 +425,43 @@ main {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: var(--space-8) var(--container-padding);
+  /* Very subtle background for main content area */
+  background: var(--section-bg-default);
 }
 
-/* Sections - Consistent Spacing */
+/* Sections - Consistent Spacing with Subtle Visual Separation */
 .section {
-  margin: var(--space-6) 0;
+  margin: var(--space-8) 0;
   border-radius: var(--radius-xl);
   overflow: hidden;
+  /* Add subtle padding and separation */
+  padding: var(--space-6) 0;
 }
 
 .section:first-child {
   margin-top: 0;
+  padding-top: 0;
+}
+
+.section:not(:last-child) {
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5);
 }
 
 .section h2 {
-  margin: 0 0 var(--space-2);
+  margin: 0 0 var(--space-3);
   @apply heading-lg;
   color: var(--text-primary);
+  /* Better heading emphasis */
+  font-weight: 700;
 }
 
 .section > p {
   margin-bottom: var(--space-4);
+  /* Improved readability */
   color: var(--text-secondary);
   @apply body-base;
+  line-height: 1.75;
+  max-width: 65ch;
 }
 
 /* Card Grid - Responsive & Clean */
@@ -450,7 +477,7 @@ main {
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-xs);
+  box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
@@ -459,7 +486,7 @@ main {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--accent-light);
+  border-color: var(--accent-primary);
 }
 
 .card img {
@@ -479,13 +506,16 @@ main {
   @apply heading-sm;
   margin: var(--space-3) var(--space-3) var(--space-2);
   color: var(--text-primary);
+  line-height: 1.4;
 }
 
 .card p {
   margin: 0 var(--space-3) var(--space-3);
+  /* Improved text contrast */
   color: var(--text-secondary);
   @apply body-base;
   flex-grow: 1;
+  line-height: 1.7;
 }
 
 /* Areal Cards - 16:9 Landscape */
@@ -945,18 +975,26 @@ footer {
 .section-header {
   text-align: center;
   margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent 0%, var(--border-light) 50%, transparent 100%) 1;
 }
 
 .section-header h2 {
   @apply heading-lg;
   margin: 0 0 var(--space-2);
+  /* Improved readability */
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .section-header p {
+  /* Enhanced secondary text contrast */
   color: var(--text-secondary);
   @apply body-lg;
   max-width: 800px;
   margin: 0 auto;
+  line-height: 1.75;
 }
 
 /* FAQ Section */
@@ -2567,7 +2605,7 @@ summary:focus-visible {
   color: var(--text-muted);
 }
 
-/* Hero Section Refactoring */
+/* Hero Section Refactoring - Enhanced Readability */
 .hero-wrapper {
     position: relative;
     overflow: hidden;
@@ -2591,7 +2629,8 @@ summary:focus-visible {
     color: white;
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     line-height: 1.1;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    /* Enhanced text shadow for better readability */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.7), 0 8px 24px rgba(0,0,0,0.4);
     z-index: 2;
     width: 90%;
     max-width: 1200px;
@@ -2601,13 +2640,15 @@ summary:focus-visible {
     font-size: clamp(1.25rem, 3vw, 2rem);
     display: block;
     margin-top: 1rem;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    /* Enhanced subtitle shadow */
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.8);
 }
 
 .hero-gradient-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.4) 100%);
+    /* Improved gradient for better text contrast */
+    background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.55) 100%);
     z-index: 1;
 }
 
@@ -2694,6 +2735,10 @@ summary:focus-visible {
   padding: var(--space-8) var(--container-padding);
   max-width: var(--container-max);
   margin: 0 auto;
+  /* Subtle background for section differentiation */
+  background: var(--section-bg-alternate);
+  margin-left: calc(var(--container-padding) * -1);
+  margin-right: calc(var(--container-padding) * -1);
 }
 
 .persona-section .section-header {
@@ -2721,14 +2766,18 @@ summary:focus-visible {
 }
 
 .persona-card {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-light);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
   position: relative;
+  /* Subtle background tint per persona type */
+  background: linear-gradient(180deg, 
+    var(--bg-primary) 0%, 
+    color-mix(in srgb, var(--persona-color, var(--accent-primary)) 3%, var(--bg-primary)) 100%
+  );
 }
 
 .persona-card::before {
@@ -2737,8 +2786,9 @@ summary:focus-visible {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 5px;
   background: var(--persona-color, var(--accent-primary));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .persona-card:hover {
@@ -2853,9 +2903,12 @@ summary:focus-visible {
    ============================================ */
 .seasonal-section {
   padding: var(--space-8) var(--container-padding);
-  background: var(--bg-accent);
+  /* Enhanced subtle background */
+  background: linear-gradient(180deg, var(--section-bg-accent-soft) 0%, var(--bg-accent) 100%);
   margin-left: calc(var(--container-padding) * -1);
   margin-right: calc(var(--container-padding) * -1);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
 }
 
 .seasonal-inner {
@@ -2873,14 +2926,16 @@ summary:focus-visible {
 .seasonal-card {
   background: var(--bg-primary);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--border-light);
   overflow: hidden;
   transition: all var(--transition-base);
+  box-shadow: var(--shadow-xs);
 }
 
 .seasonal-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-primary);
 }
 
 .seasonal-card-header {
@@ -2889,14 +2944,18 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  /* Enhanced gradient depth */
+  position: relative;
 }
 
 .seasonal-card-header.summer {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 50%, #d97706 100%);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .seasonal-card-header.winter {
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .seasonal-card-header h3 {
@@ -3105,7 +3164,8 @@ summary:focus-visible {
 /* Specials Section */
 .specials-section {
   padding: calc(var(--grid) * 6) calc(var(--grid) * 3);
-  background: var(--bg-subtle);
+  background: var(--section-bg-warm);
+  border-top: 1px solid var(--border-light);
 }
 
 .specials-section h2 {
@@ -3161,6 +3221,9 @@ summary:focus-visible {
 .categories-section {
   padding: calc(var(--grid) * 8) calc(var(--grid) * 3);
   position: relative;
+  /* Already has background from inline styles, add border for separation */
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
 }
 
 .categories-section .section-header {
@@ -3294,4 +3357,432 @@ summary:focus-visible {
   .category-card-image {
     height: 140px;
   }
+}
+
+/* ============================================
+   MONETIZATION & SERVICE FEATURES (Added 2026)
+   ============================================ */
+
+/* Service Grid (Home) */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.service-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+  background: var(--bg-accent);
+}
+
+.service-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-3);
+  line-height: 1;
+}
+
+.service-card h3 {
+  @apply heading-sm;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.service-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: var(--space-2);
+}
+
+/* Pricing Table (Tickets) */
+.pricing-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  background: var(--bg-primary);
+}
+
+.pricing-table th, 
+.pricing-table td {
+  padding: var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pricing-table th {
+  background-color: var(--bg-secondary);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.pricing-table tr:hover {
+  background-color: var(--bg-accent);
+}
+
+/* Hotel Card (Accommodation) */
+.hotel-card {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+  background: var(--bg-primary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 768px) {
+  .hotel-card {
+    flex-direction: row;
+    min-height: 220px;
+  }
+  .hotel-image {
+    width: 40%;
+    min-height: auto;
+  }
+  .hotel-content {
+    width: 60%;
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.hotel-image {
+  background-color: var(--bg-secondary);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+.hotel-content {
+  padding: var(--space-4);
+}
+
+.hotel-rating {
+  color: var(--warning);
+  font-weight: bold;
+  margin-bottom: var(--space-1);
+  display: block;
+  font-size: 0.9rem;
+}
+
+.hotel-features {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.btn-book {
+  background-color: #0071c2;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.btn-book:hover {
+  background-color: #005999;
+}
+
+/* ============================================
+   SUBPAGE LAYOUTS (Added for Monetization Pages)
+   ============================================ */
+
+.breadcrumbs {
+  padding: var(--space-2);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.breadcrumbs a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.hero-subpage {
+  position: relative;
+  height: 40vh;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.hero-subpage.hero-large {
+  height: 50vh;
+  min-height: 400px;
+}
+
+.hero-subpage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-subpage-content {
+  position: absolute;
+  bottom: var(--space-5);
+  left: var(--space-3);
+  right: var(--space-3);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  color: white;
+  z-index: 2;
+}
+
+.hero-subpage-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.hero-subpage-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  margin-top: var(--space-2);
+}
+
+.content-container {
+  max-width: 800px;
+  padding: var(--space-5) var(--space-3);
+  margin: 0 auto;
+}
+
+.content-container.content-wide {
+    max-width: 900px;
+}
+
+.ad-container {
+    margin: var(--space-4) 0;
+    text-align: center;
+}
+
+.section-highlight {
+    background: var(--bg-secondary);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    margin: var(--space-5) 0;
+}
+
+.footer-simple {
+    background: var(--bg-secondary);
+    padding: var(--space-5) var(--space-3);
+    margin-top: var(--space-6);
+    text-align: center;
+}
+
+/* ============================================
+   TABLE STYLES (Moved from Oeffnungszeiten)
+   ============================================ */
+
+.price-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  background: var(--bg-primary);
+}
+
+.price-table th,
+.price-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.price-table th {
+  background-color: var(--bg-secondary);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.price-table tr:hover {
+  background-color: var(--bg-accent);
+}
+
+.badge-small {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+/* ============================================
+   HOTEL CARD IMAGE FIX (For img tag support)
+   ============================================ */
+
+.hotel-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hotel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ============================================
+   ALERT COMPONENTS
+   ============================================ */
+
+.alert {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  border-left: 4px solid transparent;
+}
+
+.alert-info {
+  background: var(--bg-accent);
+  border-left-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+/* Venue Card Image */
+.card-image-venue {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-3);
+}
+
+/* ============================================
+   FULL WIDTH SECTION & MAP (Refactored)
+   ============================================ */
+
+.section-full-width {
+  background: var(--bg-accent);
+  padding: var(--space-8) var(--container-padding);
+  margin-left: calc(var(--container-padding) * -1);
+  margin-right: calc(var(--container-padding) * -1);
+}
+
+.section-full-width-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.map-iframe {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  width: 100%;
+  height: 600px;
+}
+
+@media (max-width: 768px) {
+  .map-iframe {
+    height: 50vh;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-iframe {
+    height: 45vh;
+    min-height: 280px;
+  }
+}
+
+.mt-space-4 {
+    margin-top: var(--space-4);
+}
+
+/* ============================================
+   STICKY FOOTER AD (Mobile Only)
+   ============================================ */
+
+.sticky-footer-ad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-light);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-2);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  transform: translateY(100%);
+  animation: slideUp 0.5s ease 3s forwards; /* 3s delay before showing */
+}
+
+@keyframes slideUp {
+  to { transform: translateY(0); }
+}
+
+@media (min-width: 768px) {
+  .sticky-footer-ad {
+    display: none;
+  }
+}
+
+.sticky-footer-ad-close {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-bottom: none;
+  padding: 4px 10px;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }

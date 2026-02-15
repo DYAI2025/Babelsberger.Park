@@ -60,6 +60,7 @@
       --accent: #0ea5e9;
       --bg-surface: #fafbfc;
     }
+
     [data-theme="dark"] {
       --bg: #0f172a;
       --bg-subtle: #1e293b;
@@ -70,6 +71,7 @@
       --accent: #38bdf8;
       --bg-surface: #1e293b;
     }
+
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
         --bg: #0f172a;
@@ -190,7 +192,7 @@
     <span class="separator">›</span>
     <a href="/park-babelsberg/">Parks & Schlösser</a>
     <span class="separator">›</span>
-    <span class="current">Pillar Guide: Die drei Parks von Potsdam</span>
+    <span class="current">Die drei Parks von Potsdam</span>
   </nav>
 
   <!-- Sticky Table of Contents -->
@@ -595,9 +597,8 @@
     </section>
 
     <!-- Categories & Map Section -->
-    <section class="section" id="location-finder"
-      style="background: var(--bg-accent); padding: var(--space-8) var(--container-padding); margin-left: calc(var(--container-padding) * -1); margin-right: calc(var(--container-padding) * -1);">
-      <div style="max-width: var(--container-max); margin: 0 auto;">
+    <section class="section section-full-width" id="location-finder">
+      <div class="section-full-width-inner">
         <div class="section-header">
           <h2 data-i18n="finder.title">WC, Gastronomie & Parkplätze finden</h2>
           <p data-i18n="finder.description">Finde schnell die nächste Toilette, Restaurant oder Parkplatz in allen drei
@@ -605,28 +606,10 @@
         </div>
 
         <!-- Unified Map iframe -->
-        <iframe src="modules/unified-map-v4.html" width="100%" height="600" frameborder="0" title="Location Finder"
-          loading="lazy" style="border-radius: var(--radius-md); border: 1px solid var(--border-light);"
-          allowfullscreen></iframe>
+        <iframe src="modules/unified-map-v4.html" frameborder="0" title="Location Finder" loading="lazy"
+          class="map-iframe" allowfullscreen></iframe>
       </div>
     </section>
-
-    <!-- Mobile Map Fullscreen Button -->
-    <style>
-      @media (max-width: 768px) {
-        #location-finder iframe {
-          height: 50vh;
-          min-height: 300px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        #location-finder iframe {
-          height: 45vh;
-          min-height: 280px;
-        }
-      }
-    </style>
 
     <!-- AdSense Unit - Before Planning -->
     <aside class="ad-unit">
@@ -638,33 +621,45 @@
     <!-- VISIT PLANNING / HIGH-CPC CONTENT             -->
     <!-- ============================================ -->
     <section class="pillar-content-section" id="planen">
-      <h2 data-i18n="planen.title">Ihren Besuch planen: Praktische Informationen</h2>
-      <p data-i18n="planen.subtitle">Die „Perlenkette“ von der Glienicker Brücke im Süden bis zur Meierei im Norden
-        erstreckt sich über ca. 4–5 km entlang der Havel. Planen Sie Ihren Besuch entlang dieses zusammenhängenden
-        Erlebnisbandes – drei Parks, drei Bundesland-Grenzen, eine UNESCO-Kulturlandschaft.</p>
-
-      <div class="highlight-box">
-        <p>💡 <strong>Insider-Tipp:</strong> Starten Sie an der Glienicker Brücke (lokal „Klinikerbrücke“ genannt) und
-          wandern Sie nordwärts über Park Babelsberg zum Neuen Garten. Die Meierei am Ende der Strecke ist der perfekte
-          kulinarische Abschluss mit hauseigener Brauerei.</p>
+      <div class="section-header">
+        <h2 data-i18n="planen.title">Besucher-Service & Planung</h2>
+        <p data-i18n="planen.subtitle">Alles für Ihren perfekten Aufenthalt: Von der Anreise bis zur Übernachtung.</p>
       </div>
 
-      <div class="info-box-grid">
-        <div class="info-box">
-          <h3 data-i18n="planen.hotels.title">Unterkünfte & Hotels</h3>
-          <p data-i18n="planen.hotels.text">Potsdam-Babelsberg bietet eine breite Palette an Unterkünften – von
-            Boutique-Hotels nahe dem Filmpark bis zu historischen Pensionen.</p>
-        </div>
-        <div class="info-box">
-          <h3 data-i18n="planen.weddings.title">Hochzeitslocations</h3>
-          <p data-i18n="planen.weddings.text">Die Remise Glienicke, Schloss Babelsberg und das Casino am Jungfernsee
-            zählen zu den exklusivsten Locations.</p>
-        </div>
-        <div class="info-box">
-          <h3 data-i18n="planen.insurance.title">Reiseversicherung</h3>
-          <p data-i18n="planen.insurance.text">Für internationale Gäste empfiehlt sich eine Reiseversicherung mit
-            Rücktritts- und Krankenversicherungsschutz.</p>
-        </div>
+      <div class="service-grid">
+        <!-- Card 1: Anreise -->
+        <a href="anreise-parken.html" class="service-card">
+          <div class="service-card-icon">🚗</div>
+          <h3>Anreise & Parken</h3>
+          <p>Parkplätze, Bus & Bahn Verbindungen</p>
+        </a>
+
+        <!-- Card 2: Tickets -->
+        <a href="oeffnungszeiten-tickets.html" class="service-card">
+          <div class="service-card-icon">🎟️</div>
+          <h3>Öffnungszeiten & Tickets</h3>
+          <p>Preise, Schlösser & Führungen</p>
+        </a>
+
+        <!-- Card 3: Hotels -->
+        <a href="uebernachten.html" class="service-card">
+          <div class="service-card-icon">🛏️</div>
+          <h3>Übernachten</h3>
+          <p>Hotels & Pensionen am Park</p>
+        </a>
+
+        <!-- Card 4: Weddings -->
+        <a href="heiraten-feiern.html" class="service-card">
+          <div class="service-card-icon">💍</div>
+          <h3>Heiraten & Feiern</h3>
+          <p>Traumlocations für Ihre Hochzeit</p>
+        </a>
+      </div>
+
+      <div class="highlight-box mt-space-4">
+        <p>💡 <strong>Insider-Tipp:</strong> Starten Sie an der Glienicker Brücke und wandern Sie nordwärts über Park
+          Babelsberg zum Neuen Garten. Die Meierei am Ende der Strecke (ca. 4-5 km) ist der perfekte kulinarische
+          Abschluss.</p>
       </div>
     </section>
 
@@ -680,7 +675,7 @@
 
       <div class="blog-grid">
         <article class="blog-card">
-          <img src="images/park-babelsberg/attractions/glienicke-bridge.webp" alt="Glienicker Brücke">
+          <img src="images/park-babelsberg/attractions/glienicke-bridge.jpeg" alt="Glienicker Brücke">
           <div class="blog-card-content">
             <h3>Glienicker Brücke: Die Agenten-Brücke</h3>
             <p>Alles über den berühmtesten Agentenaustausch-Ort des Kalten Krieges.</p>
@@ -689,7 +684,7 @@
         </article>
 
         <article class="blog-card">
-          <img src="images/park-babelsberg/attractions/dampfmaschine.webp" alt="Dampfmaschinenhaus">
+          <img src="images/park-babelsberg/attractions/dampfmaschine.jpeg" alt="Dampfmaschinenhaus">
           <div class="blog-card-content">
             <h3>Dampfmaschinenhaus Babelsberg</h3>
             <p>Technik im Gewand einer normannischen Burg. Ein preußisches Meisterwerk.</p>
@@ -699,7 +694,7 @@
         </article>
 
         <article class="blog-card">
-          <img src="images/park-babelsberg/attractions/hochzeit-potsdam.webp" alt="Heiraten in Potsdam">
+          <img src="images/park-babelsberg/attractions/hochzeit-potsdam.jpeg" alt="Heiraten in Potsdam">
           <div class="blog-card-content">
             <h3>Traumhochzeit in Potsdam</h3>
             <p>Die schönsten Locations für den „schönsten Tag“ zwischen Schlössern und Gärten.</p>
@@ -1452,6 +1447,21 @@
       }
     })();
   </script>
+
+
+  <!-- Mobile Sticky Footer Ad -->
+  <div class="sticky-footer-ad" id="mobileStickyAd">
+    <button class="sticky-footer-ad-close"
+      onclick="document.getElementById('mobileStickyAd').style.removeProperty('display'); document.getElementById('mobileStickyAd').style.display='none';"
+      aria-label="Close Ad">×</button>
+    <div style="width: 100%; max-width: 320px; height: 50px;">
+      <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px"
+        data-ad-client="ca-pub-1712273263687132" data-ad-slot="BABELSB_STICKY_MOBILE"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
 
   <!-- i18n System -->
   <script src="assets/i18n.js"></script>

@@ -12,13 +12,27 @@
 <body>
 
 <header class="header">
-  <div class="hero" style="background-image: url('images/park-babelsberg/schiffarht.jpeg');">
-    <h1 data-i18n="wasser.hero.title">Die Havel vom Wasser aus</h1>
-    <p class="lead" data-i18n="wasser.hero.subtitle">Potsdams Parklandschaft neu entdecken</p>
+  <div class="hero">
+    <img src="images/park-babelsberg/schiffarht.jpeg" 
+         alt="Die Havel vom Wasser aus – Potsdams Parklandschaft neu entdecken" 
+         width="1200" 
+         height="675" 
+         fetchpriority="high"
+         style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 600px;">
   </div>
 </header>
 
 <main id="content">
+
+  <!-- Page Header -->
+  <header class="content-header" style="max-width: 900px; margin: 0 auto; padding: var(--space-8) var(--container-padding) var(--space-6);">
+    <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: var(--space-3); color: var(--text-primary);" data-i18n="wasser.hero.title">
+      Die Havel vom Wasser aus
+    </h1>
+    <p style="font-size: clamp(1.125rem, 2.5vw, 1.5rem); color: var(--text-muted); margin-bottom: 0; font-weight: 400;" data-i18n="wasser.hero.subtitle">
+      Potsdams Parklandschaft neu entdecken
+    </p>
+  </header>
 
   <section class="section">
     <div class="section-header">
