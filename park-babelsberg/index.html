@@ -21,6 +21,10 @@
   <meta name="geo.placename" content="Park Babelsberg, Potsdam">
   <meta name="geo.position" content="52.400;13.085">
   <link rel="canonical" href="https://park.babelsberger.info/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/">
+  <link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://park.babelsberger.info/park-babelsberg/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -120,7 +124,7 @@
         "name": "Park Babelsberg",
         "description": "Historischer Landschaftspark mit UNESCO-Welterbe-Status am Havelufer. Highlights: Schloss Babelsberg, Flatowturm, Matrosenhaus, Dampfmaschinenhaus, Uferweg Nord.",
         "url": "https://park.babelsberger.info/park-babelsberg/park-babelsberg.html",
-        "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg",
+        "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/attractions/schloss-babelsberg-1.webp",
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": "52.4089",
@@ -164,7 +168,7 @@
         "name": "Neuer Garten",
         "description": "Englischer Landschaftsgarten am Heiligen See mit königlicher Geschichte. Highlights: Marmorpalais, Schloss Cecilienhof, Muschelgrotte, Orangerie, Gotische Bibliothek.",
         "url": "https://park.babelsberger.info/park-babelsberg/neuer-garten.html",
-        "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/jagdschloss.jpeg",
+        "image": "https://park.babelsberger.info/park-babelsberg/images/park-babelsberg/cicilienhof_weit.jpeg",
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": "52.4197",
@@ -224,13 +228,13 @@
   </button>
 
   <!-- Floating Weather Widget (with flags) - Desktop only -->
-  <div id="weather-widget" style="position: fixed; top: 80px; right: 20px; width: 220px; z-index: 1000; display: none;">
+  <div id="weather-widget" style="position: fixed; top: 130px; right: 20px; width: 220px; z-index: 1000; display: none;">
     <div id="weather-header"
-      style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white; padding: 8px 12px; border-radius: 6px 6px 0 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+      style="background: linear-gradient(135deg, #0284c7, #0369a1); color: white; padding: 8px 12px; border-radius: 6px 6px 0 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
       <h3 style="margin: 0; font-size: 0.9rem;">🌤️ Wetter</h3>
       <span id="weather-toggle" style="cursor: pointer; font-size: 1.2rem;">▲</span>
     </div>
-    <div id="weather-content"
+    <div id="weather-content" tabindex="0" aria-label="Wetterinhalt"
       style="background: white; border: 1px solid #d1d5db; border-top: none; border-radius: 0 0 6px 6px; padding: 12px; max-height: 200px; overflow-y: auto;">
       <div id="weather-flags"
         style="display: flex; justify-content: space-around; margin-bottom: 8px; font-size: 1.2rem;">
@@ -304,17 +308,7 @@
 
   </header>
 
-  <main class="pillar-page" data-date="2025-11-05">
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/park-babelsberg/schloss_allee.jpeg"
-        alt="Schlossallee im Park Babelsberg – UNESCO Welterbe Kulturlandschaft" loading="eager">
-      <div class="hero-content">
-        <h1 data-i18n="pillar.hero.title">Die drei Parks von Potsdam: Babelsberg, Glienicke & Neuer Garten</h1>
-        <p class="subtitle" data-i18n="pillar.hero.subtitle">UNESCO-Welterbe Kulturlandschaft | Reiseführer 2025 | Von
-          der Glienicker Brücke bis zur Meierei</p>
-      </div>
-    </section>
+  <main class="pillar-page" data-date="2026-03-03">
 
     <!-- E-E-A-T Trust Signals -->
     <section class="trust-signals" aria-label="Vertrauens-Signale">
@@ -718,9 +712,9 @@
     </section>
 
     <!-- AdSense Unit - Before FAQ -->
-    <aside class="ad-unit">
+    <aside class="ad-unit" aria-label="Anzeige">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1712273263687132"
-        data-ad-slot="BABELSB_PLANEN_4" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        data-ad-slot="BABELSB_FAQ_5" data-ad-format="auto" data-full-width-responsive="true"></ins>
     </aside>
 
     <!-- ============================================ -->
@@ -1678,17 +1672,8 @@
   <!-- Parks Renderer -->
   <script src="assets/parks-renderer.js" defer></script>
 
-  <!-- Initialize AdSense after content loads -->
-  <script>
-    window.addEventListener('load', function () {
-      try {
-        var ads = document.querySelectorAll('.adsbygoogle');
-        for (var i = 0; i < ads.length; i++) {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        }
-      } catch (e) { /* AdSense may not be loaded */ }
-    });
-  </script>
+  <!-- Centralized AdSense initializer (replaces scattered inline pushes) -->
+  <script src="assets/ad-config.js" defer></script>
 
   <!-- Sticky TOC Scroll-Spy & Smooth Scroll -->
   <script>

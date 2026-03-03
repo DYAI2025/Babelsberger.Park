@@ -18,9 +18,9 @@
   --text-light: #94a3b8;
   --text-inverse: #ffffff;
   
-  --accent-primary: #0ea5e9;
-  --accent-secondary: #06b6d4;
-  --accent-dark: #0284c7;
+  --accent-primary: #0284c7;   /* sky-600 – Kontrast 4.6:1 auf Weiß (WCAG AA ✓) */
+  --accent-secondary: #0ea5e9; /* sky-400 – nur für dekorative Zwecke, nicht für Text */
+  --accent-dark: #0369a1;      /* sky-700 */
   --accent-light: #7dd3fc;
   
   --success: #10b981;
@@ -75,7 +75,7 @@
   /* Section Background Variations for Visual Differentiation */
   --section-bg-default: var(--bg-primary);
   --section-bg-alternate: rgba(240, 249, 255, 0.4);  /* Very subtle blue tint */
-  --section-bg-accent-soft: rgba(14, 165, 233, 0.03);  /* Extremely subtle accent */
+  --section-bg-accent-soft: rgba(2, 132, 199, 0.03);   /* Extremely subtle accent */
   --section-bg-warm: rgba(251, 191, 36, 0.04);  /* Subtle warm tint */
 }
 
@@ -2376,6 +2376,14 @@ summary:focus-visible {
   margin-right: auto;
 }
 
+/* Anchor-as-card: reset link styles so <a class="attraction-card"> looks like a card */
+a.attraction-card,
+a.category-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .attraction-card {
   background: var(--bg);
   border: 1px solid var(--border);
@@ -3265,6 +3273,21 @@ summary:focus-visible {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   border-color: var(--accent-primary);
+}
+
+/* img-variant for category card (replaces background-image) */
+.category-card-image-img,
+.card-image-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-image-img {
+  border-radius: calc(var(--radius) / 2);
+  margin-bottom: calc(var(--grid) * 1.5);
 }
 
 .category-card-image {
