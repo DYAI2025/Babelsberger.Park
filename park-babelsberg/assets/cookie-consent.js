@@ -73,7 +73,7 @@
               cursor: pointer;
               transition: all 0.2s;
             " onmouseover="this.style.borderColor='rgba(255,255,255,0.6)'; this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)'; this.style.background='transparent';">
-              Nur notwendige
+              Ablehnen
             </button>
 
             <button id="cookie-settings" style="
