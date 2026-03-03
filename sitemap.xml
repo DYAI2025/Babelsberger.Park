@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://park.babelsberger.info/</loc><lastmod>2026-02-13</lastmod></url>
+  <url><loc>https://park.babelsberger.info/</loc><lastmod>2026-03-03</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/anreise.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/datenschutz.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/eritage.html</loc><lastmod>2026-02-13</lastmod></url>
@@ -12,7 +12,7 @@
   <url><loc>https://park.babelsberger.info/park-babelsberg/geschichte.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/gr%C3%BCnes-haus.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/impressum.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/index.html</loc><lastmod>2026-02-13</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/index.html</loc><lastmod>2026-03-03</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/jagdschloss-glienicke.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/laufen.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/liegewiesen.html</loc><lastmod>2026-02-13</lastmod></url>
@@ -34,4 +34,22 @@
   <url><loc>https://park.babelsberger.info/park-babelsberg/uferweg-nord.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/wasseraktivitaeten.html</loc><lastmod>2026-02-13</lastmod></url>
   <url><loc>https://park.babelsberger.info/park-babelsberg/yoga.html</loc><lastmod>2026-02-13</lastmod></url>
+  <!-- Blog / Magazin -->
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/index.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/agentenaustausch-glienicker-bruecke.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/biosphaere-potsdam-winter-tipp.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/dampfmaschinenhaus-technisches-wunder.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/filmpark-babelsberg-familien-guide.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/fotografie-guenther-platz-cecilienhof.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/gastronomie-guide-babelsberg.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/geocaching-babelsberg-schatzsuche.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/heiliger-see-baden-neuer-garten.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/heiraten-in-potsdam-locations.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/jogging-routen-babelsberg.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/park-babelsberg-mit-hund.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/schloss-cecilienhof-weltgeschichte.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/yoga-meditation-potsdam-parks.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/tagesausflug-potsdam.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/potsdam-mit-kindern.html</loc><lastmod>2026-03-03</lastmod></url>
+  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/fruehling-potsdam-blueten.html</loc><lastmod>2026-03-03</lastmod></url>
 </urlset>

@@ -43,7 +43,8 @@
     "enthusiasts": "For Enthusiasts",
     "arrival": "Getting Here",
     "faq": "FAQ",
-    "wasser": "Water Activities"
+    "wasser": "Water Activities",
+    "magazin": "Magazine"
   },
   "funfacts": {
     "title": "Did You Know?",
@@ -496,7 +497,12 @@
   },
   "blog": {
     "title": "Babelsberg Magazine",
-    "subtitle": "Dive deeper into history, technology, and lifestyle around the UNESCO World Heritage site."
+    "subtitle": "Dive deeper into history, technology, and lifestyle around the UNESCO World Heritage site.",
+    "allArticles": "View all articles"
+  },
+  "blogIndex": {
+    "title": "Babelsberg Magazine",
+    "subtitle": "History, excursion tips and insider knowledge about the UNESCO World Heritage parks in Potsdam."
   },
   "wasser": {
     "hero": {

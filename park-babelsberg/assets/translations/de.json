@@ -43,7 +43,8 @@
     "enthusiasts": "Für Enthusiasten",
     "arrival": "Anreise",
     "faq": "FAQ",
-    "wasser": "Wasseraktivitäten"
+    "wasser": "Wasseraktivitäten",
+    "magazin": "Magazin"
   },
   "funfacts": {
     "title": "Wusstest du schon?",
@@ -545,6 +546,11 @@
   },
   "blog": {
     "title": "Babelsberg Magazin",
-    "subtitle": "Tiefer eintauchen in Geschichte, Technik und Lifestyle rund um das UNESCO-Welterbe."
+    "subtitle": "Tiefer eintauchen in Geschichte, Technik und Lifestyle rund um das UNESCO-Welterbe.",
+    "allArticles": "Alle Artikel ansehen"
+  },
+  "blogIndex": {
+    "title": "Babelsberg Magazin",
+    "subtitle": "Geschichte, Ausflugstipps und Insider-Wissen rund um die UNESCO-Welterbe Parks in Potsdam."
   }
 }
