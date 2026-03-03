@@ -1,0 +1,21 @@
+REDESIGN-PROMPT COMPLIANCE CHECKLIST (Strict)
+
+1) Reduktion auf 3 Areale: Babelsberg, Glienicke, Neuer Garten  ✅
+2) Feste Farbcodes je Areal (Kacheln/Badges): 
+   - Babelsberg Blau (#5ea5ff)
+   - Glienicke Grün/Türkis (#2fb3a4)
+   - Neuer Garten Goldgelb (#caa73a)                                  ✅ (Tokens hinzugefügt)
+3) Sections als graue Wash-Flächen mit abgerundeten Ecken, hinter den Kacheln: ✅ (.section-block)
+4) Headings (H2/H3) in Sections immer weiß: ✅
+5) Dark/Bright: identische Brand-Farben; Wash-Flächen im Dark dunkler: ✅
+6) Keine neuen Features/Module: 
+   - Keine neuen JS-Features, kein Data-Layer eingebaut                ✅
+7) Karten-Auswahl pro Areal nur mit vorhandenen Seiten/Bildern: 
+   - Babelsberg: Schloss, Flatowturm, Matrosenhaus, Anreise, Gastro    ✅
+   - Glienicke: Jagdschloss (verlinkt auf vorhandene Seite)            ✅
+   - Neuer Garten: Cecilienhof, Meierei (verlinkt auf vorhandene Seite)✅
+8) Terminologie: Cecilienhof korrekt; keine ‚Parkkliniken‘             ✅
+9) H2-Text angepasst von „Die 4 Areale …“ auf „Drei Areale …“          ✅
+10) Keine Stiländerungen außerhalb des Scopes                          ✅
+
+Hinweis: Eremitage/weitere Karten wurden NICHT eingefügt (keine extra Features ohne Freigabe).

@@ -1,0 +1,92 @@
+{
+  "pillar": {
+    "hero": {
+      "title": "The Three Parks of Potsdam: Babelsberg, Glienicke & Neuer Garten",
+      "subtitle": "UNESCO World Heritage Cultural Landscape | Attractions | Practical Info"
+    }
+  },
+  "parks": {
+    "babelsberg": {
+      "name": "Babelsberg Park",
+      "description": "Historic landscape park with UNESCO World Heritage status on the Havel River",
+      "link": "All info about Babelsberg Park ’"
+    },
+    "glienicke": {
+      "name": "Glienicke Park",
+      "description": "Classical landscape park with Italian influences and Havel views",
+      "link": "All info about Glienicke Park ’"
+    },
+    "neuergarten": {
+      "name": "Neuer Garten",
+      "description": "English landscape garden on the Heiliger See lake with royal history",
+      "link": "All info about Neuer Garten ’"
+    }
+  },
+  "specials": {
+    "title": "Special Features & Activities",
+    "wassersport": {
+      "title": "Water Sports & Boating",
+      "description": "The Havel connects all three parks and offers ideal conditions for canoeing, stand-up paddling, and boat tours."
+    },
+    "unesco": {
+      "title": "UNESCO World Heritage",
+      "description": "All three parks belong to the UNESCO World Heritage site 'Palaces and Parks of Potsdam and Berlin'."
+    },
+    "fotografie": {
+      "title": "Photography Hotspots",
+      "description": "From palaces to the Havel promenade to hidden park paths  countless Instagram-worthy photo opportunities."
+    },
+    "veranstaltungen": {
+      "title": "Events & Guided Tours",
+      "description": "The Prussian Palaces and Gardens Foundation regularly offers themed tours and seasonal events."
+    },
+    "natur": {
+      "title": "Nature & Biodiversity",
+      "description": "The parks are home to over 200 bird species and provide valuable habitat for native flora and fauna."
+    },
+    "radwege": {
+      "title": "Cycling & Hiking Trails",
+      "description": "A network of paved main paths and natural trails connects all three parks."
+    }
+  },
+  "finder": {
+    "title": "Find WC, Restaurants & Parking",
+    "description": "Quickly find the nearest restroom, restaurant, or parking in all three parks:"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers to the most important questions about your visit.",
+    "q1": {
+      "question": "Where can I find toilets in the park?",
+      "answer": "Public restrooms are signposted at the main entrances. Use our <a href=\"#location-finder\">Location Finder</a> to find the nearest toilet. Some are pay toilets (approx. ¬0.50), others are free."
+    },
+    "q2": {
+      "question": "Is the park accessible?",
+      "answer": "The paved main paths are well accessible for wheelchairs and strollers. Some natural paths have inclines and are less suitable. The Flatow Tower is not accessible (only reachable via stairs)."
+    },
+    "q3": {
+      "question": "Am I allowed to barbecue or picnic in the park?",
+      "answer": "Picnicking is allowed on the lawns. Barbecuing is prohibited throughout the park (fire protection). Please take your trash with you or dispose of it in the provided bins."
+    },
+    "q4": {
+      "question": "Can I cycle through the park?",
+      "answer": "Cycling is only allowed on the paved main paths. Cycling is prohibited on hiking trails and natural paths. Pay attention to on-site signs. More details in our <a href=\"/park-babelsberg/parkordnung-vergleich.html\">Park Rules</a>."
+    },
+    "q5": {
+      "question": "Are dogs allowed in the park?",
+      "answer": "Yes, dogs are allowed but must be kept on a leash. Please bring dog waste bags and dispose of them in the trash bins."
+    },
+    "q6": {
+      "question": "Can I swim in the Havel?",
+      "answer": "No, swimming in the Havel is prohibited (no lifeguards, currents, boat traffic). Alternative swimming areas are available at Heiliger See lake in Neuer Garten."
+    },
+    "q7": {
+      "question": "Are there guided tours through the park?",
+      "answer": "Yes, the Prussian Palaces and Gardens Foundation offers regular tours. Dates and booking at <a href=\"https://www.spsg.de\" target=\"_blank\" rel=\"noopener\">www.spsg.de</a>."
+    },
+    "q8": {
+      "question": "How much time should I plan for a visit?",
+      "answer": "For a relaxed walk: 2-3 hours. With palace visit and Flatow Tower: 4-5 hours. For all 4 areas: full-day trip recommended."
+    }
+  }
+}

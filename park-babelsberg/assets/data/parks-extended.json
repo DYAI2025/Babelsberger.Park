@@ -1,0 +1,195 @@
+{
+  "specials": [
+    {
+      "id": "wassersport",
+      "title": "Wassersport & Bootfahren",
+      "description": "Die Havel verbindet alle drei Parks und bietet ideale Bedingungen für Kanufahrten, Stand-Up-Paddling und Bootstouren. Mehrere Bootsverleihe in der Nähe ermöglichen spontane Ausflüge auf dem Wasser.",
+      "icon": "⛵"
+    },
+    {
+      "id": "geocaching",
+      "title": "Geocaching & Schatzsuche",
+      "description": "Über 20 Geocaches verstecken sich in den drei Parks – ideal für Familien und Abenteurer. Die Parks bieten sowohl einfache Traditional-Caches als auch anspruchsvolle Multi-Caches mit historischem Bezug. Kostenlose Apps wie Geocaching.com zeigen alle verfügbaren Caches.",
+      "icon": "🗺️"
+    },
+    {
+      "id": "yoga-meditation",
+      "title": "Yoga & Meditation",
+      "description": "Ruhige Liegewiesen und schattige Plätze laden zu Outdoor-Yoga und Meditation ein. Beliebte Spots: Uferweg Nord (Park Babelsberg), Casino-Wiese (Glienicke) und Heiliger See-Ufer (Neuer Garten). Im Sommer finden regelmäßig Yoga-Kurse in den Parks statt.",
+      "icon": "🧘"
+    },
+    {
+      "id": "vogelbeobachtung",
+      "title": "Vogelbeobachtung & Ornithologie",
+      "description": "Die Parks sind Hotspots für Vogelbeobachter: Eisvögel an der Havel, Graureiher am Heiligen See, Buntspechte in alten Baumbeständen. Beste Zeiten: Frühjahr (Zugvögel) und Herbst (Wasservögel). Fernglas mitbringen!",
+      "icon": "🦅"
+    },
+    {
+      "id": "plogging",
+      "title": "Plogging & Umweltschutz",
+      "description": "Joggen + Müll sammeln = Plogging! Die Parks eignen sich perfekt für diese nachhaltige Trendsportart. Regelmäßige Community-Events organisiert von lokalen Umweltgruppen. Müllbeutel und Handschuhe gibt es kostenfrei an den Parkeingängen.",
+      "icon": "♻️"
+    },
+    {
+      "id": "historische-rallyes",
+      "title": "Historische Rallyes & Schnitzeljagden",
+      "description": "Interaktive Geschichtstouren für Familien: Folge den Spuren preußischer Könige, löse Rätsel an historischen Gebäuden und entdecke verborgene Parkgeheimnisse. Download der kostenlosen Rallye-App oder PDF-Karten an den Infopunkten.",
+      "icon": "🏰"
+    },
+    {
+      "id": "unesco-welterbe",
+      "title": "UNESCO-Welterbe",
+      "description": "Alle drei Parks gehören zum UNESCO-Welterbe 'Schlösser und Parks von Potsdam und Berlin'. Die historischen Landschaftsgärten repräsentieren preußische Gartenbaukunst vom 18. bis 20. Jahrhundert.",
+      "icon": "🏛️"
+    },
+    {
+      "id": "fotografie",
+      "title": "Fotografie-Hotspots",
+      "description": "Von den Schlössern über die Havelpromenade bis zu versteckten Parkwegen – die drei Parks bieten unzählige Instagram-würdige Fotomotive. Besonders beliebt: Sonnenaufgang am Flatowturm und Sonnenuntergang am Marmorpalais.",
+      "icon": "📷"
+    },
+    {
+      "id": "veranstaltungen",
+      "title": "Veranstaltungen & Führungen",
+      "description": "Die Stiftung Preußische Schlösser und Gärten bietet regelmäßig Themenführungen, historische Spaziergänge und saisonale Events an. Im Sommer finden Open-Air-Konzerte und Theateraufführungen statt.",
+      "icon": "🎭"
+    },
+    {
+      "id": "natur-biodiversitaet",
+      "title": "Natur & Biodiversität",
+      "description": "Die Parks beherbergen über 200 Vogelarten, darunter Eisvögel, Graureiher und Kormorane. Alte Baumbestände, Feuchtwiesen und Uferzonen bieten wertvollen Lebensraum für heimische Tier- und Pflanzenarten.",
+      "icon": "🦆"
+    },
+    {
+      "id": "radwege",
+      "title": "Radwege & Wanderwege",
+      "description": "Ein Netz aus asphaltierten Hauptwegen und Naturpfaden verbindet alle drei Parks. Der Havelradweg führt direkt an allen Parks vorbei und bietet Anschluss an überregionale Radrouten (Berlin-Potsdam-Radweg).",
+      "icon": "🚴"
+    }
+  ],
+  "categories": [
+    {
+      "id": "parkplaetze",
+      "title": "Parkplätze & Anfahrt",
+      "count": 1254,
+      "icon": "🅿️",
+      "description": "Über 1250 Parkplätze in der Nähe der drei Parks – kostenlos und kostenpflichtig. Von Straßenparkplätzen bis zu großen Parkdecks. Tipp: Anreise mit ÖPNV ist günstiger und umweltfreundlicher.",
+      "image": "images/categories/parkplaetze.jpg",
+      "link": "#location-finder"
+    },
+    {
+      "id": "wc-toiletten",
+      "title": "WC & Toiletten",
+      "count": 23,
+      "icon": "🚻",
+      "description": "23 öffentliche Toiletten in und um die Parks – kostenlos und kostenpflichtig (ca. 0,50€). Alle barrierefrei zugänglichen WCs sind im Location-Finder markiert. Sauber und regelmäßig gewartet.",
+      "image": "images/categories/wc.webp",
+      "link": "#location-finder"
+    },
+    {
+      "id": "gastronomie",
+      "title": "Gastronomie & Essen",
+      "count": 303,
+      "icon": "☕",
+      "description": "Über 300 Restaurants, Cafés, Imbisse und Biergärten in Laufnähe zu den Parks. Von traditioneller deutscher Küche bis zu internationalen Spezialitäten. Viele mit Terrassen und Havelblick.",
+      "image": "images/categories/Gastronomie.jpeg",
+      "link": "gastronomie.html"
+    },
+    {
+      "id": "oepnv",
+      "title": "ÖPNV & Anreise",
+      "count": 45,
+      "icon": "🚌",
+      "description": "45 ÖPNV-Haltestellen (Bus, Tram, S-Bahn) in direkter Parknähe. VBB-Ticket gilt für alle Verbindungen. Beste Anbindung: S7 Babelsberg, Bus 316, 692, 694. Fahrpläne im Location-Finder.",
+      "image": "images/categories/oepnv.jpg",
+      "link": "#location-finder"
+    },
+    {
+      "id": "schloesser",
+      "title": "Schlösser & Gebäude",
+      "count": 8,
+      "icon": "🏰",
+      "description": "8 historische Schlösser, Paläste und architektonische Kleinode verteilt auf die drei Parks: Schloss Babelsberg, Flatowturm, Marmorpalais, Schloss Cecilienhof, Schloss Glienicke u.v.m.",
+      "image": "images/categories/schloesser.webp",
+      "link": "#park-babelsberg"
+    },
+    {
+      "id": "aussichtspunkte",
+      "title": "Aussichtspunkte",
+      "count": 6,
+      "icon": "🔭",
+      "description": "6 spektakuläre Aussichtspunkte mit Panoramablick auf Havel, Berlin und Potsdam: Flatowturm (höchster Punkt), Belvedere auf dem Pfingstberg, Große Neugierde, Havelpromenaden.",
+      "image": "images/categories/aussicht.jpg",
+      "link": "#park-babelsberg"
+    },
+    {
+      "id": "wasser",
+      "title": "Wasser & Ufer",
+      "count": 9,
+      "icon": "🌊",
+      "description": "9 Uferabschnitte und Wassersport-Spots: Havelpromenaden, Bootsstege, SUP-Verleih, Kanuanlegestellen. Perfekt für Wassersport, Spaziergänge und Sonnenuntergänge am Wasser.",
+      "image": "images/categories/wasser.jpg",
+      "link": "#park-babelsberg"
+    },
+    {
+      "id": "natur",
+      "title": "Natur & Wiesen",
+      "count": 7,
+      "icon": "🌳",
+      "description": "7 Liegewiesen, Naturschutzgebiete und botanische Highlights: Perfekt für Picknick, Sonnenbaden und Naturbeobachtung. Alte Baumbestände, Feuchtwiesen, Wildblumenwiesen.",
+      "image": "images/categories/natur.jpg",
+      "link": "#park-babelsberg"
+    },
+    {
+      "id": "kultur",
+      "title": "Kultur & Geschichte",
+      "count": 11,
+      "icon": "📚",
+      "description": "11 Museen, Gedenkstätten und historische Stätten: Vom preußischen Königtum bis zur Potsdamer Konferenz. Geschichte zum Anfassen in authentischen Schauplätzen.",
+      "image": "images/categories/kultur.jpg",
+      "link": "#park-babelsberg"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Sind alle drei Parks kostenfrei zugänglich?",
+      "answer": "Ja, der Eintritt in alle drei Parks (Babelsberg, Glienicke, Neuer Garten) ist kostenfrei. Einige Gebäude wie Schlösser und Museen erheben jedoch Eintrittsgebühren (z.B. Schloss Babelsberg, Marmorpalais)."
+    },
+    {
+      "question": "Kann ich alle drei Parks an einem Tag besuchen?",
+      "answer": "Für einen entspannten Besuch aller drei Parks sollten Sie einen vollen Tag einplanen. Die Entfernungen zwischen den Parks betragen: Babelsberg ↔ Glienicke ca. 3 km, Glienicke ↔ Neuer Garten ca. 4 km. Mit dem Fahrrad oder ÖPNV gut machbar."
+    },
+    {
+      "question": "Wie komme ich am besten zwischen den Parks hin und her?",
+      "answer": "Am einfachsten mit dem Fahrrad über den Havelradweg oder mit ÖPNV: Bus 316 (Babelsberg-Glienicke), Bus 692 (Glienicke-Neuer Garten). Fußwege entlang der Havel sind möglich, aber länger (ca. 45-60 Min. pro Strecke)."
+    },
+    {
+      "question": "Gibt es Führungen durch alle drei Parks?",
+      "answer": "Ja, die Stiftung Preußische Schlösser und Gärten (SPSG) bietet regelmäßig Themenführungen an. Buchung und Termine auf www.spsg.de. Es gibt auch kombinierte Führungen, die mehrere Parks umfassen."
+    },
+    {
+      "question": "Wo finde ich Toiletten in den Parks?",
+      "answer": "Öffentliche WCs befinden sich an den Haupteingängen und zentralen Punkten. Nutzen Sie unseren interaktiven Location-Finder, um die nächstgelegene Toilette zu finden. Einige sind kostenpflichtig (ca. 0,50€)."
+    },
+    {
+      "question": "Darf ich in den Parks grillen oder zelten?",
+      "answer": "Nein, Grillen und Zelten sind in allen drei Parks verboten (Brandschutz und Naturschutz). Picknicken auf ausgewiesenen Liegewiesen ist erlaubt. Bitte Müll mitnehmen oder in Abfallbehältern entsorgen."
+    },
+    {
+      "question": "Sind die Parks barrierefrei?",
+      "answer": "Die asphaltierten Hauptwege sind größtenteils barrierefrei und für Rollstühle/Kinderwagen geeignet. Naturwege haben teilweise Steigungen. Türme (Flatowturm, Belvedere) sind nicht barrierefrei. Details zu einzelnen Sehenswürdigkeiten auf den jeweiligen Park-Detailseiten."
+    },
+    {
+      "question": "Kann ich mit dem Hund in die Parks?",
+      "answer": "Ja, Hunde sind in allen drei Parks erlaubt, müssen aber angeleint sein. Hundekotbeutel bitte mitnehmen und in Abfallbehältern entsorgen. In Gebäuden (Schlösser, Museen) sind Hunde nicht erlaubt."
+    },
+    {
+      "question": "Gibt es Parkmöglichkeiten in der Nähe?",
+      "answer": "Ja, alle Parks haben Parkplätze in der Nähe (teils kostenpflichtig). Nutzen Sie unseren interaktiven Location-Finder, um den nächsten Parkplatz zu finden. Empfehlung: Anreise mit ÖPNV oder Fahrrad (kostenlos, umweltfreundlich)."
+    },
+    {
+      "question": "Wann sind die Parks geöffnet?",
+      "answer": "Alle drei Parks sind ganzjährig und rund um die Uhr zugänglich (keine Schließzeiten). Gebäude und Museen haben unterschiedliche Öffnungszeiten, meist April-Oktober täglich 10-18 Uhr, November-März eingeschränkt."
+    }
+  ]
+}

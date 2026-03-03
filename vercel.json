@@ -9,6 +9,14 @@
   ],
   "routes": [
     {
+      "src": "/blog/?$",
+      "dest": "/park-babelsberg/blog/index.html"
+    },
+    {
+      "src": "/magazin/?$",
+      "dest": "/park-babelsberg/blog/index.html"
+    },
+    {
       "src": "/park/?",
       "dest": "/park-babelsberg/park-babelsberg.html"
     },
