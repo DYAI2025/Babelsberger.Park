@@ -2,6 +2,7 @@
 /* DSGVO-konform: System-Fonts statt Google Fonts */
 
 :root {
+  color-scheme: light dark;
   /* System Font Stacks (DSGVO-konform, keine externen Requests) */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
@@ -1376,6 +1377,35 @@ a.icon-only .icon {
   border-width: 0;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 10000;
+  padding: 8px 16px;
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 8px;
+}
+
+.footer-link-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+.footer-link-btn:hover {
+  opacity: 0.8;
+}
+
 /* ============================================
    NEW NICHE CONTENT COMPONENTS
    ============================================ */
@@ -2275,6 +2305,9 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+  html {
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Focus Styles */
@@ -3048,7 +3081,7 @@ a.category-card {
   margin-bottom: var(--space-2);
 }
 
-.trust-item h4 {
+.trust-item h3 {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -3779,7 +3812,7 @@ a.category-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--space-2);
+  padding: var(--space-2) var(--space-2) calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   transform: translateY(100%);
   animation: slideUp 0.5s ease 3s forwards; /* 3s delay before showing */

@@ -552,5 +552,98 @@
   "blogIndex": {
     "title": "Babelsberg Magazin",
     "subtitle": "Geschichte, Ausflugstipps und Insider-Wissen rund um die UNESCO-Welterbe Parks in Potsdam."
+  },
+  "trust": {
+    "unesco": { "title": "UNESCO Welterbe", "desc": "Offiziell gelistete Kulturlandschaft seit 1990" },
+    "expertise": { "title": "Lokale Expertise", "desc": "Redaktionell gepflegt mit aktuellen Daten für 2025" },
+    "maps": { "title": "Interaktive Karten", "desc": "Echtzeit-Standortfinder für WCs, Gastronomie & Parkplätze" },
+    "accessibility": { "title": "Barrierefreiheit", "desc": "Informationen zu rollstuhl- und kinderwagengerechten Wegen" }
+  },
+  "breadcrumb": {
+    "parks": "Parks & Schlösser",
+    "current": "Die drei Parks von Potsdam"
+  },
+  "toc": {
+    "label": "Inhalt",
+    "neuergarten": "Neuer Garten",
+    "visitors": "Besuchergruppen",
+    "seasonal": "Saisonale Tipps",
+    "finder": "Location-Finder",
+    "plan": "Besuch planen"
+  },
+  "service": {
+    "arrival": { "title": "Anreise & Parken", "desc": "Parkplätze, Bus & Bahn Verbindungen" },
+    "tickets": { "title": "Öffnungszeiten & Tickets", "desc": "Preise, Schlösser & Führungen" },
+    "hotels": { "title": "Übernachten", "desc": "Hotels & Pensionen am Park" },
+    "weddings": { "title": "Heiraten & Feiern", "desc": "Traumlocations für Ihre Hochzeit" }
+  },
+  "insiderTip": "💡 <strong>Insider-Tipp:</strong> Starten Sie an der Glienicker Brücke und wandern Sie nordwärts über Park Babelsberg zum Neuen Garten. Die Meierei am Ende der Strecke (ca. 4–5 km) ist der perfekte kulinarische Abschluss.",
+  "blogCards": {
+    "bridge": { "title": "Glienicker Brücke: Die Agenten-Brücke", "desc": "Alles über den berühmtesten Agentenaustausch-Ort des Kalten Krieges.", "btn": "Mehr erfahren" },
+    "steam": { "title": "Dampfmaschinenhaus Babelsberg", "desc": "Technik im Gewand einer normannischen Burg. Ein preußisches Meisterwerk.", "btn": "Technik entdecken" },
+    "wedding": { "title": "Traumhochzeit in Potsdam", "desc": "Die schönsten Locations für den „schönsten Tag" zwischen Schlössern und Gärten.", "btn": "Locations ansehen" }
+  },
+  "weather": {
+    "title": "🌤️ Wetter",
+    "loading": "Lade Wetter…"
+  },
+  "a11y": {
+    "skipLink": "Zum Inhalt springen"
+  },
+  "parkRules": "Parkordnung:",
+  "renderer": {
+    "specialsSoon": "Besonderheiten werden demnächst ergänzt.",
+    "categoriesSoon": "Kategorien werden demnächst ergänzt.",
+    "imageSoon": "📷 Bild folgt"
+  },
+  "attractions": {
+    "schloss-babelsberg": {
+      "title": "Schloss Babelsberg",
+      "desc": "Neugotisches Schloss mit spektakulärem Havelblick und historischer Architektur"
+    },
+    "flatowturm": {
+      "title": "Flatowturm",
+      "desc": "Aussichtsturm im gotischen Stil mit Panoramablick über Park und Havel"
+    },
+    "matrosenhaus": {
+      "title": "Matrosenhaus",
+      "desc": "Historisches Bootshaus mit Gastronomie direkt am Wasser"
+    },
+    "uferweg-nord": {
+      "title": "Uferweg Nord",
+      "desc": "Malerischer Spazierweg entlang der Havel mit Naturerlebnis"
+    },
+    "liegewiesen": {
+      "title": "Liegewiesen",
+      "desc": "Große Grünflächen zum Entspannen, Picknicken und Sonnenbaden"
+    },
+    "jagdschloss-glienicke": {
+      "title": "Jagdschloss Glienicke",
+      "desc": "Klassizistisches Sommerschloss mit mediterranem Flair und Kunstschätzen"
+    },
+    "casino-glienicke": {
+      "title": "Casino",
+      "desc": "Elegantes Teehaus im italienischen Stil mit Havelterrasse"
+    },
+    "klosterhof-glienicke": {
+      "title": "Klosterhof",
+      "desc": "Romantischer Innenhof mit historischen Säulengängen"
+    },
+    "schloss-cecilienhof": {
+      "title": "Schloss Cecilienhof",
+      "desc": "Historisches Schloss im Landhausstil, Ort der Potsdamer Konferenz 1945"
+    },
+    "marmorpalais": {
+      "title": "Marmorpalais",
+      "desc": "Frühklassizistisches Schloss direkt am Heiligen See"
+    },
+    "pyramide-neuergarten": {
+      "title": "Pyramide",
+      "desc": "Historischer Eiskeller in Form einer ägyptischen Pyramide"
+    },
+    "meierei-neuergarten": {
+      "title": "Meierei",
+      "desc": "Gotisches Milchhaus mit Gastronomie und historischem Ambiente"
+    }
   }
 }

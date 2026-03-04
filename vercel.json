@@ -157,6 +157,22 @@
       "dest": "/park-babelsberg/jagdschloss-glienicke.html"
     },
     {
+      "src": "/casino-glienicke/?",
+      "dest": "/park-babelsberg/casino-glienicke.html"
+    },
+    {
+      "src": "/klosterhof-glienicke/?",
+      "dest": "/park-babelsberg/klosterhof-glienicke.html"
+    },
+    {
+      "src": "/klosterhof/?",
+      "dest": "/park-babelsberg/klosterhof-glienicke.html"
+    },
+    {
+      "src": "/aussichtspunkte/?",
+      "dest": "/park-babelsberg/aussichtspunkte.html"
+    },
+    {
       "src": "/gruenes-haus/?",
       "dest": "/park-babelsberg/grünes-haus.html"
     },

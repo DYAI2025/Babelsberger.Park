@@ -1,14 +1,26 @@
 /**
  * DSGVO-konformer Cookie-Consent-Banner
- * Version: 1.0
+ * Version: 2.0
  * Speichert Einwilligung in localStorage
+ * Google Consent Mode v2 integriert
  */
+
+// Google Consent Mode v2 — MUST run before any Google script loads
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'wait_for_update': 500
+});
 
 (function() {
   'use strict';
 
   const CONSENT_KEY = 'cookie_consent';
-  const CONSENT_VERSION = '1.0';
+  const CONSENT_VERSION = '2.0';
 
   // Cookie-Banner HTML
   const bannerHTML = `
@@ -362,21 +374,15 @@
 
   // Google Analytics laden
   function loadGoogleAnalytics() {
-    if (window.gtag) return; // Already loaded
+    if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
 
-    const script1 = document.createElement('script');
-    script1.async = true;
-    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ';
-    document.head.appendChild(script1);
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ';
+    document.head.appendChild(script);
 
-    const script2 = document.createElement('script');
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-K409QD2YSJ', { 'anonymize_ip': true });
-    `;
-    document.head.appendChild(script2);
+    gtag('js', new Date());
+    gtag('config', 'G-K409QD2YSJ', { 'anonymize_ip': true });
 
     console.log('[Cookie Consent] Google Analytics loaded');
   }
@@ -400,10 +406,16 @@
     if (!consent) return;
 
     if (consent.analytics) {
+      gtag('consent', 'update', { 'analytics_storage': 'granted' });
       loadGoogleAnalytics();
     }
 
     if (consent.adsense) {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted'
+      });
       loadGoogleAdSense();
     }
   }

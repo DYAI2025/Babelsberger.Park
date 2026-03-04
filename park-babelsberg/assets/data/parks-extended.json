@@ -75,7 +75,7 @@
       "icon": "🅿️",
       "description": "Über 1250 Parkplätze in der Nähe der drei Parks – kostenlos und kostenpflichtig. Von Straßenparkplätzen bis zu großen Parkdecks. Tipp: Anreise mit ÖPNV ist günstiger und umweltfreundlicher.",
       "image": "images/categories/parkplaetze.jpg",
-      "link": "#location-finder"
+      "link": "anreise-parken.html"
     },
     {
       "id": "wc-toiletten",
@@ -102,7 +102,7 @@
       "icon": "🚌",
       "description": "45 ÖPNV-Haltestellen (Bus, Tram, S-Bahn) in direkter Parknähe. VBB-Ticket gilt für alle Verbindungen. Beste Anbindung: S7 Babelsberg, Bus 316, 692, 694. Fahrpläne im Location-Finder.",
       "image": "images/categories/oepnv.jpg",
-      "link": "#location-finder"
+      "link": "anreise-parken.html#oepnv"
     },
     {
       "id": "schloesser",
@@ -111,7 +111,7 @@
       "icon": "🏰",
       "description": "8 historische Schlösser, Paläste und architektonische Kleinode verteilt auf die drei Parks: Schloss Babelsberg, Flatowturm, Marmorpalais, Schloss Cecilienhof, Schloss Glienicke u.v.m.",
       "image": "images/categories/schloesser.webp",
-      "link": "#park-babelsberg"
+      "link": "sehenswuerdigkeiten.html"
     },
     {
       "id": "aussichtspunkte",
@@ -120,7 +120,7 @@
       "icon": "🔭",
       "description": "6 spektakuläre Aussichtspunkte mit Panoramablick auf Havel, Berlin und Potsdam: Flatowturm (höchster Punkt), Belvedere auf dem Pfingstberg, Große Neugierde, Havelpromenaden.",
       "image": "images/categories/aussicht.jpg",
-      "link": "#park-babelsberg"
+      "link": "aussichtspunkte.html"
     },
     {
       "id": "wasser",
@@ -129,7 +129,7 @@
       "icon": "🌊",
       "description": "9 Uferabschnitte und Wassersport-Spots: Havelpromenaden, Bootsstege, SUP-Verleih, Kanuanlegestellen. Perfekt für Wassersport, Spaziergänge und Sonnenuntergänge am Wasser.",
       "image": "images/categories/wasser.jpg",
-      "link": "#park-babelsberg"
+      "link": "wasseraktivitaeten.html"
     },
     {
       "id": "natur",
@@ -138,7 +138,7 @@
       "icon": "🌳",
       "description": "7 Liegewiesen, Naturschutzgebiete und botanische Highlights: Perfekt für Picknick, Sonnenbaden und Naturbeobachtung. Alte Baumbestände, Feuchtwiesen, Wildblumenwiesen.",
       "image": "images/categories/natur.jpg",
-      "link": "#park-babelsberg"
+      "link": "natur-wege.html"
     },
     {
       "id": "kultur",
@@ -147,7 +147,7 @@
       "icon": "📚",
       "description": "11 Museen, Gedenkstätten und historische Stätten: Vom preußischen Königtum bis zur Potsdamer Konferenz. Geschichte zum Anfassen in authentischen Schauplätzen.",
       "image": "images/categories/kultur.jpg",
-      "link": "#park-babelsberg"
+      "link": "geschichte.html"
     }
   ],
   "faqs": [

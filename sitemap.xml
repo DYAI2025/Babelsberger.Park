@@ -274,6 +274,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/jagdschloss-glienicke.html"/>
   </url>
   <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/casino-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/casino-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/casino-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/klosterhof-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/klosterhof-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/klosterhof-glienicke.html"/>
+  </url>
+  <url>
     <loc>https://park.babelsberger.info/park-babelsberg/kinderwagen-barrierefrei.html</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -992,5 +1008,13 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/yoga.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/yoga.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/aussichtspunkte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/aussichtspunkte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/aussichtspunkte.html"/>
   </url>
 </urlset>

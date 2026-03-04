@@ -552,5 +552,98 @@
         "description": "Use only the designated jetties and rest areas. Mooring on the banks of the parks is generally not permitted in order to protect the vegetation."
       }
     }
+  },
+  "trust": {
+    "unesco": { "title": "UNESCO World Heritage", "desc": "Officially listed cultural landscape since 1990" },
+    "expertise": { "title": "Local Expertise", "desc": "Editorially maintained with up-to-date data for 2025" },
+    "maps": { "title": "Interactive Maps", "desc": "Real-time location finder for restrooms, dining & parking" },
+    "accessibility": { "title": "Accessibility", "desc": "Information on wheelchair- and stroller-friendly paths" }
+  },
+  "breadcrumb": {
+    "parks": "Parks & Palaces",
+    "current": "The Three Parks of Potsdam"
+  },
+  "toc": {
+    "label": "Contents",
+    "neuergarten": "New Garden",
+    "visitors": "Visitor Groups",
+    "seasonal": "Seasonal Tips",
+    "finder": "Location Finder",
+    "plan": "Plan Your Visit"
+  },
+  "service": {
+    "arrival": { "title": "Getting Here & Parking", "desc": "Parking, bus & train connections" },
+    "tickets": { "title": "Opening Hours & Tickets", "desc": "Prices, palaces & guided tours" },
+    "hotels": { "title": "Accommodation", "desc": "Hotels & guesthouses near the park" },
+    "weddings": { "title": "Weddings & Events", "desc": "Dream venues for your special day" }
+  },
+  "insiderTip": "💡 <strong>Insider Tip:</strong> Start at the Glienicke Bridge and walk north through Park Babelsberg to the New Garden. The Meierei at the end of the route (approx. 4–5 km) is the perfect culinary finale.",
+  "blogCards": {
+    "bridge": { "title": "Glienicke Bridge: The Spy Bridge", "desc": "Everything about the Cold War's most famous spy exchange location.", "btn": "Learn more" },
+    "steam": { "title": "Babelsberg Steam Engine House", "desc": "Technology in the guise of a Norman castle. A Prussian masterpiece.", "btn": "Discover the tech" },
+    "wedding": { "title": "Dream Wedding in Potsdam", "desc": "The most beautiful venues for your special day among palaces and gardens.", "btn": "View venues" }
+  },
+  "weather": {
+    "title": "🌤️ Weather",
+    "loading": "Loading weather…"
+  },
+  "a11y": {
+    "skipLink": "Skip to content"
+  },
+  "parkRules": "Park Rules:",
+  "renderer": {
+    "specialsSoon": "Special features will be added soon.",
+    "categoriesSoon": "Categories will be added soon.",
+    "imageSoon": "📷 Image coming soon"
+  },
+  "attractions": {
+    "schloss-babelsberg": {
+      "title": "Babelsberg Palace",
+      "desc": "Neo-Gothic palace with spectacular Havel views and historic architecture"
+    },
+    "flatowturm": {
+      "title": "Flatow Tower",
+      "desc": "Gothic-style lookout tower with panoramic views over the park and Havel"
+    },
+    "matrosenhaus": {
+      "title": "Sailor's House",
+      "desc": "Historic boathouse with dining right on the waterfront"
+    },
+    "uferweg-nord": {
+      "title": "Northern Waterfront Path",
+      "desc": "Scenic walking trail along the Havel with nature experiences"
+    },
+    "liegewiesen": {
+      "title": "Meadow Lawns",
+      "desc": "Spacious green areas for relaxing, picnicking, and sunbathing"
+    },
+    "jagdschloss-glienicke": {
+      "title": "Glienicke Hunting Lodge",
+      "desc": "Classicist summer palace with Mediterranean flair and art treasures"
+    },
+    "casino-glienicke": {
+      "title": "Casino",
+      "desc": "Elegant Italian-style tea house with Havel terrace"
+    },
+    "klosterhof-glienicke": {
+      "title": "Cloister Courtyard",
+      "desc": "Romantic inner courtyard with historic colonnades"
+    },
+    "schloss-cecilienhof": {
+      "title": "Cecilienhof Palace",
+      "desc": "Historic Tudor-style palace, site of the 1945 Potsdam Conference"
+    },
+    "marmorpalais": {
+      "title": "Marble Palace",
+      "desc": "Early Classicist palace on the shores of the Holy Lake"
+    },
+    "pyramide-neuergarten": {
+      "title": "Pyramid",
+      "desc": "Historic ice cellar in the shape of an Egyptian pyramid"
+    },
+    "meierei-neuergarten": {
+      "title": "Meierei",
+      "desc": "Gothic-style dairy house with dining and historic ambiance"
+    }
   }
 }

@@ -33,8 +33,8 @@ class AttractionCard {
 
     card.innerHTML = `
       ${imageHTML}
-      <h3>${this.data.title}</h3>
-      <p>${this.data.short_description}</p>
+      <h3 data-i18n="attractions.${this.data.id}.title">${this.data.title}</h3>
+      <p data-i18n="attractions.${this.data.id}.desc">${this.data.short_description}</p>
     `;
 
     return card;
@@ -228,7 +228,8 @@ class ParksApp {
     }
 
     if (!this.extendedData || !this.extendedData.specials || this.extendedData.specials.length === 0) {
-      container.innerHTML = '<p style="text-align: center; color: var(--ink-muted);">Besonderheiten werden demnächst ergänzt.</p>';
+      const msg = window.i18n ? window.i18n.t('renderer.specialsSoon') : 'Besonderheiten werden demnächst ergänzt.';
+      container.innerHTML = `<p style="text-align: center; color: var(--ink-muted);">${msg}</p>`;
       return;
     }
 
@@ -249,7 +250,8 @@ class ParksApp {
     }
 
     if (!this.extendedData || !this.extendedData.categories || this.extendedData.categories.length === 0) {
-      container.innerHTML = '<p style="text-align: center; color: var(--ink-muted);">Kategorien werden demnächst ergänzt.</p>';
+      const msg = window.i18n ? window.i18n.t('renderer.categoriesSoon') : 'Kategorien werden demnächst ergänzt.';
+      container.innerHTML = `<p style="text-align: center; color: var(--ink-muted);">${msg}</p>`;
       return;
     }
 
