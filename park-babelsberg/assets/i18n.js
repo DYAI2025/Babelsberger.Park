@@ -1,6 +1,7 @@
 /**
  * i18n System for Park Babelsberg Website
  * Handles language switching between German (de) and English (en)
+ * DACH-aware: de / de-AT / de-CH → German, everything else → English
  */
 
 (function() {
@@ -15,20 +16,26 @@
      * Initialize i18n system
      */
     async init() {
-      // Load translations
       await this.loadTranslations();
-      
-      // Detect and set language
+
       const savedLang = localStorage.getItem('preferred-language');
-      const browserLang = navigator.language.split('-')[0]; // 'en-US' -> 'en'
-      const detectedLang = savedLang || (browserLang === 'en' ? 'en' : 'de');
-      
+      const detectedLang = savedLang || this.detectBrowserLang();
+
       await this.setLanguage(detectedLang);
-      
-      // Setup language toggle button
       this.setupLanguageToggle();
-      
+
       console.log('✅ i18n initialized:', this.currentLang);
+    },
+
+    /**
+     * DACH-aware language detection.
+     * de / de-AT / de-CH / de-LI / de-LU → 'de'
+     * Everything else → 'en'
+     */
+    detectBrowserLang() {
+      const langs = Array.from(navigator.languages || [navigator.language || 'de']);
+      const isDACH = langs.some(l => l.toLowerCase().startsWith('de'));
+      return isDACH ? 'de' : 'en';
     },
 
     /**
@@ -40,7 +47,6 @@
           fetch('assets/translations/de.json').then(r => r.json()),
           fetch('assets/translations/en.json').then(r => r.json())
         ]);
-        
         this.translations = { de, en };
         console.log('✅ Translations loaded');
       } catch (error) {
@@ -54,7 +60,7 @@
     t(keyPath) {
       const keys = keyPath.split('.');
       let value = this.translations[this.currentLang];
-      
+
       for (const key of keys) {
         if (value && typeof value === 'object') {
           value = value[key];
@@ -65,13 +71,13 @@
             if (value && typeof value === 'object') {
               value = value[k];
             } else {
-              return keyPath; // Return key if not found
+              return keyPath;
             }
           }
           break;
         }
       }
-      
+
       return value || keyPath;
     },
 
@@ -79,25 +85,21 @@
      * Set language and update DOM
      */
     async setLanguage(lang) {
-      if (!['de', 'en'].includes(lang)) {
-        lang = this.fallbackLang;
-      }
-      
+      if (!['de', 'en'].includes(lang)) lang = this.fallbackLang;
+
       this.currentLang = lang;
       localStorage.setItem('preferred-language', lang);
-      
-      // Update HTML lang attribute
+
       document.documentElement.lang = lang;
-      
-      // Update all elements with data-i18n attribute
       this.updateDOM();
-      
-      // Update meta tags
       this.updateMetaTags();
-      
-      // Update language toggle button
       this.updateLanguageToggle();
-      
+
+      // Sync pill toggle if lang-toggle.js is loaded
+      if (window.langPill && typeof window.langPill.update === 'function') {
+        window.langPill.update(lang);
+      }
+
       console.log('🌍 Language set to:', lang);
     },
 
@@ -105,33 +107,27 @@
      * Update all DOM elements with translations
      */
     updateDOM() {
-      // Update elements with data-i18n attribute
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         const translation = this.t(key);
-        
+
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          if (el.placeholder) {
-            el.placeholder = translation;
-          }
+          if (el.placeholder) el.placeholder = translation;
         } else {
           el.textContent = translation;
         }
       });
-      
-      // Update elements with data-i18n-html (for HTML content)
+
       document.querySelectorAll('[data-i18n-html]').forEach(el => {
         const key = el.getAttribute('data-i18n-html');
         el.innerHTML = this.t(key);
       });
-      
-      // Update aria-label attributes
+
       document.querySelectorAll('[data-i18n-aria]').forEach(el => {
         const key = el.getAttribute('data-i18n-aria');
         el.setAttribute('aria-label', this.t(key));
       });
-      
-      // Update title attributes
+
       document.querySelectorAll('[data-i18n-title]').forEach(el => {
         const key = el.getAttribute('data-i18n-title');
         el.setAttribute('title', this.t(key));
@@ -144,32 +140,29 @@
     updateMetaTags() {
       const title = this.t('meta.title');
       const description = this.t('meta.description');
-      
-      document.title = title;
-      
+
+      if (title && title !== 'meta.title') document.title = title;
+
       const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) metaDesc.content = description;
-      
+      if (metaDesc && description && description !== 'meta.description') metaDesc.content = description;
+
       const ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) ogTitle.content = title;
-      
+      if (ogTitle && title) ogTitle.content = title;
+
       const ogDesc = document.querySelector('meta[property="og:description"]');
-      if (ogDesc) ogDesc.content = description;
-      
-      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-      if (twitterTitle) twitterTitle.content = title;
-      
-      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-      if (twitterDesc) twitterDesc.content = description;
+      if (ogDesc && description) ogDesc.content = description;
+
+      const ogLocale = document.querySelector('meta[property="og:locale"]');
+      if (ogLocale) ogLocale.content = this.currentLang === 'de' ? 'de_DE' : 'en_US';
     },
 
     /**
-     * Setup language toggle button
+     * Setup language toggle button (legacy circular button on index.html)
      */
     setupLanguageToggle() {
       const toggle = document.getElementById('lang-toggle');
       if (!toggle) return;
-      
+
       toggle.addEventListener('click', () => {
         const newLang = this.currentLang === 'de' ? 'en' : 'de';
         this.setLanguage(newLang);
@@ -177,33 +170,31 @@
     },
 
     /**
-     * Update language toggle button state
+     * Update legacy language toggle button state
      */
     updateLanguageToggle() {
       const toggle = document.getElementById('lang-toggle');
       if (!toggle) return;
-      
+
       const deText = toggle.querySelector('.lang-text-de');
       const enText = toggle.querySelector('.lang-text-en');
-      
+
       if (this.currentLang === 'de') {
-        deText.style.display = 'none';
-        enText.style.display = 'block';
+        if (deText) deText.style.display = 'none';
+        if (enText) enText.style.display = 'block';
         toggle.setAttribute('aria-label', 'Switch to English');
         toggle.setAttribute('title', 'Switch to English');
       } else {
-        deText.style.display = 'block';
-        enText.style.display = 'none';
+        if (deText) deText.style.display = 'block';
+        if (enText) enText.style.display = 'none';
         toggle.setAttribute('aria-label', 'Auf Deutsch umschalten');
         toggle.setAttribute('title', 'Auf Deutsch umschalten');
       }
     }
   };
 
-  // Make i18n globally available
   window.i18n = i18n;
 
-  // Auto-initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => i18n.init());
   } else {

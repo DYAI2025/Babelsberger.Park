@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-adsense-account" content="ca-pub-1712273263687132">
+<title>Gastronomy in & Around Park Babelsberg – Full Restaurant Guide</title>
+<meta name="description" content="Complete gastronomy guide for Park Babelsberg and the surrounding area. Restaurants, cafés, beer gardens and snack spots near the UNESCO parks.">
+
+<!-- Preload -->
+<link rel="preload" as="style" href="../assets/style.css">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="../assets/style.css">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- i18n System -->
+<script src="../assets/i18n.js" defer></script>
+
+<!-- Dark Mode -->
+<script src="../assets/dark-mode.js"></script>
+
+<!-- Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K409QD2YSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K409QD2YSJ');
+</script>
+
+<!-- DSGVO-konformes Cookie-Consent-Management -->
+<script src="../assets/cookie-consent.js"></script>
+
+<style>
+.restaurants-page {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: calc(var(--grid) * 4) var(--container-padding);
+}
+
+.restaurants-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto calc(var(--grid) * 6);
+}
+
+.restaurants-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: calc(var(--grid) * 2);
+}
+
+.restaurants-intro p {
+  font-size: 1.125rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+.restaurants-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: calc(var(--grid) * 2);
+  margin-bottom: calc(var(--grid) * 8);
+}
+
+.category-filter {
+  background: var(--bg-accent);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  padding: calc(var(--grid) * 2);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-filter:hover,
+.category-filter.active {
+  border-color: var(--accent-primary);
+  background: var(--bg-primary);
+}
+
+.category-filter-icon {
+  font-size: 2rem;
+  margin-bottom: calc(var(--grid) * 1);
+}
+
+.restaurants-list {
+  display: grid;
+  gap: calc(var(--grid) * 3);
+}
+
+.restaurant-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: calc(var(--grid) * 3);
+  transition: all 0.3s ease;
+}
+
+.restaurant-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.restaurant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: calc(var(--grid) * 2);
+}
+
+.restaurant-title {
+  flex: 1;
+}
+
+.restaurant-title h3 {
+  margin: 0 0 calc(var(--grid) * 0.5) 0;
+  font-size: 1.5rem;
+}
+
+.restaurant-category {
+  display: inline-block;
+  background: var(--bg-accent);
+  color: var(--ink-muted);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.restaurant-distance {
+  background: var(--accent-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.restaurant-description {
+  color: var(--ink-muted);
+  line-height: 1.7;
+  margin-bottom: calc(var(--grid) * 2);
+}
+
+.restaurant-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--grid) * 1);
+  margin-bottom: calc(var(--grid) * 2);
+}
+
+.highlight-badge {
+  background: var(--bg-accent);
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.restaurant-actions {
+  display: flex;
+  gap: calc(var(--grid) * 2);
+}
+
+.btn-directions {
+  flex: 1;
+  background: var(--accent-primary);
+  color: white;
+  padding: calc(var(--grid) * 1.5) calc(var(--grid) * 2);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-directions:hover {
+  background: var(--accent-secondary);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .restaurants-intro h1 {
+    font-size: 2rem;
+  }
+
+  .restaurant-header {
+    flex-direction: column;
+    gap: calc(var(--grid) * 1);
+  }
+
+  .restaurant-distance {
+    align-self: flex-start;
+  }
+}
+</style>
+
+  <link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/gastronomie-restaurants.html">
+  <link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/gastronomie-restaurants.html">
+  <link rel="alternate" hreflang="x-default" href="https://park.babelsberger.info/park-babelsberg/gastronomie-restaurants.html">
+</head>
+<body>
+
+<!-- Language Toggle Button -->
+<button id="lang-toggle" class="lang-toggle icon-only" aria-label="Switch to English" title="Switch to English">
+  <span class="lang-text lang-text-de" aria-hidden="true">DE</span>
+  <span class="lang-text lang-text-en" aria-hidden="true">EN</span>
+</button>
+
+<!-- Theme Toggle Button -->
+<button id="theme-toggle" class="theme-toggle icon-only" aria-label="Dark Mode umschalten" title="Dark Mode umschalten">
+  <i data-lucide="sun" class="theme-icon theme-icon-sun icon icon-md" aria-hidden="true"></i>
+  <i data-lucide="moon" class="theme-icon theme-icon-moon icon icon-md" aria-hidden="true"></i>
+</button>
+
+<main class="restaurants-page">
+  <div class="restaurants-intro">
+    <h1>Restaurants & Cafés</h1>
+    <p>Über 300 gastronomische Einrichtungen in Laufnähe zu den drei Parks von Potsdam. Von traditioneller deutscher Küche bis zu internationalen Spezialitäten – hier findest du die perfekte Gastronomie für deinen Parkbesuch.</p>
+  </div>
+
+  <!-- Category Filters -->
+  <div class="restaurants-categories">
+    <div class="category-filter active" data-category="alle">
+      <div class="category-filter-icon">🍽️</div>
+      <div>Alle (303)</div>
+    </div>
+    <div class="category-filter" data-category="restaurant">
+      <div class="category-filter-icon">🍴</div>
+      <div>Restaurants (87)</div>
+    </div>
+    <div class="category-filter" data-category="cafe">
+      <div class="category-filter-icon">☕</div>
+      <div>Cafés (95)</div>
+    </div>
+    <div class="category-filter" data-category="imbiss">
+      <div class="category-filter-icon">🌭</div>
+      <div>Imbiss (64)</div>
+    </div>
+    <div class="category-filter" data-category="biergarten">
+      <div class="category-filter-icon">🍺</div>
+      <div>Biergärten (28)</div>
+    </div>
+    <div class="category-filter" data-category="eiscafe">
+      <div class="category-filter-icon">🍦</div>
+      <div>Eiscafés (29)</div>
+    </div>
+  </div>
+
+  <!-- Restaurants List -->
+  <div class="restaurants-list">
+
+    <!-- Restaurant 1: Schlossgarten Babelsberg -->
+    <article class="restaurant-card" data-category="restaurant biergarten">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Schlossgarten Babelsberg</h3>
+          <span class="restaurant-category">Restaurant & Biergarten</span>
+        </div>
+        <div class="restaurant-distance">500m vom Park</div>
+      </div>
+      <p class="restaurant-description">Traditionelles deutsches Restaurant mit großem Biergarten direkt am Park Babelsberg. Perfekt nach einem Spaziergang durch den Park. Saisonale Küche mit regionalen Zutaten und Blick auf den Schlosspark.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🌳 Biergarten</span>
+        <span class="highlight-badge">🥨 Deutsche Küche</span>
+        <span class="highlight-badge">👨‍👩‍👧‍👦 Familienfreundlich</span>
+        <span class="highlight-badge">🚻 WC vorhanden</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Schlossgarten+Babelsberg,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+    <!-- Restaurant 2: Café Heider -->
+    <article class="restaurant-card" data-category="cafe">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Café Heider</h3>
+          <span class="restaurant-category">Café & Konditorei</span>
+        </div>
+        <div class="restaurant-distance">350m vom Park</div>
+      </div>
+      <p class="restaurant-description">Gemütliches Café mit hausgemachten Kuchen und Torten. Perfekt für einen Kaffee vor oder nach dem Parkbesuch. Frühstücksangebot bis 14 Uhr. Terrasse mit Sonnenschirmen im Sommer.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🍰 Hausgemachte Kuchen</span>
+        <span class="highlight-badge">☕ Specialty Coffee</span>
+        <span class="highlight-badge">🥐 Frühstück</span>
+        <span class="highlight-badge">☀️ Terrasse</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Café+Heider,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+    <!-- Restaurant 3: Il Lago -->
+    <article class="restaurant-card" data-category="restaurant">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Il Lago</h3>
+          <span class="restaurant-category">Italienisches Restaurant</span>
+        </div>
+        <div class="restaurant-distance">700m vom Park</div>
+      </div>
+      <p class="restaurant-description">Authentische italienische Küche mit Havelblick. Frische Pasta, Pizza aus dem Steinofen und exzellente Weine. Romantische Atmosphäre mit Blick aufs Wasser. Reservierung empfohlen.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🍝 Italienische Küche</span>
+        <span class="highlight-badge">🍕 Steinofen-Pizza</span>
+        <span class="highlight-badge">🌊 Havelblick</span>
+        <span class="highlight-badge">🍷 Weinauswahl</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Il+Lago,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+    <!-- Restaurant 4: Fischrestaurant Bootshaus -->
+    <article class="restaurant-card" data-category="restaurant">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Fischrestaurant Bootshaus</h3>
+          <span class="restaurant-category">Fischrestaurant</span>
+        </div>
+        <div class="restaurant-distance">900m vom Park</div>
+      </div>
+      <p class="restaurant-description">Frischer Fisch direkt von der Havel. Täglich wechselnde Karte je nach Fang. Gemütliches Bootshaus-Ambiente mit maritimer Dekoration. Im Sommer Außenterrasse direkt am Wasser.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🐟 Frischer Fisch</span>
+        <span class="highlight-badge">🌊 Am Wasser</span>
+        <span class="highlight-badge">⛵ Bootshaus-Ambiente</span>
+        <span class="highlight-badge">☀️ Außenterrasse</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Bootshaus,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+    <!-- Restaurant 5: Eis-Café Venezia -->
+    <article class="restaurant-card" data-category="eiscafe">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Eis-Café Venezia</h3>
+          <span class="restaurant-category">Eiscafé</span>
+        </div>
+        <div class="restaurant-distance">400m vom Park</div>
+      </div>
+      <p class="restaurant-description">Hausgemachtes Eis nach italienischer Tradition. Über 30 Sorten, darunter vegane und laktosefreie Optionen. Perfekt für eine Abkühlung nach dem Parkspaziergang. Im Sommer lange Öffnungszeiten.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🍦 Hausgemachtes Eis</span>
+        <span class="highlight-badge">🌱 Vegane Optionen</span>
+        <span class="highlight-badge">🇮🇹 Italienische Tradition</span>
+        <span class="highlight-badge">☀️ Sommer-Spezialitäten</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Eis+Café+Venezia,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+    <!-- Restaurant 6: Imbiss am Park -->
+    <article class="restaurant-card" data-category="imbiss">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Imbiss am Park</h3>
+          <span class="restaurant-category">Imbiss</span>
+        </div>
+        <div class="restaurant-distance">200m vom Park</div>
+      </div>
+      <p class="restaurant-description">Schnelle Snacks und Getränke direkt am Parkeingang. Currywurst, Pommes, Döner und frische Brezeln. Ideal für einen schnellen Imbiss zwischendurch. Faire Preise und freundlicher Service.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🌭 Currywurst</span>
+        <span class="highlight-badge">🥙 Döner</span>
+        <span class="highlight-badge">💰 Günstig</span>
+        <span class="highlight-badge">⚡ Schnell</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Parkeingang+Babelsberg,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+    <!-- Restaurant 7: Biergarten am Heiligen See -->
+    <article class="restaurant-card" data-category="biergarten">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Biergarten am Heiligen See</h3>
+          <span class="restaurant-category">Biergarten</span>
+        </div>
+        <div class="restaurant-distance">800m vom Neuen Garten</div>
+      </div>
+      <p class="restaurant-description">Idyllischer Biergarten direkt am Heiligen See im Neuen Garten. Regionale Bierspezialitäten und deftige Brotzeiten. Große Kastanien spenden Schatten. Live-Musik an Sommerabenden. Kinderfreundlich mit Spielplatz.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🍺 Regionale Biere</span>
+        <span class="highlight-badge">🌳 Kastanienbäume</span>
+        <span class="highlight-badge">🎵 Live-Musik</span>
+        <span class="highlight-badge">🧸 Spielplatz</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Heiliger+See,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+    <!-- Restaurant 8: Veggie House -->
+    <article class="restaurant-card" data-category="restaurant">
+      <div class="restaurant-header">
+        <div class="restaurant-title">
+          <h3>Veggie House</h3>
+          <span class="restaurant-category">Vegetarisches Restaurant</span>
+        </div>
+        <div class="restaurant-distance">1.2km vom Park</div>
+      </div>
+      <p class="restaurant-description">100% vegetarisch und vegan. Kreative Gerichte mit Bio-Zutaten aus der Region. Von Bowls über Burger bis zu raffinierten Hauptgerichten. Glutenfreie Optionen verfügbar. Nachhaltigkeitskonzept.</p>
+      <div class="restaurant-highlights">
+        <span class="highlight-badge">🌱 100% Vegetarisch</span>
+        <span class="highlight-badge">🥗 Vegan-Optionen</span>
+        <span class="highlight-badge">🌾 Bio-Zutaten</span>
+        <span class="highlight-badge">♻️ Nachhaltig</span>
+      </div>
+      <div class="restaurant-actions">
+        <a href="https://www.google.com/maps/dir//Veggie+House,+Potsdam" target="_blank" rel="noopener" class="btn-directions">
+          🗺️ Wegbeschreibung
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Back to Main Page -->
+  <div style="text-align: center; margin-top: calc(var(--grid) * 8);">
+    <a href="../index.html class="btn-directions" style="display: inline-flex; max-width: 300px;">
+      ← Back to Overview zur Hauptseite
+    </a>
+  </div>
+
+</main>
+
+<script>
+// Category filtering
+const filters = document.querySelectorAll('.category-filter');
+const cards = document.querySelectorAll('.restaurant-card');
+
+filters.forEach(filter => {
+  filter.addEventListener('click', () => {
+    const category = filter.dataset.category;
+
+    // Update active state
+    filters.forEach(f => f.classList.remove('active'));
+    filter.classList.add('active');
+
+    // Filter cards
+    cards.forEach(card => {
+      if (category === 'alle' || card.dataset.category.includes(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Initialize Lucide icons
+lucide.createIcons();
+</script>
+
+<script src="../assets/lang-toggle.js" defer></script>
+</body>
+</html>
