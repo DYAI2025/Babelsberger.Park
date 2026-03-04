@@ -2,6 +2,7 @@
 /* DSGVO-konform: System-Fonts statt Google Fonts */
 
 :root {
+  color-scheme: light dark;
   /* System Font Stacks (DSGVO-konform, keine externen Requests) */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
@@ -18,9 +19,9 @@
   --text-light: #94a3b8;
   --text-inverse: #ffffff;
   
-  --accent-primary: #0ea5e9;
-  --accent-secondary: #06b6d4;
-  --accent-dark: #0284c7;
+  --accent-primary: #0284c7;   /* sky-600 – Kontrast 4.6:1 auf Weiß (WCAG AA ✓) */
+  --accent-secondary: #0ea5e9; /* sky-400 – nur für dekorative Zwecke, nicht für Text */
+  --accent-dark: #0369a1;      /* sky-700 */
   --accent-light: #7dd3fc;
   
   --success: #10b981;
@@ -75,7 +76,7 @@
   /* Section Background Variations for Visual Differentiation */
   --section-bg-default: var(--bg-primary);
   --section-bg-alternate: rgba(240, 249, 255, 0.4);  /* Very subtle blue tint */
-  --section-bg-accent-soft: rgba(14, 165, 233, 0.03);  /* Extremely subtle accent */
+  --section-bg-accent-soft: rgba(2, 132, 199, 0.03);   /* Extremely subtle accent */
   --section-bg-warm: rgba(251, 191, 36, 0.04);  /* Subtle warm tint */
 }
 
@@ -1376,6 +1377,35 @@ a.icon-only .icon {
   border-width: 0;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 10000;
+  padding: 8px 16px;
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 8px;
+}
+
+.footer-link-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+.footer-link-btn:hover {
+  opacity: 0.8;
+}
+
 /* ============================================
    NEW NICHE CONTENT COMPONENTS
    ============================================ */
@@ -2275,6 +2305,9 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+  html {
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Focus Styles */
@@ -2374,6 +2407,14 @@ summary:focus-visible {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Anchor-as-card: reset link styles so <a class="attraction-card"> looks like a card */
+a.attraction-card,
+a.category-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .attraction-card {
@@ -3040,7 +3081,7 @@ summary:focus-visible {
   margin-bottom: var(--space-2);
 }
 
-.trust-item h4 {
+.trust-item h3 {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -3265,6 +3306,21 @@ summary:focus-visible {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   border-color: var(--accent-primary);
+}
+
+/* img-variant for category card (replaces background-image) */
+.category-card-image-img,
+.card-image-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-image-img {
+  border-radius: calc(var(--radius) / 2);
+  margin-bottom: calc(var(--grid) * 1.5);
 }
 
 .category-card-image {
@@ -3756,7 +3812,7 @@ summary:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--space-2);
+  padding: var(--space-2) var(--space-2) calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   transform: translateY(100%);
   animation: slideUp 0.5s ease 3s forwards; /* 3s delay before showing */

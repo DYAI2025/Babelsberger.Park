@@ -9,6 +9,46 @@
   ],
   "routes": [
     {
+      "src": "/en/?$",
+      "dest": "/park-babelsberg/en/index.html"
+    },
+    {
+      "src": "/en/blog/?$",
+      "dest": "/park-babelsberg/en/blog/index.html"
+    },
+    {
+      "src": "/en/(.*)",
+      "dest": "/park-babelsberg/en/$1"
+    },
+    {
+      "src": "/eintritt/?",
+      "dest": "/park-babelsberg/eintritt-kosten.html"
+    },
+    {
+      "src": "/eintritt-kosten/?",
+      "dest": "/park-babelsberg/eintritt-kosten.html"
+    },
+    {
+      "src": "/barrierefrei/?",
+      "dest": "/park-babelsberg/kinderwagen-barrierefrei.html"
+    },
+    {
+      "src": "/kinderwagen/?",
+      "dest": "/park-babelsberg/kinderwagen-barrierefrei.html"
+    },
+    {
+      "src": "/fahrrad/?",
+      "dest": "/park-babelsberg/fahrrad-ebike.html"
+    },
+    {
+      "src": "/picknick/?",
+      "dest": "/park-babelsberg/picknick.html"
+    },
+    {
+      "src": "/winter/?",
+      "dest": "/park-babelsberg/winter-guide.html"
+    },
+    {
       "src": "/blog/?$",
       "dest": "/park-babelsberg/blog/index.html"
     },
@@ -115,6 +155,22 @@
     {
       "src": "/jagdschloss/?",
       "dest": "/park-babelsberg/jagdschloss-glienicke.html"
+    },
+    {
+      "src": "/casino-glienicke/?",
+      "dest": "/park-babelsberg/casino-glienicke.html"
+    },
+    {
+      "src": "/klosterhof-glienicke/?",
+      "dest": "/park-babelsberg/klosterhof-glienicke.html"
+    },
+    {
+      "src": "/klosterhof/?",
+      "dest": "/park-babelsberg/klosterhof-glienicke.html"
+    },
+    {
+      "src": "/aussichtspunkte/?",
+      "dest": "/park-babelsberg/aussichtspunkte.html"
     },
     {
       "src": "/gruenes-haus/?",

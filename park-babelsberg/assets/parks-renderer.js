@@ -10,15 +10,18 @@ class AttractionCard {
   }
 
   render() {
-    const card = document.createElement('article');
+    // Use <a> for semantic, accessible, SEO-friendly card navigation
+    const card = document.createElement('a');
     card.className = 'attraction-card';
+    card.href = this.data.details_url || '#';
     card.setAttribute('data-attraction-id', this.data.id);
+    card.setAttribute('aria-label', this.data.title);
 
-    // Image placeholder (if no image URL, show placeholder)
+    // Use <img loading="lazy"> for better SEO and accessibility over background-image
     let imageHTML = '';
     if (this.data.image_url && this.data.image_url !== '') {
       imageHTML = `
-        <div class="card-image" style="background-image: url('${this.data.image_url}');"></div>
+        <img src="${this.data.image_url}" alt="${this.data.title}" loading="lazy" class="card-image-img">
       `;
     } else {
       imageHTML = `
@@ -30,25 +33,9 @@ class AttractionCard {
 
     card.innerHTML = `
       ${imageHTML}
-      <h3>${this.data.title}</h3>
-      <p>${this.data.short_description}</p>
+      <h3 data-i18n="attractions.${this.data.id}.title">${this.data.title}</h3>
+      <p data-i18n="attractions.${this.data.id}.desc">${this.data.short_description}</p>
     `;
-
-    // Click handler - navigate to detail page
-    card.addEventListener('click', () => {
-      window.location.href = this.data.details_url;
-    });
-
-    // Keyboard accessibility
-    card.setAttribute('tabindex', '0');
-    card.setAttribute('role', 'button');
-    card.setAttribute('aria-label', this.data.title);
-    card.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        window.location.href = this.data.details_url;
-      }
-    });
 
     return card;
   }
@@ -107,20 +94,39 @@ class CategoryCard {
   }
 
   render() {
-    const card = document.createElement('article');
+    // Use <a> for semantic, accessible card – works for both anchor and page links
+    const card = document.createElement('a');
     card.className = 'category-card';
     card.setAttribute('data-category-id', this.data.id);
+    card.setAttribute('aria-label', this.data.title);
 
-    // Image placeholder (no icon overlay)
+    if (this.data.link) {
+      if (this.data.link.startsWith('#')) {
+        card.href = this.data.link;
+        // Smooth-scroll for internal anchor links
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
+          const target = document.querySelector(this.data.link);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      } else {
+        card.href = this.data.link;
+      }
+    } else {
+      card.href = '#';
+      card.setAttribute('aria-disabled', 'true');
+    }
+
+    // Use <img loading="lazy"> for better SEO and LCP
     let imageHTML = '';
     if (this.data.image && this.data.image !== '') {
       imageHTML = `
-        <div class="category-card-image" style="background-image: url('${this.data.image}');"></div>
+        <img src="${this.data.image}" alt="${this.data.title}" loading="lazy" class="category-card-image-img">
       `;
     } else {
-      imageHTML = `
-        <div class="category-card-image"></div>
-      `;
+      imageHTML = `<div class="category-card-image"></div>`;
     }
 
     card.innerHTML = `
@@ -133,33 +139,6 @@ class CategoryCard {
         <p>${this.data.description}</p>
       </div>
     `;
-
-    // Click handler - navigate to link
-    if (this.data.link) {
-      card.addEventListener('click', () => {
-        if (this.data.link.startsWith('#')) {
-          // Internal anchor link - smooth scroll
-          const target = document.querySelector(this.data.link);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        } else {
-          // External link - navigate
-          window.location.href = this.data.link;
-        }
-      });
-
-      // Keyboard accessibility
-      card.setAttribute('tabindex', '0');
-      card.setAttribute('role', 'button');
-      card.setAttribute('aria-label', this.data.title);
-      card.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          card.click();
-        }
-      });
-    }
 
     return card;
   }
@@ -249,7 +228,8 @@ class ParksApp {
     }
 
     if (!this.extendedData || !this.extendedData.specials || this.extendedData.specials.length === 0) {
-      container.innerHTML = '<p style="text-align: center; color: var(--ink-muted);">Besonderheiten werden demnächst ergänzt.</p>';
+      const msg = window.i18n ? window.i18n.t('renderer.specialsSoon') : 'Besonderheiten werden demnächst ergänzt.';
+      container.innerHTML = `<p style="text-align: center; color: var(--ink-muted);">${msg}</p>`;
       return;
     }
 
@@ -270,7 +250,8 @@ class ParksApp {
     }
 
     if (!this.extendedData || !this.extendedData.categories || this.extendedData.categories.length === 0) {
-      container.innerHTML = '<p style="text-align: center; color: var(--ink-muted);">Kategorien werden demnächst ergänzt.</p>';
+      const msg = window.i18n ? window.i18n.t('renderer.categoriesSoon') : 'Kategorien werden demnächst ergänzt.';
+      container.innerHTML = `<p style="text-align: center; color: var(--ink-muted);">${msg}</p>`;
       return;
     }
 

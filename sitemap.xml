@@ -1,55 +1,1020 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://park.babelsberger.info/</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/anreise.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/datenschutz.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/eritage.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/flatowturm.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/fotografie.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/gastronomie-restaurants.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/gastronomie.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/geocaching.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/geschichte.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/gr%C3%BCnes-haus.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/impressum.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/index.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/jagdschloss-glienicke.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/laufen.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/liegewiesen.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/matrosenhaus.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/meierei-neuer-garten.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/natur-wege.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/neuer-garten.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/park-babelsberg.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/park-glienicke.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/parkordnung-vergleich.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/praktisches.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/raeucherhaus.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/schifffahrtsanleger.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/schloss-babelsberg.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/schloss-charlottenhof.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/schloss-glienicke.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/sehenswuerdigkeiten.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/soziale-treffpunkte.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/uferweg-nord.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/wasseraktivitaeten.html</loc><lastmod>2026-02-13</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/yoga.html</loc><lastmod>2026-02-13</lastmod></url>
-  <!-- Blog / Magazin -->
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/index.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/agentenaustausch-glienicker-bruecke.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/biosphaere-potsdam-winter-tipp.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/dampfmaschinenhaus-technisches-wunder.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/filmpark-babelsberg-familien-guide.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/fotografie-guenther-platz-cecilienhof.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/gastronomie-guide-babelsberg.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/geocaching-babelsberg-schatzsuche.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/heiliger-see-baden-neuer-garten.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/heiraten-in-potsdam-locations.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/jogging-routen-babelsberg.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/park-babelsberg-mit-hund.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/schloss-cecilienhof-weltgeschichte.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/yoga-meditation-potsdam-parks.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/tagesausflug-potsdam.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/potsdam-mit-kindern.html</loc><lastmod>2026-03-03</lastmod></url>
-  <url><loc>https://park.babelsberger.info/park-babelsberg/blog/fruehling-potsdam-blueten.html</loc><lastmod>2026-03-03</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/anreise-parken.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/anreise-parken.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/anreise-parken.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/anreise.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/anreise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/anreise.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/agentenaustausch-glienicker-bruecke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/agentenaustausch-glienicker-bruecke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/agentenaustausch-glienicker-bruecke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/biosphaere-potsdam-winter-tipp.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/biosphaere-potsdam-winter-tipp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/biosphaere-potsdam-winter-tipp.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/dampfmaschinenhaus-technisches-wunder.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/dampfmaschinenhaus-technisches-wunder.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/dampfmaschinenhaus-technisches-wunder.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/filmpark-babelsberg-familien-guide.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/filmpark-babelsberg-familien-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/filmpark-babelsberg-familien-guide.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/fotografie-guenther-platz-cecilienhof.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/fotografie-guenther-platz-cecilienhof.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/fotografie-guenther-platz-cecilienhof.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/fruehling-potsdam-blueten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/fruehling-potsdam-blueten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/fruehling-potsdam-blueten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/gastronomie-guide-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/gastronomie-guide-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/gastronomie-guide-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/geocaching-babelsberg-schatzsuche.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/geocaching-babelsberg-schatzsuche.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/geocaching-babelsberg-schatzsuche.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/heiliger-see-baden-neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/heiliger-see-baden-neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/heiliger-see-baden-neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/heiraten-in-potsdam-locations.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/heiraten-in-potsdam-locations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/heiraten-in-potsdam-locations.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/index.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/index.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/jogging-routen-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/jogging-routen-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/jogging-routen-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/park-babelsberg-mit-hund.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/park-babelsberg-mit-hund.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/park-babelsberg-mit-hund.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/potsdam-mit-kindern.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/potsdam-mit-kindern.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/potsdam-mit-kindern.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/schloss-cecilienhof-weltgeschichte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/schloss-cecilienhof-weltgeschichte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/schloss-cecilienhof-weltgeschichte.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/tagesausflug-potsdam.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/tagesausflug-potsdam.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/tagesausflug-potsdam.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/blog/yoga-meditation-potsdam-parks.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/yoga-meditation-potsdam-parks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/yoga-meditation-potsdam-parks.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/datenschutz.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/datenschutz.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/eintritt-kosten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/eintritt-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/eintritt-kosten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/eritage.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/eritage.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/eritage.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/fahrrad-ebike.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/fahrrad-ebike.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/fahrrad-ebike.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/flatowturm.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/flatowturm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/flatowturm.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/fotografie.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/fotografie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/fotografie.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/gastronomie-restaurants.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/gastronomie-restaurants.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/gastronomie-restaurants.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/gastronomie.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/gastronomie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/gastronomie.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/geocaching.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/geocaching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/geocaching.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/geschichte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/geschichte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/geschichte.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/grünes-haus.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/grünes-haus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/grünes-haus.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/heiraten-feiern.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/heiraten-feiern.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/heiraten-feiern.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/impressum.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/impressum.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/index.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/jagdschloss-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/jagdschloss-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/jagdschloss-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/casino-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/casino-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/casino-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/klosterhof-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/klosterhof-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/klosterhof-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/kinderwagen-barrierefrei.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/kinderwagen-barrierefrei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/kinderwagen-barrierefrei.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/laufen.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/laufen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/laufen.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/liegewiesen.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/liegewiesen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/liegewiesen.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/marmorpalais.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/marmorpalais.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/marmorpalais.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/matrosenhaus.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/matrosenhaus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/matrosenhaus.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/meierei-neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/meierei-neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/meierei-neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/natur-wege.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/natur-wege.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/natur-wege.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/oeffnungszeiten-tickets.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/oeffnungszeiten-tickets.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/oeffnungszeiten-tickets.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/park-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/park-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/park-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/park-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/park-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/park-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/parkordnung-vergleich.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/parkordnung-vergleich.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/parkordnung-vergleich.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/picknick.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/picknick.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/picknick.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/praktisches.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/praktisches.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/praktisches.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/pyramide-neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/pyramide-neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/pyramide-neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/raeucherhaus.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/raeucherhaus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/raeucherhaus.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/schifffahrtsanleger.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schifffahrtsanleger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schifffahrtsanleger.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/schloss-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/schloss-cecilienhof.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-cecilienhof.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-cecilienhof.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/schloss-charlottenhof.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-charlottenhof.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-charlottenhof.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/schloss-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/sehenswuerdigkeiten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/sehenswuerdigkeiten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/sehenswuerdigkeiten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/soziale-treffpunkte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/soziale-treffpunkte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/soziale-treffpunkte.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/uebernachten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/uebernachten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/uebernachten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/uferweg-nord.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/uferweg-nord.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/uferweg-nord.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/wasseraktivitaeten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/wasseraktivitaeten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/wasseraktivitaeten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/winter-guide.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/winter-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/winter-guide.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/yoga.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/yoga.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/yoga.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/anreise-parken.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/anreise-parken.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/anreise-parken.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/anreise.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/anreise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/anreise.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/agentenaustausch-glienicker-bruecke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/agentenaustausch-glienicker-bruecke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/agentenaustausch-glienicker-bruecke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/biosphaere-potsdam-winter-tipp.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/biosphaere-potsdam-winter-tipp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/biosphaere-potsdam-winter-tipp.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/dampfmaschinenhaus-technisches-wunder.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/dampfmaschinenhaus-technisches-wunder.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/dampfmaschinenhaus-technisches-wunder.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/filmpark-babelsberg-familien-guide.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/filmpark-babelsberg-familien-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/filmpark-babelsberg-familien-guide.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/fotografie-guenther-platz-cecilienhof.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/fotografie-guenther-platz-cecilienhof.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/fotografie-guenther-platz-cecilienhof.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/fruehling-potsdam-blueten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/fruehling-potsdam-blueten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/fruehling-potsdam-blueten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/gastronomie-guide-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/gastronomie-guide-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/gastronomie-guide-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/geocaching-babelsberg-schatzsuche.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/geocaching-babelsberg-schatzsuche.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/geocaching-babelsberg-schatzsuche.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/heiliger-see-baden-neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/heiliger-see-baden-neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/heiliger-see-baden-neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/heiraten-in-potsdam-locations.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/heiraten-in-potsdam-locations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/heiraten-in-potsdam-locations.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/index.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/index.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/jogging-routen-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/jogging-routen-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/jogging-routen-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/park-babelsberg-mit-hund.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/park-babelsberg-mit-hund.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/park-babelsberg-mit-hund.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/potsdam-mit-kindern.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/potsdam-mit-kindern.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/potsdam-mit-kindern.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/schloss-cecilienhof-weltgeschichte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/schloss-cecilienhof-weltgeschichte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/schloss-cecilienhof-weltgeschichte.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/tagesausflug-potsdam.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/tagesausflug-potsdam.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/tagesausflug-potsdam.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/blog/yoga-meditation-potsdam-parks.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/blog/yoga-meditation-potsdam-parks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/blog/yoga-meditation-potsdam-parks.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/datenschutz.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/datenschutz.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/eintritt-kosten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/eintritt-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/eintritt-kosten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/eritage.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/eritage.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/eritage.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/fahrrad-ebike.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/fahrrad-ebike.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/fahrrad-ebike.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/flatowturm.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/flatowturm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/flatowturm.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/fotografie.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/fotografie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/fotografie.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/gastronomie-restaurants.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/gastronomie-restaurants.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/gastronomie-restaurants.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/gastronomie.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/gastronomie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/gastronomie.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/geocaching.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/geocaching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/geocaching.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/geschichte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/geschichte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/geschichte.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/grünes-haus.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/grünes-haus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/grünes-haus.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/heiraten-feiern.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/heiraten-feiern.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/heiraten-feiern.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/impressum.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/impressum.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/index.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/jagdschloss-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/jagdschloss-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/jagdschloss-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/kinderwagen-barrierefrei.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/kinderwagen-barrierefrei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/kinderwagen-barrierefrei.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/laufen.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/laufen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/laufen.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/liegewiesen.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/liegewiesen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/liegewiesen.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/marmorpalais.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/marmorpalais.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/marmorpalais.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/matrosenhaus.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/matrosenhaus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/matrosenhaus.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/meierei-neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/meierei-neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/meierei-neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/natur-wege.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/natur-wege.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/natur-wege.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/oeffnungszeiten-tickets.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/oeffnungszeiten-tickets.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/oeffnungszeiten-tickets.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/park-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/park-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/park-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/park-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/park-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/park-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/parkordnung-vergleich.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/parkordnung-vergleich.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/parkordnung-vergleich.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/picknick.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/picknick.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/picknick.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/praktisches.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/praktisches.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/praktisches.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/pyramide-neuer-garten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/pyramide-neuer-garten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/pyramide-neuer-garten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/raeucherhaus.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/raeucherhaus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/raeucherhaus.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/schifffahrtsanleger.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schifffahrtsanleger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schifffahrtsanleger.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/schloss-babelsberg.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-babelsberg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-babelsberg.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/schloss-cecilienhof.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-cecilienhof.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-cecilienhof.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/schloss-charlottenhof.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-charlottenhof.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-charlottenhof.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/schloss-glienicke.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/schloss-glienicke.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/schloss-glienicke.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/sehenswuerdigkeiten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/sehenswuerdigkeiten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/sehenswuerdigkeiten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/soziale-treffpunkte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/soziale-treffpunkte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/soziale-treffpunkte.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/uebernachten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/uebernachten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/uebernachten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/uferweg-nord.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/uferweg-nord.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/uferweg-nord.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/wasseraktivitaeten.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/wasseraktivitaeten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/wasseraktivitaeten.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/winter-guide.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/winter-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/winter-guide.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/en/yoga.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/yoga.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/yoga.html"/>
+  </url>
+  <url>
+    <loc>https://park.babelsberger.info/park-babelsberg/aussichtspunkte.html</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/aussichtspunkte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/aussichtspunkte.html"/>
+  </url>
 </urlset>
