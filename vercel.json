@@ -9,6 +9,54 @@
   ],
   "routes": [
     {
+      "src": "/en/?$",
+      "dest": "/park-babelsberg/en/index.html"
+    },
+    {
+      "src": "/en/blog/?$",
+      "dest": "/park-babelsberg/en/blog/index.html"
+    },
+    {
+      "src": "/en/(.*)",
+      "dest": "/park-babelsberg/en/$1"
+    },
+    {
+      "src": "/eintritt/?",
+      "dest": "/park-babelsberg/eintritt-kosten.html"
+    },
+    {
+      "src": "/eintritt-kosten/?",
+      "dest": "/park-babelsberg/eintritt-kosten.html"
+    },
+    {
+      "src": "/barrierefrei/?",
+      "dest": "/park-babelsberg/kinderwagen-barrierefrei.html"
+    },
+    {
+      "src": "/kinderwagen/?",
+      "dest": "/park-babelsberg/kinderwagen-barrierefrei.html"
+    },
+    {
+      "src": "/fahrrad/?",
+      "dest": "/park-babelsberg/fahrrad-ebike.html"
+    },
+    {
+      "src": "/picknick/?",
+      "dest": "/park-babelsberg/picknick.html"
+    },
+    {
+      "src": "/winter/?",
+      "dest": "/park-babelsberg/winter-guide.html"
+    },
+    {
+      "src": "/blog/?$",
+      "dest": "/park-babelsberg/blog/index.html"
+    },
+    {
+      "src": "/magazin/?$",
+      "dest": "/park-babelsberg/blog/index.html"
+    },
+    {
       "src": "/park/?",
       "dest": "/park-babelsberg/park-babelsberg.html"
     },
@@ -75,6 +123,58 @@
     {
       "src": "/parkordnung/?",
       "dest": "/park-babelsberg/parkordnung-vergleich.html"
+    },
+    {
+      "src": "/schloss-glienicke/?",
+      "dest": "/park-babelsberg/schloss-glienicke.html"
+    },
+    {
+      "src": "/glienicke/?",
+      "dest": "/park-babelsberg/schloss-glienicke.html"
+    },
+    {
+      "src": "/charlottenhof/?",
+      "dest": "/park-babelsberg/schloss-charlottenhof.html"
+    },
+    {
+      "src": "/meierei/?",
+      "dest": "/park-babelsberg/meierei-neuer-garten.html"
+    },
+    {
+      "src": "/eritage/?",
+      "dest": "/park-babelsberg/eritage.html"
+    },
+    {
+      "src": "/raeucherhaus/?",
+      "dest": "/park-babelsberg/raeucherhaus.html"
+    },
+    {
+      "src": "/schifffahrtsanleger/?",
+      "dest": "/park-babelsberg/schifffahrtsanleger.html"
+    },
+    {
+      "src": "/jagdschloss/?",
+      "dest": "/park-babelsberg/jagdschloss-glienicke.html"
+    },
+    {
+      "src": "/casino-glienicke/?",
+      "dest": "/park-babelsberg/casino-glienicke.html"
+    },
+    {
+      "src": "/klosterhof-glienicke/?",
+      "dest": "/park-babelsberg/klosterhof-glienicke.html"
+    },
+    {
+      "src": "/klosterhof/?",
+      "dest": "/park-babelsberg/klosterhof-glienicke.html"
+    },
+    {
+      "src": "/aussichtspunkte/?",
+      "dest": "/park-babelsberg/aussichtspunkte.html"
+    },
+    {
+      "src": "/gruenes-haus/?",
+      "dest": "/park-babelsberg/grünes-haus.html"
     },
     {
       "src": "/",

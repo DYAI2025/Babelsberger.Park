@@ -1,0 +1,649 @@
+{
+  "pillar": {
+    "hero": {
+      "title": "Die drei Parks von Potsdam: Babelsberg, Glienicke & Neuer Garten",
+      "subtitle": "UNESCO-Welterbe Kulturlandschaft | Sehenswürdigkeiten | Praktische Infos"
+    }
+  },
+  "parks": {
+    "babelsberg": {
+      "name": "Park Babelsberg",
+      "description": "Historischer Landschaftspark mit UNESCO-Welterbe-Status am Havelufer",
+      "link": "Alle Infos zu Park Babelsberg →"
+    },
+    "glienicke": {
+      "name": "Park Glienicke",
+      "description": "Klassizistischer Landschaftspark mit italienischen Einflüssen und Havelblick",
+      "link": "Alle Infos zu Park Glienicke →"
+    },
+    "neuergarten": {
+      "name": "Neuer Garten",
+      "description": "Englischer Landschaftsgarten am Heiligen See mit königlicher Geschichte",
+      "link": "Alle Infos zum Neuen Garten →"
+    }
+  },
+  "specials": {
+    "title": "Besonderheiten & Aktivitäten"
+  },
+  "meta": {
+    "title": "Park Babelsberg Potsdam – Praktische Infos, Toiletten, Wege & Highlights",
+    "description": "Alle praktischen Infos für deinen Besuch: Wo sind Toiletten? Welche Wege sind barrierefrei? Echte Bilder zeigen, was dich erwartet. Für Familien, Senioren, Hundebesitzer.",
+    "keywords": "park babelsberg toiletten, wc park babelsberg, restaurants park babelsberg, parkplätze park babelsberg, neuer garten potsdam toiletten, schloss babelsberg gastronomie, potsdam park toiletten finden, park babelsberg karte"
+  },
+  "hero": {
+    "title": "Parks und Schlösser in Potsdam-Babelsberg",
+    "subtitle": "Kultur, Natur und Erholung am Ufer der Havel",
+    "lead": "Entdecken Sie die UNESCO-Welterbe-Parks und Kulturdenkmäler am Ufer der Havel. Mit praktischen Informationen zu Örtlichkeiten, Anfahrt und aktuellen Gegebenheiten vor Ort."
+  },
+  "nav": {
+    "funfacts": "Fun Facts",
+    "areale": "Die 4 Areale",
+    "finder": "Location-Finder",
+    "categories": "Kategorien",
+    "enthusiasts": "Für Enthusiasten",
+    "arrival": "Anreise",
+    "faq": "FAQ",
+    "wasser": "Wasseraktivitäten",
+    "magazin": "Magazin"
+  },
+  "funfacts": {
+    "title": "Wusstest du schon?",
+    "subtitle": "Faszinierende Fakten über die UNESCO-Welterbe-Parks in Potsdam",
+    "unesco": {
+      "title": "UNESCO-Welterbe",
+      "text": "Die Potsdamer Kulturlandschaft wurde 1990 in die UNESCO-Welterbeliste aufgenommen – zusammen mit Schloss Sanssouci."
+    },
+    "hectares": {
+      "title": "Hektar Parkfläche",
+      "text": "Der Park Babelsberg erstreckt sich über 124 Hektar – das entspricht etwa 174 Fußballfeldern!"
+    },
+    "kaiser": {
+      "title": "Kaiser Wilhelm I.",
+      "text": "Das Schloss Babelsberg war das Sommerschloss von Kaiser Wilhelm I. – erbaut von Karl Friedrich Schinkel."
+    },
+    "architects": {
+      "title": "Berühmte Architekten",
+      "text": "Schinkel, Persius und Strack – drei Architektur-Genies schufen gemeinsam das neugotische Meisterwerk."
+    },
+    "shoreline": {
+      "title": "Uferlinie",
+      "text": "Über 7 Kilometer malerische Uferwege entlang der Havel laden zum Spazieren und Verweilen ein."
+    },
+    "potsdam": {
+      "title": "Potsdamer Konferenz",
+      "text": "Im Schloss Cecilienhof (Neuer Garten) fand 1945 die historische Potsdamer Konferenz statt."
+    }
+  },
+  "areale": {
+    "title": "Die 4 Areale – Eine Landschaft, vier Erlebnisse",
+    "subtitle": "Von der historischen Parkanlage bis zum königlichen Schloss – entdecke die verbundenen UNESCO-Welterbe-Areale am Ufer der Havel.",
+    "label": "Areal",
+    "mapButton": "Kartenansicht",
+    "areal1": {
+      "title": "Park Babelsberg",
+      "description": "Der 124 Hektar große englische Landschaftspark am Ufer der Havel ist ein Meisterwerk der Gartenkunst. Seit 1990 UNESCO-Welterbe."
+    },
+    "areal2": {
+      "title": "Schloss Babelsberg",
+      "description": "Das neugotische Sommerschloss von Kaiser Wilhelm I. thront majestätisch über der Havel. Erbaut 1833-1849 nach Entwürfen von Karl Friedrich Schinkel."
+    },
+    "areal3": {
+      "title": "Neuer Garten",
+      "description": "Ein frühes Meisterwerk der Landschaftsgestaltung am Heiligen See. Angelegt ab 1787 für Friedrich Wilhelm II. Hier fand 1945 die Potsdamer Konferenz statt."
+    },
+    "areal4": {
+      "title": "Park Glienicke",
+      "description": "Der südlichste Teil der UNESCO-Welterbe-Landschaft an der Glienicker Brücke. Ein verstecktes Juwel mit italienisch inspirierter Architektur."
+    }
+  },
+  "finder": {
+    "title": "Finde was du brauchst",
+    "subtitle": "Interaktive Karte mit WCs, Restaurants, Parkplätzen und ÖPNV-Haltestellen. Mit Standort-Navigation und Live-Fahrplanauskünften.",
+    "description": "Finde schnell die nächste Toilette, Restaurant oder Parkplatz in allen drei Parks:",
+    "wc": "WC",
+    "gastro": "Gastronomie",
+    "parking": "Parkplätze",
+    "transit": "ÖPNV",
+    "subfilter": {
+      "restaurant": "Restaurant",
+      "cafe": "Café",
+      "fastFood": "Imbiss",
+      "bar": "Bar",
+      "pub": "Pub",
+      "iceCream": "Eiscafé",
+      "biergarten": "Biergarten"
+    },
+    "controls": {
+      "locate": "Standort nutzen",
+      "nearestWc": "Nächstes WC",
+      "nearestGastro": "Nächstes Restaurant",
+      "nearestParking": "Nächster Parkplatz"
+    },
+    "legend": {
+      "title": "Legende & Datenquellen",
+      "wc": "WC: 🟢 Öffentlich · 🟡 Nur Kunden · 💰 Kostenpflichtig",
+      "gastro": "Gastronomie: 🍽️ Restaurant · ☕ Café · 🍔 Imbiss · 🍺 Bar/Pub · 🍦 Eiscafé · 🌳 Biergarten",
+      "parking": "Parkplätze: 🅿️ Öffentlich · 💰 Kostenpflichtig · 🔒 Privat · 🏢 Parkhaus · 🚲 Fahrrad",
+      "transit": "ÖPNV: 🚍 Bus & Tram Haltestellen · 🕐 Fahrplanauskünfte via VBB",
+      "data": "Daten: © OpenStreetMap-Mitwirkende (ODbL) · Navigation: Google Maps"
+    }
+  },
+  "categories": {
+    "title": "Entdecke nach Kategorien",
+    "subtitle": "Finde schnell was du suchst – von Sehenswürdigkeiten bis zu praktischen Services.",
+    "castles": {
+      "title": "Schlösser & Bauwerke",
+      "count": "8 historische Orte",
+      "description": "Neugotische Schlösser, Aussichtstürme und historische Bauwerke aus verschiedenen Epochen.",
+      "button": "Alle ansehen"
+    },
+    "gastro": {
+      "title": "Gastronomie",
+      "count": "303 Locations",
+      "description": "Restaurants, Cafés, Imbisse und Biergärten in Fußnähe zum Park.",
+      "button": "Alle ansehen"
+    },
+    "practical": {
+      "title": "Praktisches",
+      "count": "WC, Parking, ÖPNV",
+      "description": "Toiletten, Parkplätze und öffentliche Verkehrsmittel mit Live-Daten.",
+      "button": "Auf Karte zeigen"
+    },
+    "nature": {
+      "title": "Natur & Wege",
+      "count": "Spazierwege & Wiesen",
+      "description": "Malerische Uferwege, Liegewiesen und Naturerlebnisse im Park.",
+      "button": "Entdecken"
+    },
+    "arrival": {
+      "title": "Anreise & Parken",
+      "count": "1200+ Parkplätze",
+      "description": "Alle Infos zu Anfahrt, Parkplätzen und öffentlichen Verkehrsmitteln.",
+      "button": "Mehr erfahren"
+    },
+    "rules": {
+      "title": "Regeln & Ordnung",
+      "count": "Parkordnung",
+      "description": "Was ist erlaubt? Radfahren, Picknicken, Baden und mehr.",
+      "button": "Vergleich ansehen"
+    }
+  },
+  "highlights": {
+    "title": "Die schönsten Orte",
+    "subtitle": "Entdecke die historischen Bauwerke und landschaftlichen Highlights im UNESCO-Welterbe Park Babelsberg.",
+    "schloss": {
+      "title": "Schloss Babelsberg",
+      "description": "Neugotisches Sommerschloss von Kaiser Wilhelm I. Erbaut 1833-1849 von Schinkel, Persius und Strack. UNESCO-Welterbe seit 1990.",
+      "button": "Mehr erfahren"
+    },
+    "flatow": {
+      "title": "Flatowturm",
+      "description": "46m hoher Aussichtsturm mit 360°-Panorama über Potsdam. Erbaut 1853-1856. Geöffnet Mai–Oktober, Sa/So 10-17:30 Uhr.",
+      "button": "Mehr erfahren"
+    },
+    "uferweg": {
+      "title": "Uferweg Nord",
+      "description": "Malerischer Spazierweg mit freiem Panoramablick über den Tiefen See. Perfekt zum Entspannen, Fotografieren und Sonnenuntergang genießen.",
+      "button": "Mehr erfahren"
+    },
+    "matrosenhaus": {
+      "title": "Matrosenhaus",
+      "description": "Historisches Bootshaus am Havelufer aus dem 19. Jahrhundert. Heute Event-Location mit romantischem Blick aufs Wasser.",
+      "button": "Mehr erfahren"
+    }
+  },
+  "arrival": {
+    "title": "Anreise & Parkplätze",
+    "subtitle": "So kommst du am besten zum Park Babelsberg – mit Auto, ÖPNV oder Fahrrad.",
+    "car": {
+      "title": "Mit dem Auto",
+      "mainParking": "Hauptparkplatz \"Am Neuen Garten\"",
+      "gps": "GPS: 52.419083, 13.071547",
+      "capacity": "Kapazität: ca. 50 Stellplätze",
+      "distance": "Entfernung zum Schloss: 1,2 km (15 Min. Fußweg)",
+      "warning": "An Wochenenden oft voll ab 11 Uhr",
+      "warningTip": "früh kommen empfohlen!",
+      "button": "Alle Parkplätze auf Karte"
+    },
+    "transit": {
+      "title": "Mit ÖPNV (Empfohlen!)",
+      "bus694": "Bus 694: Haltestelle \"Park Babelsberg\" (direkt am Eingang)",
+      "bus690": "Bus 690: Haltestelle \"Rathaus Babelsberg\" (800m Fußweg)",
+      "tram93": "Tram 93: Haltestelle \"Lutherplatz\" (1,2 km Fußweg)",
+      "benefit": "Klimafreundlich und stressfrei",
+      "benefitDetail": "keine Parkplatzsuche! Live-Abfahrtszeiten auf unserer Karte verfügbar.",
+      "button": "Live-Fahrplan"
+    },
+    "tips": {
+      "title": "Parktipps für Autofahrer",
+      "tip1": "Tipp 1: Wochenend-Besucher sollten vor 10 Uhr anreisen oder auf ÖPNV umsteigen.",
+      "tip2": "Tipp 2: Über 1200 weitere Parkplätze in der Umgebung (siehe Karte oben).",
+      "tip3": "Tipp 3: Park + Ride: Parkplatz am S-Bahnhof Griebnitzsee (kostenlos), dann 15 Min. Fußweg."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Schnelle Antworten auf die wichtigsten Fragen rund um deinen Besuch.",
+    "q1": {
+      "question": "Wo finde ich Toiletten im Park?",
+      "answer": "Öffentliche WCs sind an den Haupteingängen ausgeschildert. Nutze unseren Location-Finder um die nächste Toilette zu finden. Einige sind kostenpflichtig (ca. 0,50€), andere kostenlos."
+    },
+    "q2": {
+      "question": "Ist der Park barrierefrei?",
+      "answer": "Die asphaltierten Hauptwege sind gut befahrbar für Rollstühle und Kinderwagen. Einige Naturwege haben Steigungen und sind weniger geeignet. Der Flatowturm ist nicht barrierefrei (nur über Treppen erreichbar)."
+    },
+    "q3": {
+      "question": "Darf ich im Park grillen oder picknicken?",
+      "answer": "Picknicken ist auf den Liegewiesen erlaubt. Grillen ist im gesamten Park verboten (Brandschutz). Bitte Müll mitnehmen oder in den bereitgestellten Abfallbehältern entsorgen."
+    },
+    "q4": {
+      "question": "Kann ich mit dem Fahrrad durch den Park fahren?",
+      "answer": "Radfahren ist nur auf den asphaltierten Hauptwegen erlaubt. Auf Wanderwegen und Naturpfaden ist Radfahren verboten. Schilder vor Ort beachten. Mehr Details in unserer Parkordnung."
+    },
+    "q5": {
+      "question": "Sind Hunde im Park erlaubt?",
+      "answer": "Ja, Hunde sind erlaubt, müssen aber an der Leine geführt werden. Hundekotbeutel bitte mitnehmen und in den Abfallbehältern entsorgen."
+    },
+    "q6": {
+      "question": "Kann ich in der Havel schwimmen?",
+      "answer": "Nein, Schwimmen in der Havel ist verboten (keine Badeaufsicht, Strömung, Schiffsverkehr). Alternative Badestellen gibt es am Heiligen See im Neuen Garten."
+    },
+    "q7": {
+      "question": "Gibt es Führungen durch den Park?",
+      "answer": "Ja, die Stiftung Preußische Schlösser und Gärten bietet regelmäßig Führungen an. Termine und Buchung auf www.spsg.de."
+    },
+    "q8": {
+      "question": "Wie lange sollte ich für einen Besuch einplanen?",
+      "answer": "Für einen entspannten Spaziergang: 2-3 Stunden. Mit Schlossbesichtigung und Flatowturm: 4-5 Stunden. Für alle 4 Areale: Ganztagesausflug empfohlen."
+    }
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "cookies": "Cookie-Einstellungen",
+    "copyright": "© 2025 Park Babelsberg Info · Daten: OpenStreetMap-Mitwirkende (ODbL)",
+    "rules": "Stand: 2025-10-31 • SPSG-Parkordnung: Wegegebot beachten • Öffnung 8:00 Uhr bis Dämmerung • Private Foto/Film außen mit Stativ/Blitz erlaubt • Kommerzielle Nutzung genehmigungspflichtig • Drohnen strikt verboten"
+  },
+  "babelsberg": {
+    "photography": {
+      "title": "Fotografie-Tipps für Park Babelsberg",
+      "intro": "Tele 135–200 mm für Achsen (Pfingstberg/Marmorpalais), Polfilter am Wasser, ND 6–10 Stufen für seidig-glatte Havel. Drohnen verboten. Wegegebot beachten.",
+      "lightMatrix": {
+        "title": "Licht-Matrix: Spots × Tageszeit",
+        "spot": "Spot",
+        "morning": "Morgen",
+        "evening": "Abend",
+        "winter": "Winter",
+        "summer": "Sommer"
+      },
+      "spots": {
+        "uferweg": {
+          "name": "Uferwege → Glienicker Brücke",
+          "morning": "Sanfte Modellierung aus O/ONO",
+          "evening": "Warmes Seitenlicht",
+          "winter": "Flaches SW-Licht für Texturen",
+          "summer": "Spätes NW-Gegenlicht"
+        },
+        "flatowturm": {
+          "name": "Flatowturm Panorama",
+          "morning": "Klarer Dunst-Layer",
+          "evening": "Goldene Silhouetten",
+          "hint": "Zutritt saisonal – 'Schöne Aussichten!' Programm prüfen"
+        }
+      },
+      "composition": {
+        "title": "Komposition & Perspektiven",
+        "tip1": "S-Linie des Uferwegs als Leitkurve zur Brücke – führt den Blick durch das Bild",
+        "tip2": "Tele-Kompression vom Flatowturm auf Pfingstberg/Marmorpalais – verdichtet Landschaft",
+        "tip3": "Dampfmaschinenhaus: Langzeitbelichtung am Wasser mit ND-Filter für seidig-glatten Effekt"
+      }
+    },
+    "hiddenGems": {
+      "title": "Verborgene Schätze",
+      "dampfmaschine": "Dampfmaschinenhaus: Als \"normannische Burg\" getarnt – Ingenieurskunst für Schloss-Fontäne, nicht Verteidigung",
+      "gerichtslaube": "Gerichtslaube: Mittelalterliches Berliner Rathaus-Fragment (13. Jh.), 1871 als \"Teehaus-Kuriosum\" hierher versetzt",
+      "disclaimer": "Historische Besonderheiten. Aktuelle Zugänglichkeit bitte vor Ort prüfen."
+    },
+    "geocaching": {
+      "title": "Geocaching-Hotspot",
+      "description": "Multi-Caches 'Park Babelsberg 01/02' (Owner: g_r) führen durch den Park mit Stationen u.a. Flatowturm, Marstall, Matrosenhaus.",
+      "warning": "⚠️ Hohe Muggeldichte – diskret loggen. Wege nicht verlassen (UNESCO-Welterbe/SPSG-Parkordnung). Drohnen verboten. Cache-Status auf geocaching.com prüfen (Stand: 2025-10-31)."
+    },
+    "running": {
+      "title": "Laufen & Achtsamkeit",
+      "description": "Hügeliges Profil für Trainingsreiz – stetige Auf- und Abstiege trainieren Kraft und Ausdauer.",
+      "routes": {
+        "title": "Laufrouten (GPX-Downloads)",
+        "route1": "Laufrunde Babelsberg ~4,5 km (hügelig)",
+        "route2": "Laufrunde Babelsberg ~7,7 km (anspruchsvoll)",
+        "disclaimer": "Community-Vorschläge. Vor Ort Wegegebot beachten (nur asphaltierte Hauptwege)."
+      }
+    }
+  },
+  "glienicke": {
+    "photography": {
+      "title": "Fotospots im Fokus",
+      "intro": "Belvedere-Layering: Wasser–Brücke–Schloss mit Tele 135–200 mm. Nachmittagslicht warm. Wegegebot, Drohnenverbot.",
+      "spots": {
+        "title": "Komposition & Perspektiven",
+        "casino": "Casino Glienicke: Arkaden-Rahmung + Spiegelungen bei Windstille – Symmetrie nutzen",
+        "loggia": "Böttcherberg/Loggia Alexandra: Layering bis Schloss Babelsberg – Teleobjektiv verdichtet Landschaft",
+        "stibadium": "Stibadium (Persius): Halbkreis-Teepavillon als Nischenmotiv – architektonische Details"
+      }
+    },
+    "history": {
+      "title": "Agentenkulisse & Kuriositäten",
+      "bridge": "Glienicker Brücke: Austausch-Historie (Powers 1962, Abel 1962, Shcharansky 1986) – Geführte Story-Walks buchbar",
+      "curiosity": "\"Little Curiosity\": Dorischer Beobachtungsposten – perfekte Sichtlinie zur Brücke",
+      "frigate": "Schinkels Dummy-Fregatte: Historisches Kulissen-Schiff (1840er), heute verschollen – architektonische Illusion",
+      "disclaimer": "Historische Besonderheiten. Story-Walks extern organisiert (nicht SPSG)."
+    },
+    "events": {
+      "title": "Event-Potenzial (Premium/Kleinformatig)",
+      "storytelling": {
+        "title": "📚 Storytelling-Formate",
+        "description": "Exklusive Dinner/Podien zu Spionage-Themen im historischen Ambiente"
+      },
+      "photography": {
+        "title": "📷 Golden-Hour-Workshops",
+        "description": "Product-Launches für Kamera/Optik mit professioneller Kulisse"
+      },
+      "disclaimer": "Event-Genehmigung bei SPSG erforderlich. Kapazitäten limitiert."
+    }
+  },
+  "neuerGarten": {
+    "photography": {
+      "title": "Fotospots im Neuen Garten",
+      "intro": "Vormittags frontales Licht am Marmorpalais. Diffuses Licht für Cecilienhof-Texturen. Wegegebot, Drohnenverbot.",
+      "spots": {
+        "title": "Komposition & Perspektiven",
+        "marmorpalais": "Marmorpalais: Ostufer → symmetrische Spiegelungen (morgens) bei Windstille",
+        "cecilienhof": "Cecilienhof: Backstein-/Dach-Texturen – SW-tauglich bei Dunst/Nebel",
+        "see": "Heiliger See: Layer im Morgennebel – atmosphärische Stimmung"
+      }
+    },
+    "history": {
+      "title": "Geschichtsweg \"Verbotene Stadt\" (2,5 km / 14 Stationen)",
+      "description": "KGB-Sperrzone ab 1945 – sowjetische Militärstadt mitten in Potsdam. Gedenkstätte Leistikowstraße 1: Authentische Zellen des sowjetischen Geheimdienstes.",
+      "warning": "ℹ️ Respektvoller Besuch empfohlen. Hinweise vor Ort beachten. Führungen buchbar über Gedenkstätte."
+    },
+    "esoteric": {
+      "title": "Esoterische Spuren Friedrich Wilhelms II.",
+      "pyramid": "Eiskammer als Pyramide: Freimaurerische Symbolik – nicht nur praktisch, sondern spirituell aufgeladen",
+      "temple": "Palastküche als \"versunkener Tempel\": Architektonische Anspielung auf antike Mysterien",
+      "disclaimer": "Historische Interpretationen. Zugänglichkeit variiert je nach Bauwerk."
+    },
+    "movement": {
+      "title": "Joggen & Yoga im Neuen Garten",
+      "description": "Flache ~4-km-Runde – ideal für entspanntes Laufen. Ruhige Wiesen abseits Hauptwege für Yoga/Achtsamkeit.",
+      "running": {
+        "title": "Laufroute (GPX-Download)",
+        "route": "Laufrunde Neuer Garten ~4,0 km (flach)"
+      },
+      "yoga": {
+        "title": "Yoga & Achtsamkeit",
+        "tip1": "Ausrüstung: Matte robust (Wiesen können feucht sein), Zwiebellook gegen Morgen-Kühle",
+        "tip2": "Zeitfenster: Früh morgens = ruhiger & kühler, weniger Besucher",
+        "tip3": "Spots: Ruhige ebene Wiesen abseits Hauptwege – Wegegebot beachten"
+      }
+    }
+  },
+  "enthusiasts": {
+    "title": "Für Enthusiasten",
+    "subtitle": "Nischen-Erlebnisse für Fotografie, Laufen, Geschichte und mehr – entdecke die Parks aus neuen Perspektiven.",
+    "photography": {
+      "title": "📷 Fotografie & Licht",
+      "description": "Licht-Matrizen, Kompositions-Tipps und optimale Tageszeiten für alle drei Parks. Von Tele-Kompression bis Langzeitbelichtung.",
+      "button": "Foto-Guides"
+    },
+    "running": {
+      "title": "🏃 Laufen & Bewegung",
+      "description": "GPS-Tracks zum Download: 4,5–7,7 km hügelige Strecken in Babelsberg, 4 km flache Runde im Neuen Garten. Plus Yoga-Tipps.",
+      "button": "Routen & GPX"
+    },
+    "geocaching": {
+      "title": "🎯 Geocaching",
+      "description": "Multi-Caches 'Park Babelsberg 01/02' führen zu versteckten Spots. Hohe Muggeldichte – diskret loggen!",
+      "button": "Cache-Infos"
+    },
+    "history": {
+      "title": "🕵️ Geschichte & Spionage",
+      "description": "Glienicker Brücke Austausch-Historie, KGB 'Verbotene Stadt' Trail mit 14 Stationen, Story-Walks buchbar.",
+      "button": "Geschichtspfade"
+    },
+    "esoteric": {
+      "title": "🔮 Esoterik & Verborgenes",
+      "description": "Freimaurerische Pyramide, versunkener Tempel, getarnte Burgen – historische Kuriositäten mit spiritueller Aufladung.",
+      "button": "Hidden Gems"
+    },
+    "social": {
+      "title": "☕ Social Hotspots Guide",
+      "description": "Die Parks als „Third Place“: Jugendkultur am Heiligen See, Café Matschke als Bindeglied zur Kunstszene, Schlosskonzerte als kulturelles Ritual. Von autonomen Zonen bis zum intellektuellen Austausch und gepflegten Community-Events – die Parks als Fundament der städtischen Identität.",
+      "button": "Mehr erfahren"
+    }
+  },
+  "wasser": {
+    "hero": {
+      "title": "Die Havel vom Wasser aus",
+      "subtitle": "Potsdams Parklandschaft neu entdecken"
+    },
+    "intro": {
+      "title": "Die Havel als Bühne",
+      "subtitle": "Während die meisten Besucher die Potsdamer Parklandschaften zu Fuß erkunden, eröffnet sich vom Wasser aus eine völlig neue, fast magische Perspektive. Die von Lenné und Pückler-Muskau meisterhaft inszenierten Sichtachsen wurden bewusst so konzipiert, dass sie ihre volle Pracht vom Wasser aus entfalten. Gleiten Sie mit dem Kanu, SUP oder einem Ausflugsschiff über die Havel und erleben Sie, wie sich die Schlösser und Gärten als eine perfekt komponierte Uferlandschaft präsentieren."
+    },
+    "aktiv": {
+      "title": "Aktiv auf dem Wasser",
+      "subtitle": "Für alle, die die Parklandschaft auf eigene Faust erkunden möchten, bieten sich zahlreiche Möglichkeiten, aktiv zu werden. Ob sportlich im Kajak oder entspannt auf dem SUP – die Potsdamer Gewässer sind ein Paradies für Paddler.",
+      "kanu": {
+        "title": "Kanu & Kajak",
+        "description": "Mieten Sie ein Kanu oder Kajak und paddeln Sie entlang der Ufer von Park Babelsberg, dem Neuen Garten und Park Glienicke. Entdecken Sie versteckte Buchten und genießen Sie die Ruhe auf dem Wasser. Zahlreiche Verleihstationen in Potsdam bieten eine große Auswahl an Booten für Anfänger und Fortgeschrittene.",
+        "button": "Verleihstationen finden"
+      },
+      "sup": {
+        "title": "Stand-Up-Paddling (SUP)",
+        "description": "Erleben Sie die Parks vom SUP aus und genießen Sie ein einzigartiges Workout an der frischen Luft. Die ruhigen Gewässer der Havel sind ideal für Anfänger. Einige Verleihstationen bieten auch geführte SUP-Touren und Yoga-Kurse auf dem Wasser an.",
+        "button": "SUP-Verleih finden"
+      }
+    },
+    "touren": {
+      "title": "Entspannte Touren",
+      "subtitle": "Lehnen Sie sich zurück und genießen Sie die vorbeiziehende Landschaft bei einer der zahlreichen Schiffstouren. Verschiedene Reedereien bieten Rundfahrten an, die Sie zu den schönsten Orten der Potsdamer Parklandschaft bringen.",
+      "weltkulturerbe": {
+        "title": "Weltkulturerbefahrt",
+        "description": "Die 3-stündige \"Weltkulturerbefahrt\" der Reederei STERN+KREIS ist ein Klassiker. Sie führt vorbei an den Schlössern Babelsberg und Cecilienhof, der Glienicker Brücke, der Pfaueninsel und vielen weiteren Highlights. Ein Audioguide in Deutsch und Englisch erläutert die Geschichte und die Besonderheiten der Orte.",
+        "button": "Mehr zur Weltkulturerbefahrt"
+      }
+    },
+    "regeln": {
+      "title": "Was man wissen muss",
+      "subtitle": "Damit Ihr Ausflug aufs Wasser zu einem unvergesslichen Erlebnis wird, sollten Sie einige Dinge beachten.",
+      "regeln": {
+        "title": "Regeln & Sicherheit",
+        "description": "Beachten Sie die geltenden Schifffahrtsregeln und nehmen Sie Rücksicht auf andere Wassersportler und die Berufsschifffahrt. Tragen Sie eine Schwimmweste und informieren Sie sich über das Wetter, bevor Sie starten."
+      },
+      "umwelt": {
+        "title": "Umweltschutz",
+        "description": "Die Uferbereiche der Parks sind wertvolle Lebensräume für viele Tier- und Pflanzenarten. Halten Sie Abstand zu Schilfzonen und bewachsenen Ufern und vermeiden Sie Lärm. Nehmen Sie Ihren Müll wieder mit."
+      },
+      "anstieg": {
+        "title": "Anlegestellen & Pausen",
+        "description": "Nutzen Sie nur die ausgewiesenen Anlegestellen und Rastplätze. Das Anlegen an den Ufern der Parks ist in der Regel nicht gestattet, um die Vegetation zu schützen."
+      }
+    }
+  },
+  "visitorGroups": {
+    "title": "Wer besucht die Parks? – Maßgeschneiderte Tipps",
+    "subtitle": "Jeder Besucher hat andere Bedürfnisse. Finden Sie hier die passenden Infos für Ihre Gruppe.",
+    "culture": {
+      "title": "Kultur- & Architektur-Enthusiasten",
+      "interests": "Schinkel-Bauten, Tudor-Stil (Kleines Schloss), Lenné & Pückler.",
+      "locations": "Schloss Babelsberg, Flatowturm, Hofgärtnermuseum Glienicke.",
+      "needs": "Exklusive Hintergründe, Sanierungs-Updates, „Zeit(ge)schichten“-Führungen.",
+      "rules": "Niedrig (Denkmalschutz deckt sich mit Interessen)."
+    },
+    "families": {
+      "title": "Familien mit Kindern",
+      "interests": "Spiel, Edutainment, unkomplizierte Erholung.",
+      "locations": "Dino-Spielplatz, Filmpark Babelsberg, Strandbad (Juli 2025).",
+      "needs": "Erreichbarkeit, kinderwagengerechte Wege, Spielplatz-Standorte.",
+      "rules": "Hoch (Achtung: Ballspiele & Inlineskaten verboten)."
+    },
+    "athletes": {
+      "title": "Aktivsportler & Naturfreunde",
+      "interests": "Physische Aktivität, Panorama-Jogging, Radwege.",
+      "locations": "Berliner Mauerweg, Havelufer, AllTrails-Routen.",
+      "needs": "Wegequalität, Höhenprofile, legale Rad-Korridore.",
+      "rules": "Sehr Hoch (Radfahrverbot außerhalb markierter Wege)."
+    },
+    "history": {
+      "title": "Geschichts- & Zeitzeugen-Interessierte",
+      "interests": "DDR-Grenzgeschichte, Kalter Krieg, Agententausch.",
+      "locations": "Glienicker Brücke, Matrosenhaus, Berlin-Wall-Pfad.",
+      "needs": "Exakte Verortung historischer Ereignisse, Zeitzeugenberichte.",
+      "rules": "Niedrig (Fokus auf authentische Orte)."
+    },
+    "events": {
+      "title": "Event- & Gastronomie-Suchende",
+      "interests": "Hochzeiten, Braukultur, exklusive Atmosphäre.",
+      "locations": "Meierei (Brauerei), Remise Glienicke, Schlössernacht.",
+      "needs": "Öffnungszeiten, Event-Tickets, Mietkonditionen für Locations.",
+      "rules": "Medium (Lärmschutz/Sperrungen bei Events)."
+    }
+  },
+  "seasonal": {
+    "title": "Babelsberg zu jeder Jahreszeit",
+    "subtitle": "Die Parks verändern ihr Gesicht – erleben Sie die Faszination das ganze Jahr über.",
+    "summer": {
+      "title": "Sommer-Highlights",
+      "text": "Genießen Sie die blühenden Gärten und die kühle Brise der Havel. Ideal für Picknicks und lange Spaziergänge bis zum Sonnenuntergang.",
+      "bullet1": "Eröffnung Strandbad Babelsberg (5. Juli 2025)",
+      "bullet2": "Wasserspiele im Park Babelsberg",
+      "bullet3": "Potsdamer Schlössernacht (August)"
+    },
+    "winter": {
+      "title": "Winter-Erlebnisse",
+      "text": "Wenn Frost die Sichtachsen verzaubert, herrscht eine ganz besondere Stille. Perfekt für atmosphärische Fotografie und gemütliche Einkehr.",
+      "bullet1": "Wintermenü in der historischen Meierei",
+      "bullet2": "Indoor-Alternative: Biosphäre Potsdam (tropisch warm)",
+      "bullet3": "Fotoprobe: Frostige Sichtachsen am Flatowturm"
+    }
+  },
+  "planen": {
+    "title": "Ihren Besuch planen: Praktische Informationen",
+    "subtitle": "Die „Perlenkette“ von der Glienicker Brücke im Süden bis zur Meierei im Norden.",
+    "hotels": {
+      "title": "Unterkünfte & Hotels",
+      "text": "Potsdam-Babelsberg bietet eine breite Palette an Unterkünften – von Boutique-Hotels nahe dem Filmpark bis zu historischen Pensionen."
+    },
+    "weddings": {
+      "title": "Hochzeitslocations",
+      "text": "Die Remise Glienicke, Schloss Babelsberg und das Casino am Jungfernsee zählen zu den exklusivsten Locations."
+    },
+    "insurance": {
+      "title": "Reiseversicherung",
+      "text": "Für internationale Gäste empfiehlt sich eine Reiseversicherung mit Rücktritts- und Krankenversicherungsschutz."
+    }
+  },
+  "blog": {
+    "title": "Babelsberg Magazin",
+    "subtitle": "Tiefer eintauchen in Geschichte, Technik und Lifestyle rund um das UNESCO-Welterbe.",
+    "allArticles": "Alle Artikel ansehen"
+  },
+  "blogIndex": {
+    "title": "Babelsberg Magazin",
+    "subtitle": "Geschichte, Ausflugstipps und Insider-Wissen rund um die UNESCO-Welterbe Parks in Potsdam."
+  },
+  "trust": {
+    "unesco": { "title": "UNESCO Welterbe", "desc": "Offiziell gelistete Kulturlandschaft seit 1990" },
+    "expertise": { "title": "Lokale Expertise", "desc": "Redaktionell gepflegt mit aktuellen Daten für 2025" },
+    "maps": { "title": "Interaktive Karten", "desc": "Echtzeit-Standortfinder für WCs, Gastronomie & Parkplätze" },
+    "accessibility": { "title": "Barrierefreiheit", "desc": "Informationen zu rollstuhl- und kinderwagengerechten Wegen" }
+  },
+  "breadcrumb": {
+    "parks": "Parks & Schlösser",
+    "current": "Die drei Parks von Potsdam"
+  },
+  "toc": {
+    "label": "Inhalt",
+    "neuergarten": "Neuer Garten",
+    "visitors": "Besuchergruppen",
+    "seasonal": "Saisonale Tipps",
+    "finder": "Location-Finder",
+    "plan": "Besuch planen"
+  },
+  "service": {
+    "arrival": { "title": "Anreise & Parken", "desc": "Parkplätze, Bus & Bahn Verbindungen" },
+    "tickets": { "title": "Öffnungszeiten & Tickets", "desc": "Preise, Schlösser & Führungen" },
+    "hotels": { "title": "Übernachten", "desc": "Hotels & Pensionen am Park" },
+    "weddings": { "title": "Heiraten & Feiern", "desc": "Traumlocations für Ihre Hochzeit" }
+  },
+  "insiderTip": "💡 <strong>Insider-Tipp:</strong> Starten Sie an der Glienicker Brücke und wandern Sie nordwärts über Park Babelsberg zum Neuen Garten. Die Meierei am Ende der Strecke (ca. 4–5 km) ist der perfekte kulinarische Abschluss.",
+  "blogCards": {
+    "bridge": { "title": "Glienicker Brücke: Die Agenten-Brücke", "desc": "Alles über den berühmtesten Agentenaustausch-Ort des Kalten Krieges.", "btn": "Mehr erfahren" },
+    "steam": { "title": "Dampfmaschinenhaus Babelsberg", "desc": "Technik im Gewand einer normannischen Burg. Ein preußisches Meisterwerk.", "btn": "Technik entdecken" },
+    "wedding": { "title": "Traumhochzeit in Potsdam", "desc": "Die schönsten Locations für den „schönsten Tag" zwischen Schlössern und Gärten.", "btn": "Locations ansehen" }
+  },
+  "weather": {
+    "title": "🌤️ Wetter",
+    "loading": "Lade Wetter…"
+  },
+  "a11y": {
+    "skipLink": "Zum Inhalt springen"
+  },
+  "parkRules": "Parkordnung:",
+  "renderer": {
+    "specialsSoon": "Besonderheiten werden demnächst ergänzt.",
+    "categoriesSoon": "Kategorien werden demnächst ergänzt.",
+    "imageSoon": "📷 Bild folgt"
+  },
+  "attractions": {
+    "schloss-babelsberg": {
+      "title": "Schloss Babelsberg",
+      "desc": "Neugotisches Schloss mit spektakulärem Havelblick und historischer Architektur"
+    },
+    "flatowturm": {
+      "title": "Flatowturm",
+      "desc": "Aussichtsturm im gotischen Stil mit Panoramablick über Park und Havel"
+    },
+    "matrosenhaus": {
+      "title": "Matrosenhaus",
+      "desc": "Historisches Bootshaus mit Gastronomie direkt am Wasser"
+    },
+    "uferweg-nord": {
+      "title": "Uferweg Nord",
+      "desc": "Malerischer Spazierweg entlang der Havel mit Naturerlebnis"
+    },
+    "liegewiesen": {
+      "title": "Liegewiesen",
+      "desc": "Große Grünflächen zum Entspannen, Picknicken und Sonnenbaden"
+    },
+    "jagdschloss-glienicke": {
+      "title": "Jagdschloss Glienicke",
+      "desc": "Klassizistisches Sommerschloss mit mediterranem Flair und Kunstschätzen"
+    },
+    "casino-glienicke": {
+      "title": "Casino",
+      "desc": "Elegantes Teehaus im italienischen Stil mit Havelterrasse"
+    },
+    "klosterhof-glienicke": {
+      "title": "Klosterhof",
+      "desc": "Romantischer Innenhof mit historischen Säulengängen"
+    },
+    "schloss-cecilienhof": {
+      "title": "Schloss Cecilienhof",
+      "desc": "Historisches Schloss im Landhausstil, Ort der Potsdamer Konferenz 1945"
+    },
+    "marmorpalais": {
+      "title": "Marmorpalais",
+      "desc": "Frühklassizistisches Schloss direkt am Heiligen See"
+    },
+    "pyramide-neuergarten": {
+      "title": "Pyramide",
+      "desc": "Historischer Eiskeller in Form einer ägyptischen Pyramide"
+    },
+    "meierei-neuergarten": {
+      "title": "Meierei",
+      "desc": "Gotisches Milchhaus mit Gastronomie und historischem Ambiente"
+    }
+  }
+}

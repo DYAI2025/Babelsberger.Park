@@ -1,0 +1,83 @@
+--- /mnt/data/babelsberg_repo/Babelsberger.Park-main/park-babelsberg/assets/style.css
++++ /mnt/data/babelsberg_repo_patched/Babelsberger.Park-main/park-babelsberg/assets/style.css
+@@ -1964,4 +1964,40 @@
+   outline: 2px solid var(--accent-primary);
+
+   outline-offset: 2px;
+
+   border-radius: var(--radius-sm);
+
+-}
++}
+
++
+
++/* === Redesign 2025-11 Minimal Patch (strict scope) === */
+
++:root{
+
++  --babelsberg-prim:#5ea5ff; --babelsberg-wash:#eaf3ff;
+
++  --glienicke-prim:#2fb3a4;  --glienicke-wash:#e8f6f3;
+
++  --neuergarten-prim:#caa73a; --neuergarten-wash:#f7f2df;
+
++  --section-wash:#f2f4f7; --section-border:#d9dde3;
+
++  --section-radius:16px; --section-pad:clamp(16px,3vw,28px);
+
++}
+
++@media (prefers-color-scheme: dark){
+
++  :root{ --section-wash:#15171a; --section-border:#2a2e34; }
+
++}
+
++.section-block{
+
++  background:var(--section-wash); border:1px solid var(--section-border);
+
++  border-radius:var(--section-radius); padding:var(--section-pad);
+
++  margin-block:clamp(16px,3vw,32px);
+
++}
+
++.section-block .section__title, .section-block h2, .section-block h3{ color:#ffffff; }
+
++
+
++/* Brand accents for badges/tags */
+
++.theme-babelsberg .badge, .theme-babelsberg .tag{
+
++  background:rgba(94,165,255,.15); border:1px solid rgba(94,165,255,.35); color:#e8f2ff;
+
++}
+
++.theme-glienicke .badge, .theme-glienicke .tag{
+
++  background:rgba(47,179,164,.15); border:1px solid rgba(47,179,164,.35); color:#e8fffb;
+
++}
+
++.theme-neuer-garten .badge, .theme-neuer-garten .tag{
+
++  background:rgba(202,167,58,.15); border:1px solid rgba(202,167,58,.35); color:#fff6dd;
+
++}
+
++
+
++/* Simple grid for inner cards (reuse existing card styles) */
+
++.cards-grid-areas{
+
++  display:grid;
+
++  grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
+
++  gap: clamp(12px, 2vw, 20px);
+
++}

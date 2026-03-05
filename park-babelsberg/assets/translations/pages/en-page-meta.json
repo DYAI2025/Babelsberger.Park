@@ -1,0 +1,492 @@
+{
+  "index": {
+    "title": "Potsdam Parks: Babelsberg, Glienicke & New Garden – UNESCO World Heritage",
+    "description": "Discover the three UNESCO World Heritage parks in Potsdam: Park Babelsberg, Park Glienicke and New Garden. Interactive maps with toilets, restaurants & parking.",
+    "og_title": "Potsdam's UNESCO Parks – Babelsberg, Glienicke & New Garden",
+    "og_description": "Interactive location finder for toilets, restaurants and parking in all three Potsdam parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Parks and Palaces in Potsdam-Babelsberg"
+  },
+  "flatowturm": {
+    "title": "Flatowturm Park Babelsberg – Neo-Gothic Tower, Opening Hours & Admission 2026",
+    "description": "Flatowturm in Park Babelsberg: 46m neo-Gothic observation tower. History, opening hours (May–Oct, Sat/Sun), admission prices & visitor tips.",
+    "og_title": "Flatowturm – 46m Panoramic Tower in Park Babelsberg",
+    "og_description": "46m neo-Gothic tower with 360° views over Potsdam. May–Oct, Sat/Sun 10–17:30. Admission: €5.",
+    "breadcrumb": "← Back to Park Babelsberg Overview",
+    "h1": "Flatowturm",
+    "subtitle": "46m Neo-Gothic Observation Tower in Park Babelsberg"
+  },
+  "schloss-babelsberg": {
+    "title": "Babelsberg Palace – Neo-Gothic Summer Residence of Emperor Wilhelm I | Potsdam",
+    "description": "Babelsberg Palace: Neo-Gothic summer residence of Emperor Wilhelm I in UNESCO World Heritage Park Babelsberg. History, architecture, special tours 2025/2026.",
+    "og_title": "Babelsberg Palace – Summer Residence of Emperor Wilhelm I",
+    "og_description": "Neo-Gothic palace in UNESCO World Heritage Park Babelsberg. Built 1833–1849 by Schinkel, Persius and Strack.",
+    "breadcrumb": "← Back to Park Babelsberg Overview",
+    "h1": "Babelsberg Palace",
+    "subtitle": "Neo-Gothic Summer Residence of Emperor Wilhelm I"
+  },
+  "park-babelsberg": {
+    "title": "Park Babelsberg – Guide to the UNESCO World Heritage Landscape Park",
+    "description": "Park Babelsberg guide: 124 hectares of UNESCO World Heritage landscape park on the banks of the Havel. Attractions, paths, tips & practical info.",
+    "og_title": "Park Babelsberg – Complete Guide to the UNESCO Park",
+    "og_description": "124 hectares of landscape park with Babelsberg Palace, Flatowturm and 7km of riverside paths.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Park Babelsberg"
+  },
+  "park-glienicke": {
+    "title": "Park Glienicke – Classicist Landscape Park at the Glienicke Bridge | Potsdam",
+    "description": "Park Glienicke: Classicist landscape park with Italian influences near the famous Glienicke Bridge (spy exchange site). Visitor guide & practical info.",
+    "og_title": "Park Glienicke – Hidden Gem at the Glienicke Bridge",
+    "og_description": "Classicist landscape park with Italian-inspired architecture and views of the Havel.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Park Glienicke"
+  },
+  "neuer-garten": {
+    "title": "New Garden Potsdam – Marmorpalais & English Landscape Garden | UNESCO",
+    "description": "New Garden Potsdam: 102-hectare English landscape garden on the Heiliger See with Marmorpalais, Cecilienhof Palace and historic buildings. UNESCO World Heritage.",
+    "og_title": "New Garden Potsdam – English Landscape Garden on the Heiliger See",
+    "og_description": "102 hectares of landscape garden with Marmorpalais and Cecilienhof Palace. UNESCO World Heritage since 1990.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "New Garden"
+  },
+  "schloss-cecilienhof": {
+    "title": "Cecilienhof Palace Potsdam – Potsdam Conference Site 1945 | Visitor Info",
+    "description": "Cecilienhof Palace in the New Garden: Historic site of the 1945 Potsdam Conference. Tudor-style palace, permanent exhibition, opening hours & visitor info.",
+    "og_title": "Cecilienhof Palace – Site of the 1945 Potsdam Conference",
+    "og_description": "Historic Tudor-style palace where Churchill, Truman and Stalin met in 1945. Open year-round.",
+    "breadcrumb": "← Back to New Garden Overview",
+    "h1": "Cecilienhof Palace"
+  },
+  "marmorpalais": {
+    "title": "Marmorpalais Potsdam – Classicist Palace on the Heiliger See | New Garden",
+    "description": "Marmorpalais in the New Garden: Classicist palace built 1787–1797 for Friedrich Wilhelm II on the banks of the Heiliger See. Museum & visitor info.",
+    "og_title": "Marmorpalais – Classicist Palace on the Heiliger See",
+    "og_description": "Built 1787–1797 for Friedrich Wilhelm II. Beautiful Classicist architecture reflected in the Heiliger See.",
+    "breadcrumb": "← Back to New Garden Overview",
+    "h1": "Marmorpalais"
+  },
+  "schloss-glienicke": {
+    "title": "Glienicke Palace – Italian Villa on the Havel | Park Glienicke Potsdam",
+    "description": "Glienicke Palace in Park Glienicke: Italian-inspired villa on the Havel River, near the famous Glienicke Bridge. Architecture, history & visitor info.",
+    "og_title": "Glienicke Palace – Italian-Inspired Villa at the Havel",
+    "og_description": "Italian-inspired villa in Park Glienicke, near the spy exchange Glienicke Bridge.",
+    "breadcrumb": "← Back to Park Glienicke Overview",
+    "h1": "Glienicke Palace"
+  },
+  "anreise-parken": {
+    "title": "Getting to Park Babelsberg – Parking, Public Transport & Directions",
+    "description": "How to get to Park Babelsberg: parking spots, bus connections (Bus 694 direct), tram options and cycling routes. Plan your stress-free visit.",
+    "og_title": "Getting to Park Babelsberg – Parking & Public Transport",
+    "og_description": "Bus 694 goes directly to the park. Parking nearby. All transport options for your visit.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Getting Here & Parking"
+  },
+  "oeffnungszeiten-tickets": {
+    "title": "Park Babelsberg Opening Hours & Tickets 2026 – All Info",
+    "description": "Park Babelsberg opening hours: The park is open year-round from 8am until dusk. Admission prices for Flatowturm, palaces & SPSG attractions.",
+    "og_title": "Park Babelsberg Opening Hours & Admission 2026",
+    "og_description": "The park is open year-round. Flatowturm: May–Oct, Sat/Sun 10–17:30. All prices at a glance.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Opening Hours & Admission"
+  },
+  "eintritt-kosten": {
+    "title": "Park Babelsberg Admission – Free Entry? All Prices 2026",
+    "description": "Is Park Babelsberg free? Yes – the park itself is free! Only certain buildings cost admission. All prices, SPSG tickets and savings tips at a glance.",
+    "og_title": "Park Babelsberg Admission: Free or Not?",
+    "og_description": "The parks are free to enter. Only palaces & towers charge admission. Full price overview.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Admission & Costs in Park Babelsberg"
+  },
+  "kinderwagen-barrierefrei": {
+    "title": "Park Babelsberg Accessible & Stroller-Friendly – Paths & Tips 2026",
+    "description": "Park Babelsberg with stroller or wheelchair: which paths are paved, which areas are accessible, barrier-free toilets & recommended routes for families and seniors.",
+    "og_title": "Park Babelsberg – Accessible & Stroller-Friendly Guide",
+    "og_description": "Paved main paths are suitable for strollers and wheelchairs. Full accessibility guide for families.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Park Babelsberg – Accessible & Stroller-Friendly"
+  },
+  "fahrrad-ebike": {
+    "title": "Cycling & E-Bike in Park Babelsberg – Routes, Rules & Rentals 2026",
+    "description": "Cycling in Park Babelsberg: Rules (only on paved paths!), Berlin Wall Trail route through all 3 parks, e-bike charging stations & bike rentals in Potsdam.",
+    "og_title": "Cycling & E-Bike in Park Babelsberg – Routes & Rules",
+    "og_description": "Cycling permitted on marked paths only. Wall Trail connects all 3 parks. E-bike rentals & charging stations in Potsdam.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Cycling & E-Bike in Park Babelsberg"
+  },
+  "picknick": {
+    "title": "Picnic in Park Babelsberg – Best Meadows, Rules & Tips 2026",
+    "description": "Picnic in Park Babelsberg: the best lawn spots, what's allowed (picnics yes, BBQ no!), nearby shops and tips for families, couples and groups.",
+    "og_title": "Picnic in Park Babelsberg – The Most Beautiful Meadows",
+    "og_description": "Picnics are allowed on the meadows. BBQ/grilling is forbidden. Best spots & shopping tips.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Picnic in Park Babelsberg"
+  },
+  "winter-guide": {
+    "title": "Park Babelsberg in Winter – Tips, Opening Hours & Alternatives 2026",
+    "description": "Visiting Park Babelsberg in winter: opening hours, atmospheric winter photography spots, recommended walks and indoor alternatives for cold days in Potsdam.",
+    "og_title": "Park Babelsberg in Winter – Mysterious Stillness in the UNESCO Park",
+    "og_description": "Winter opening hours, photography tips and indoor alternatives for your winter visit to Potsdam.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Park Babelsberg in Winter"
+  },
+  "gastronomie": {
+    "title": "Restaurants Near Park Babelsberg – Cafés, Beer Gardens & Dining 2026",
+    "description": "Best restaurants and cafés near Park Babelsberg: Meierei brewery, lakeside cafés and international cuisine within walking distance of all three Potsdam parks.",
+    "og_title": "Restaurants & Cafés Near Park Babelsberg",
+    "og_description": "From the historic Meierei brewery to cozy cafés – best dining spots near all three parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Restaurants & Gastronomy"
+  },
+  "gastronomie-restaurants": {
+    "title": "Gastronomy in & Around Park Babelsberg – Full Restaurant Guide",
+    "description": "Complete gastronomy guide for Park Babelsberg and the surrounding area. Restaurants, cafés, beer gardens and snack spots near the UNESCO parks.",
+    "og_title": "Gastronomy in Park Babelsberg – Restaurant Guide",
+    "og_description": "Full guide to restaurants, cafés and food near Park Babelsberg, New Garden and Park Glienicke.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Gastronomy & Restaurants"
+  },
+  "fotografie": {
+    "title": "Photography in Park Babelsberg – Best Spots, Light & Tips for Photographers",
+    "description": "Photography guide for Park Babelsberg: best spots, optimal times of day, light conditions and composition tips for the UNESCO World Heritage landscape.",
+    "og_title": "Photography in Park Babelsberg – Light & Composition Guide",
+    "og_description": "Best photography spots, ideal times and composition tips for all three Potsdam parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Photography in Park Babelsberg"
+  },
+  "geocaching": {
+    "title": "Geocaching in Park Babelsberg – Multi-Caches & Hidden Spots",
+    "description": "Geocaching in Park Babelsberg: multi-caches 'Park Babelsberg 01/02', hidden spots and practical tips for geocachers in the UNESCO World Heritage park.",
+    "og_title": "Geocaching in Park Babelsberg – Hidden Treasures",
+    "og_description": "Multi-caches through the park with stations at Flatowturm, Matrosenhaus & more. Tips for discreet logging.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Geocaching in Park Babelsberg"
+  },
+  "laufen": {
+    "title": "Running in Park Babelsberg – Best Jogging Routes & GPS Tracks",
+    "description": "Jogging routes in Park Babelsberg: 4.5km hilly route, 7.7km challenging round and Wall Trail run. GPS downloads and tips for runners.",
+    "og_title": "Running in Park Babelsberg – Jogging Routes & GPS Tracks",
+    "og_description": "4.5–7.7km scenic running routes in Park Babelsberg. GPS downloads available. Tips for trail runners.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Running in Park Babelsberg"
+  },
+  "yoga": {
+    "title": "Yoga & Mindfulness in Park Babelsberg – Best Spots & Tips",
+    "description": "Yoga and mindfulness in the Potsdam parks: best quiet meadows, early morning spots and practical tips for your outdoor yoga session.",
+    "og_title": "Yoga in Park Babelsberg – Mindfulness in the UNESCO Park",
+    "og_description": "Quiet meadows for yoga and mindfulness in all three Potsdam parks. Best spots and practical tips.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Yoga & Mindfulness in the Park"
+  },
+  "wasseraktivitaeten": {
+    "title": "Water Activities in Potsdam – Kayak, SUP & Boat Tours on the Havel",
+    "description": "Water activities on the Havel in Potsdam: kayak and canoe rental, stand-up paddling, guided boat tours through the UNESCO World Heritage landscape.",
+    "og_title": "Water Activities on the Havel – Kayak, SUP & Boat Tours",
+    "og_description": "Explore the Potsdam parks from the water. Kayak rental, SUP tours and classic river cruises.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Water Activities on the Havel"
+  },
+  "uferweg-nord": {
+    "title": "Uferweg Nord – Scenic Riverside Walk in Park Babelsberg",
+    "description": "Uferweg Nord in Park Babelsberg: scenic riverside path with panoramic views of the Havel. The best viewpoint for sunsets and photography in the park.",
+    "og_title": "Uferweg Nord – Best Riverside Walk in Park Babelsberg",
+    "og_description": "Panoramic riverside path with views of the Havel and Glienicke Bridge. Perfect for sunset walks.",
+    "breadcrumb": "← Back to Park Babelsberg Overview",
+    "h1": "Uferweg Nord"
+  },
+  "matrosenhaus": {
+    "title": "Matrosenhaus – Historic Boathouse in Park Babelsberg | Visitor Info",
+    "description": "Matrosenhaus (Sailor's House) in Park Babelsberg: historic 19th-century boathouse on the Havel. History, event location and visitor information.",
+    "og_title": "Matrosenhaus – Historic Boathouse in Park Babelsberg",
+    "og_description": "Historic 19th-century boathouse on the Havel. Today used as an event venue with romantic water views.",
+    "breadcrumb": "← Back to Park Babelsberg Overview",
+    "h1": "Matrosenhaus"
+  },
+  "liegewiesen": {
+    "title": "Meadows in Park Babelsberg – Best Spots for Sunbathing & Relaxation",
+    "description": "The best meadows in Park Babelsberg for sunbathing, picnics and relaxation. Tips on the quietest spots and practical info for your visit.",
+    "og_title": "Meadows in Park Babelsberg – Sunbathing & Relaxation Spots",
+    "og_description": "Best meadows for picnics and sunbathing. Practical tips for families and couples.",
+    "breadcrumb": "← Back to Park Babelsberg Overview",
+    "h1": "Meadows & Relaxation Spots"
+  },
+  "natur-wege": {
+    "title": "Nature & Walking Paths in Park Babelsberg – Trails & Tips",
+    "description": "Nature trails in Park Babelsberg: from easy riverside walks to hilly forest paths. All routes, distances and difficulty levels for walkers and hikers.",
+    "og_title": "Walking Paths in Park Babelsberg – Nature & Trails",
+    "og_description": "From easy riverside walks to hilly forest trails. All routes and distances for the UNESCO parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Nature & Walking Paths"
+  },
+  "parkordnung-vergleich": {
+    "title": "Park Rules Comparison – What's Allowed in Babelsberg, Glienicke & New Garden",
+    "description": "Park regulations comparison for all three Potsdam parks: what's allowed and prohibited for cyclists, dog owners, picnickers and photographers.",
+    "og_title": "Park Rules – What's Allowed in Potsdam's UNESCO Parks?",
+    "og_description": "Cycling, dogs, picnics, photography: what's allowed in Park Babelsberg, Glienicke and New Garden.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Park Rules Comparison"
+  },
+  "praktisches": {
+    "title": "Practical Info for Park Babelsberg – Toilets, Parking & ÖPNV",
+    "description": "All practical information for your visit to Park Babelsberg: toilet locations, parking, public transport, opening hours and accessibility.",
+    "og_title": "Practical Info – Park Babelsberg Visitor Guide",
+    "og_description": "Where are the toilets? Where to park? All practical info for a perfect visit.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Practical Visitor Information"
+  },
+  "sehenswuerdigkeiten": {
+    "title": "Sights in Park Babelsberg – Palaces, Towers & Historic Buildings",
+    "description": "All sights in Park Babelsberg: Babelsberg Palace, Flatowturm, Matrosenhaus and more. History, visitor info and tips for each attraction.",
+    "og_title": "Sights in Park Babelsberg – Complete Attraction Guide",
+    "og_description": "From Babelsberg Palace to the Flatowturm: all historic buildings and attractions in the UNESCO park.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Sights & Attractions"
+  },
+  "heiraten-feiern": {
+    "title": "Wedding Venues in Potsdam – Park Babelsberg & Historic Locations",
+    "description": "Wedding in Potsdam: the most beautiful historic venues near Park Babelsberg. Remise Glienicke, Cecilienhof and more unique locations.",
+    "og_title": "Weddings in Potsdam – Historic UNESCO Park Venues",
+    "og_description": "The most exclusive wedding venues near the Potsdam parks: Cecilienhof, Remise Glienicke and more.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Weddings & Events in the Park"
+  },
+  "uebernachten": {
+    "title": "Accommodation Near Park Babelsberg – Hotels, B&Bs & Holiday Rentals",
+    "description": "Best accommodation near Park Babelsberg: hotels, guesthouses and holiday apartments within walking distance of the UNESCO parks in Potsdam.",
+    "og_title": "Accommodation Near Park Babelsberg – Hotels & B&Bs",
+    "og_description": "Best hotels and guesthouses near the Potsdam parks. Walking distance to all three UNESCO parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Accommodation Near the Park"
+  },
+  "soziale-treffpunkte": {
+    "title": "Social Hotspots in Potsdam-Babelsberg – Parks as Meeting Places",
+    "description": "The Potsdam parks as social spaces: youth culture at the Heiliger See, café culture, concerts and community events in the UNESCO World Heritage parks.",
+    "og_title": "Social Hotspots in Potsdam-Babelsberg",
+    "og_description": "Parks as meeting places: from café culture to summer concerts. The parks as the heart of urban life.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Social Hotspots & Meeting Places"
+  },
+  "geschichte": {
+    "title": "History of Park Babelsberg – From Royal Garden to UNESCO Heritage",
+    "description": "History of Park Babelsberg: from the summer residence of Emperor Wilhelm I to UNESCO World Heritage Site. Schinkel, Pückler-Muskau and the Hohenzollern dynasty.",
+    "og_title": "History of Park Babelsberg – Royal Gardens & UNESCO Heritage",
+    "og_description": "From the Hohenzollern summer residence to UNESCO World Heritage: the fascinating history of the Potsdam parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "History of Park Babelsberg"
+  },
+  "meierei-neuer-garten": {
+    "title": "Meierei im Neuen Garten – Historic Brewery & Restaurant Potsdam",
+    "description": "Meierei im Neuen Garten: historic dairy turned brewery restaurant in Potsdam. House-brewed beer, regional cuisine and stunning lake views.",
+    "og_title": "Meierei im Neuen Garten – Historic Brewery Restaurant",
+    "og_description": "Historic dairy with house-brewed beer and regional cuisine. One of Potsdam's most beautiful restaurant locations.",
+    "breadcrumb": "← Back to New Garden Overview",
+    "h1": "Meierei im Neuen Garten"
+  },
+  "pyramide-neuer-garten": {
+    "title": "Pyramid in New Garden Potsdam – Masonic Symbol & Ice Cellar",
+    "description": "The pyramid in the New Garden: built as an ice cellar for Friedrich Wilhelm II, with Masonic symbolism. A hidden curiosity in the Potsdam UNESCO park.",
+    "og_title": "Pyramid in New Garden – Masonic Symbol & Historic Ice Cellar",
+    "og_description": "A hidden curiosity: the pyramid served as an ice cellar and as a Masonic symbol for Friedrich Wilhelm II.",
+    "breadcrumb": "← Back to New Garden Overview",
+    "h1": "The Pyramid in the New Garden"
+  },
+  "jagdschloss-glienicke": {
+    "title": "Jagdschloss Glienicke – Historic Hunting Lodge in Park Glienicke",
+    "description": "Jagdschloss Glienicke: historic hunting lodge in Park Glienicke near the Glienicke Bridge. Architecture, history and visitor information.",
+    "og_title": "Jagdschloss Glienicke – Historic Hunting Lodge",
+    "og_description": "Historic hunting lodge in Park Glienicke, near the famous spy exchange bridge.",
+    "breadcrumb": "← Back to Park Glienicke Overview",
+    "h1": "Jagdschloss Glienicke"
+  },
+  "schloss-charlottenhof": {
+    "title": "Charlottenhof Palace – Schinkel Masterpiece in the Sanssouci Park",
+    "description": "Charlottenhof Palace: Karl Friedrich Schinkel's classicist masterpiece in the Sanssouci Park. Roman villa-inspired architecture and historic garden design.",
+    "og_title": "Charlottenhof Palace – Schinkel's Roman Villa in Potsdam",
+    "og_description": "Classicist palace designed as a Roman villa by Schinkel. Part of the UNESCO Sanssouci Park.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Charlottenhof Palace"
+  },
+  "schifffahrtsanleger": {
+    "title": "Boat Landings on the Havel – Ferry & Boat Trips Near Park Babelsberg",
+    "description": "Boat landings near Park Babelsberg: ferry connections and boat trip departure points on the Havel River in Potsdam. Timetables and practical info.",
+    "og_title": "Boat Landings – Ferry & Boat Trips Near the Parks",
+    "og_description": "Ferry connections and boat trip departures on the Havel near all three Potsdam parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Boat Landings on the Havel"
+  },
+  "raeucherhaus": {
+    "title": "Räucherhaus (Smokehouse) – Hidden Curiosity in Park Babelsberg",
+    "description": "The Räucherhaus in Park Babelsberg: a historic smokehouse designed as an Egyptian-style building. One of the park's lesser-known architectural curiosities.",
+    "og_title": "Räucherhaus – Egyptian Smokehouse in Park Babelsberg",
+    "og_description": "Historic smokehouse designed in Egyptian style – one of Park Babelsberg's most unusual hidden gems.",
+    "breadcrumb": "← Back to Park Babelsberg Overview",
+    "h1": "Räucherhaus (Smokehouse)"
+  },
+  "eritage": {
+    "title": "Eritage Potsdam – Heritage & Art Space Near Park Babelsberg",
+    "description": "Eritage in Potsdam-Babelsberg: a unique art and heritage space near the UNESCO parks. Events, exhibitions and cultural programming.",
+    "og_title": "Eritage Potsdam – Art & Heritage Space",
+    "og_description": "Unique art and heritage venue near the Potsdam UNESCO parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Eritage Potsdam"
+  },
+  "anreise": {
+    "title": "Getting to Potsdam's Parks – Transport, Directions & Journey Planner",
+    "description": "How to get to Potsdam's UNESCO parks: by train, bus, car or bike. Journey times from Berlin, parking tips and public transport connections.",
+    "og_title": "Getting to Potsdam's Parks – Transport Guide",
+    "og_description": "By train from Berlin in 30 minutes. Bus 694 direct to Park Babelsberg. All transport options.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Getting Here"
+  },
+  "blog/index": {
+    "title": "Park Babelsberg Magazine – Articles, Guides & Insider Tips",
+    "description": "The Park Babelsberg magazine: in-depth articles on history, nature, photography and practical guides for the Potsdam UNESCO World Heritage parks.",
+    "og_title": "Park Babelsberg Magazine – Insider Guides & Articles",
+    "og_description": "Deep dives into history, photography guides and practical tips for all three Potsdam parks.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Park Babelsberg Magazine"
+  },
+  "blog/jogging-routen-babelsberg": {
+    "title": "Jogging in Babelsberg: The 3 Best Panoramic Running Routes",
+    "description": "Best jogging routes in Park Babelsberg: riverside loop (4km), castle challenge (6km) and Wall Trail long run (10km+). With elevation profiles and tips.",
+    "og_title": "Jogging in Babelsberg: Top 3 Running Routes",
+    "og_description": "3 scenic running routes from 4km to 10km+. With elevation profiles and insider tips.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Running in Babelsberg: The Best Jogging Routes"
+  },
+  "blog/agentenaustausch-glienicker-bruecke": {
+    "title": "Spy Exchange at Glienicke Bridge – Cold War History in Potsdam",
+    "description": "The Glienicke Bridge as a Cold War spy exchange site: Powers (1962), Abel (1962) and Shcharansky (1986). History, locations and guided story walks.",
+    "og_title": "Spy Exchange at Glienicke Bridge – Cold War History",
+    "og_description": "The bridge where Cold War spies were exchanged: Powers, Abel and Shcharansky. Full history.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Spy Exchange at the Glienicke Bridge"
+  },
+  "blog/tagesausflug-potsdam": {
+    "title": "Day Trip to Potsdam from Berlin – Parks, Palaces & Hidden Gems",
+    "description": "Perfect day trip from Berlin to Potsdam: the three UNESCO parks, best cafés, scenic routes and insider tips for a complete day in Potsdam-Babelsberg.",
+    "og_title": "Day Trip from Berlin to Potsdam – Complete Guide",
+    "og_description": "The perfect day in Potsdam: parks, palaces, cafés and insider tips. Only 30 minutes from Berlin.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Day Trip to Potsdam: The Perfect Itinerary"
+  },
+  "blog/park-babelsberg-mit-hund": {
+    "title": "Park Babelsberg with Dogs – Rules, Best Routes & Dog-Friendly Tips",
+    "description": "Visiting Park Babelsberg with your dog: leash rules, best routes for dog owners, water access and waste disposal. Complete guide for dog owners.",
+    "og_title": "Park Babelsberg with Dogs – Rules & Tips",
+    "og_description": "Dogs are welcome in the park on a leash. Best routes, water access and practical tips for dog owners.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Park Babelsberg with Dogs"
+  },
+  "blog/potsdam-mit-kindern": {
+    "title": "Potsdam with Kids – Parks, Playgrounds & Family-Friendly Activities",
+    "description": "Potsdam with children: the best family activities in and around Park Babelsberg, New Garden and Park Glienicke. Playgrounds, boat trips and kid-friendly tips.",
+    "og_title": "Potsdam with Kids – Family Activities & Tips",
+    "og_description": "Best family activities in Potsdam: playgrounds, boat trips, the Filmpark and scenic park walks.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Potsdam with Children"
+  },
+  "blog/heiraten-in-potsdam-locations": {
+    "title": "Wedding Venues in Potsdam – UNESCO Parks & Historic Locations",
+    "description": "The most beautiful wedding venues in Potsdam: Cecilienhof Palace, Remise Glienicke, Casino am Jungfernsee and more. Complete guide for couples.",
+    "og_title": "Wedding in Potsdam – The Most Beautiful Venues",
+    "og_description": "From Cecilienhof to Park Glienicke: the most exclusive wedding locations in the Potsdam parks.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Wedding Venues in Potsdam"
+  },
+  "blog/schloss-cecilienhof-weltgeschichte": {
+    "title": "Cecilienhof Palace – World History in Potsdam 1945",
+    "description": "Cecilienhof Palace and the Potsdam Conference 1945: where Churchill, Truman and Stalin shaped the post-war world. History, exhibits and visitor information.",
+    "og_title": "Cecilienhof Palace – Where World History Was Made",
+    "og_description": "The 1945 Potsdam Conference: Churchill, Truman and Stalin at Cecilienhof. Full history & visitor info.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Cecilienhof – World History in Potsdam"
+  },
+  "blog/geocaching-babelsberg-schatzsuche": {
+    "title": "Geocaching in Babelsberg – Treasure Hunt in the UNESCO Park",
+    "description": "Geocaching adventure in Park Babelsberg: multi-cache routes, hidden locations and tips for discreet logging in the UNESCO World Heritage park.",
+    "og_title": "Geocaching in Babelsberg – Treasure Hunt Guide",
+    "og_description": "Multi-caches through Park Babelsberg with stations at Flatowturm, Matrosenhaus and more.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Geocaching in Babelsberg"
+  },
+  "blog/heiliger-see-baden-neuer-garten": {
+    "title": "Swimming at the Heiliger See – Bathing in the New Garden Potsdam",
+    "description": "Swimming at the Heiliger See in the New Garden: permitted areas, water quality, bathing spots and practical tips for a refreshing dip in Potsdam.",
+    "og_title": "Heiliger See – Swimming in Potsdam's New Garden",
+    "og_description": "Swimming rules, permitted areas and practical tips for the Heiliger See in the New Garden.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Swimming at the Heiliger See"
+  },
+  "blog/fruehling-potsdam-blueten": {
+    "title": "Spring in Potsdam – Cherry Blossoms & Park Highlights in March–May",
+    "description": "Spring in Potsdam's parks: cherry blossoms, magnolias and tulips in March–May. The best spots for spring photography and early morning walks.",
+    "og_title": "Spring in Potsdam – Blossom Season in the Parks",
+    "og_description": "Cherry blossoms, magnolias and tulips from March to May. Best spots and photography tips.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Spring in Potsdam"
+  },
+  "blog/yoga-meditation-potsdam-parks": {
+    "title": "Yoga in Potsdam's Parks – Outdoor Mindfulness Guide",
+    "description": "Outdoor yoga and meditation in the Potsdam parks: best quiet meadows, early morning spots and practical tips for your mindfulness session in nature.",
+    "og_title": "Yoga in Potsdam's Parks – Outdoor Mindfulness",
+    "og_description": "Best spots for outdoor yoga and meditation in Park Babelsberg, New Garden and Park Glienicke.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Yoga & Meditation in Potsdam's Parks"
+  },
+  "blog/gastronomie-guide-babelsberg": {
+    "title": "Gastronomy Guide Babelsberg – Best Restaurants & Cafés Near the Park",
+    "description": "The best restaurants, cafés and beer gardens near Park Babelsberg. From the historic Meierei to modern bistros – complete gastronomy guide.",
+    "og_title": "Gastronomy Guide Babelsberg – Best Restaurants & Cafés",
+    "og_description": "Best dining spots near Park Babelsberg: from the historic Meierei brewery to modern cafés.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Gastronomy Guide Babelsberg"
+  },
+  "blog/biosphaere-potsdam-winter-tipp": {
+    "title": "Biosphäre Potsdam – Tropical Indoor Alternative in Winter",
+    "description": "Biosphäre Potsdam: a tropical indoor ecosystem as the perfect winter alternative to the Potsdam parks. Admission, opening hours and visitor tips.",
+    "og_title": "Biosphäre Potsdam – Tropical Winter Escape",
+    "og_description": "Tropical rainforest atmosphere all year round – the perfect indoor alternative for cold days in Potsdam.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Biosphäre Potsdam – Tropical Winter Alternative"
+  },
+  "blog/dampfmaschinenhaus-technisches-wunder": {
+    "title": "Dampfmaschinenhaus – Engineering Masterpiece Disguised as a Norman Castle",
+    "description": "The Dampfmaschinenhaus (steam engine house) in Park Babelsberg: a 19th-century engineering marvel disguised as a Norman castle. History and visitor info.",
+    "og_title": "Dampfmaschinenhaus – Engineering Marvel in Disguise",
+    "og_description": "A Norman castle that hides a Victorian steam engine. One of Park Babelsberg's most unusual hidden gems.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Dampfmaschinenhaus – Engineering in Disguise"
+  },
+  "blog/filmpark-babelsberg-familien-guide": {
+    "title": "Filmpark Babelsberg Family Guide – Europe's Oldest Film Studio",
+    "description": "Filmpark Babelsberg family guide: Europe's oldest active film studio (since 1912). Stunt shows, set walks and attractions for all ages.",
+    "og_title": "Filmpark Babelsberg – Europe's Oldest Film Studio",
+    "og_description": "Europe's oldest active film studio. Stunt shows, studio tours and attractions for all the family.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Filmpark Babelsberg Family Guide"
+  },
+  "blog/fotografie-guenther-platz-cecilienhof": {
+    "title": "Photography at Cecilienhof – Light, Angles & Composition Tips",
+    "description": "Photography guide for Cecilienhof Palace: best angles, optimal light conditions and composition tips for Tudor-style architecture photography.",
+    "og_title": "Photography at Cecilienhof – Light & Composition Guide",
+    "og_description": "Best photography spots and light conditions at Cecilienhof Palace in the New Garden.",
+    "breadcrumb": "← Back to Magazine",
+    "h1": "Photography at Cecilienhof"
+  },
+  "datenschutz": {
+    "title": "Privacy Policy – Park Babelsberg Info",
+    "description": "Privacy policy for park.babelsberger.info: data processing, cookies, Google Analytics and AdSense. GDPR compliant.",
+    "og_title": "Privacy Policy – Park Babelsberg Info",
+    "og_description": "GDPR-compliant privacy policy including information on Google Analytics and AdSense.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Privacy Policy"
+  },
+  "impressum": {
+    "title": "Imprint – Park Babelsberg Info",
+    "description": "Legal imprint for park.babelsberger.info as required by German law (§5 TMG).",
+    "og_title": "Imprint – Park Babelsberg Info",
+    "og_description": "Legal information and contact details for park.babelsberger.info.",
+    "breadcrumb": "← Back to Overview",
+    "h1": "Imprint"
+  }
+}

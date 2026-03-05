@@ -2,10 +2,13 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<link rel="canonical" href="https://park.babelsberger.info/gastronomie/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-1712273263687132">
 <title>Gastronomie rund um Park Babelsberg | Cafés, Restaurants & Imbisse</title>
 <meta name="description" content="Alle Restaurants, Cafés und Imbisse in Fußnähe zu Park Babelsberg. Von gehobener Küche bis zum schnellen Snack – finde die perfekte Einkehr nach deinem Parkbesuch.">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/blog.css">
 <style>
 .hero-gastro {
   position: relative;
@@ -124,10 +127,94 @@
 .breadcrumb a:hover {
   text-decoration: underline;
 }
+
+/* Filter Buttons */
+.filter-btn {
+  padding: 10px 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  color: #374151;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  min-width: auto;
+  justify-content: center;
+}
+
+.filter-btn.active {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 2px 4px rgba(37,99,235,0.3);
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.filter-btn:active {
+  transform: translateY(0);
+}
+
+/* Popup Actions for Directions */
+.popup-actions {
+  padding: 12px;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.popup-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  min-width: 100px;
+}
+
+.popup-btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.popup-btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.popup-btn-secondary {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.popup-btn-secondary:hover {
+  background: #eff6ff;
+}
 </style>
 
 <!-- DSGVO-konformes Cookie-Consent-Management -->
 <script src="assets/cookie-consent.js"></script>
+  <link rel="alternate" hreflang="de" href="https://park.babelsberger.info/park-babelsberg/gastronomie.html">
+  <link rel="alternate" hreflang="en" href="https://park.babelsberger.info/park-babelsberg/en/gastronomie.html">
+  <link rel="alternate" hreflang="x-default" href="https://park.babelsberger.info/park-babelsberg/gastronomie.html">
 </head>
 <body>
 
@@ -148,8 +235,21 @@
     </p>
   </section>
 
+  <!-- Filter Section -->
+  <section style="margin-bottom: var(--space-6);">
+    <h2 style="@apply heading-md; margin-bottom: var(--space-3);">Filtern nach Kategorie</h2>
+    <div style="display: flex; gap: var(--space-2); flex-wrap: wrap; padding: var(--space-3); background: var(--bg-secondary); border-radius: var(--radius-lg);">
+      <button class="filter-btn active" data-category="all">Alle</button>
+      <button class="filter-btn" data-category="restaurant">Restaurants</button>
+      <button class="filter-btn" data-category="cafe">Cafés</button>
+      <button class="filter-btn" data-category="fast-food">Schnellimbiss</button>
+      <button class="filter-btn" data-category="bar">Bars & Bistros</button>
+      <button class="filter-btn" data-category="ice-cream">Eisdiele</button>
+    </div>
+  </section>
+
   <!-- Gehobene Gastronomie -->
-  <section style="margin-bottom: var(--space-10);">
+  <section style="margin-bottom: var(--space-10);" class="gastro-category" data-type="restaurant">
     <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Gehobene Gastronomie</h2>
     
     <div style="display: grid; gap: var(--space-4);">
@@ -185,6 +285,14 @@
             <span>Terrasse, Kinderfreundlich, Reservierung empfohlen</span>
           </div>
         </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Park+Babelsberg+10%2C+14482+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
       </article>
 
       <article class="gastro-card">
@@ -219,12 +327,20 @@
             <span>Seeblick, Weinkeller, Reservierung erforderlich</span>
           </div>
         </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Mangerstra%C3%9Fe+34%2C+14467+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
       </article>
     </div>
   </section>
 
   <!-- Cafés & Bistros -->
-  <section style="margin-bottom: var(--space-10);">
+  <section style="margin-bottom: var(--space-10);" class="gastro-category" data-type="cafe">
     <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Cafés & Bistros</h2>
     
     <div style="display: grid; gap: var(--space-4);">
@@ -260,6 +376,14 @@
             <span>Terrasse, WLAN, Kinderfreundlich, Hunde erlaubt</span>
           </div>
         </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Am+Neuen+Garten+64%2C+14469+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
       </article>
 
       <article class="gastro-card">
@@ -294,12 +418,20 @@
             <span>Seeblick, Vegetarische Optionen, Außenplätze</span>
           </div>
         </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Neust%C3%A4dter+Havelbucht+1%2C+14467+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
       </article>
     </div>
   </section>
 
   <!-- Schnellimbiss & To-Go -->
-  <section style="margin-bottom: var(--space-10);">
+  <section style="margin-bottom: var(--space-10);" class="gastro-category" data-type="fast-food">
     <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Schnellimbiss & To-Go</h2>
     
     <div style="display: grid; gap: var(--space-4);">
@@ -335,6 +467,14 @@
             <span>Schnell, Günstig, Outdoor-Stehtische</span>
           </div>
         </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Park+Babelsberg+Haupteingang%2C+14482+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
       </article>
 
       <article class="gastro-card">
@@ -368,6 +508,14 @@
             <span class="detail-icon">✨</span>
             <span>To-Go, Frühstücksangebot, Sitzplätze</span>
           </div>
+        </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Rudolf-Breitscheid-Stra%C3%9Fe+45%2C+14482+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
         </div>
       </article>
 
@@ -403,7 +551,217 @@
             <span>Hausgemacht, Vegane Optionen, Außenplätze</span>
           </div>
         </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Karl-Liebknecht-Stra%C3%9Fe+23%2C+14482+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
       </article>
+    </div>
+  </section>
+
+  <!-- Additional Gastronomy Locations -->
+  <section style="margin-bottom: var(--space-10);" class="gastro-category" data-type="all">
+    <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Weitere Empfehlungen</h2>
+    
+    <div style="display: grid; gap: var(--space-4);">
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Café & Restaurant Zur Neuen Kiesgrube</h3>
+            <span class="gastro-category">Café & Restaurant</span>
+          </div>
+          <div class="distance-badge">15 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Idyllisch gelegenes Café direkt am Neuen Garten mit Blick auf Schloss Cecilienhof. 
+          Hervorragender Kuchen, regionale Küche und saisonische Gerichte.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Am Neuen Garten 12, 14469 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Täglich 10:00–19:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€ (Hauptgerichte 8–18€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Schlossblick, Terrasse, Hunde erlaubt</span>
+          </div>
+        </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Am+Neuen+Garten+12%2C+14469+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
+      </article>
+
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Restaurant Zur Letzten Instanz</h3>
+            <span class="gastro-category">Deutsche Küche</span>
+          </div>
+          <div class="distance-badge">20 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Historisches Restaurant in der Potsdamer Altstadt mit über 300 Jahren Tradition. 
+          Deutsche und brandenburgische Spezialitäten in historischem Ambiente.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Brandenburger Str. 49-50, 14482 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Täglich 10:00–24:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€ (Hauptgerichte 12–25€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Historisches Ambiente, Terrasse, Gruppenplätze</span>
+          </div>
+        </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Brandenburger+Str.+49-50%2C+14482+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
+      </article>
+
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>BrewDog Potsdam</h3>
+            <span class="gastro-category">Craft Bier & Küche</span>
+          </div>
+          <div class="distance-badge">25 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Modernes Craft-Bier-Restaurant mit riesiger Auswahl an Bieren und internationaler Küche. 
+          Trendiges Ambiente mit offener Küche.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Hegelallee 44, 14467 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Mo–Fr 12:00–24:00 Uhr, Sa–So 11:00–24:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€ (Hauptgerichte 11–20€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Offene Küche, Craft Bier, Terrasse</span>
+          </div>
+        </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Hegelallee+44%2C+14467+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
+      </article>
+
+      <article class="gastro-card">
+        <div class="gastro-header">
+          <div class="gastro-title">
+            <h3>Café Heider</h3>
+            <span class="gastro-category">Café & Konditorei</span>
+          </div>
+          <div class="distance-badge">30 Min. Fußweg</div>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-3);">
+          Traditionelle Konditorei mit hauseigenem Café und großer Auswahl an Torten, 
+          Kuchen und Confiserie. Seit 1991 in Potsdam bekannt für höchste Backkunst.
+        </p>
+        
+        <div class="gastro-details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Jägerstraße 3, 14467 Potsdam</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <span>Mo–Sa 7:00–19:00 Uhr, So 9:00–18:00 Uhr</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">💶</span>
+            <span>€€ (Kuchen 3–5€, Café 2,50–4€)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✨</span>
+            <span>Hausgemachte Torten, Frühstück, Sitzplätze</span>
+          </div>
+        </div>
+        <div class="popup-actions" style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=J%C3%A4gerstra%C3%9Fe+3%2C+14467+Potsdam&travelmode=walking" target="_blank" rel="noopener" class="popup-btn popup-btn-primary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: #2563eb; color: white; border: none;">
+            📍 Wegbeschreibung (Google Maps)
+          </a>
+          <a href="/#location-finder" class="popup-btn popup-btn-secondary" style="flex: 1; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; min-width: auto; background: white; color: #2563eb; border: 1px solid #2563eb;">
+            🗺️ Auf der Karte
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Tipps -->
+  <section style="padding: var(--space-6); background: var(--bg-secondary); border-radius: var(--radius-xl);">
+    <h2 style="@apply heading-lg; margin-bottom: var(--space-4);">Praktische Tipps</h2>
+    
+    <div class="kv">
+      <div>
+        <strong>🕐 Öffnungszeiten</strong>
+        <p>Viele Restaurants haben Ruhetage (meist Montag). Vor allem bei gehobener Gastronomie vorher prüfen.</p>
+      </div>
+
+      <div>
+        <strong>📞 Reservierung</strong>
+        <p>Bei Restaurants mit €€€ oder mehr ist eine Reservierung dringend empfohlen, besonders am Wochenende.</p>
+      </div>
+
+      <div>
+        <strong>🥪 Picknick-Alternative</strong>
+        <p>Bäckerei oder Imbiss besuchen und auf den Liegewiesen im Park picknicken – günstiger und entspannter.</p>
+      </div>
+
+      <div>
+        <strong>💳 Zahlungsmittel</strong>
+        <p>Kleinere Imbisse akzeptieren oft nur Bargeld. Bei Restaurants ist Kartenzahlung üblich.</p>
+      </div>
     </div>
   </section>
 
@@ -442,24 +800,77 @@
          data-ad-slot="4436722440"
          data-ad-format="horizontal"
          data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
   </section>
+
+        <section class="magazin-section">
+            <h3>Aus unserem Magazin</h3>
+            <div class="magazin-grid">
+                <a href="blog/gastronomie-guide-babelsberg.html" class="magazin-card">
+                    <img src="images/park-babelsberg/attractions/gastronomie.webp" alt="Kulinarische Highlights rund um den Park" loading="lazy">
+                    <h4>Schlemmen wie die Preußen: Kulinarische Highlights</h4>
+                </a>
+                <a href="blog/heiraten-in-potsdam-locations.html" class="magazin-card">
+                    <img src="images/park-babelsberg/attractions/hochzeit-potsdam.jpeg" alt="Traumhochzeit in Potsdam" loading="lazy">
+                    <h4>Traumhochzeit in Potsdam</h4>
+                </a>
+            </div>
+        </section>
 
   <footer style="margin-top: var(--space-10); padding-top: var(--space-6); border-top: 1px solid var(--border);">
     <div style="text-align: center;">
       <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
-        © 2025 Park Babelsberg Info
+        © 2026 Park Babelsberg Info
       </p>
       <p style="color: var(--text-secondary); font-size: 0.85rem;">
         <a href="/" style="color: var(--accent-primary); margin: 0 12px;">← Zurück zur Übersicht</a> ·
-        <a href="/park-babelsberg/impressum.html" style="color: var(--accent-primary); margin: 0 12px;">Impressum</a> ·
-        <a href="/park-babelsberg/datenschutz.html" style="color: var(--accent-primary); margin: 0 12px;">Datenschutz</a>
+        <a href="/impressum/" style="color: var(--accent-primary); margin: 0 12px;">Impressum</a> ·
+        <a href="/datenschutz/" style="color: var(--accent-primary); margin: 0 12px;">Datenschutz</a>
       </p>
     </div>
   </footer>
 </main>
 
+<!-- JavaScript für Filterfunktion und Karten-Weiterleitung -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const gastroCards = document.querySelectorAll('.gastro-category');
+  
+  // Filterfunktion
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Aktiven Button aktualisieren
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      const filter = this.getAttribute('data-category');
+      
+      gastroCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-type') === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // Funktion für "Auf der Karte" Buttons
+  const mapButtons = document.querySelectorAll('.popup-btn-secondary:not(.filter-btn)');
+  mapButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Ziel: Weiterleitung zur Hauptseite mit aktiviertem Location Finder
+      // Hier könnten wir später spezifische Funktionalität hinzufügen
+      window.location.href = '/#location-finder';
+    });
+  });
+});
+</script>
+
+
+    <script src="assets/ad-config.js" defer></script>
+<script src="assets/lang-toggle.js" defer></script>
 </body>
 </html>

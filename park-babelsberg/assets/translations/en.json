@@ -1,0 +1,649 @@
+{
+  "pillar": {
+    "hero": {
+      "title": "The Three Parks of Potsdam: Babelsberg, Glienicke & New Garden",
+      "subtitle": "UNESCO World Heritage Cultural Landscape | Attractions | Practical Info"
+    }
+  },
+  "parks": {
+    "babelsberg": {
+      "name": "Park Babelsberg",
+      "description": "Historic landscape park with UNESCO World Heritage status on the banks of the Havel",
+      "link": "All about Park Babelsberg →"
+    },
+    "glienicke": {
+      "name": "Park Glienicke",
+      "description": "Classicist landscape park with Italian influences and Havel views",
+      "link": "All about Park Glienicke →"
+    },
+    "neuergarten": {
+      "name": "New Garden",
+      "description": "English landscape garden on the Heiliger See with royal history",
+      "link": "All about the New Garden →"
+    }
+  },
+  "specials": {
+    "title": "Special Features & Activities"
+  },
+  "meta": {
+    "title": "Park Babelsberg Potsdam – Practical Info, Toilets, Paths & Highlights",
+    "description": "All practical information for your visit: Where are the toilets? Which paths are accessible? Real photos show what to expect. For families, seniors, dog owners.",
+    "keywords": "park babelsberg toilets, wc park babelsberg, restaurants park babelsberg, parking park babelsberg, neuer garten potsdam toilets, schloss babelsberg gastronomy, potsdam park toilet finder, park babelsberg map"
+  },
+  "hero": {
+    "title": "Parks and Palaces in Potsdam-Babelsberg",
+    "subtitle": "Culture, Nature and Recreation on the Banks of the Havel",
+    "lead": "Discover the UNESCO World Heritage parks and cultural monuments on the banks of the Havel River. With practical information about locations, directions and current conditions on site."
+  },
+  "nav": {
+    "funfacts": "Fun Facts",
+    "areale": "The 4 Areas",
+    "finder": "Location Finder",
+    "categories": "Categories",
+    "enthusiasts": "For Enthusiasts",
+    "arrival": "Getting Here",
+    "faq": "FAQ",
+    "wasser": "Water Activities",
+    "magazin": "Magazine"
+  },
+  "funfacts": {
+    "title": "Did You Know?",
+    "subtitle": "Fascinating facts about the UNESCO World Heritage parks in Potsdam",
+    "unesco": {
+      "title": "UNESCO World Heritage",
+      "text": "The Potsdam cultural landscape was inscribed on the UNESCO World Heritage List in 1990 – together with Sanssouci Palace."
+    },
+    "hectares": {
+      "title": "Hectares of Parkland",
+      "text": "Park Babelsberg covers 124 hectares – equivalent to about 174 football fields!"
+    },
+    "kaiser": {
+      "title": "Emperor Wilhelm I",
+      "text": "Babelsberg Palace was the summer residence of Emperor Wilhelm I – built by Karl Friedrich Schinkel."
+    },
+    "architects": {
+      "title": "Famous Architects",
+      "text": "Schinkel, Persius and Strack – three architectural geniuses created this neo-Gothic masterpiece together."
+    },
+    "shoreline": {
+      "title": "Shoreline",
+      "text": "Over 7 kilometers of scenic riverside paths along the Havel invite you to stroll and linger."
+    },
+    "potsdam": {
+      "title": "Potsdam Conference",
+      "text": "The historic Potsdam Conference took place at Cecilienhof Palace (New Garden) in 1945."
+    }
+  },
+  "areale": {
+    "title": "The 4 Areas – One Landscape, Four Experiences",
+    "subtitle": "From historic parkland to royal palace – discover the connected UNESCO World Heritage areas on the banks of the Havel.",
+    "label": "Area",
+    "mapButton": "Map View",
+    "areal1": {
+      "title": "Park Babelsberg",
+      "description": "The 124-hectare English landscape park on the banks of the Havel is a masterpiece of garden art. UNESCO World Heritage Site since 1990."
+    },
+    "areal2": {
+      "title": "Babelsberg Palace",
+      "description": "The neo-Gothic summer palace of Emperor Wilhelm I majestically overlooks the Havel. Built 1833-1849 to designs by Karl Friedrich Schinkel."
+    },
+    "areal3": {
+      "title": "New Garden",
+      "description": "An early masterpiece of landscape design on the Heiliger See. Created from 1787 for Friedrich Wilhelm II. The Potsdam Conference took place here in 1945."
+    },
+    "areal4": {
+      "title": "Park Glienicke",
+      "description": "The southernmost part of the UNESCO World Heritage landscape at the Glienicke Bridge. A hidden gem with Italian-inspired architecture."
+    }
+  },
+  "finder": {
+    "title": "Find What You Need",
+    "subtitle": "Interactive map with toilets, restaurants, parking and public transport stops. With location navigation and live timetable information.",
+    "description": "Quickly find the nearest toilet, restaurant or parking in all three parks:",
+    "wc": "Toilets",
+    "gastro": "Dining",
+    "parking": "Parking",
+    "transit": "Transit",
+    "subfilter": {
+      "restaurant": "Restaurant",
+      "cafe": "Café",
+      "fastFood": "Fast Food",
+      "bar": "Bar",
+      "pub": "Pub",
+      "iceCream": "Ice Cream",
+      "biergarten": "Beer Garden"
+    },
+    "controls": {
+      "locate": "Use My Location",
+      "nearestWc": "Nearest Toilet",
+      "nearestGastro": "Nearest Restaurant",
+      "nearestParking": "Nearest Parking"
+    },
+    "legend": {
+      "title": "Legend & Data Sources",
+      "wc": "Toilets: 🟢 Public · 🟡 Customers Only · 💰 Fee Required",
+      "gastro": "Dining: 🍽️ Restaurant · ☕ Café · 🍔 Fast Food · 🍺 Bar/Pub · 🍦 Ice Cream · 🌳 Beer Garden",
+      "parking": "Parking: 🅿️ Public · 💰 Fee Required · 🔒 Private · 🏢 Parking Garage · 🚲 Bicycle",
+      "transit": "Transit: 🚍 Bus & Tram Stops · 🕐 Timetable Info via VBB",
+      "data": "Data: © OpenStreetMap Contributors (ODbL) · Navigation: Google Maps"
+    }
+  },
+  "categories": {
+    "title": "Explore by Category",
+    "subtitle": "Quickly find what you're looking for – from attractions to practical services.",
+    "castles": {
+      "title": "Palaces & Buildings",
+      "count": "8 Historic Sites",
+      "description": "Neo-Gothic palaces, observation towers and historic buildings from different eras.",
+      "button": "View All"
+    },
+    "gastro": {
+      "title": "Dining",
+      "count": "303 Locations",
+      "description": "Restaurants, cafés, snack bars and beer gardens within walking distance of the park.",
+      "button": "View All"
+    },
+    "practical": {
+      "title": "Practical",
+      "count": "Toilets, Parking, Transit",
+      "description": "Toilets, parking and public transport with live data.",
+      "button": "Show on Map"
+    },
+    "nature": {
+      "title": "Nature & Paths",
+      "count": "Walking Paths & Lawns",
+      "description": "Scenic riverside paths, lawns and nature experiences in the park.",
+      "button": "Explore"
+    },
+    "arrival": {
+      "title": "Getting Here & Parking",
+      "count": "1200+ Parking Spaces",
+      "description": "All information about directions, parking and public transport.",
+      "button": "Learn More"
+    },
+    "rules": {
+      "title": "Rules & Regulations",
+      "count": "Park Rules",
+      "description": "What's allowed? Cycling, picnicking, swimming and more.",
+      "button": "View Comparison"
+    }
+  },
+  "highlights": {
+    "title": "The Most Beautiful Places",
+    "subtitle": "Discover the historic buildings and landscape highlights in the UNESCO World Heritage Park Babelsberg.",
+    "schloss": {
+      "title": "Babelsberg Palace",
+      "description": "Neo-Gothic summer palace of Emperor Wilhelm I. Built 1833-1849 by Schinkel, Persius and Strack. UNESCO World Heritage Site since 1990.",
+      "button": "Learn More"
+    },
+    "flatow": {
+      "title": "Flatow Tower",
+      "description": "46m high observation tower with 360° panorama over Potsdam. Built 1853-1856. Open May–October, Sat/Sun 10am-5:30pm.",
+      "button": "Learn More"
+    },
+    "uferweg": {
+      "title": "North Riverside Path",
+      "description": "Scenic walking path with open panoramic views over the Tiefer See. Perfect for relaxing, photography and enjoying sunsets.",
+      "button": "Learn More"
+    },
+    "matrosenhaus": {
+      "title": "Sailor's House",
+      "description": "Historic boathouse on the Havel riverbank from the 19th century. Now an event location with romantic water views.",
+      "button": "Learn More"
+    }
+  },
+  "arrival": {
+    "title": "Getting Here & Parking",
+    "subtitle": "The best way to get to Park Babelsberg – by car, public transport or bicycle.",
+    "car": {
+      "title": "By Car",
+      "mainParking": "Main Parking \"Am Neuen Garten\"",
+      "gps": "GPS: 52.419083, 13.071547",
+      "capacity": "Capacity: approx. 50 spaces",
+      "distance": "Distance to palace: 1.2 km (15 min walk)",
+      "warning": "Often full on weekends from 11am",
+      "warningTip": "arrive early recommended!",
+      "button": "All Parking on Map"
+    },
+    "transit": {
+      "title": "By Public Transport (Recommended!)",
+      "bus694": "Bus 694: Stop \"Park Babelsberg\" (directly at entrance)",
+      "bus690": "Bus 690: Stop \"Rathaus Babelsberg\" (800m walk)",
+      "tram93": "Tram 93: Stop \"Lutherplatz\" (1.2 km walk)",
+      "benefit": "Climate-friendly and stress-free",
+      "benefitDetail": "no parking search! Live departure times available on our map.",
+      "button": "Live Timetable"
+    },
+    "tips": {
+      "title": "Parking Tips for Drivers",
+      "tip1": "Tip 1: Weekend visitors should arrive before 10am or switch to public transport.",
+      "tip2": "Tip 2: Over 1200 additional parking spaces in the area (see map above).",
+      "tip3": "Tip 3: Park & Ride: Parking at Griebnitzsee S-Bahn station (free), then 15 min walk."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers to the most important questions about your visit.",
+    "q1": {
+      "question": "Where can I find toilets in the park?",
+      "answer": "Public toilets are signposted at the main entrances. Use our Location Finder to find the nearest toilet. Some require a fee (approx. €0.50), others are free."
+    },
+    "q2": {
+      "question": "Is the park accessible?",
+      "answer": "The paved main paths are easily accessible for wheelchairs and strollers. Some nature trails have inclines and are less suitable. The Flatow Tower is not accessible (only accessible via stairs)."
+    },
+    "q3": {
+      "question": "Can I grill or picnic in the park?",
+      "answer": "Picnicking is allowed on the lawns. Grilling is prohibited throughout the park (fire safety). Please take your trash with you or dispose of it in the provided bins."
+    },
+    "q4": {
+      "question": "Can I cycle through the park?",
+      "answer": "Cycling is only allowed on paved main paths. Cycling is prohibited on hiking trails and nature paths. Follow signs on site. More details in our park regulations."
+    },
+    "q5": {
+      "question": "Are dogs allowed in the park?",
+      "answer": "Yes, dogs are allowed but must be kept on a leash. Please bring dog waste bags and dispose of them in the bins."
+    },
+    "q6": {
+      "question": "Can I swim in the Havel?",
+      "answer": "No, swimming in the Havel is prohibited (no lifeguard, current, boat traffic). Alternative swimming spots are available at Heiliger See in the New Garden."
+    },
+    "q7": {
+      "question": "Are there guided tours of the park?",
+      "answer": "Yes, the Prussian Palaces and Gardens Foundation offers regular tours. Dates and booking at www.spsg.de."
+    },
+    "q8": {
+      "question": "How long should I plan for a visit?",
+      "answer": "For a relaxed walk: 2-3 hours. With palace tour and Flatow Tower: 4-5 hours. For all 4 areas: full day trip recommended."
+    }
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "cookies": "Cookie Settings",
+    "copyright": "© 2025 Park Babelsberg Info · Data: OpenStreetMap Contributors (ODbL)",
+    "rules": "As of: 2025-10-31 • SPSG Park Regulations: Stay on paths • Open 8:00am to dusk • Private photo/film outdoors with tripod/flash permitted • Commercial use requires permission • Drones strictly prohibited"
+  },
+  "babelsberg": {
+    "photography": {
+      "title": "Photography Tips for Park Babelsberg",
+      "intro": "Telephoto 135–200mm for sight lines (Pfingstberg/Marmorpalais), polarizer for water, ND 6–10 stops for silky-smooth Havel. Drones prohibited. Stay on paths.",
+      "lightMatrix": {
+        "title": "Light Matrix: Spots × Time of Day",
+        "spot": "Spot",
+        "morning": "Morning",
+        "evening": "Evening",
+        "winter": "Winter",
+        "summer": "Summer"
+      },
+      "spots": {
+        "uferweg": {
+          "name": "Riverside Paths → Glienicke Bridge",
+          "morning": "Soft modeling from E/ENE",
+          "evening": "Warm side light",
+          "winter": "Flat SW light for textures",
+          "summer": "Late NW backlight"
+        },
+        "flatowturm": {
+          "name": "Flatow Tower Panorama",
+          "morning": "Clear haze layer",
+          "evening": "Golden silhouettes",
+          "hint": "Seasonal access – check 'Schöne Aussichten!' program"
+        }
+      },
+      "composition": {
+        "title": "Composition & Perspectives",
+        "tip1": "S-curve of the riverside path as leading line to the bridge – guides the viewer's eye through the image",
+        "tip2": "Telephoto compression from Flatow Tower to Pfingstberg/Marmorpalais – compresses landscape",
+        "tip3": "Steam Engine House: Long exposure at water with ND filter for silky-smooth effect"
+      }
+    },
+    "hiddenGems": {
+      "title": "Hidden Gems",
+      "dampfmaschine": "Steam Engine House: Disguised as 'Norman castle' – engineering for palace fountain, not defense",
+      "gerichtslaube": "Court Arcade: Medieval Berlin town hall fragment (13th c.), relocated here in 1871 as 'teahouse curiosity'",
+      "disclaimer": "Historic peculiarities. Please check current accessibility on site."
+    },
+    "geocaching": {
+      "title": "Geocaching Hotspot",
+      "description": "Multi-caches 'Park Babelsberg 01/02' (Owner: g_r) lead through the park with stations including Flatow Tower, Marstall, Sailor's House.",
+      "warning": "⚠️ High muggle density – log discreetly. Stay on paths (UNESCO World Heritage/SPSG park regulations). Drones prohibited. Check cache status on geocaching.com (as of 2025-10-31)."
+    },
+    "running": {
+      "title": "Running & Mindfulness",
+      "description": "Hilly profile for training stimulus – steady ups and downs train strength and endurance.",
+      "routes": {
+        "title": "Running Routes (GPX Downloads)",
+        "route1": "Babelsberg Loop ~4.5 km (hilly)",
+        "route2": "Babelsberg Loop ~7.7 km (challenging)",
+        "disclaimer": "Community suggestions. Stay on paths on site (paved main paths only)."
+      }
+    }
+  },
+  "glienicke": {
+    "photography": {
+      "title": "Photo Spots in Focus",
+      "intro": "Belvedere layering: Water–Bridge–Palace with telephoto 135–200mm. Warm afternoon light. Stay on paths, drones prohibited.",
+      "spots": {
+        "title": "Composition & Perspectives",
+        "casino": "Casino Glienicke: Arcade framing + reflections in calm conditions – use symmetry",
+        "loggia": "Böttcherberg/Loggia Alexandra: Layering to Babelsberg Palace – telephoto compresses landscape",
+        "stibadium": "Stibadium (Persius): Semicircular tea pavilion as niche motif – architectural details"
+      }
+    },
+    "history": {
+      "title": "Spy Bridge History & Curiosities",
+      "bridge": "Glienicke Bridge: Exchange history (Powers 1962, Abel 1962, Shcharansky 1986) – Guided story walks available",
+      "curiosity": "\"Little Curiosity\": Doric observation post – perfect sight line to the bridge",
+      "frigate": "Schinkel's Dummy Frigate: Historic prop ship (1840s), now lost – architectural illusion",
+      "disclaimer": "Historic peculiarities. Story walks organized externally (not SPSG)."
+    },
+    "events": {
+      "title": "Event Potential (Premium/Small-scale)",
+      "storytelling": {
+        "title": "📚 Storytelling Formats",
+        "description": "Exclusive dinners/panels on espionage themes in historic setting"
+      },
+      "photography": {
+        "title": "📷 Golden Hour Workshops",
+        "description": "Product launches for camera/optics with professional backdrop"
+      },
+      "disclaimer": "Event permission from SPSG required. Limited capacity."
+    }
+  },
+  "neuerGarten": {
+    "photography": {
+      "title": "Photo Spots in the New Garden",
+      "intro": "Morning frontal light at Marble Palace. Diffuse light for Cecilienhof textures. Stay on paths, drones prohibited.",
+      "spots": {
+        "title": "Composition & Perspectives",
+        "marmorpalais": "Marble Palace: East shore → symmetrical reflections (morning) in calm conditions",
+        "cecilienhof": "Cecilienhof: Brick/roof textures – B&W suitable in haze/fog",
+        "see": "Heiliger See: Layers in morning mist – atmospheric mood"
+      }
+    },
+    "history": {
+      "title": "History Trail \"Forbidden City\" (2.5 km / 14 stations)",
+      "description": "KGB restricted zone from 1945 – Soviet military town in the middle of Potsdam. Leistikowstraße 1 Memorial: Authentic cells of Soviet intelligence service.",
+      "warning": "ℹ️ Respectful visit recommended. Follow on-site instructions. Guided tours bookable via memorial."
+    },
+    "esoteric": {
+      "title": "Esoteric Traces of Friedrich Wilhelm II",
+      "pyramid": "Ice Chamber as Pyramid: Masonic symbolism – not just practical, but spiritually charged",
+      "temple": "Palace Kitchen as 'Sunken Temple': Architectural allusion to ancient mysteries",
+      "disclaimer": "Historic interpretations. Accessibility varies by structure."
+    },
+    "movement": {
+      "title": "Running & Yoga in the New Garden",
+      "description": "Flat ~4km loop – ideal for relaxed running. Quiet meadows away from main paths for yoga/mindfulness.",
+      "running": {
+        "title": "Running Route (GPX Download)",
+        "route": "New Garden Loop ~4.0 km (flat)"
+      },
+      "yoga": {
+        "title": "Yoga & Mindfulness",
+        "tip1": "Equipment: Mat robust (meadows can be damp), layered clothing for morning chill",
+        "tip2": "Time window: Early morning = quieter & cooler, fewer visitors",
+        "tip3": "Spots: Quiet level meadows away from main paths – stay on permitted areas"
+      }
+    }
+  },
+  "enthusiasts": {
+    "title": "For Enthusiasts",
+    "subtitle": "Niche experiences for photography, running, history and more – discover the parks from new perspectives.",
+    "photography": {
+      "title": "📷 Photography & Light",
+      "description": "Light matrices, composition tips and optimal times of day for all three parks. From telephoto compression to long exposure.",
+      "button": "Photo Guides"
+    },
+    "running": {
+      "title": "🏃 Running & Movement",
+      "description": "GPS tracks to download: 4.5–7.7 km hilly routes in Babelsberg, 4 km flat loop in New Garden. Plus yoga tips.",
+      "button": "Routes & GPX"
+    },
+    "geocaching": {
+      "title": "🎯 Geocaching",
+      "description": "Multi-caches 'Park Babelsberg 01/02' lead to hidden spots. High muggle density – log discreetly!",
+      "button": "Cache Info"
+    },
+    "history": {
+      "title": "🕵️ History & Espionage",
+      "description": "Glienicke Bridge exchange history, KGB 'Forbidden City' trail with 14 stations, story walks bookable.",
+      "button": "History Trails"
+    },
+    "esoteric": {
+      "title": "🔮 Esoteric & Hidden",
+      "description": "Masonic pyramid, sunken temple, disguised castles – historic curiosities with spiritual significance.",
+      "button": "Hidden Gems"
+    },
+    "social": {
+      "title": "☕ Social Hotspots Guide",
+      "description": "The parks as a \"third place\": youth culture at Heiliger See, Café Matschke as a link to the art scene, palace concerts as a cultural ritual. From autonomous zones to intellectual exchange and cultivated community events – the parks as a foundation of urban identity.",
+      "button": "Hidden Gems"
+    }
+  },
+  "visitorGroups": {
+    "title": "Who's visiting the parks? – Tailored Tips",
+    "subtitle": "Every visitor has different needs. Find the right information for your group here.",
+    "culture": {
+      "title": "Culture & Architecture Enthusiasts",
+      "interests": "Schinkel buildings, Tudor style (Little Palace), Lenné & Pückler.",
+      "locations": "Babelsberg Palace, Flatow Tower, Glienicke Garden Museum.",
+      "needs": "Exclusive background info, renovation updates, 'Zeit(ge)schichten' tours.",
+      "rules": "Low (heritage protection aligns with interests)."
+    },
+    "families": {
+      "title": "Families with Children",
+      "interests": "Play, edutainment, uncomplicated recreation.",
+      "locations": "Dino Playground, Filmpark Babelsberg, Strandbad (July 2025).",
+      "needs": "Accessibility, stroller-friendly paths, playground locations.",
+      "rules": "High (Note: ball games & inline skating prohibited)."
+    },
+    "athletes": {
+      "title": "Active Athletes & Nature Lovers",
+      "interests": "Physical activity, panoramic jogging, cycle paths.",
+      "locations": "Berlin Wall Trail, Havel riverbank, AllTrails routes.",
+      "needs": "Path quality, elevation profiles, legal cycle corridors.",
+      "rules": "Very High (cycling prohibited off marked paths)."
+    },
+    "history": {
+      "title": "History & Witness Seekers",
+      "interests": "GDR border history, Cold War, spy exchanges.",
+      "locations": "Glienicke Bridge, Sailor's House, Berlin Wall path.",
+      "needs": "Exact location of historical events, witness reports.",
+      "rules": "Low (focus on authentic sites)."
+    },
+    "events": {
+      "title": "Event & Gastronomy Seekers",
+      "interests": "Weddings, brewing culture, exclusive atmosphere.",
+      "locations": "Meierei (brewery), Glienicke Coach House, Night of the Palaces.",
+      "needs": "Opening hours, event tickets, rental conditions for locations.",
+      "rules": "Medium (noise protection/closures during events)."
+    }
+  },
+  "seasonal": {
+    "title": "Babelsberg in Every Season",
+    "subtitle": "The parks change their face – experience the fascination all year round.",
+    "summer": {
+      "title": "Summer Highlights",
+      "text": "Enjoy the blooming gardens and the cool breeze of the Havel. Ideal for picnics and long walks until sunset.",
+      "bullet1": "Opening of Strandbad Babelsberg (July 5, 2025)",
+      "bullet2": "Water features in Park Babelsberg",
+      "bullet3": "Potsdam Night of the Palaces (August)"
+    },
+    "winter": {
+      "title": "Winter Experiences",
+      "text": "When frost enchants the sightlines, a very special silence prevails. Perfect for atmospheric photography and cozy stops.",
+      "bullet1": "Winter menu in the historic Meierei",
+      "bullet2": "Indoor alternative: Biosphere Potsdam (topically warm)",
+      "bullet3": "Photo trial: Frosty sightlines at the Flatow Tower"
+    }
+  },
+  "planen": {
+    "title": "Plan Your Visit: Practical Information",
+    "subtitle": "The 'chain of pearls' from the Glienicke Bridge in the south to the Meierei in the north.",
+    "hotels": {
+      "title": "Accommodation & Hotels",
+      "text": "Potsdam-Babelsberg offers a wide range of accommodation – from boutique hotels near the Filmpark to historic pensions."
+    },
+    "weddings": {
+      "title": "Wedding Locations",
+      "text": "The Coach House Glienicke, Babelsberg Palace and the Casino at Jungfernsee are among the most exclusive locations."
+    },
+    "insurance": {
+      "title": "Travel Insurance",
+      "text": "For international guests, travel insurance with cancellation and health insurance coverage is recommended."
+    }
+  },
+  "blog": {
+    "title": "Babelsberg Magazine",
+    "subtitle": "Dive deeper into history, technology, and lifestyle around the UNESCO World Heritage site.",
+    "allArticles": "View all articles"
+  },
+  "blogIndex": {
+    "title": "Babelsberg Magazine",
+    "subtitle": "History, excursion tips and insider knowledge about the UNESCO World Heritage parks in Potsdam."
+  },
+  "wasser": {
+    "hero": {
+      "title": "The Havel from the Water",
+      "subtitle": "Rediscovering Potsdam's Park Landscape"
+    },
+    "intro": {
+      "title": "The Havel as a Stage",
+      "subtitle": "While most visitors explore Potsdam's park landscapes on foot, a completely new, almost magical perspective opens up from the water. The masterfully staged visual axes by Lenné and Pückler-Muskau were deliberately designed to unfold their full splendor from the water. Glide across the Havel in a canoe, SUP or on an excursion boat and experience how the castles and gardens present themselves as a perfectly composed shore landscape."
+    },
+    "aktiv": {
+      "title": "Active on the Water",
+      "subtitle": "For all those who want to explore the park landscape on their own, there are numerous opportunities to get active. Whether sporty in a kayak or relaxed on a SUP – Potsdam's waters are a paradise for paddlers.",
+      "kanu": {
+        "title": "Canoe & Kayak",
+        "description": "Rent a canoe or kayak and paddle along the shores of Park Babelsberg, the New Garden and Park Glienicke. Discover hidden bays and enjoy the tranquility on the water. Numerous rental stations in Potsdam offer a large selection of boats for beginners and advanced paddlers.",
+        "button": "Find rental stations"
+      },
+      "sup": {
+        "title": "Stand-Up-Paddling (SUP)",
+        "description": "Experience the parks from a SUP and enjoy a unique workout in the fresh air. The calm waters of the Havel are ideal for beginners. Some rental stations also offer guided SUP tours and yoga classes on the water.",
+        "button": "Find SUP rental"
+      }
+    },
+    "touren": {
+      "title": "Relaxed Tours",
+      "subtitle": "Sit back and enjoy the passing scenery on one of the numerous boat trips. Various shipping companies offer round trips that take you to the most beautiful places in the Potsdam park landscape.",
+      "weltkulturerbe": {
+        "title": "World Heritage Tour",
+        "description": "The 3-hour \"World Heritage Tour\" by the STERN+KREIS shipping company is a classic. It takes you past Babelsberg and Cecilienhof palaces, the Glienicke Bridge, Peacock Island and many other highlights. An audio guide in German and English explains the history and special features of the places.",
+        "button": "More about the World Heritage Tour"
+      }
+    },
+    "regeln": {
+      "title": "What you need to know",
+      "subtitle": "To make your trip on the water an unforgettable experience, you should observe a few things.",
+      "regeln": {
+        "title": "Rules & Safety",
+        "description": "Observe the applicable shipping rules and be considerate of other water sports enthusiasts and commercial shipping. Wear a life jacket and check the weather before you start."
+      },
+      "umwelt": {
+        "title": "Environmental Protection",
+        "description": "The shore areas of the parks are valuable habitats for many animal and plant species. Keep your distance from reed zones and overgrown shores and avoid noise. Take your rubbish with you."
+      },
+      "anstieg": {
+        "title": "Jetties & Breaks",
+        "description": "Use only the designated jetties and rest areas. Mooring on the banks of the parks is generally not permitted in order to protect the vegetation."
+      }
+    }
+  },
+  "trust": {
+    "unesco": { "title": "UNESCO World Heritage", "desc": "Officially listed cultural landscape since 1990" },
+    "expertise": { "title": "Local Expertise", "desc": "Editorially maintained with up-to-date data for 2025" },
+    "maps": { "title": "Interactive Maps", "desc": "Real-time location finder for restrooms, dining & parking" },
+    "accessibility": { "title": "Accessibility", "desc": "Information on wheelchair- and stroller-friendly paths" }
+  },
+  "breadcrumb": {
+    "parks": "Parks & Palaces",
+    "current": "The Three Parks of Potsdam"
+  },
+  "toc": {
+    "label": "Contents",
+    "neuergarten": "New Garden",
+    "visitors": "Visitor Groups",
+    "seasonal": "Seasonal Tips",
+    "finder": "Location Finder",
+    "plan": "Plan Your Visit"
+  },
+  "service": {
+    "arrival": { "title": "Getting Here & Parking", "desc": "Parking, bus & train connections" },
+    "tickets": { "title": "Opening Hours & Tickets", "desc": "Prices, palaces & guided tours" },
+    "hotels": { "title": "Accommodation", "desc": "Hotels & guesthouses near the park" },
+    "weddings": { "title": "Weddings & Events", "desc": "Dream venues for your special day" }
+  },
+  "insiderTip": "💡 <strong>Insider Tip:</strong> Start at the Glienicke Bridge and walk north through Park Babelsberg to the New Garden. The Meierei at the end of the route (approx. 4–5 km) is the perfect culinary finale.",
+  "blogCards": {
+    "bridge": { "title": "Glienicke Bridge: The Spy Bridge", "desc": "Everything about the Cold War's most famous spy exchange location.", "btn": "Learn more" },
+    "steam": { "title": "Babelsberg Steam Engine House", "desc": "Technology in the guise of a Norman castle. A Prussian masterpiece.", "btn": "Discover the tech" },
+    "wedding": { "title": "Dream Wedding in Potsdam", "desc": "The most beautiful venues for your special day among palaces and gardens.", "btn": "View venues" }
+  },
+  "weather": {
+    "title": "🌤️ Weather",
+    "loading": "Loading weather…"
+  },
+  "a11y": {
+    "skipLink": "Skip to content"
+  },
+  "parkRules": "Park Rules:",
+  "renderer": {
+    "specialsSoon": "Special features will be added soon.",
+    "categoriesSoon": "Categories will be added soon.",
+    "imageSoon": "📷 Image coming soon"
+  },
+  "attractions": {
+    "schloss-babelsberg": {
+      "title": "Babelsberg Palace",
+      "desc": "Neo-Gothic palace with spectacular Havel views and historic architecture"
+    },
+    "flatowturm": {
+      "title": "Flatow Tower",
+      "desc": "Gothic-style lookout tower with panoramic views over the park and Havel"
+    },
+    "matrosenhaus": {
+      "title": "Sailor's House",
+      "desc": "Historic boathouse with dining right on the waterfront"
+    },
+    "uferweg-nord": {
+      "title": "Northern Waterfront Path",
+      "desc": "Scenic walking trail along the Havel with nature experiences"
+    },
+    "liegewiesen": {
+      "title": "Meadow Lawns",
+      "desc": "Spacious green areas for relaxing, picnicking, and sunbathing"
+    },
+    "jagdschloss-glienicke": {
+      "title": "Glienicke Hunting Lodge",
+      "desc": "Classicist summer palace with Mediterranean flair and art treasures"
+    },
+    "casino-glienicke": {
+      "title": "Casino",
+      "desc": "Elegant Italian-style tea house with Havel terrace"
+    },
+    "klosterhof-glienicke": {
+      "title": "Cloister Courtyard",
+      "desc": "Romantic inner courtyard with historic colonnades"
+    },
+    "schloss-cecilienhof": {
+      "title": "Cecilienhof Palace",
+      "desc": "Historic Tudor-style palace, site of the 1945 Potsdam Conference"
+    },
+    "marmorpalais": {
+      "title": "Marble Palace",
+      "desc": "Early Classicist palace on the shores of the Holy Lake"
+    },
+    "pyramide-neuergarten": {
+      "title": "Pyramid",
+      "desc": "Historic ice cellar in the shape of an Egyptian pyramid"
+    },
+    "meierei-neuergarten": {
+      "title": "Meierei",
+      "desc": "Gothic-style dairy house with dining and historic ambiance"
+    }
+  }
+}
