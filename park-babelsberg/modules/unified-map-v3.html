@@ -3,14 +3,14 @@
 
 <section id="location-finder" class="section">
   <h2>Location-Finder für Park Babelsberg</h2>
-  <p style="margin-bottom:16px;color:var(--text-muted)">
+  <p class="z-inline-style-361">
     Finde WCs, Restaurants, Parkplätze und ÖPNV-Haltestellen im Park Babelsberg, Neuer Garten und rund um Schloss Babelsberg.
     Mit Standort-Navigation und Live-Fahrplanauskünften.
   </p>
 
-  <div class="card" style="padding:0;overflow:hidden;">
+  <div class="card z-inline-style-27">
     <!-- Main Filter Buttons -->
-    <div style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;background:var(--bg-secondary);border-bottom:2px solid var(--border-color);">
+    <div class="z-inline-style-362">
       <button id="filter-wc" class="filter-btn active" data-layer="wc" aria-pressed="true">
         <span class="filter-icon">🚻</span> WC <span class="filter-count" id="count-wc">0</span>
       </button>
@@ -27,7 +27,7 @@
 
     <!-- Sub-Filter für Gastronomie -->
     <div id="gastro-subfilter" class="subfilter-panel">
-      <div style="padding:12px 16px;display:flex;gap:8px;flex-wrap:wrap;background:#fafafa;">
+      <div class="z-inline-style-36">
         <label class="subfilter-checkbox">
           <input type="checkbox" data-amenity="restaurant" checked> 🍽️ Restaurant
         </label>
@@ -53,10 +53,10 @@
     </div>
 
     <!-- Map Container -->
-    <div id="unified-map" style="height:500px;width:100%;background:#e5e7eb;" role="application" aria-label="Interaktive Karte"></div>
+    <div id="unified-map" class="z-inline-style-37" role="application" aria-label="Interaktive Karte"></div>
 
     <!-- Controls -->
-    <div style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:white;">
+    <div class="z-inline-style-38">
       <button id="btn-locate" class="map-btn map-btn-primary" aria-label="Meinen Standort nutzen">
         📍 Standort nutzen
       </button>
@@ -66,18 +66,18 @@
       <button id="btn-nearest-gastro" class="map-btn map-btn-secondary" disabled aria-label="Zum nächsten Restaurant navigieren">
         🍽️ Nächstes Restaurant
       </button>
-      <button id="btn-nearest-parking" class="map-btn map-btn-secondary" disabled style="display:none;" aria-label="Zum nächsten Parkplatz navigieren">
+      <button id="btn-nearest-parking" class="map-btn map-btn-secondary" disabled class="z-inline-style-39" aria-label="Zum nächsten Parkplatz navigieren">
         🅿️ Nächster Parkplatz
       </button>
     </div>
 
     <!-- Distance Info -->
-    <div id="distance-info" style="padding:0 16px 12px;color:var(--text-muted);font-size:0.9rem;min-height:20px;" role="status" aria-live="polite"></div>
+    <div id="distance-info" class="z-inline-style-40" role="status" aria-live="polite"></div>
 
     <!-- Legend -->
-    <details class="notice" style="margin:0 16px 16px;cursor:pointer;">
-      <summary style="font-weight:600;padding:8px 0;">📍 Legende & Datenquellen</summary>
-      <div style="padding-top:8px;font-size:0.9rem;line-height:1.6;">
+    <details class="notice z-inline-style-28">
+      <summary class="z-inline-style-41">📍 Legende & Datenquellen</summary>
+      <div class="z-inline-style-42">
         <strong>WC:</strong> 🟢 Öffentlich · 🟡 Nur Kunden · 💰 Kostenpflichtig<br>
         <strong>Gastronomie:</strong> 🍽️ Restaurant · ☕ Café · 🍔 Imbiss · 🍺 Bar/Pub · 🍦 Eiscafé · 🌳 Biergarten<br>
         <strong>Parkplätze:</strong> 🅿️ Öffentlich · 💰 Kostenpflichtig · 🔒 Privat · 🏢 Parkhaus · 🚲 Fahrrad<br>
@@ -702,7 +702,7 @@
       </div>
       <div class="popup-body">
         <p>${typeLabel}</p>
-        <p style="color:var(--text-muted);font-size:0.85rem;">
+        <p class="z-inline-style-83">
           ℹ️ Fahrplanauskünfte via VBB-Link
         </p>
         <!-- Phase 2 Placeholder -->

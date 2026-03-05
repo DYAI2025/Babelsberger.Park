@@ -3,16 +3,16 @@
 
 <section id="location-finder" class="section">
   <h2>Location-Finder für Park Babelsberg</h2>
-  <p style="margin-bottom:16px;color:var(--text-muted)">
+  <p class="z-inline-style-361">
     Finde WCs, Restaurants, Parkplätze und ÖPNV-Haltestellen im Park Babelsberg, Neuer Garten und rund um Schloss
     Babelsberg.
     Mit Standort-Navigation und Live-Fahrplanauskünften.
   </p>
 
-  <div class="card" style="padding:0;overflow:hidden;">
+  <div class="card z-inline-style-27">
     <!-- Main Filter Buttons -->
     <div
-      style="padding:16px;display:flex;gap:12px;flex-wrap:wrap;background:var(--bg-secondary);border-bottom:2px solid var(--border-color);">
+      class="z-inline-style-362">
       <button id="filter-wc" class="filter-btn active" data-layer="wc" aria-pressed="true">
         <span class="filter-icon">🚻</span> WC <span class="filter-count" id="count-wc">0</span>
       </button>
@@ -55,7 +55,7 @@
     </div>
 
     <!-- Map Container -->
-    <div id="unified-map" style="height:500px;width:100%;background:#e5e7eb;" role="application"
+    <div id="unified-map" class="z-inline-style-37" role="application"
       aria-label="Interaktive Karte"></div>
 
     <!-- Controls -->
@@ -70,20 +70,20 @@
         aria-label="Zum nächsten Restaurant navigieren">
         🍽️ Nächstes Restaurant
       </button>
-      <button id="btn-nearest-parking" class="map-btn map-btn-secondary" disabled style="display:none;"
+      <button id="btn-nearest-parking" class="map-btn map-btn-secondary" disabled class="z-inline-style-39"
         aria-label="Zum nächsten Parkplatz navigieren">
         🅿️ Nächster Parkplatz
       </button>
     </div>
 
     <!-- Distance Info -->
-    <div id="distance-info" style="padding:0 16px 12px;color:var(--text-muted);font-size:0.9rem;min-height:20px;"
+    <div id="distance-info" class="z-inline-style-40"
       role="status" aria-live="polite"></div>
 
     <!-- Legend -->
-    <details class="notice" style="margin:0 16px 16px;cursor:pointer;">
-      <summary style="font-weight:600;padding:8px 0;">📍 Legende & Datenquellen</summary>
-      <div style="padding-top:8px;font-size:0.9rem;line-height:1.6;">
+    <details class="notice z-inline-style-28">
+      <summary class="z-inline-style-41">📍 Legende & Datenquellen</summary>
+      <div class="z-inline-style-42">
         <strong>WC:</strong> 🟢 Öffentlich · 🟡 Nur Kunden · 💰 Kostenpflichtig<br>
         <strong>Gastronomie:</strong> 🍽️ Restaurant · ☕ Café · 🍔 Imbiss · 🍺 Bar/Pub · 🍦 Eiscafé · 🌳 Biergarten<br>
         <strong>Parkplätze:</strong> 🅿️ Öffentlich · 💰 Kostenpflichtig · 🔒 Privat · 🏢 Parkhaus · 🚲 Fahrrad<br>
@@ -865,13 +865,13 @@
         🚍 ${name} ${ref}
       </div>
       <div class="popup-body">
-        <p style="margin-bottom:8px;">${typeLabel}</p>
-        <div id="${liveContainerId}" style="min-height:40px;">
-          <p style="color:#6b7280;font-size:0.9rem;">⏳ Lade Fahrplandaten...</p>
+        <p class="z-inline-style-274">${typeLabel}</p>
+        <div id="${liveContainerId}" class="z-inline-style-275">
+          <p class="z-inline-style-276">⏳ Lade Fahrplandaten...</p>
         </div>
       </div>
       <div class="popup-actions">
-        <button id="${refreshBtnId}" class="popup-btn popup-btn-primary" style="cursor:pointer;">
+        <button id="${refreshBtnId}" class="popup-btn popup-btn-primary z-inline-style-265">
           🔄 Aktualisieren
         </button>
         <a href="${vbbUrl}" target="_blank" rel="noopener" class="popup-btn popup-btn-secondary">
@@ -960,9 +960,9 @@
       const diffMs = depTime - now;
       const diffMin = Math.round(diffMs / 60000);
 
-      if (diffMin < 0) return '<span style="color:#6b7280;">Abgefahren</span>';
-      if (diffMin === 0) return '<span style="color:#ef4444;font-weight:700;">Jetzt</span>';
-      if (diffMin <= 20) return `<span style="font-weight:700;">${diffMin} Min</span>`;
+      if (diffMin < 0) return '<span class="z-inline-style-277">Abgefahren</span>';
+      if (diffMin === 0) return '<span class="z-inline-style-278">Jetzt</span>';
+      if (diffMin <= 20) return `<span class="z-inline-style-279">${diffMin} Min</span>`;
 
       return depTime.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
     }
@@ -970,7 +970,7 @@
     // Render departures HTML
     function renderDepartures(departures) {
       if (!departures || departures.length === 0) {
-        return '<p style="color:#6b7280;font-size:0.9rem;padding:8px 0;">Keine Abfahrten in den nächsten 60 Minuten.</p>';
+        return '<p class="z-inline-style-280">Keine Abfahrten in den nächsten 60 Minuten.</p>';
       }
 
       const items = departures.slice(0, 6).map(dep => {
@@ -982,7 +982,7 @@
 
         let delayLabel = '';
         if (delay > 0) {
-          delayLabel = `<span style="color:#ef4444;font-size:0.75rem;font-weight:700;margin-left:4px;">+${delay}'</span>`;
+          delayLabel = `<span class="z-inline-style-281">+${delay}'</span>`;
         }
 
         const isTram = dep.line?.product === 'tram' || dep.line?.mode === 'train';
@@ -990,14 +990,14 @@
         const lineIcon = isTram ? '🚊' : '🚌';
 
         return `
-        <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #e5e7eb;">
+        <div class="z-inline-style-282">
           <span style="background:${lineColor};color:white;padding:3px 8px;border-radius:6px;font-size:0.75rem;font-weight:700;min-width:55px;text-align:center;display:flex;align-items:center;justify-content:center;gap:4px;">
             ${lineIcon} ${lineName}
           </span>
-          <span style="flex:1;font-size:0.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#374151;">
+          <span class="z-inline-style-283">
             ${direction}
           </span>
-          <span style="font-size:0.9rem;white-space:nowrap;">
+          <span class="z-inline-style-284">
             ${timeLabel}${delayLabel}
           </span>
         </div>
@@ -1005,9 +1005,9 @@
       }).join('');
 
       return `
-      <div style="margin-top:8px;">
-        <p style="font-weight:600;margin-bottom:6px;font-size:0.95rem;">Nächste Abfahrten:</p>
-        <div style="max-height:200px;overflow-y:auto;">
+      <div class="z-inline-style-221">
+        <p class="z-inline-style-285">Nächste Abfahrten:</p>
+        <div class="z-inline-style-286">
           ${items}
         </div>
       </div>
@@ -1021,7 +1021,7 @@
       if (!container) return;
 
       // Show loading
-      container.innerHTML = '<p style="color:#6b7280;font-size:0.9rem;">⏳ Lade Fahrplandaten...</p>';
+      container.innerHTML = '<p class="z-inline-style-276">⏳ Lade Fahrplandaten...</p>';
 
       // Fetch data
       const liveData = await fetchLiveDepartures(lat, lng);
@@ -1031,14 +1031,14 @@
       if (liveData && liveData.departures) {
         const now = new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
         container.innerHTML = renderDepartures(liveData.departures) +
-          `<p style="color:#6b7280;font-size:0.75rem;margin-top:8px;">🕐 Aktualisiert: ${now}</p>`;
+          `<p class="z-inline-style-287">🕐 Aktualisiert: ${now}</p>`;
       } else {
         container.innerHTML = `
-        <div style="padding:12px;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;margin-top:8px;">
-          <p style="color:#dc2626;font-size:0.85rem;margin:0;">
+        <div class="z-inline-style-288">
+          <p class="z-inline-style-289">
             ⚠️ Live-Daten vorübergehend nicht verfügbar
           </p>
-          <p style="color:#6b7280;font-size:0.8rem;margin:4px 0 0;">
+          <p class="z-inline-style-290">
             Bitte nutze den VBB-Fahrplan-Link unten.
           </p>
         </div>

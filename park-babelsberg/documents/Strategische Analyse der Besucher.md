@@ -1,4 +1,4 @@
-Strategische Analyse der Besucher-Personas und Informations-Infrastruktur: Areal Glienicke – Babelsberg – Neuer Garten
+# Strategische Analyse der Besucher-Personas und Informations-Infrastruktur: Areal Glienicke – Babelsberg – Neuer Garten
 
 1. Einleitung: Strategischer Kontext und Zielsetzung
 Das Ensemble zwischen der Glienicker Brücke, dem Park Babelsberg und dem Neuen Garten bildet einen der komplexesten und zugleich wertvollsten Abschnitte des UNESCO-Welterbes „Schlösser und Parks von Potsdam und Berlin“. In diesem Raum verdichten sich preußische Geschichte, die Gartenkunst von Lenné und Pückler-Muskau sowie moderne Freizeitkultur zu einem „Preußischen Arkadien“. Die strategische Herausforderung besteht darin, dieses Areal nicht als bloße Aneinanderreihung von Einzeldenkmälern, sondern als zusammenhängendes Erlebnisband zu positionieren.

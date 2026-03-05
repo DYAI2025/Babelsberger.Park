@@ -3,6 +3,15 @@
  * Loads inline core data + lazy-loads extended data (specials, categories, FAQs)
  */
 
+// Derive base path from this script's URL so fetch calls work from any
+// subdirectory (e.g. /en/).  We query the DOM immediately (synchronous)
+// before any deferred execution.
+const _RENDERER_BASE_PATH = (function() {
+  var el = document.querySelector('script[src*="parks-renderer"]');
+  if (!el || !el.src) return '';
+  return el.src.replace(/\/assets\/parks-renderer[^/]*$/, '');
+})();
+
 class AttractionCard {
   constructor(attractionData, parkColor) {
     this.data = attractionData;
@@ -18,10 +27,15 @@ class AttractionCard {
     card.setAttribute('aria-label', this.data.title);
 
     // Use <img loading="lazy"> for better SEO and accessibility over background-image
+    // Prefix relative image URLs with _RENDERER_BASE_PATH so they resolve correctly
+    // from any subdirectory (e.g. /en/).
     let imageHTML = '';
     if (this.data.image_url && this.data.image_url !== '') {
+      const imgSrc = this.data.image_url.startsWith('http') || this.data.image_url.startsWith('/')
+        ? this.data.image_url
+        : _RENDERER_BASE_PATH + '/' + this.data.image_url;
       imageHTML = `
-        <img src="${this.data.image_url}" alt="${this.data.title}" loading="lazy" class="card-image-img">
+        <img src="${imgSrc}" alt="${this.data.title}" loading="lazy" class="card-image-img">
       `;
     } else {
       imageHTML = `
@@ -190,7 +204,7 @@ class ParksApp {
 
   async loadExtendedData() {
     try {
-      const response = await fetch('assets/data/parks-extended.json');
+      const response = await fetch(_RENDERER_BASE_PATH + '/assets/data/parks-extended.json');
       if (!response.ok) {
         console.warn('⚠️ Extended data not found, skipping');
         this.extendedData = { specials: [], categories: [], faqs: [] };
@@ -228,7 +242,8 @@ class ParksApp {
     }
 
     if (!this.extendedData || !this.extendedData.specials || this.extendedData.specials.length === 0) {
-      const msg = window.i18n ? window.i18n.t('renderer.specialsSoon') : 'Besonderheiten werden demnächst ergänzt.';
+      const translation = window.i18n ? window.i18n.t('renderer.specialsSoon') : null;
+      const msg = translation || 'Besonderheiten werden demnächst ergänzt.';
       container.innerHTML = `<p style="text-align: center; color: var(--ink-muted);">${msg}</p>`;
       return;
     }
@@ -250,7 +265,8 @@ class ParksApp {
     }
 
     if (!this.extendedData || !this.extendedData.categories || this.extendedData.categories.length === 0) {
-      const msg = window.i18n ? window.i18n.t('renderer.categoriesSoon') : 'Kategorien werden demnächst ergänzt.';
+      const translation = window.i18n ? window.i18n.t('renderer.categoriesSoon') : null;
+      const msg = translation || 'Kategorien werden demnächst ergänzt.';
       container.innerHTML = `<p style="text-align: center; color: var(--ink-muted);">${msg}</p>`;
       return;
     }

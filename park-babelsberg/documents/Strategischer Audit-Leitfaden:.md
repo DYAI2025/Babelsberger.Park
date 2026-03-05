@@ -1,4 +1,4 @@
-Strategischer Audit-Leitfaden: Das Potenzial von Babelsberg.info zur erfolgreichen Pillar Page
+# Strategischer Audit-Leitfaden: Das Potenzial von Babelsberg.info zur erfolgreichen Pillar Page
 
 1. Einleitung: Die strategische Rolle von Pillar Pages in der Destinationsvermarktung
 

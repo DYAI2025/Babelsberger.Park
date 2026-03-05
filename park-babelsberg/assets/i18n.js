@@ -7,6 +7,18 @@
 (function() {
   'use strict';
 
+  // Capture base path at script evaluation time so fetch calls work correctly
+  // from any subdirectory (e.g. /en/).  We try document.currentScript first
+  // (available for synchronous non-defer/async scripts) and fall back to a
+  // DOM query for the <script src="…i18n…"> tag, which is always in the DOM
+  // by the time this IIFE executes.
+  const _BASE_PATH = (function() {
+    var s = document.currentScript || document.querySelector('script[src*="i18n"]');
+    if (!s || !s.src) return '';
+    // Strip everything from /assets/i18n… onwards
+    return s.src.replace(/\/assets\/i18n[^/]*$/, '');
+  })();
+
   const i18n = {
     currentLang: 'de',
     translations: {},
@@ -44,8 +56,8 @@
     async loadTranslations() {
       try {
         const [de, en] = await Promise.all([
-          fetch('assets/translations/de.json').then(r => r.json()),
-          fetch('assets/translations/en.json').then(r => r.json())
+          fetch(_BASE_PATH + '/assets/translations/de.json').then(r => r.json()),
+          fetch(_BASE_PATH + '/assets/translations/en.json').then(r => r.json())
         ]);
         this.translations = { de, en };
         console.log('✅ Translations loaded');
@@ -61,24 +73,28 @@
       const keys = keyPath.split('.');
       let value = this.translations[this.currentLang];
 
+      if (!value) return null; // Safe guard for failed fetches
+
       for (const key of keys) {
-        if (value && typeof value === 'object') {
+        if (value && typeof value === 'object' && key in value) {
           value = value[key];
         } else {
           // Fallback to German if key not found
           value = this.translations[this.fallbackLang];
+          if (!value) return null;
+          
           for (const k of keys) {
-            if (value && typeof value === 'object') {
+            if (value && typeof value === 'object' && k in value) {
               value = value[k];
             } else {
-              return keyPath;
+              return null; // Key missing in both languages
             }
           }
           break;
         }
       }
 
-      return value || keyPath;
+      return value;
     },
 
     /**
@@ -111,26 +127,31 @@
         const key = el.getAttribute('data-i18n');
         const translation = this.t(key);
 
-        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          if (el.placeholder) el.placeholder = translation;
-        } else {
-          el.textContent = translation;
+        if (translation) {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            if (el.placeholder) el.placeholder = translation;
+          } else {
+            el.textContent = translation;
+          }
         }
       });
 
       document.querySelectorAll('[data-i18n-html]').forEach(el => {
         const key = el.getAttribute('data-i18n-html');
-        el.innerHTML = this.t(key);
+        const translation = this.t(key);
+        if (translation) el.innerHTML = translation;
       });
 
       document.querySelectorAll('[data-i18n-aria]').forEach(el => {
         const key = el.getAttribute('data-i18n-aria');
-        el.setAttribute('aria-label', this.t(key));
+        const translation = this.t(key);
+        if (translation) el.setAttribute('aria-label', translation);
       });
 
       document.querySelectorAll('[data-i18n-title]').forEach(el => {
         const key = el.getAttribute('data-i18n-title');
-        el.setAttribute('title', this.t(key));
+        const translation = this.t(key);
+        if (translation) el.setAttribute('title', translation);
       });
     },
 
