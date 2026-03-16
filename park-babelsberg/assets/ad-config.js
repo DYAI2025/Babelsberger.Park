@@ -41,6 +41,11 @@
     'BABELSB_STICKY_MOBILE': AD_SLOTS.STICKY_MOBILE,
     'BABELSB_IN_ARTICLE':    AD_SLOTS.IN_ARTICLE,
     'BABELSB_INFEED':        AD_SLOTS.INFEED,
+    // Blog-specific mappings
+    'BLOG_CONTENT_1':        AD_SLOTS.INFEED,
+    'BLOG_CONTENT_2':        AD_SLOTS.IN_ARTICLE,
+    'BLOG_INDEX_1':          AD_SLOTS.INFEED,
+    'BLOG_INDEX_2':          AD_SLOTS.INFEED,
   };
 
   /* ──────────────────────────────────────────────────────────────────

@@ -1,37 +1,27 @@
 # Babelsberger.info AdSense Setup
 
-## Aktueller Status
-Die Seite hat bereits AdSense aktiviert mit Publisher ID: `ca-pub-1712273263687132`
+## Aktueller Status (März 2026)
+Die Seite ist für Produktion bereit.
+- Publisher ID: `ca-pub-1712273263687132`
+- CMP (Cookie Consent) integriert und steuert AdSense-Ladung.
+- Ad-Block-Layout-Shifts durch CSS min-height minimiert.
+- Legal Pages (DE/EN) vollständig konform.
 
-## Offene AdSense Slots
-Momentan sind folgende Platzhalter in der index.html vorhanden:
-- `BABELSB_TOP_1` (obere Anzeige)
-- `BABELSB_MIDDLE_2` (mittlere Anzeige)
+## AdSense Slots
+Alle Slots werden dynamisch über `assets/ad-config.js` verwaltet. In den HTML-Dateien werden nur noch logische Namen verwendet:
 
-## Anleitung für echte AdSlots
+- `BABELSB_TOP_1`
+- `BABELSB_MIDDLE_2`
+- `BABELSB_PARKS_3`
+- `BABELSB_PLANEN_4`
+- `BABELSB_FAQ_5`
+- `BABELSB_STICKY_MOBILE`
+- `BABELSB_IN_ARTICLE`
+- `BABELSB_INFEED`
 
-1. **Gehe zu AdSense:**
-   https://www.google.com/adsense/new/u/0/sites
-
-2. **Erstelle neue AdUnits für:**
-   - `babelsb-top-1` (Banner oben)
-   - `babelsb-middle-2` (In-feed unten)
-
-3. **Kopiere die Slot IDs und ersetze die Platzhalter:**
-
-```bash
-# Ersetze die Platzhalter mit den echten Slot IDs:
-sed -i 's/BABELSB_TOP_1/[DEINE_SLOT_ID_1]/g' /home/moltbot/Babelsberger.Park/park-babelsberg/index.html
-sed -i 's/BABELSB_MIDDLE_2/[DEINE_SLOT_ID_2]/g' /home/moltbot/Babelsberger.Park/park-babelsberg/index.html
-```
-
-4. **Deploye die aktualisierte Seite:**
-```bash
-cd /home/moltbot/Babelsberger.Park
-git add .
-git commit -m "feat: AdSense Slots mit echten IDs ersetzt"
-git push origin main
-```
-
-## Automatisierung
-Wenn du die Slot IDs hast, kann ich sie direkt ersetzen.
+## Compliance-Checkliste
+1. [x] **ads.txt** im Root vorhanden.
+2. [x] **CMP** blockiert AdSense bis zur Einwilligung.
+3. [x] **Datenschutz** erklärt AdSense-Nutzung (DE & EN).
+4. [x] **Keine hardcodierten Skripte** in den HTML-Dateien (Ladung nur via JS).
+5. [x] **Slot-IDs** sind numerisch in `ad-config.js` hinterlegt.

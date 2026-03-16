@@ -4235,3 +4235,26 @@ a.category-card {
 .z-inline-style-366 { height:500px;width:100%;background:#e2e8f0; }
 .z-inline-style-367 { padding:calc(var(--grid) * 2);display:flex;gap:calc(var(--grid) * 1.5);flex-wrap:wrap;align-items:center; }
 .z-inline-style-368 { color:var(--text-muted);font-size:0.9rem;margin-left:auto;flex-basis:100%;margin-top:8px; }
+
+/* AdSense CLS Prevention & Styling */
+ins.adsbygoogle {
+  display: block;
+  background: var(--bg-secondary);
+  min-height: 100px;
+  margin: 1.5rem 0;
+  text-align: center;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* Ensure sticky mobile ads don't overlap UI */
+#BABELSB_STICKY_MOBILE {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: var(--bg-primary);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  min-height: 50px;
+}

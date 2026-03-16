@@ -1,13 +1,19 @@
 # Babelsberger.info AdSense Config
 
 ## Account-Daten
-- **Publisher-ID:** pub-1712273263687132
+- **Publisher-ID:** ca-pub-1712273263687132
 - **Kundennummer:** 4436722440
 - **GA4:** G-K409QD2YSJ
 
-## Slot-IDs (Platzhalter)
-- BABELSB_TOP_1
-- BABELSB_MIDDLE_2
+## Slot-IDs (Aktiviert)
+- **TOP_HORIZONTAL (BABELSB_TOP_1):** 7082205943
+- **MIDDLE_HORIZONTAL (BABELSB_MIDDLE_2):** 9200627461
+- **PARKS_AUTO (BABELSB_PARKS_3):** 8290870475
+- **PLANEN_AUTO (BABELSB_PLANEN_4):** 7082205943
+- **FAQ_AUTO (BABELSB_FAQ_5):** 9200627461
+- **STICKY_MOBILE (BABELSB_STICKY_MOBILE):** 8290870475
+- **IN_ARTICLE (BABELSB_IN_ARTICLE):** 9200627461
+- **INFEED (BABELSB_INFEED):** 8290870475
 
 ## Datum
-2026-02-06 - IDs von Google AdSense erhalten
+2026-03-16 - Konfiguration verifiziert und für Produktion bereitgestellt.
